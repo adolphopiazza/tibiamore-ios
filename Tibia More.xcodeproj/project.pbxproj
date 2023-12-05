@@ -1,0 +1,661 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		382A29C22B1EA97500961FE2 /* Tibia_MoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A29C12B1EA97500961FE2 /* Tibia_MoreApp.swift */; };
+		382A29C42B1EA97500961FE2 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A29C32B1EA97500961FE2 /* TabBarView.swift */; };
+		382A29C62B1EA97600961FE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 382A29C52B1EA97600961FE2 /* Assets.xcassets */; };
+		382A29C92B1EA97600961FE2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 382A29C82B1EA97600961FE2 /* Preview Assets.xcassets */; };
+		382A29D32B1EA97600961FE2 /* Tibia_MoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A29D22B1EA97600961FE2 /* Tibia_MoreTests.swift */; };
+		382A29DD2B1EA97600961FE2 /* Tibia_MoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A29DC2B1EA97600961FE2 /* Tibia_MoreUITests.swift */; };
+		382A29DF2B1EA97600961FE2 /* Tibia_MoreUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A29DE2B1EA97600961FE2 /* Tibia_MoreUITestsLaunchTests.swift */; };
+		382A29F12B1EACFB00961FE2 /* NewsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A29F02B1EACFB00961FE2 /* NewsListView.swift */; };
+		382A29F32B1EAD1C00961FE2 /* CharactersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A29F22B1EAD1C00961FE2 /* CharactersListView.swift */; };
+		382A29F52B1EAD4200961FE2 /* WorldsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A29F42B1EAD4200961FE2 /* WorldsListView.swift */; };
+		382A29FC2B1EAF1100961FE2 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A29FB2B1EAF1100961FE2 /* TabBarItem.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		382A29CF2B1EA97600961FE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 382A29B62B1EA97500961FE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 382A29BD2B1EA97500961FE2;
+			remoteInfo = "Tibia More";
+		};
+		382A29D92B1EA97600961FE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 382A29B62B1EA97500961FE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 382A29BD2B1EA97500961FE2;
+			remoteInfo = "Tibia More";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		382A29BE2B1EA97500961FE2 /* Tibia More.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tibia More.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		382A29C12B1EA97500961FE2 /* Tibia_MoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tibia_MoreApp.swift; sourceTree = "<group>"; };
+		382A29C32B1EA97500961FE2 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		382A29C52B1EA97600961FE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		382A29C82B1EA97600961FE2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		382A29CE2B1EA97600961FE2 /* Tibia MoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tibia MoreTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		382A29D22B1EA97600961FE2 /* Tibia_MoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tibia_MoreTests.swift; sourceTree = "<group>"; };
+		382A29D82B1EA97600961FE2 /* Tibia MoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tibia MoreUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		382A29DC2B1EA97600961FE2 /* Tibia_MoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tibia_MoreUITests.swift; sourceTree = "<group>"; };
+		382A29DE2B1EA97600961FE2 /* Tibia_MoreUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tibia_MoreUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		382A29F02B1EACFB00961FE2 /* NewsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListView.swift; sourceTree = "<group>"; };
+		382A29F22B1EAD1C00961FE2 /* CharactersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListView.swift; sourceTree = "<group>"; };
+		382A29F42B1EAD4200961FE2 /* WorldsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldsListView.swift; sourceTree = "<group>"; };
+		382A29FB2B1EAF1100961FE2 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		382A29BB2B1EA97500961FE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		382A29CB2B1EA97600961FE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		382A29D52B1EA97600961FE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		382A29B52B1EA97500961FE2 = {
+			isa = PBXGroup;
+			children = (
+				382A29C02B1EA97500961FE2 /* Tibia More */,
+				382A29D12B1EA97600961FE2 /* Tibia MoreTests */,
+				382A29DB2B1EA97600961FE2 /* Tibia MoreUITests */,
+				382A29BF2B1EA97500961FE2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		382A29BF2B1EA97500961FE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				382A29BE2B1EA97500961FE2 /* Tibia More.app */,
+				382A29CE2B1EA97600961FE2 /* Tibia MoreTests.xctest */,
+				382A29D82B1EA97600961FE2 /* Tibia MoreUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		382A29C02B1EA97500961FE2 /* Tibia More */ = {
+			isa = PBXGroup;
+			children = (
+				382A29EC2B1EACC300961FE2 /* Common */,
+				382A29EB2B1EACA600961FE2 /* Features */,
+				382A29C12B1EA97500961FE2 /* Tibia_MoreApp.swift */,
+				382A29C52B1EA97600961FE2 /* Assets.xcassets */,
+				382A29C72B1EA97600961FE2 /* Preview Content */,
+			);
+			path = "Tibia More";
+			sourceTree = "<group>";
+		};
+		382A29C72B1EA97600961FE2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				382A29C82B1EA97600961FE2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		382A29D12B1EA97600961FE2 /* Tibia MoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				382A29D22B1EA97600961FE2 /* Tibia_MoreTests.swift */,
+			);
+			path = "Tibia MoreTests";
+			sourceTree = "<group>";
+		};
+		382A29DB2B1EA97600961FE2 /* Tibia MoreUITests */ = {
+			isa = PBXGroup;
+			children = (
+				382A29DC2B1EA97600961FE2 /* Tibia_MoreUITests.swift */,
+				382A29DE2B1EA97600961FE2 /* Tibia_MoreUITestsLaunchTests.swift */,
+			);
+			path = "Tibia MoreUITests";
+			sourceTree = "<group>";
+		};
+		382A29EB2B1EACA600961FE2 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				382A29ED2B1EACCE00961FE2 /* News */,
+				382A29EE2B1EACD300961FE2 /* Characters */,
+				382A29EF2B1EACDB00961FE2 /* Worlds */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		382A29EC2B1EACC300961FE2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				382A29F82B1EADDA00961FE2 /* TabBar */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		382A29ED2B1EACCE00961FE2 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				382A29F02B1EACFB00961FE2 /* NewsListView.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		382A29EE2B1EACD300961FE2 /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+				382A29F22B1EAD1C00961FE2 /* CharactersListView.swift */,
+			);
+			path = Characters;
+			sourceTree = "<group>";
+		};
+		382A29EF2B1EACDB00961FE2 /* Worlds */ = {
+			isa = PBXGroup;
+			children = (
+				382A29F42B1EAD4200961FE2 /* WorldsListView.swift */,
+			);
+			path = Worlds;
+			sourceTree = "<group>";
+		};
+		382A29F82B1EADDA00961FE2 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				382A29C32B1EA97500961FE2 /* TabBarView.swift */,
+				382A29FB2B1EAF1100961FE2 /* TabBarItem.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		382A29BD2B1EA97500961FE2 /* Tibia More */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 382A29E22B1EA97600961FE2 /* Build configuration list for PBXNativeTarget "Tibia More" */;
+			buildPhases = (
+				382A29BA2B1EA97500961FE2 /* Sources */,
+				382A29BB2B1EA97500961FE2 /* Frameworks */,
+				382A29BC2B1EA97500961FE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tibia More";
+			productName = "Tibia More";
+			productReference = 382A29BE2B1EA97500961FE2 /* Tibia More.app */;
+			productType = "com.apple.product-type.application";
+		};
+		382A29CD2B1EA97600961FE2 /* Tibia MoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 382A29E52B1EA97600961FE2 /* Build configuration list for PBXNativeTarget "Tibia MoreTests" */;
+			buildPhases = (
+				382A29CA2B1EA97600961FE2 /* Sources */,
+				382A29CB2B1EA97600961FE2 /* Frameworks */,
+				382A29CC2B1EA97600961FE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				382A29D02B1EA97600961FE2 /* PBXTargetDependency */,
+			);
+			name = "Tibia MoreTests";
+			productName = "Tibia MoreTests";
+			productReference = 382A29CE2B1EA97600961FE2 /* Tibia MoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		382A29D72B1EA97600961FE2 /* Tibia MoreUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 382A29E82B1EA97600961FE2 /* Build configuration list for PBXNativeTarget "Tibia MoreUITests" */;
+			buildPhases = (
+				382A29D42B1EA97600961FE2 /* Sources */,
+				382A29D52B1EA97600961FE2 /* Frameworks */,
+				382A29D62B1EA97600961FE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				382A29DA2B1EA97600961FE2 /* PBXTargetDependency */,
+			);
+			name = "Tibia MoreUITests";
+			productName = "Tibia MoreUITests";
+			productReference = 382A29D82B1EA97600961FE2 /* Tibia MoreUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		382A29B62B1EA97500961FE2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					382A29BD2B1EA97500961FE2 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					382A29CD2B1EA97600961FE2 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 382A29BD2B1EA97500961FE2;
+					};
+					382A29D72B1EA97600961FE2 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 382A29BD2B1EA97500961FE2;
+					};
+				};
+			};
+			buildConfigurationList = 382A29B92B1EA97500961FE2 /* Build configuration list for PBXProject "Tibia More" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 382A29B52B1EA97500961FE2;
+			productRefGroup = 382A29BF2B1EA97500961FE2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				382A29BD2B1EA97500961FE2 /* Tibia More */,
+				382A29CD2B1EA97600961FE2 /* Tibia MoreTests */,
+				382A29D72B1EA97600961FE2 /* Tibia MoreUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		382A29BC2B1EA97500961FE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				382A29C92B1EA97600961FE2 /* Preview Assets.xcassets in Resources */,
+				382A29C62B1EA97600961FE2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		382A29CC2B1EA97600961FE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		382A29D62B1EA97600961FE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		382A29BA2B1EA97500961FE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				382A29F52B1EAD4200961FE2 /* WorldsListView.swift in Sources */,
+				382A29C42B1EA97500961FE2 /* TabBarView.swift in Sources */,
+				382A29F12B1EACFB00961FE2 /* NewsListView.swift in Sources */,
+				382A29F32B1EAD1C00961FE2 /* CharactersListView.swift in Sources */,
+				382A29FC2B1EAF1100961FE2 /* TabBarItem.swift in Sources */,
+				382A29C22B1EA97500961FE2 /* Tibia_MoreApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		382A29CA2B1EA97600961FE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				382A29D32B1EA97600961FE2 /* Tibia_MoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		382A29D42B1EA97600961FE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				382A29DD2B1EA97600961FE2 /* Tibia_MoreUITests.swift in Sources */,
+				382A29DF2B1EA97600961FE2 /* Tibia_MoreUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		382A29D02B1EA97600961FE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 382A29BD2B1EA97500961FE2 /* Tibia More */;
+			targetProxy = 382A29CF2B1EA97600961FE2 /* PBXContainerItemProxy */;
+		};
+		382A29DA2B1EA97600961FE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 382A29BD2B1EA97500961FE2 /* Tibia More */;
+			targetProxy = 382A29D92B1EA97600961FE2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		382A29E02B1EA97600961FE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		382A29E12B1EA97600961FE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		382A29E32B1EA97600961FE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Tibia More/Preview Content\"";
+				DEVELOPMENT_TEAM = H574TJ3JKS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tibia More";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adolphopiazza.Tibia-More";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		382A29E42B1EA97600961FE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Tibia More/Preview Content\"";
+				DEVELOPMENT_TEAM = H574TJ3JKS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tibia More";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adolphopiazza.Tibia-More";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		382A29E62B1EA97600961FE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H574TJ3JKS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adolphopiazza.Tibia-MoreTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tibia More.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Tibia More";
+			};
+			name = Debug;
+		};
+		382A29E72B1EA97600961FE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H574TJ3JKS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adolphopiazza.Tibia-MoreTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tibia More.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Tibia More";
+			};
+			name = Release;
+		};
+		382A29E92B1EA97600961FE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H574TJ3JKS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adolphopiazza.Tibia-MoreUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Tibia More";
+			};
+			name = Debug;
+		};
+		382A29EA2B1EA97600961FE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H574TJ3JKS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adolphopiazza.Tibia-MoreUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Tibia More";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		382A29B92B1EA97500961FE2 /* Build configuration list for PBXProject "Tibia More" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				382A29E02B1EA97600961FE2 /* Debug */,
+				382A29E12B1EA97600961FE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		382A29E22B1EA97600961FE2 /* Build configuration list for PBXNativeTarget "Tibia More" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				382A29E32B1EA97600961FE2 /* Debug */,
+				382A29E42B1EA97600961FE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		382A29E52B1EA97600961FE2 /* Build configuration list for PBXNativeTarget "Tibia MoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				382A29E62B1EA97600961FE2 /* Debug */,
+				382A29E72B1EA97600961FE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		382A29E82B1EA97600961FE2 /* Build configuration list for PBXNativeTarget "Tibia MoreUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				382A29E92B1EA97600961FE2 /* Debug */,
+				382A29EA2B1EA97600961FE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 382A29B62B1EA97500961FE2 /* Project object */;
+}
