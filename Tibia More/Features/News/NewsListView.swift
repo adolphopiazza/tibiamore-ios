@@ -9,8 +9,29 @@ import SwiftUI
 
 struct NewsListView: View {
     
+    @State private var viewModel: NewsListViewModel = .init()
+    
     var body: some View {
-        Text("Here we'll have a list with Tibia news")
+        NavigationStack {
+            List(viewModel.news, id: \.id) { news in
+                NewsListRowView(viewModel: .init(news))
+            }
+            .navigationTitle(viewModel.viewTitle)
+            .refreshable {
+                await viewModel.fetchLatestNews()
+            }
+            .overlay {
+                if viewModel.news.isEmpty && !viewModel.isLoading {
+                    ContentUnavailableView("No news found",
+                                           systemImage: "newspaper",
+                                           description: Text("Please pull-to-refresh to get the latest Tibia news"))
+                }
+                
+                if viewModel.isLoading {
+                    ProgressView()
+                }
+            }
+        }
     }
     
 }
