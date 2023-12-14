@@ -20,9 +20,35 @@ final class NewsService {
         do {
             let (data, _) = try await URLSession.shared.data(from: fetchURL)
             let decoded = try JSONDecoder().decode(NewsModel.self, from: data)
-            return decoded.news
+            guard let news = decoded.news else {
+                throw APIErrors.apiDown
+            }
+            
+            return news
         } catch {
-            print("Some error occured: \(error)")
+            print("Service error occured: \(error)")
+            throw error
+        }
+    }
+    
+    func fetchDetails(with id: Int) async throws -> NewsDetailInformationModel {
+        // TODO: We are force unwrapping here but think of a better solution for endpoints with user defined parameters
+        let fetchURL: URL = URL(string: "\(URL.Endpoints.News.details)/\(id)")!
+        
+        do {
+            let (data, _) = try await URLSession.shared.data(from: fetchURL)
+            
+            let decoder = JSONDecoder()
+            decoder.keyDecodingStrategy = .convertFromSnakeCase
+            
+            let decoded = try decoder.decode(NewsDetailModel.self, from: data)
+            guard let news = decoded.news, !news.title.isEmpty else {
+                throw APIErrors.apiDown
+            }
+            
+            return news
+        } catch {
+            print("Service error: \(error)")
             throw error
         }
     }
