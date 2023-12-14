@@ -36,7 +36,8 @@ struct NewsListDetailView: View {
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Button("Read it on Tibia.com") {
-                    UIApplication.shared.open(URL(string: viewModel.detailedNews.url)!)
+                    let route = NavigationRoutes.News.browser(with: viewModel.detailedNews.url)
+                    self.navigationPath.append(route)
                 }
             }
         }

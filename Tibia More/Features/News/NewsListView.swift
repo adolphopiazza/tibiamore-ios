@@ -38,6 +38,8 @@ struct NewsListView: View {
                 switch route {
                 case .details(let news):
                     NewsListDetailView(viewModel: .init(newsID: news.id), navigationPath: $viewModel.navigationPath)
+                case .browser(let url):
+                    BrowserView(navigationPath: $viewModel.navigationPath, url: url)
                 }
             }
         }

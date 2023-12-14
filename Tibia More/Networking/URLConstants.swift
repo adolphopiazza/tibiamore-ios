@@ -12,6 +12,7 @@ import Foundation
 
 // TODO: Maybe only store Strings here and format the URL at the service? (without the base URL of course)
 extension URL {
+    static let tibiaURL: URL = URL(string: "https://www.tibia.com")!
     static let baseURL: URL = URL(string: "https://api.tibiadata.com/v4")!
     
     struct Endpoints {
