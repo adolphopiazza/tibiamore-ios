@@ -5,13 +5,14 @@
 //  Created by Adolpho Francisco Zimmermann Piazza on 09/12/23.
 //
 
-import Foundation
+import SwiftUI
 
 @Observable
 final class NewsListViewModel {
     
     let viewTitle: String = "Latest news"
     
+    var navigationPath: NavigationPath = .init()
     var news: [NewsInformationModel] = []
     var isLoading: Bool = false
     

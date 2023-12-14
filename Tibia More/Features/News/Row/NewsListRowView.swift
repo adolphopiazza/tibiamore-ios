@@ -14,7 +14,7 @@ struct NewsListRowView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
             HStack {
-                Text(viewModel.news.date)
+                Text(viewModel.news.date.formatDate)
                 
                 Spacer()
                 
@@ -28,6 +28,11 @@ struct NewsListRowView: View {
             
             Text(viewModel.news.category)
                 .font(.footnote)
+                .padding(6)
+                .background {
+                    RoundedRectangle(cornerRadius: 4)
+                        .foregroundStyle(.green)
+                }
         }
         .fontDesign(.serif)
     }

@@ -12,9 +12,12 @@ struct NewsListView: View {
     @State private var viewModel: NewsListViewModel = .init()
     
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $viewModel.navigationPath) {
             List(viewModel.news, id: \.id) { news in
                 NewsListRowView(viewModel: .init(news))
+                    .onTapGesture {
+                        viewModel.navigationPath.append(NavigationRoutes.News.details(of: news))
+                    }
             }
             .navigationTitle(viewModel.viewTitle)
             .refreshable {
@@ -29,6 +32,12 @@ struct NewsListView: View {
                 
                 if viewModel.isLoading {
                     ProgressView()
+                }
+            }
+            .navigationDestination(for: NavigationRoutes.News.self) { route in
+                switch route {
+                case .details(let news):
+                    NewsListDetailView(viewModel: .init(newsID: news.id), navigationPath: $viewModel.navigationPath)
                 }
             }
         }
