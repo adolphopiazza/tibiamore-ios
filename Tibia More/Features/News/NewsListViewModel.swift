@@ -15,6 +15,7 @@ final class NewsListViewModel {
     var navigationPath: NavigationPath = .init()
     var news: [NewsInformationModel] = []
     var isLoading: Bool = false
+    var showInfoAlert: Bool = false
     
     init() {
         Task {
