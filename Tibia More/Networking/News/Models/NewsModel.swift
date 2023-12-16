@@ -18,5 +18,5 @@ struct NewsInformationModel: Decodable, Hashable, Equatable {
     let news: String
     let type: String
     let url: String
-    let url_api: String
+    let urlApi: String
 }

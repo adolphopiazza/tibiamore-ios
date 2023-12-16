@@ -13,42 +13,34 @@ final class NewsService {
     
     init() {}
     
-    // TODO: Work on proper error handling
     func fetch() async throws -> [NewsInformationModel] {
-        let fetchURL: URL = .Endpoints.News.latest
+        let service = NetworkService<NewsModel>()
         
         do {
-            let (data, _) = try await URLSession.shared.data(from: fetchURL)
-            let decoded = try JSONDecoder().decode(NewsModel.self, from: data)
-            guard let news = decoded.news else {
-                throw APIErrors.apiDown
+            let result = try await service.fetch(url: .Endpoints.News.latest)
+            guard let news = result.news else {
+                throw APIErrors.errorOnAPI
             }
             
             return news
         } catch {
-            print("Service error occured: \(error)")
+            print("Some error occured on news service: \(error)")
             throw error
         }
     }
     
     func fetchDetails(with id: Int) async throws -> NewsDetailInformationModel {
-        // TODO: We are force unwrapping here but think of a better solution for endpoints with user defined parameters
-        let fetchURL: URL = URL(string: "\(URL.Endpoints.News.details)/\(id)")!
+        let service = NetworkService<NewsDetailModel>()
         
         do {
-            let (data, _) = try await URLSession.shared.data(from: fetchURL)
-            
-            let decoder = JSONDecoder()
-            decoder.keyDecodingStrategy = .convertFromSnakeCase
-            
-            let decoded = try decoder.decode(NewsDetailModel.self, from: data)
-            guard let news = decoded.news, !news.title.isEmpty else {
-                throw APIErrors.apiDown
+            let result = try await service.fetch(url: .Endpoints.News.details + String(id))
+            guard let news = result.news, !news.title.isEmpty else {
+                throw APIErrors.errorOnAPI
             }
             
             return news
         } catch {
-            print("Service error: \(error)")
+            print("Some error occured on news service: \(error)")
             throw error
         }
     }

@@ -32,7 +32,8 @@ final class NewsListViewModel {
             self.news = news
             self.isLoading.toggle()
         } catch {
-            print("Some error: \(error)")
+            print("View model error: \(error)")
+            self.news.removeAll()
             self.isLoading.toggle()
         }
     }

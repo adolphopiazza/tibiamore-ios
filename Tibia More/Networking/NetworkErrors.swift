@@ -8,5 +8,7 @@
 import Foundation
 
 enum APIErrors: Error {
-    case apiDown
+    case errorOnAPI
+    case malformedURL
+    case failedToDecode(error: DecodingError)
 }

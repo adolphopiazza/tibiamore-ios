@@ -46,7 +46,7 @@ struct NewsListRowView: View {
                                      news: "Winter Update 2023",
                                      type: "news",
                                      url: "https://www.tibia.com/news/?subtopic=newsarchive&id=7639",
-                                     url_api: "https://+https://https://api.tibiadata.com/v4/news/id/7639")
+                                     urlApi: "https://+https://https://api.tibiadata.com/v4/news/id/7639")
     
     return AnyView(
         NavigationStack {

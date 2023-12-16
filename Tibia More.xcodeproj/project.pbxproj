@@ -32,6 +32,7 @@
 		38AC7CF12B253FEE00B6DF29 /* NewsListDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AC7CF02B253FEE00B6DF29 /* NewsListDetailViewModel.swift */; };
 		38AC7CF42B25411800B6DF29 /* NewsDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AC7CF32B25411800B6DF29 /* NewsDetailModel.swift */; };
 		38AC7CF72B254B2A00B6DF29 /* NavigationRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AC7CF62B254B2A00B6DF29 /* NavigationRoutes.swift */; };
+		38F2416F2B2D04BE003CC100 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F2416E2B2D04BD003CC100 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		38AC7CF02B253FEE00B6DF29 /* NewsListDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListDetailViewModel.swift; sourceTree = "<group>"; };
 		38AC7CF32B25411800B6DF29 /* NewsDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailModel.swift; sourceTree = "<group>"; };
 		38AC7CF62B254B2A00B6DF29 /* NavigationRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRoutes.swift; sourceTree = "<group>"; };
+		38F2416E2B2D04BD003CC100 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +231,7 @@
 				382A29FE2B1EB9C800961FE2 /* News */,
 				382A2A032B1EBC8A00961FE2 /* URLConstants.swift */,
 				38A28A812B27C2D800C707F7 /* NetworkErrors.swift */,
+				38F2416E2B2D04BD003CC100 /* NetworkService.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -428,6 +431,7 @@
 				38AC7CF42B25411800B6DF29 /* NewsDetailModel.swift in Sources */,
 				38A28AA52B2B75E300C707F7 /* Strings+Ext.swift in Sources */,
 				38AC7CE72B24B22200B6DF29 /* NewsListViewModel.swift in Sources */,
+				38F2416F2B2D04BE003CC100 /* NetworkService.swift in Sources */,
 				38A28AA72B2B7AED00C707F7 /* SafariView.swift in Sources */,
 				38AC7CEA2B24BD7000B6DF29 /* NewsListRowView.swift in Sources */,
 				382A29FC2B1EAF1100961FE2 /* TabBarItem.swift in Sources */,
