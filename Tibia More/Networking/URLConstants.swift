@@ -7,18 +7,17 @@
 
 import Foundation
 
-/// Note: we force unwrap this because they're constants and aren't suppose to
-/// change, so we'll not get any crashes.
-
-// TODO: Maybe only store Strings here and format the URL at the service? (without the base URL of course)
 extension URL {
-    static let tibiaURL: URL = URL(string: "https://www.tibia.com")!
-    static let baseURL: URL = URL(string: "https://api.tibiadata.com/v4")!
+    static let tibiaURL = URL(string: "https://www.tibia.com")!
+}
+
+extension String {
+    static let baseURL = "https://api.tibiadata.com/v4"
     
     struct Endpoints {
         struct News {
-            static let latest: URL = URL(string: "\(URL.baseURL.absoluteString)/news/latest")!
-            static let details: URL = URL(string: "\(URL.baseURL.absoluteString)/news/id/")!
+            static let latest = "\(baseURL)/news/latest"
+            static let details = "\(baseURL)/news/id/"
         }
     }
 }
