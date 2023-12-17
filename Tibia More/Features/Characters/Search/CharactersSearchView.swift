@@ -31,6 +31,7 @@ struct CharactersSearchView: View {
             .padding([.horizontal, .top], 20)
         }
         .navigationTitle(viewModel.viewTitle)
+        .disabled(viewModel.isLoading)
         .alert("Error 🙁", isPresented: $viewModel.hasError) {
             Button("OK") {
                 viewModel.characterName.removeAll()
@@ -38,7 +39,11 @@ struct CharactersSearchView: View {
         } message: {
             Text("Unable to find this character\n\nPlease try again!")
         }
-
+        .overlay {
+            if viewModel.isLoading {
+                ProgressView()
+            }
+        }
     }
     
 }
