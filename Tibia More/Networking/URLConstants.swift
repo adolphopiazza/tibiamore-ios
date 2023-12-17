@@ -12,12 +12,16 @@ extension URL {
 }
 
 extension String {
-    static let baseURL = "https://api.tibiadata.com/v4"
+    static let baseURL = "https://api.tibiadata.com/v4/"
     
     struct Endpoints {
         struct News {
-            static let latest = "\(baseURL)/news/latest"
-            static let details = "\(baseURL)/news/id/"
+            static let latest = "news/latest"
+            static let details = "news/id/"
+        }
+        
+        struct Characters {
+            static let details = "character/"
         }
     }
 }

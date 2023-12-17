@@ -10,7 +10,7 @@ import Foundation
 final class NetworkService<T: Decodable> {
     
     func fetch(url: String) async throws -> T {
-        guard let url = URL(string: url) else {
+        guard let url = URL(string: .baseURL + url) else {
             throw APIErrors.malformedURL
         }
         
