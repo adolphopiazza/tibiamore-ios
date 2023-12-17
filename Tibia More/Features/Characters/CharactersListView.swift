@@ -19,7 +19,7 @@ struct CharactersListView: View {
             .navigationTitle(viewModel.viewTitle)
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
-                    Button("Search for character", systemImage: "magnifyingglass") {
+                    Button("Search for character", systemImage: .SFImages.magnifyingglass) {
                         viewModel.navigationPath.append(NavigationRoutes.Characters.search)
                     }
                 }

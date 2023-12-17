@@ -26,11 +26,11 @@ enum TabBarItem {
     var sfImage: String {
         switch self {
         case .news:
-            return "newspaper"
+            return .SFImages.newspaper
         case .characters:
-            return "person.3"
+            return .SFImages.person3
         case .worlds:
-            return "globe"
+            return .SFImages.globe
         }
     }
     

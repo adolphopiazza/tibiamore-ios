@@ -35,7 +35,7 @@ struct NewsListView: View {
             })
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
-                    Button("Info", systemImage: "info.circle") {
+                    Button("Info", systemImage: .SFImages.infoCircle) {
                         viewModel.showInfoAlert.toggle()
                     }
                 }
