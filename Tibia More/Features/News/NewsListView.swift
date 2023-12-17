@@ -9,7 +9,7 @@ import SwiftUI
 
 struct NewsListView: View {
     
-    @State private var viewModel: NewsListViewModel = .init()
+    @State private var viewModel: NewsListViewModel = NewsListViewModel()
     
     init() {
         /// https://www.hackingwithswift.com/forums/swiftui/alert-button-color-conforming-to-accentcolor/7193/7198

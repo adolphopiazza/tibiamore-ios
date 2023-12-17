@@ -14,4 +14,8 @@ enum NavigationRoutes {
         case browser(with: String)
     }
     
+    enum Characters {
+        case search
+    }
+    
 }

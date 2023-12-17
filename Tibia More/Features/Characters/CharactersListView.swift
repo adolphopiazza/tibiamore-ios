@@ -9,9 +9,28 @@ import SwiftUI
 
 struct CharactersListView: View {
     
+    @State private var viewModel: CharactersListViewModel = CharactersListViewModel()
+    
     var body: some View {
-        Text("This is the view that we'll have the saved characters list")
-            .multilineTextAlignment(.center)
+        NavigationStack(path: $viewModel.navigationPath) {
+            List {
+                Text("First character")
+            }
+            .navigationTitle(viewModel.viewTitle)
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("Search for character", systemImage: "magnifyingglass") {
+                        viewModel.navigationPath.append(NavigationRoutes.Characters.search)
+                    }
+                }
+            }
+            .navigationDestination(for: NavigationRoutes.Characters.self) { route in
+                switch route {
+                case .search:
+                    CharactersSearchView()
+                }
+            }
+        }
     }
     
 }
