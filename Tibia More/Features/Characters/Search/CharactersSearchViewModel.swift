@@ -15,13 +15,14 @@ final class CharactersSearchViewModel {
     var characterName: String = ""
     var isLoading: Bool = false
     var hasError: Bool = false
+    var model: CharacterInfoModel?
     
     @MainActor func fetch() async {
         self.isLoading = true
         
         do {
             let result = try await CharactersService.shared.fetch(name: characterName)
-            print(result)
+            self.model = result
             self.isLoading = false
         } catch {
             print("Some error occured on characters search view model: \(error)")

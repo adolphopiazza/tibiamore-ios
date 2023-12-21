@@ -27,7 +27,9 @@ struct CharactersListView: View {
             .navigationDestination(for: NavigationRoutes.Characters.self) { route in
                 switch route {
                 case .search:
-                    CharactersSearchView()
+                    CharactersSearchView(navigationPath: $viewModel.navigationPath)
+                case .details(let model):
+                    CharacterSearchDetailsView(model: model)
                 }
             }
         }

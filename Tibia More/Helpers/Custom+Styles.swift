@@ -16,7 +16,7 @@ struct CharacterSearchTextFieldStyle: TextFieldStyle {
             .background {
                 Color(uiColor: .systemGray6)
             }
-            .clipShape(.capsule)
+            .clipShape(.rect(cornerRadius: 8))
             .multilineTextAlignment(.center)
             .font(.title3)
             .fontDesign(.serif)

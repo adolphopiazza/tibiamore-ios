@@ -15,7 +15,7 @@ struct CharacterModel: Decodable {
     let character: CharacterInfoModel
 }
 
-struct CharacterInfoModel: Decodable {
+struct CharacterInfoModel: Decodable, Hashable, Equatable {
     let accountStatus: String?
     let achievementPoints: Int?
     let comment: String?
@@ -38,12 +38,12 @@ struct CharacterInfoModel: Decodable {
     let world: String?
 }
 
-struct GuildModel: Decodable {
+struct GuildModel: Decodable, Hashable, Equatable {
     let name: String?
     let rank: String?
 }
 
-struct HouseModel: Decodable {
+struct HouseModel: Decodable, Hashable, Equatable {
     let houseid: Int?
     let name: String?
     let paid: String?

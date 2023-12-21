@@ -10,6 +10,7 @@ import SwiftUI
 struct CharactersSearchView: View {
     
     @State private var viewModel = CharactersSearchViewModel()
+    @Binding var navigationPath: NavigationPath
     
     var body: some View {
         ScrollView {
@@ -20,7 +21,7 @@ struct CharactersSearchView: View {
                 
                 Button(action: {
                     Task {
-                        await viewModel.fetch()
+                        await routeToDetails()
                     }
                 }, label: {
                     Text("exiva \"\(viewModel.characterName)\"")
@@ -44,10 +45,28 @@ struct CharactersSearchView: View {
                 ProgressView()
             }
         }
+        .onSubmit {
+            Task {
+                await routeToDetails()
+            }
+        }
+    }
+    
+}
+
+// MARK: - Routes
+extension CharactersSearchView {
+    
+    private func routeToDetails() async {
+        await viewModel.fetch()
+        
+        if let model = viewModel.model {
+            self.navigationPath.append(NavigationRoutes.Characters.details(with: model))
+        }
     }
     
 }
 
 #Preview {
-    CharactersSearchView()
+    CharactersSearchView(navigationPath: Binding.constant(NavigationPath()))
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3800FC702B34DC8B00685C5E /* CharacterSearchDetailsViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800FC6F2B34DC8B00685C5E /* CharacterSearchDetailsViewRow.swift */; };
 		382A29C22B1EA97500961FE2 /* Tibia_MoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A29C12B1EA97500961FE2 /* Tibia_MoreApp.swift */; };
 		382A29C42B1EA97500961FE2 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A29C32B1EA97500961FE2 /* TabBarView.swift */; };
 		382A29C62B1EA97600961FE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 382A29C52B1EA97600961FE2 /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 		38A3EDF62B2F2DC8003C7BDA /* CharactersSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A3EDF52B2F2DC8003C7BDA /* CharactersSearchView.swift */; };
 		38A3EDF82B2F2DE2003C7BDA /* CharactersSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A3EDF72B2F2DE2003C7BDA /* CharactersSearchViewModel.swift */; };
 		38A3EDFA2B2F32E0003C7BDA /* Custom+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A3EDF92B2F32E0003C7BDA /* Custom+Styles.swift */; };
+		38A3EDFD2B2F3DE1003C7BDA /* CharacterSearchDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A3EDFC2B2F3DE1003C7BDA /* CharacterSearchDetailsView.swift */; };
 		38AC7CE72B24B22200B6DF29 /* NewsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AC7CE62B24B22200B6DF29 /* NewsListViewModel.swift */; };
 		38AC7CEA2B24BD7000B6DF29 /* NewsListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AC7CE92B24BD7000B6DF29 /* NewsListRowView.swift */; };
 		38AC7CEC2B24BD7900B6DF29 /* NewsListRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AC7CEB2B24BD7900B6DF29 /* NewsListRowViewModel.swift */; };
@@ -59,6 +61,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3800FC6F2B34DC8B00685C5E /* CharacterSearchDetailsViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSearchDetailsViewRow.swift; sourceTree = "<group>"; };
 		382A29BE2B1EA97500961FE2 /* Tibia More.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tibia More.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		382A29C12B1EA97500961FE2 /* Tibia_MoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tibia_MoreApp.swift; sourceTree = "<group>"; };
 		382A29C32B1EA97500961FE2 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
@@ -84,6 +87,7 @@
 		38A3EDF52B2F2DC8003C7BDA /* CharactersSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersSearchView.swift; sourceTree = "<group>"; };
 		38A3EDF72B2F2DE2003C7BDA /* CharactersSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersSearchViewModel.swift; sourceTree = "<group>"; };
 		38A3EDF92B2F32E0003C7BDA /* Custom+Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Custom+Styles.swift"; sourceTree = "<group>"; };
+		38A3EDFC2B2F3DE1003C7BDA /* CharacterSearchDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSearchDetailsView.swift; sourceTree = "<group>"; };
 		38AC7CE62B24B22200B6DF29 /* NewsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewModel.swift; sourceTree = "<group>"; };
 		38AC7CE92B24BD7000B6DF29 /* NewsListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListRowView.swift; sourceTree = "<group>"; };
 		38AC7CEB2B24BD7900B6DF29 /* NewsListRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListRowViewModel.swift; sourceTree = "<group>"; };
@@ -280,10 +284,20 @@
 		38A3EDF42B2F2DB8003C7BDA /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				38A3EDFB2B2F3DD6003C7BDA /* Details */,
 				38A3EDF52B2F2DC8003C7BDA /* CharactersSearchView.swift */,
 				38A3EDF72B2F2DE2003C7BDA /* CharactersSearchViewModel.swift */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		38A3EDFB2B2F3DD6003C7BDA /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				38A3EDFC2B2F3DE1003C7BDA /* CharacterSearchDetailsView.swift */,
+				3800FC6F2B34DC8B00685C5E /* CharacterSearchDetailsViewRow.swift */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 		38AC7CE82B24BD5300B6DF29 /* Row */ = {
@@ -482,7 +496,9 @@
 				38CC6C072B2DDEAF00E5BB67 /* CharactersService.swift in Sources */,
 				38A28AA72B2B7AED00C707F7 /* SafariView.swift in Sources */,
 				38AC7CEA2B24BD7000B6DF29 /* NewsListRowView.swift in Sources */,
+				38A3EDFD2B2F3DE1003C7BDA /* CharacterSearchDetailsView.swift in Sources */,
 				382A29FC2B1EAF1100961FE2 /* TabBarItem.swift in Sources */,
+				3800FC702B34DC8B00685C5E /* CharacterSearchDetailsViewRow.swift in Sources */,
 				38AC7CEC2B24BD7900B6DF29 /* NewsListRowViewModel.swift in Sources */,
 				382A29C22B1EA97500961FE2 /* Tibia_MoreApp.swift in Sources */,
 				38AC7CF12B253FEE00B6DF29 /* NewsListDetailViewModel.swift in Sources */,
