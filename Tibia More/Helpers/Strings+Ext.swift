@@ -9,10 +9,15 @@ import Foundation
 
 extension String {
     
+    enum DateFormats: String {
+        case yyyyMMdd = "yyyy-MM-dd"
+        case yyyyMMddTHHmmssZ = "yyyy-MM-dd'T'HH:mm:ss'Z'"
+    }
+    
     // TODO: Create Date+Ext with more options for date formatting
-    var formatDate: String {
+    func formatDate(with format: DateFormats) -> String {
         let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd"
+        formatter.dateFormat = format.rawValue
         
         guard let date = formatter.date(from: self) else { return self }
         

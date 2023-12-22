@@ -74,12 +74,16 @@ struct CharacterSearchDetailsView: View {
                 }
             }
             
-            CharacterSearchDetailsViewRow(title: "Last Login", value: model.character.lastLogin ?? "No last login found")
-            CharacterSearchDetailsViewRow(title: "Comment", value: model.character.comment ?? "No comment found", orientation: .vertical)
+            CharacterSearchDetailsViewRow(title: "Last Login", value: model.character.lastLogin?.formatDate(with: .yyyyMMddTHHmmssZ) ?? "No last login found")
+            
+            if let comment = model.character.comment {
+                CharacterSearchDetailsViewRow(title: "Comment", value: comment, orientation: .vertical)
+            }
+            
             CharacterSearchDetailsViewRow(title: "Account Status", value: model.character.accountStatus ?? "No account status found")
             
             if let deletionDate = model.character.deletionDate {
-                CharacterSearchDetailsViewRow(title: "Deletion Date", value: deletionDate)
+                CharacterSearchDetailsViewRow(title: "Deletion Date", value: deletionDate.formatDate(with: .yyyyMMddTHHmmssZ))
             }
             
             if let position = model.character.position {
@@ -113,7 +117,7 @@ struct CharacterSearchDetailsView: View {
                 let created = accountInformation.created, !created.isEmpty {
                     Section("Account Information") {
                         CharacterSearchDetailsViewRow(title: "Loyalty Title", value: loyaltyTitle)
-                        CharacterSearchDetailsViewRow(title: "Created", value: created)
+                        CharacterSearchDetailsViewRow(title: "Created", value: created.formatDate(with: .yyyyMMddTHHmmssZ))
                     }
             }
         }

@@ -14,7 +14,7 @@ struct NewsListRowView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
             HStack {
-                Text(viewModel.news.date.formatDate)
+                Text(viewModel.news.date.formatDate(with: .yyyyMMdd))
                 
                 Spacer()
                 

@@ -53,7 +53,7 @@ struct NewsListDetailView: View {
             Text(viewModel.detailedNews.title)
                 .font(.largeTitle)
             
-            Text(viewModel.detailedNews.date.formatDate)
+            Text(viewModel.detailedNews.date.formatDate(with: .yyyyMMdd))
                 .font(.footnote)
                 .padding(.top, 6)
             
