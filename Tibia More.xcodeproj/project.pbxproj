@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3800FC702B34DC8B00685C5E /* CharacterSearchDetailsViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800FC6F2B34DC8B00685C5E /* CharacterSearchDetailsViewRow.swift */; };
+		3800FC722B35D90700685C5E /* CharacterSearchDetailsAchievementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800FC712B35D90700685C5E /* CharacterSearchDetailsAchievementView.swift */; };
+		3800FC742B35DD6600685C5E /* CharacterSearchDetailsOtherCharactersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800FC732B35DD6600685C5E /* CharacterSearchDetailsOtherCharactersView.swift */; };
 		382A29C22B1EA97500961FE2 /* Tibia_MoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A29C12B1EA97500961FE2 /* Tibia_MoreApp.swift */; };
 		382A29C42B1EA97500961FE2 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A29C32B1EA97500961FE2 /* TabBarView.swift */; };
 		382A29C62B1EA97600961FE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 382A29C52B1EA97600961FE2 /* Assets.xcassets */; };
@@ -62,6 +64,8 @@
 
 /* Begin PBXFileReference section */
 		3800FC6F2B34DC8B00685C5E /* CharacterSearchDetailsViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSearchDetailsViewRow.swift; sourceTree = "<group>"; };
+		3800FC712B35D90700685C5E /* CharacterSearchDetailsAchievementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSearchDetailsAchievementView.swift; sourceTree = "<group>"; };
+		3800FC732B35DD6600685C5E /* CharacterSearchDetailsOtherCharactersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSearchDetailsOtherCharactersView.swift; sourceTree = "<group>"; };
 		382A29BE2B1EA97500961FE2 /* Tibia More.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tibia More.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		382A29C12B1EA97500961FE2 /* Tibia_MoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tibia_MoreApp.swift; sourceTree = "<group>"; };
 		382A29C32B1EA97500961FE2 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
@@ -296,6 +300,8 @@
 			children = (
 				38A3EDFC2B2F3DE1003C7BDA /* CharacterSearchDetailsView.swift */,
 				3800FC6F2B34DC8B00685C5E /* CharacterSearchDetailsViewRow.swift */,
+				3800FC712B35D90700685C5E /* CharacterSearchDetailsAchievementView.swift */,
+				3800FC732B35DD6600685C5E /* CharacterSearchDetailsOtherCharactersView.swift */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -478,6 +484,7 @@
 				382A2A002B1EBB0900961FE2 /* NewsModel.swift in Sources */,
 				382A29F52B1EAD4200961FE2 /* WorldsListView.swift in Sources */,
 				382A2A022B1EBBA000961FE2 /* NewsService.swift in Sources */,
+				3800FC742B35DD6600685C5E /* CharacterSearchDetailsOtherCharactersView.swift in Sources */,
 				38A3EDF62B2F2DC8003C7BDA /* CharactersSearchView.swift in Sources */,
 				38A28AAA2B2B7CD500C707F7 /* BrowserView.swift in Sources */,
 				38A3EDF82B2F2DE2003C7BDA /* CharactersSearchViewModel.swift in Sources */,
@@ -501,6 +508,7 @@
 				3800FC702B34DC8B00685C5E /* CharacterSearchDetailsViewRow.swift in Sources */,
 				38AC7CEC2B24BD7900B6DF29 /* NewsListRowViewModel.swift in Sources */,
 				382A29C22B1EA97500961FE2 /* Tibia_MoreApp.swift in Sources */,
+				3800FC722B35D90700685C5E /* CharacterSearchDetailsAchievementView.swift in Sources */,
 				38AC7CF12B253FEE00B6DF29 /* NewsListDetailViewModel.swift in Sources */,
 				38AC7CEF2B253FE400B6DF29 /* NewsListDetailView.swift in Sources */,
 			);

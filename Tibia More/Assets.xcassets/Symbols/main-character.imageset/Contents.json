@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "main-character.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

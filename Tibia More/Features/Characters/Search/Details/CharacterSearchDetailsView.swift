@@ -11,11 +11,26 @@ struct CharacterSearchDetailsView: View {
     
     var model: CharacterModel
     
+    @Binding var navigationPath: NavigationPath
+    
     var body: some View {
         List {
             characterInfoView
+            
+            achievementsView
+            
+            accountInformationView
+            
+            otherCharactersView
         }
         .navigationTitle(model.character.name ?? "Character")
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                Button("All characters") {
+                    self.navigationPath.removeLast(self.navigationPath.count)
+                }
+            }
+        }
     }
     
     private var characterInfoView: some View {
@@ -81,6 +96,39 @@ struct CharacterSearchDetailsView: View {
         }
     }
     
+    private var achievementsView: some View {
+        Group {
+            if let achievements = model.achievements {
+                Section("Account Achievements") {
+                    CharacterSearchDetailsAchievementView(achievements: achievements)
+                }
+            }
+        }
+    }
+    
+    private var accountInformationView: some View {
+        Group {
+            if let accountInformation = model.accountInformation,
+                let loyaltyTitle = accountInformation.loyaltyTitle, !loyaltyTitle.isEmpty,
+                let created = accountInformation.created, !created.isEmpty {
+                    Section("Account Information") {
+                        CharacterSearchDetailsViewRow(title: "Loyalty Title", value: loyaltyTitle)
+                        CharacterSearchDetailsViewRow(title: "Created", value: created)
+                    }
+            }
+        }
+    }
+    
+    private var otherCharactersView: some View {
+        Group {
+            if let otherCharacters = model.otherCharacters {
+                Section("Characters") {
+                    CharacterSearchDetailsOtherCharactersView(characters: otherCharacters)
+                }
+            }
+        }
+    }
+    
 }
 
 #Preview {
@@ -104,7 +152,34 @@ struct CharacterSearchDetailsView: View {
                                                                                    unlockedTitles: nil,
                                                                                    vocation: "Master Sorcerer",
                                                                                    world: "Belobra"),
-                                                     accountInformation: nil,
-                                                     achievements: nil,
-                                                     otherCharacters: nil))
+                                                     accountInformation: AccountInformationModel(created: "2005-10-29T09:44:10Z",
+                                                                                                 loyaltyTitle: "Sage of Tibia",
+                                                                                                 position: nil),
+                                                     achievements: [AchievementsModel(grade: 2, name: "Alumni", secret: false),
+                                                                    AchievementsModel(grade: 3, name: "Dread Lord", secret: true),
+                                                                    AchievementsModel(grade: 3, name: "Herbicide", secret: true),
+                                                                    AchievementsModel(grade: 3, name: "Unleash the Beast", secret: false),
+                                                                    AchievementsModel(grade: 3, name: "You Got Horse Power", secret: false)],
+                                                     otherCharacters: [OtherCharactersModel(deleted: nil,
+                                                                                            main: true,
+                                                                                            name: "Otavio Invencivel",
+                                                                                            position: nil,
+                                                                                            status: "online",
+                                                                                            traded: nil,
+                                                                                            world: "Inabra"),
+                                                                       OtherCharactersModel(deleted: nil,
+                                                                                            main: false,
+                                                                                            name: "Otavio On Inabra",
+                                                                                            position: nil,
+                                                                                            status: "offline",
+                                                                                            traded: nil,
+                                                                                            world: "Inabra"),
+                                                                       OtherCharactersModel(deleted: nil,
+                                                                                            main: false,
+                                                                                            name: "Zjow Vice",
+                                                                                            position: nil,
+                                                                                            status: "offline",
+                                                                                            traded: nil,
+                                                                                            world: "Quelibra")]), 
+                               navigationPath: Binding.constant(NavigationPath()))
 }

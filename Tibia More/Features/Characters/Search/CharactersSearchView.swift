@@ -18,6 +18,7 @@ struct CharactersSearchView: View {
                 TextField("Insert your character name", text: $viewModel.characterName)
                     .textFieldStyle(CharacterSearchTextFieldStyle())
                     .autocorrectionDisabled()
+                    .textInputAutocapitalization(.words)
                 
                 Button(action: {
                     Task {
