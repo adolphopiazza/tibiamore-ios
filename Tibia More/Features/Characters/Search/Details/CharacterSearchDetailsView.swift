@@ -9,103 +9,74 @@ import SwiftUI
 
 struct CharacterSearchDetailsView: View {
     
-    var model: CharacterInfoModel
+    var model: CharacterModel
     
     var body: some View {
         List {
             characterInfoView
-            
-            formerNamesView
-            
-            formerWorldsView
-            
-            guildView
-            
-            housesView
         }
-        .navigationTitle(model.name ?? "Character")
+        .navigationTitle(model.character.name ?? "Character")
     }
     
     private var characterInfoView: some View {
         Section("Character Information") {
-            CharacterSearchDetailsViewRow(title: "Name", value: model.name ?? "No name found")
-            CharacterSearchDetailsViewRow(title: "Title", value: model.title ?? "None")
-            CharacterSearchDetailsViewRow(title: "Unlocked Titles", value: String(model.unlockedTitles ?? 0))
-            CharacterSearchDetailsViewRow(title: "Sex", value: model.sex ?? "No sex found")
-            CharacterSearchDetailsViewRow(title: "Vocation", value: model.vocation ?? "No vocation found")
-            CharacterSearchDetailsViewRow(title: "Level", value: String(model.level ?? 0))
-            CharacterSearchDetailsViewRow(title: "Achievement Points", value: String(model.achievementPoints ?? 0))
-            CharacterSearchDetailsViewRow(title: "World", value: model.world ?? "No world found")
-            CharacterSearchDetailsViewRow(title: "Residence", value: model.residence ?? "No residence found")
-            CharacterSearchDetailsViewRow(title: "Last Login", value: model.lastLogin ?? "No last login found")
-            CharacterSearchDetailsViewRow(title: "Comment", value: model.comment ?? "No comment found", orientation: .vertical)
-            CharacterSearchDetailsViewRow(title: "Account Status", value: model.accountStatus ?? "No account status found")
+            CharacterSearchDetailsViewRow(title: "Name", value: model.character.name ?? "No name found")
             
-            if let deletionDate = model.deletionDate {
+            if let formerNames = model.character.formerNames {
+                CharacterSearchDetailsViewRow(title: "Former Names", value: formerNames.joined(separator: ", "), orientation: .vertical)
+            }
+            
+            CharacterSearchDetailsViewRow(title: "Title", value: model.character.title ?? "None")
+            CharacterSearchDetailsViewRow(title: "Unlocked Titles", value: String(model.character.unlockedTitles ?? 0))
+            CharacterSearchDetailsViewRow(title: "Sex", value: model.character.sex ?? "No sex found")
+            CharacterSearchDetailsViewRow(title: "Vocation", value: model.character.vocation ?? "No vocation found")
+            CharacterSearchDetailsViewRow(title: "Level", value: String(model.character.level ?? 0))
+            CharacterSearchDetailsViewRow(title: "Achievement Points", value: String(model.character.achievementPoints ?? 0))
+            CharacterSearchDetailsViewRow(title: "World", value: model.character.world ?? "No world found")
+            
+            if let formerWorlds = model.character.formerWorlds {
+                CharacterSearchDetailsViewRow(title: "Former Worlds", value: formerWorlds.joined(separator: ", "), orientation: .vertical)
+            }
+            
+            CharacterSearchDetailsViewRow(title: "Residence", value: model.character.residence ?? "No residence found")
+            
+            if let houses = model.character.houses {
+                ForEach(houses, id: \.houseid) { house in
+                    if let houseName = house.name, !houseName.isEmpty,
+                       let houseTown = house.town, !houseTown.isEmpty,
+                       let housePaid = house.paid, !housePaid.isEmpty {
+                            CharacterSearchDetailsViewRow(title: "House",
+                                                          value: "\(houseName) (\(houseTown)) is paid until \(housePaid)",
+                                                          orientation: .vertical)
+                    }
+                }
+            }
+            
+            if let guild = model.character.guild {
+                if let guildRank = guild.rank, !guildRank.isEmpty,
+                   let guildName = guild.name, !guildName.isEmpty {
+                        CharacterSearchDetailsViewRow(title: "Guild Membership", value: "\(guildRank) of the \(guildName)", orientation: .vertical)
+                }
+            }
+            
+            CharacterSearchDetailsViewRow(title: "Last Login", value: model.character.lastLogin ?? "No last login found")
+            CharacterSearchDetailsViewRow(title: "Comment", value: model.character.comment ?? "No comment found", orientation: .vertical)
+            CharacterSearchDetailsViewRow(title: "Account Status", value: model.character.accountStatus ?? "No account status found")
+            
+            if let deletionDate = model.character.deletionDate {
                 CharacterSearchDetailsViewRow(title: "Deletion Date", value: deletionDate)
             }
             
-            if let position = model.position {
+            if let position = model.character.position {
                 CharacterSearchDetailsViewRow(title: "Position", value: position)
             }
             
-            if let marriedTo = model.marriedTo {
+            if let marriedTo = model.character.marriedTo {
                 CharacterSearchDetailsViewRow(title: "Married to", value: marriedTo)
             }
             
-            if let traded = model.traded {
+            if let traded = model.character.traded {
                 CharacterSearchDetailsViewRow(title: "Traded", value: traded ? "✅" : "🚫")
-            }
-        }
-    }
-    
-    private var formerNamesView: some View {
-        Group {
-            if let names = model.formerNames {
-                Section("Former Names") {
-                    ForEach(names, id: \.self) { name in
-                        Text(name)
-                            .fontDesign(.serif)
-                    }
-                }
-            }
-        }
-    }
-    
-    private var formerWorldsView: some View {
-        Group {
-            if let worlds = model.formerWorlds {
-                Section("Former Worlds") {
-                    ForEach(worlds, id: \.self) { world in
-                        Text(world)
-                            .fontDesign(.serif)
-                    }
-                }
-            }
-        }
-    }
-    
-    private var guildView: some View {
-        Group {
-            if let guild = model.guild, let guildName = guild.name {
-                Section("Guild") {
-                    CharacterSearchDetailsViewRow(title: "Name", value: guildName)
-                    CharacterSearchDetailsViewRow(title: "Rank", value: guild.rank ?? "No guild rank")
-                }
-            }
-        }
-    }
-    
-    private var housesView: some View {
-        Group {
-            if let houses = model.houses {
-                ForEach(houses, id: \.houseid) { house in
-                    Section("House") {
-                        CharacterSearchDetailsViewRow(title: "Name", value: house.name ?? "N/A")
-                        CharacterSearchDetailsViewRow(title: "Paid Until", value: house.paid ?? "N/A")
-                        CharacterSearchDetailsViewRow(title: "Town", value: house.town ?? "N/A")
-                    }
-                }
             }
         }
     }
@@ -113,24 +84,27 @@ struct CharacterSearchDetailsView: View {
 }
 
 #Preview {
-    CharacterSearchDetailsView(model: CharacterInfoModel(accountStatus: nil,
-                                                         achievementPoints: nil,
-                                                         comment: "Some random comment",
-                                                         deletionDate: nil,
-                                                         formerNames: ["Name 1", "Name 2"],
-                                                         formerWorlds: ["World 1", "World 2", "World 3"],
-                                                         guild: GuildModel(name: "The guilders", rank: "Ancient"),
-                                                         houses: [HouseModel(houseid: nil, name: "One way street", paid: "2023-12-23", town: "Venore")],
-                                                         lastLogin: nil,
-                                                         level: 191,
-                                                         marriedTo: nil,
-                                                         name: "bidomeister",
-                                                         position: nil,
-                                                         residence: "Yalahar",
-                                                         sex: "Male",
-                                                         title: nil,
-                                                         traded: nil,
-                                                         unlockedTitles: nil,
-                                                         vocation: "Master Sorcerer",
-                                                         world: "Belobra"))
+    CharacterSearchDetailsView(model: CharacterModel(character: CharacterInfoModel(accountStatus: nil,
+                                                                                   achievementPoints: nil,
+                                                                                   comment: "Some random comment",
+                                                                                   deletionDate: nil,
+                                                                                   formerNames: ["Name 1", "Name 2"],
+                                                                                   formerWorlds: ["World 1", "World 2", "World 3"],
+                                                                                   guild: GuildModel(name: "The guilders", rank: "Ancient"),
+                                                                                   houses: [HouseModel(houseid: nil, name: "One way street", paid: "2023-12-23", town: "Venore")],
+                                                                                   lastLogin: nil,
+                                                                                   level: 191,
+                                                                                   marriedTo: nil,
+                                                                                   name: "bidomeister",
+                                                                                   position: nil,
+                                                                                   residence: "Yalahar",
+                                                                                   sex: "Male",
+                                                                                   title: nil,
+                                                                                   traded: nil,
+                                                                                   unlockedTitles: nil,
+                                                                                   vocation: "Master Sorcerer",
+                                                                                   world: "Belobra"),
+                                                     accountInformation: nil,
+                                                     achievements: nil,
+                                                     otherCharacters: nil))
 }

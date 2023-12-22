@@ -25,7 +25,7 @@ struct CharacterSearchDetailsViewRow: View {
             }
             .fontDesign(.serif)
         } else {
-            VStack(alignment: .leading) {
+            VStack(alignment: .leading, spacing: 4) {
                 Text(self.title)
                 
                 Text(self.value)

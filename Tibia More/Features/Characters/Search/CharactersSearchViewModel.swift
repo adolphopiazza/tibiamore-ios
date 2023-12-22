@@ -15,7 +15,7 @@ final class CharactersSearchViewModel {
     var characterName: String = ""
     var isLoading: Bool = false
     var hasError: Bool = false
-    var model: CharacterInfoModel?
+    var model: CharacterModel?
     
     @MainActor func fetch() async {
         self.isLoading = true

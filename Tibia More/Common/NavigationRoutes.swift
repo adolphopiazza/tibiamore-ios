@@ -16,7 +16,7 @@ enum NavigationRoutes {
     
     enum Characters: Hashable {
         case search
-        case details(with: CharacterInfoModel)
+        case details(with: CharacterModel)
     }
     
 }

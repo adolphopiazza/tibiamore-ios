@@ -13,7 +13,7 @@ final class CharactersService {
     
     init() {}
     
-    func fetch(name: String) async throws -> CharacterInfoModel {
+    func fetch(name: String) async throws -> CharacterModel {
         let service = NetworkService<CharactersModel>()
         
         do {
@@ -22,7 +22,7 @@ final class CharactersService {
                 throw APIErrors.errorOnAPI
             }
             
-            return character.character
+            return character
         } catch {
             print("Some error occured on the characters service: \(error)")
             throw error
