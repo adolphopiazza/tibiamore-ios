@@ -14,7 +14,6 @@ extension String {
         case yyyyMMddTHHmmssZ = "yyyy-MM-dd'T'HH:mm:ss'Z'"
     }
     
-    // TODO: Create Date+Ext with more options for date formatting
     func formatDate(with format: DateFormats) -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = format.rawValue

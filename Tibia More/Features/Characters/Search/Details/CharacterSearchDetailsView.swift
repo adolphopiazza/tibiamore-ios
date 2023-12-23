@@ -10,6 +10,7 @@ import SwiftUI
 struct CharacterSearchDetailsView: View {
     
     var model: CharacterModel
+    var isFromSearch = true
     
     @Binding var navigationPath: NavigationPath
     
@@ -25,9 +26,17 @@ struct CharacterSearchDetailsView: View {
         }
         .navigationTitle(model.character.name ?? "Character")
         .toolbar {
-            ToolbarItem(placement: .topBarTrailing) {
-                Button("All characters") {
-                    self.navigationPath.removeLast(self.navigationPath.count)
+            if isFromSearch {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("Save on list") {
+                        self.save()
+                    }
+                }
+            } else {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("All characters") {
+                        self.navigationPath.removeLast(self.navigationPath.count)
+                    }
                 }
             }
         }
@@ -131,6 +140,27 @@ struct CharacterSearchDetailsView: View {
                 }
             }
         }
+    }
+    
+}
+
+// MARK: - Actions
+extension CharacterSearchDetailsView {
+    
+    private func save() {
+        let userDefaults = UserDefaults.standard
+        
+        var characters = userDefaults.stringArray(forKey: "SavedCharactersList")
+        
+        if characters != nil {
+            characters?.append(model.character.name ?? "")
+        } else {
+            characters = [model.character.name ?? ""]
+        }
+        
+        userDefaults.setValue(characters, forKey: "SavedCharactersList")
+        
+        self.navigationPath.removeLast(self.navigationPath.count)
     }
     
 }
