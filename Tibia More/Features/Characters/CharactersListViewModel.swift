@@ -16,15 +16,14 @@ final class CharactersListViewModel {
     var characters: [CharacterInfoModel] = []
     
     func checkUserDefaults() {
-        let userDefaults = UserDefaults.standard
-        let characters = userDefaults.stringArray(forKey: "SavedCharactersList") ?? []
+        guard let savedCharacters = DefaultStorage.shared.retrieveArray(key: .character) else {
+            return
+        }
         
-        if !characters.isEmpty {
-            // retrive via network calls
-            Task {
-                for character in characters {
-                    await fetch(name: character)
-                }
+        self.characters.removeAll()
+        Task {
+            for character in savedCharacters {
+                await fetch(name: character)
             }
         }
     }

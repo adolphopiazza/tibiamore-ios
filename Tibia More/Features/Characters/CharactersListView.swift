@@ -32,7 +32,8 @@ struct CharactersListView: View {
                 case .search:
                     CharactersSearchView(navigationPath: $viewModel.navigationPath)
                 case .details(let model):
-                    CharacterSearchDetailsView(model: model, navigationPath: $viewModel.navigationPath)
+                    CharacterSearchDetailsView(navigationPath: $viewModel.navigationPath,
+                                               viewModel: CharacterSearchDetailsViewModel(model: model))
                 }
             }
         }
