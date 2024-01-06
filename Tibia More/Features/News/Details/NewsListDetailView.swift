@@ -23,7 +23,7 @@ struct NewsListDetailView: View {
             
             if viewModel.hasError && !viewModel.isLoading {
                 ContentUnavailableView("Sorry, we are having some issues",
-                                       systemImage: "xmark.icloud",
+                                       systemImage: .SFImages.xmarkIcloud,
                                        description: Text("Please pull-to-refresh to try to get this news"))
             }
         }
@@ -53,7 +53,7 @@ struct NewsListDetailView: View {
             Text(viewModel.detailedNews.title)
                 .font(.largeTitle)
             
-            Text(viewModel.detailedNews.date.formatDate)
+            Text(viewModel.detailedNews.date.formatDate(with: .yyyyMMdd))
                 .font(.footnote)
                 .padding(.top, 6)
             

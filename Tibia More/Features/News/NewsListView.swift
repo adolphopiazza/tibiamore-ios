@@ -9,7 +9,7 @@ import SwiftUI
 
 struct NewsListView: View {
     
-    @State private var viewModel: NewsListViewModel = .init()
+    @State private var viewModel: NewsListViewModel = NewsListViewModel()
     
     init() {
         /// https://www.hackingwithswift.com/forums/swiftui/alert-button-color-conforming-to-accentcolor/7193/7198
@@ -35,7 +35,7 @@ struct NewsListView: View {
             })
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
-                    Button("Info", systemImage: "info.circle") {
+                    Button("Info", systemImage: .SFImages.infoCircle) {
                         viewModel.showInfoAlert.toggle()
                     }
                 }
@@ -46,7 +46,7 @@ struct NewsListView: View {
             .overlay {
                 if viewModel.news.isEmpty && !viewModel.isLoading {
                     ContentUnavailableView("No news found",
-                                           systemImage: "newspaper",
+                                           systemImage: .SFImages.newspaper,
                                            description: Text("Please pull-to-refresh to get the latest Tibia news"))
                 }
                 

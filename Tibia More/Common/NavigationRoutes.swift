@@ -14,4 +14,10 @@ enum NavigationRoutes {
         case browser(with: String)
     }
     
+    enum Characters: Hashable {
+        case search
+        case detailsFromSearch(with: CharacterModel)
+        case details(with: CharacterModel)
+    }
+    
 }
