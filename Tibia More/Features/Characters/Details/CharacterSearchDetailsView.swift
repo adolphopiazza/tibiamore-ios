@@ -10,6 +10,7 @@ import SwiftUI
 struct CharacterSearchDetailsView: View {
     
     @Binding var navigationPath: NavigationPath
+    @State private var removeCharacter: Bool = false
     
     var viewModel: CharacterSearchDetailsViewModel
     
@@ -24,6 +25,15 @@ struct CharacterSearchDetailsView: View {
             otherCharactersView
         }
         .navigationTitle(viewModel.model.character.name ?? "Character")
+        .alert("Remove this character from the list?", isPresented: $removeCharacter, actions: {
+            Button("Yes", role: .destructive) {
+                if DefaultStorage.shared.removeString(value: viewModel.model.character.name ?? "", from: .character) {
+                    navigationPath.removeLast()
+                }
+            }
+        }, message: {
+            Text("This action cannot be undone")
+        })
         .toolbar {
             if viewModel.isFromSearch {
                 ToolbarItem(placement: .topBarTrailing) {
@@ -33,8 +43,14 @@ struct CharacterSearchDetailsView: View {
                 }
             } else {
                 ToolbarItem(placement: .topBarTrailing) {
-                    Button("All characters") {
-                        self.navigationPath.removeLast(self.navigationPath.count)
+                    HStack {
+                        Button("All characters") {
+                            self.navigationPath.removeLast(self.navigationPath.count)
+                        }
+                        
+                        Button("Remove character", systemImage: .SFImages.trash) {
+                            self.removeCharacter = true
+                        }
                     }
                 }
             }

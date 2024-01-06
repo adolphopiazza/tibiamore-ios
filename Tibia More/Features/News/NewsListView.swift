@@ -46,7 +46,7 @@ struct NewsListView: View {
             .overlay {
                 if viewModel.news.isEmpty && !viewModel.isLoading {
                     ContentUnavailableView("No news found",
-                                           systemImage: "newspaper",
+                                           systemImage: .SFImages.newspaper,
                                            description: Text("Please pull-to-refresh to get the latest Tibia news"))
                 }
                 

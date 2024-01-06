@@ -13,7 +13,8 @@ final class CharactersListViewModel {
     let viewTitle = "Characters"
     
     var navigationPath: NavigationPath = NavigationPath()
-    var characters: [CharacterInfoModel] = []
+    var characters: [CharacterModel] = []
+    var isLoading = false
     
     func checkUserDefaults() {
         guard let savedCharacters = DefaultStorage.shared.retrieveArray(key: .character) else {
@@ -21,17 +22,22 @@ final class CharactersListViewModel {
         }
         
         self.characters.removeAll()
+        
         Task {
+            self.isLoading = true
+            
             for character in savedCharacters {
                 await fetch(name: character)
             }
+            
+            self.isLoading = false
         }
     }
     
     func fetch(name: String) async {
         do {
             let model = try await CharactersService.shared.fetch(name: name)
-            characters.append(model.character)
+            characters.append(model)
         } catch {
             print("Some error: \(error)")
         }

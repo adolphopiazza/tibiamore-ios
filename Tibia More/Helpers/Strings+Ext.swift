@@ -36,6 +36,7 @@ extension String {
         static let xmarkIcloud = "xmark.icloud"
         static let infoCircle = "info.circle"
         static let magnifyingglass = "magnifyingglass"
+        static let trash = "trash"
     }
     
 }

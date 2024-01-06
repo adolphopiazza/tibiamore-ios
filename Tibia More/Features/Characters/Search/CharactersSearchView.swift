@@ -62,7 +62,7 @@ extension CharactersSearchView {
         await viewModel.fetch()
         
         if let model = viewModel.model {
-            self.navigationPath.append(NavigationRoutes.Characters.details(with: model))
+            self.navigationPath.append(NavigationRoutes.Characters.detailsFromSearch(with: model))
         }
     }
     
