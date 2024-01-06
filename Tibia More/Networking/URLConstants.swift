@@ -23,5 +23,10 @@ extension String {
         struct Characters {
             static let details = "character/"
         }
+        
+        struct Worlds {
+            static let all = "worlds"
+            static let world = "world/"
+        }
     }
 }
