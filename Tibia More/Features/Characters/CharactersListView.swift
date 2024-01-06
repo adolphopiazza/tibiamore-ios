@@ -37,7 +37,7 @@ struct CharactersListView: View {
             .overlay {
                 if !viewModel.isLoading && viewModel.characters.isEmpty {
                     ContentUnavailableView("No characters found",
-                                           systemImage: "person.2.slash",
+                                           systemImage: .SFImages.person2Slash,
                                            description: Text("Tap the top right icon to search for a character"))
                 }
                 

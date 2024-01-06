@@ -32,6 +32,7 @@ extension String {
     struct SFImages {
         static let newspaper = "newspaper"
         static let person3 = "person.3"
+        static let person2Slash = "person.2.slash"
         static let globe = "globe"
         static let xmarkIcloud = "xmark.icloud"
         static let infoCircle = "info.circle"
