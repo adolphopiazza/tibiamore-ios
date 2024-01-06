@@ -28,7 +28,7 @@ struct CharacterSearchDetailsView: View {
         .alert("Remove this character from the list?", isPresented: $removeCharacter, actions: {
             Button("Yes", role: .destructive) {
                 if DefaultStorage.shared.removeString(value: viewModel.model.character.name ?? "", from: .character) {
-                    navigationPath.removeLast()
+                    navigationPath.removeLast(navigationPath.count)
                 }
             }
         }, message: {
