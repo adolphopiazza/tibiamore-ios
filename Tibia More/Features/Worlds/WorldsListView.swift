@@ -23,11 +23,21 @@ struct WorldsListView: View {
                 Section("Worlds") {
                     List(viewModel.model.regularWorlds, id: \.name) { world in
                         WorldsListViewRow(model: world)
+                            .contentShape(Rectangle())
+                            .onTapGesture {
+                                viewModel.navigationPath.append(NavigationRoutes.Worlds.details(of: world.name))
+                            }
                     }
                 }
             }
             .fontDesign(.serif)
             .navigationTitle(viewModel.viewTitle)
+            .navigationDestination(for: NavigationRoutes.Worlds.self, destination: { route in
+                switch route {
+                case .details(let world):
+                    WorldsDetailsView(viewModel: WorldsDetailsViewModel(world: world))
+                }
+            })
             .overlay {
                 if viewModel.isLoading {
                     ProgressView()
