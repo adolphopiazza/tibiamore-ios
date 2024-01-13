@@ -12,14 +12,29 @@ final class WorldsDetailsViewModel {
     
     var isLoading: Bool = false
     var model: SpecificWorldInfoModel?
+    let world: String
+    
+    var opacity: Double {
+        if isLoading {
+            return 0
+        }
+        
+        if !isLoading && model == nil {
+            return 0
+        }
+        
+        return 1
+    }
     
     init(world: String) {
+        self.world = world
+        
         Task {
             await fetch(world)
         }
     }
     
-    @MainActor private func fetch(_ world: String) async {
+    @MainActor func fetch(_ world: String) async {
         self.isLoading = true
         
         do {

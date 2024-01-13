@@ -85,7 +85,7 @@ struct CharacterSearchDetailsView: View {
                        let houseTown = house.town, !houseTown.isEmpty,
                        let housePaid = house.paid, !housePaid.isEmpty {
                             CharacterSearchDetailsViewRow(title: "House",
-                                                          value: "\(houseName) (\(houseTown)) is paid until \(housePaid)",
+                                                          value: "\(houseName) (\(houseTown)) is paid until \(housePaid.formatDate(with: .yyyyMMdd))",
                                                           orientation: .vertical)
                     }
                 }

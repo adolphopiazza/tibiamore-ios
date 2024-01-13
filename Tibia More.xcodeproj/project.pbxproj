@@ -10,6 +10,7 @@
 		3800FC702B34DC8B00685C5E /* CharacterSearchDetailsViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800FC6F2B34DC8B00685C5E /* CharacterSearchDetailsViewRow.swift */; };
 		3800FC722B35D90700685C5E /* CharacterSearchDetailsAchievementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800FC712B35D90700685C5E /* CharacterSearchDetailsAchievementView.swift */; };
 		3800FC742B35DD6600685C5E /* CharacterSearchDetailsOtherCharactersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800FC732B35DD6600685C5E /* CharacterSearchDetailsOtherCharactersView.swift */; };
+		3823D5EB2B5227B0000677CB /* WorldsDetailsViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3823D5EA2B5227B0000677CB /* WorldsDetailsViewRow.swift */; };
 		382A29C22B1EA97500961FE2 /* Tibia_MoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A29C12B1EA97500961FE2 /* Tibia_MoreApp.swift */; };
 		382A29C42B1EA97500961FE2 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A29C32B1EA97500961FE2 /* TabBarView.swift */; };
 		382A29C62B1EA97600961FE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 382A29C52B1EA97600961FE2 /* Assets.xcassets */; };
@@ -75,6 +76,7 @@
 		3800FC6F2B34DC8B00685C5E /* CharacterSearchDetailsViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSearchDetailsViewRow.swift; sourceTree = "<group>"; };
 		3800FC712B35D90700685C5E /* CharacterSearchDetailsAchievementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSearchDetailsAchievementView.swift; sourceTree = "<group>"; };
 		3800FC732B35DD6600685C5E /* CharacterSearchDetailsOtherCharactersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSearchDetailsOtherCharactersView.swift; sourceTree = "<group>"; };
+		3823D5EA2B5227B0000677CB /* WorldsDetailsViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldsDetailsViewRow.swift; sourceTree = "<group>"; };
 		382A29BE2B1EA97500961FE2 /* Tibia More.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tibia More.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		382A29C12B1EA97500961FE2 /* Tibia_MoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tibia_MoreApp.swift; sourceTree = "<group>"; };
 		382A29C32B1EA97500961FE2 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
@@ -298,6 +300,7 @@
 			children = (
 				385D6EAD2B4AF2D600839091 /* WorldsDetailsView.swift */,
 				385D6EAF2B4AF2E800839091 /* WorldsDetailsViewModel.swift */,
+				3823D5EA2B5227B0000677CB /* WorldsDetailsViewRow.swift */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -548,6 +551,7 @@
 				3800FC742B35DD6600685C5E /* CharacterSearchDetailsOtherCharactersView.swift in Sources */,
 				38A3EDF62B2F2DC8003C7BDA /* CharactersSearchView.swift in Sources */,
 				38A28AAA2B2B7CD500C707F7 /* BrowserView.swift in Sources */,
+				3823D5EB2B5227B0000677CB /* WorldsDetailsViewRow.swift in Sources */,
 				3838176B2B49A660000E13D7 /* WorldsListViewModel.swift in Sources */,
 				38B1E47A2B499C8900A18AB5 /* WorldsModel.swift in Sources */,
 				38A3EDF82B2F2DE2003C7BDA /* CharactersSearchViewModel.swift in Sources */,
