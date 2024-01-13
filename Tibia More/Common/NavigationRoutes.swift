@@ -22,6 +22,7 @@ enum NavigationRoutes {
     
     enum Worlds: Hashable {
         case details(of: String)
+        case characterDetails(with: CharacterModel)
     }
     
 }

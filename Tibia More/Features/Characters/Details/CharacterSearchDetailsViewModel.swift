@@ -11,10 +11,12 @@ final class CharacterSearchDetailsViewModel {
 
     var model: CharacterModel
     var isFromSearch = true
+    var isFromWorlds = false
     
-    init(model: CharacterModel, isFromSearch: Bool = true) {
+    init(model: CharacterModel, isFromSearch: Bool = true, isFromWorlds: Bool = false) {
         self.model = model
         self.isFromSearch = isFromSearch
+        self.isFromWorlds = isFromWorlds
         
         guard let characters = DefaultStorage.shared.retrieveArray(key: .character) else {
             return

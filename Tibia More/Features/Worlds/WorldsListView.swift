@@ -39,7 +39,12 @@ struct WorldsListView: View {
             .navigationDestination(for: NavigationRoutes.Worlds.self, destination: { route in
                 switch route {
                 case .details(let world):
-                    WorldsDetailsView(viewModel: WorldsDetailsViewModel(world: world))
+                    WorldsDetailsView(viewModel: WorldsDetailsViewModel(world: world), 
+                                      navigationPath: $viewModel.navigationPath)
+                case .characterDetails(let model):
+                    CharacterSearchDetailsView(navigationPath: $viewModel.navigationPath,
+                                               viewModel: CharacterSearchDetailsViewModel(model: model,
+                                                                                          isFromWorlds: true))
                 }
             })
             .opacity(viewModel.isLoading ? 0 : 1)

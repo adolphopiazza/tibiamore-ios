@@ -10,6 +10,7 @@ import SwiftUI
 struct WorldsDetailsView: View {
     
     @State var viewModel: WorldsDetailsViewModel
+    @Binding var navigationPath: NavigationPath
     
     var body: some View {
         Form {
@@ -37,10 +38,21 @@ struct WorldsDetailsView: View {
                         LabeledContent("Level", value: String(player.level))
                         LabeledContent("Vocation", value: player.vocation)
                     }
+                    .contentShape(Rectangle())
+                    .onTapGesture {
+                        Task {
+                            await viewModel.fetchCharacter(name: player.name)
+                            
+                            if let model = viewModel.characterModel {
+                                self.navigationPath.append(NavigationRoutes.Worlds.characterDetails(with: model))
+                            }
+                        }
+                    }
                 }
             }
             .opacity(viewModel.opacity)
         }
+        .disabled(viewModel.isLoadingCharacter)
         .fontDesign(.serif)
         .navigationTitle(viewModel.model?.name ?? "")
         .refreshable {
@@ -48,7 +60,7 @@ struct WorldsDetailsView: View {
             await viewModel.fetch(viewModel.world)
         }
         .overlay {
-            if viewModel.isLoading {
+            if viewModel.isLoading || viewModel.isLoadingCharacter {
                 ProgressView()
             }
             
@@ -58,10 +70,17 @@ struct WorldsDetailsView: View {
                                        description: Text("Please pull-to-refresh to get new data"))
             }
         }
+        .alert("Sorry 😞", isPresented: $viewModel.errorLoadingCharacter) {
+            Button("OK", action: {})
+        } message: {
+            Text("We were unable to get this player data. Please try again")
+        }
+
     }
     
 }
 
 #Preview {
-    WorldsDetailsView(viewModel: WorldsDetailsViewModel(world: "Belobra"))
+    WorldsDetailsView(viewModel: WorldsDetailsViewModel(world: "Belobra"),
+                      navigationPath: Binding.constant(NavigationPath()))
 }
