@@ -16,25 +16,33 @@ final class CharactersListViewModel {
     var characters: [CharacterModel] = []
     var isLoading = false
     
-    func checkUserDefaults() {
+    func checkUserDefaults() async {
         guard let savedCharacters = DefaultStorage.shared.retrieveArray(key: .character) else {
             return
         }
         
-        self.characters.removeAll()
+        if self.characters.isEmpty {
+            await fetch(characters: savedCharacters)
+            return
+        }
         
-        Task {
-            self.isLoading = true
-            
-            for character in savedCharacters {
-                await fetch(name: character)
-            }
-            
-            self.isLoading = false
+        if self.characters.count != savedCharacters.count {
+            self.characters.removeAll()
+            await fetch(characters: savedCharacters)
         }
     }
     
-    func fetch(name: String) async {
+    private func fetch(characters: [String]) async {
+        self.isLoading = true
+        
+        for character in characters {
+            await fetch(name: character)
+        }
+        
+        self.isLoading = false
+    }
+    
+    private func fetch(name: String) async {
         do {
             let model = try await CharactersService.shared.fetch(name: name)
             characters.append(model)

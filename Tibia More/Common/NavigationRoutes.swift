@@ -20,4 +20,9 @@ enum NavigationRoutes {
         case details(with: CharacterModel)
     }
     
+    enum Worlds: Hashable {
+        case details(of: String)
+        case characterDetails(with: CharacterModel)
+    }
+    
 }

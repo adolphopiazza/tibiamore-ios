@@ -23,8 +23,8 @@ struct CharactersListView: View {
             }
             .disabled(viewModel.isLoading)
             .navigationTitle(viewModel.viewTitle)
-            .onAppear {
-                viewModel.checkUserDefaults()
+            .task {
+                await viewModel.checkUserDefaults()
             }
             .alert("Clear all saved characters?", isPresented: $clearAll, actions: {
                 Button("Yes", role: .destructive) {

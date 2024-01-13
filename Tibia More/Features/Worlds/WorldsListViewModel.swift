@@ -13,7 +13,7 @@ final class WorldsListViewModel {
     let viewTitle: String = "Worlds"
     
     var isLoading: Bool = false
-    var model = WorldsInfoModel(playersOnline: 0, recordPlayers: 0, recordDate: "", regularWorlds: [])
+    var model: WorldsInfoModel?
     var navigationPath = NavigationPath()
     
     init() {
@@ -22,7 +22,7 @@ final class WorldsListViewModel {
         }
     }
     
-    @MainActor private func fetch() async {
+    @MainActor func fetch() async {
         self.isLoading = true
         
         do {

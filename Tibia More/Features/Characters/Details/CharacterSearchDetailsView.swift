@@ -41,7 +41,7 @@ struct CharacterSearchDetailsView: View {
                         self.save()
                     }
                 }
-            } else {
+            } else if !viewModel.isFromWorlds {
                 ToolbarItem(placement: .topBarTrailing) {
                     HStack {
                         Button("All characters") {
@@ -85,7 +85,7 @@ struct CharacterSearchDetailsView: View {
                        let houseTown = house.town, !houseTown.isEmpty,
                        let housePaid = house.paid, !housePaid.isEmpty {
                             CharacterSearchDetailsViewRow(title: "House",
-                                                          value: "\(houseName) (\(houseTown)) is paid until \(housePaid)",
+                                                          value: "\(houseName) (\(houseTown)) is paid until \(housePaid.formatDate(with: .yyyyMMdd))",
                                                           orientation: .vertical)
                     }
                 }
@@ -166,14 +166,33 @@ extension CharacterSearchDetailsView {
         guard var characters = DefaultStorage.shared.retrieveArray(key: .character) else {
             let charArr: [String] = [viewModel.model.character.name ?? ""]
             DefaultStorage.shared.save(key: .character, value: charArr)
-            self.navigationPath.removeLast(self.navigationPath.count)
+            
+            if viewModel.isFromWorlds {
+                self.navigationPath.removeLast()
+            } else {
+                self.navigationPath.removeLast(self.navigationPath.count)
+            }
             
             return
         }
         
         characters.append(viewModel.model.character.name ?? "")
         DefaultStorage.shared.save(key: .character, value: characters)
-        self.navigationPath.removeLast(self.navigationPath.count)
+        
+        if viewModel.isFromWorlds {
+            self.navigationPath.removeLast()
+        } else {
+            self.navigationPath.removeLast(self.navigationPath.count)
+        }
+        
+        /* TODO: Thought:
+         create function to handle the routing, if coming from worlds
+         set the tab bar selected index to the characters tab index and
+         show the list of characters
+         
+         but for now let's let as it is
+         I'm sleepy 💤
+         */
     }
     
 }

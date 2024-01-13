@@ -10,6 +10,7 @@ import Foundation
 extension String {
     
     enum DateFormats: String {
+        case yyyyMM = "yyyy-MM"
         case yyyyMMdd = "yyyy-MM-dd"
         case yyyyMMddTHHmmssZ = "yyyy-MM-dd'T'HH:mm:ss'Z'"
     }
@@ -20,7 +21,12 @@ extension String {
         
         guard let date = formatter.date(from: self) else { return self }
         
-        formatter.setLocalizedDateFormatFromTemplate("MMM d, yyyy")
+        if format.rawValue.contains("dd") {
+            formatter.setLocalizedDateFormatFromTemplate("MMM d, yyyy")
+        } else {
+            formatter.setLocalizedDateFormatFromTemplate("MMM, yyyy")
+        }
+        
         return formatter.string(from: date)
     }
     
