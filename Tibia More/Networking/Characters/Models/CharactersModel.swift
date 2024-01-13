@@ -16,6 +16,7 @@ struct CharacterModel: Decodable, Hashable, Equatable {
     let accountInformation: AccountInformationModel?
     let achievements: [AchievementsModel]?
     let otherCharacters: [OtherCharactersModel]?
+    var isOnline: Bool?
 }
 
 // MARK: - Characters Info

@@ -60,6 +60,8 @@ extension CharactersSearchView {
     
     private func routeToDetails() async {
         await viewModel.fetch()
+        let players = await viewModel.playersOnlineFrom(world: viewModel.model?.character.world ?? "")
+        viewModel.model?.isOnline = players.contains(where: { $0.name == viewModel.model?.character.name ?? "" })
         
         if let model = viewModel.model {
             self.navigationPath.append(NavigationRoutes.Characters.detailsFromSearch(with: model))

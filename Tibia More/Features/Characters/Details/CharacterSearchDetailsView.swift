@@ -66,6 +66,7 @@ struct CharacterSearchDetailsView: View {
             }
             
             CharacterSearchDetailsViewRow(title: "Title", value: viewModel.model.character.title ?? "None")
+            CharacterSearchDetailsViewRow(title: "Status", value: viewModel.model.isOnline ?? false ? "Online" : "Offline")
             CharacterSearchDetailsViewRow(title: "Unlocked Titles", value: String(viewModel.model.character.unlockedTitles ?? 0))
             CharacterSearchDetailsViewRow(title: "Sex", value: viewModel.model.character.sex ?? "No sex found")
             CharacterSearchDetailsViewRow(title: "Vocation", value: viewModel.model.character.vocation ?? "No vocation found")
@@ -249,5 +250,6 @@ extension CharacterSearchDetailsView {
                                                                                                            position: nil,
                                                                                                            status: "offline",
                                                                                                            traded: nil,
-                                                                                                           world: "Quelibra")])))
+                                                                                                           world: "Quelibra")], 
+                                                               isOnline: false)))
 }

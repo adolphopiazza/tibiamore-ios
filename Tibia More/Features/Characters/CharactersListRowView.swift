@@ -10,10 +10,15 @@ import SwiftUI
 struct CharactersListRowView: View {
     
     var model: CharacterInfoModel
+    var isOnline: Bool = false
     
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
+                Circle()
+                    .fill(isOnline ? .green : .red)
+                    .frame(width: 10)
+                
                 Text(model.name ?? "")
                     .font(.title)
                 

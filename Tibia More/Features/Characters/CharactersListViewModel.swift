@@ -37,6 +37,8 @@ final class CharactersListViewModel {
         
         for character in characters {
             await fetch(name: character)
+            let players = await playersOnlineFrom(world: self.characters.last?.character.world ?? "")
+            self.characters[self.characters.count - 1].isOnline = players.contains(where: { $0.name == character })
         }
         
         self.isLoading = false
@@ -48,6 +50,16 @@ final class CharactersListViewModel {
             characters.append(model)
         } catch {
             print("Some error: \(error)")
+        }
+    }
+    
+    private func playersOnlineFrom(world name: String) async -> [OnlinePlayersModel] {
+        do {
+            let model = try await WorldsService.shared.fetch(world: name)
+            return model.onlinePlayers
+        } catch {
+            print("Some world error: \(error)")
+            return []
         }
     }
     
