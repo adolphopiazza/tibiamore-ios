@@ -30,4 +30,14 @@ final class CharactersSearchViewModel {
             self.isLoading = false
         }
     }
+    
+    func playersOnlineFrom(world name: String) async -> [OnlinePlayersModel] {
+        do {
+            let model = try await WorldsService.shared.fetch(world: name)
+            return model.onlinePlayers
+        } catch {
+            print("Some world error: \(error)")
+            return []
+        }
+    }
 }

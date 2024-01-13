@@ -15,7 +15,7 @@ struct CharactersListView: View {
     var body: some View {
         NavigationStack(path: $viewModel.navigationPath) {
             List(viewModel.characters, id: \.self) { character in
-                CharactersListRowView(model: character.character)
+                CharactersListRowView(model: character.character, isOnline: character.isOnline ?? false)
                     .contentShape(Rectangle())
                     .onTapGesture {
                         viewModel.navigationPath.append(NavigationRoutes.Characters.details(with: character))
