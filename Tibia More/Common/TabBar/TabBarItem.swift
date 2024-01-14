@@ -7,10 +7,11 @@
 
 import SwiftUI
 
-enum TabBarItem {
+enum TabBarItem: Int {
     case news
     case characters
     case worlds
+    case utils
     
     var title: String {
         switch self {
@@ -20,6 +21,8 @@ enum TabBarItem {
             return "Characters"
         case .worlds:
             return "Worlds"
+        case .utils:
+            return "Utils"
         }
     }
     
@@ -31,19 +34,21 @@ enum TabBarItem {
             return .SFImages.person3
         case .worlds:
             return .SFImages.globe
+        case .utils:
+            return .SFImages.keyboardBadgeEllipsis
         }
     }
     
-    var view: some View {
-        Group {
-            switch self {
-            case .news:
-                NewsListView()
-            case .characters:
-                CharactersListView()
-            case .worlds:
-                WorldsListView()
-            }
+    func view(path: Binding<NavigationPath>) -> AnyView {
+        switch self {
+        case .news:
+            return AnyView(NewsListView(navPath: path))
+        case .characters:
+            return AnyView(CharactersListView(navigationPath: path))
+        case .worlds:
+            return AnyView(WorldsListView(navigationPath: path))
+        case .utils:
+            return AnyView(UtilsListView(navigationPath: path))
         }
     }
 }

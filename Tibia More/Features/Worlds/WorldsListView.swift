@@ -10,9 +10,10 @@ import SwiftUI
 struct WorldsListView: View {
     
     @State private var viewModel = WorldsListViewModel()
+    @Binding var navigationPath: NavigationPath
     
     var body: some View {
-        NavigationStack(path: $viewModel.navigationPath) {
+        NavigationStack(path: $navigationPath) {
             Form {
                 Section("About") {
                     LabeledContent("Players Online", value: String(viewModel.model?.playersOnline ?? 0))
@@ -25,7 +26,7 @@ struct WorldsListView: View {
                         WorldsListViewRow(model: world)
                             .contentShape(Rectangle())
                             .onTapGesture {
-                                viewModel.navigationPath.append(NavigationRoutes.Worlds.details(of: world.name))
+                                navigationPath.append(NavigationRoutes.Worlds.details(of: world.name))
                             }
                     }
                 }
@@ -40,9 +41,9 @@ struct WorldsListView: View {
                 switch route {
                 case .details(let world):
                     WorldsDetailsView(viewModel: WorldsDetailsViewModel(world: world), 
-                                      navigationPath: $viewModel.navigationPath)
+                                      navigationPath: $navigationPath)
                 case .characterDetails(let model):
-                    CharacterSearchDetailsView(navigationPath: $viewModel.navigationPath,
+                    CharacterSearchDetailsView(navigationPath: $navigationPath,
                                                viewModel: CharacterSearchDetailsViewModel(model: model,
                                                                                           isFromWorlds: true))
                 }
@@ -59,5 +60,5 @@ struct WorldsListView: View {
 }
 
 #Preview {
-    WorldsListView()
+    WorldsListView(navigationPath: Binding.constant(NavigationPath()))
 }

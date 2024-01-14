@@ -14,7 +14,6 @@ final class WorldsListViewModel {
     
     var isLoading: Bool = false
     var model: WorldsInfoModel?
-    var navigationPath = NavigationPath()
     
     init() {
         Task {
