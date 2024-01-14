@@ -27,7 +27,7 @@ struct UtilsListView: View {
                 case .go(let destination):
                     switch destination {
                     case .rashid:
-                        Text("Rashid")
+                        RashidView()
                     case .creatures:
                         Text("Creatures")
                     case .boostedBoss:

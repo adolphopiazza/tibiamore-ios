@@ -34,7 +34,7 @@ struct WorldsListViewRow: View {
             LabeledContent("PvP Type", value: model.pvpType)
             LabeledContent("Transfer", value: model.transferType)
             
-            if model.battleyeDate != "release" && model.battleyeProtected {
+            if model.battleyeProtected {
                 LabeledContent("Battleye Date", value: model.battleyeDate.formatDate(with: .yyyyMMdd))
             }
             

@@ -43,7 +43,7 @@ struct WorldsDetailsView: View {
                         Task {
                             await viewModel.fetchCharacter(name: player.name)
                             
-                            if let model = viewModel.characterModel {
+                            if let model = viewModel.characterModel, !viewModel.errorLoadingCharacter {
                                 self.navigationPath.append(NavigationRoutes.Worlds.characterDetails(with: model))
                             }
                         }
@@ -66,14 +66,16 @@ struct WorldsDetailsView: View {
             
             if viewModel.model == nil && !viewModel.isLoading {
                 ContentUnavailableView("No data available 😟",
-                                       systemImage: "network.slash",
+                                       systemImage: .SFImages.networkSlash,
                                        description: Text("Please pull-to-refresh to get new data"))
             }
         }
         .alert("Sorry 😞", isPresented: $viewModel.errorLoadingCharacter) {
-            Button("OK", action: {})
+            Button("OK", action: {
+                viewModel.errorLoadingCharacter = false
+            })
         } message: {
-            Text("We were unable to get this player data. Please try again")
+            Text("We were unable to get this player data\nPlease try again")
         }
 
     }
