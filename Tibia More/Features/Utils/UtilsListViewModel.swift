@@ -54,7 +54,7 @@ final class UtilsListViewModel {
             case .highscores:
                 return "See who's on the top"
             case .killStatistics:
-                return "Kill Statistics of every world"
+                return "Kill statistics of every world"
             case .fansites:
                 return "Discover some new Tibia Fansites"
             case .guilds:

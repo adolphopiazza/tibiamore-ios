@@ -12,7 +12,8 @@ extension URL {
 }
 
 extension String {
-    static let baseURL = "https://api.tibiadata.com/v4/"
+    static let tibiaDataURL = "https://api.tibiadata.com/v4/"
+    static let tibiaLabsURL = "https://api.tibialabs.com/v2/"
     
     struct Endpoints {
         struct News {
@@ -27,6 +28,10 @@ extension String {
         struct Worlds {
             static let all = "worlds"
             static let world = "world/"
+        }
+        
+        struct Utils {
+            static let rashid = "rashid/city"
         }
     }
 }

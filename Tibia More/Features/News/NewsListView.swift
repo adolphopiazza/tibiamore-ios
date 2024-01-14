@@ -28,12 +28,12 @@ struct NewsListView: View {
                     }
             }
             .navigationTitle(viewModel.viewTitle)
-            .alert("Important information",
+            .alert("Important Information",
                    isPresented: $viewModel.showInfoAlert,
                    actions: {
                 Button("OK", action: {})
             }, message: {
-                Text("Some news may not be displayed correctly due to some problems when trying to extract the news from Tibia.com.\n\nBut you can use the button on the top right corner to read the same news on the Tibia website.")
+                Text("\nSome news may not be displayed correctly due to some problems when trying to extract the news from Tibia.com\n\nBut you can use the button on the top right corner to read the same news on the Tibia website")
             })
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {

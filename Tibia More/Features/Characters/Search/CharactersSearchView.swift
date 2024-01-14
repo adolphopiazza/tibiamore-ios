@@ -34,12 +34,12 @@ struct CharactersSearchView: View {
         }
         .navigationTitle(viewModel.viewTitle)
         .disabled(viewModel.isLoading)
-        .alert("Error 🙁", isPresented: $viewModel.hasError) {
+        .alert("Sorry 🙁", isPresented: $viewModel.hasError) {
             Button("OK") {
                 viewModel.characterName.removeAll()
             }
         } message: {
-            Text("Unable to find this character\n\nPlease try again!")
+            Text("\nIt seems this character does not exist\nPlease try again")
         }
         .overlay {
             if viewModel.isLoading {

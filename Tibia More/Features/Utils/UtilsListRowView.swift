@@ -25,6 +25,7 @@ struct UtilsListRowView: View {
             
             Image(systemName: .SFImages.chevronRight)
         }
+        .fontDesign(.serif)
     }
 }
 

@@ -46,6 +46,8 @@ extension String {
         static let trash = "trash"
         static let keyboardBadgeEllipsis = "keyboard.badge.ellipsis"
         static let chevronRight = "chevron.right"
+        static let networkSlash = "network.slash"
+        static let arrowClockwise = "arrow.clockwise"
     }
     
 }

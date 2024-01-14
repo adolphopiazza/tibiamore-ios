@@ -11,4 +11,5 @@ enum APIErrors: Error {
     case errorOnAPI
     case malformedURL
     case failedToDecode(error: DecodingError)
+    case failedToDecodeString
 }
