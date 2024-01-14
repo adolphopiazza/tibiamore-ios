@@ -11,20 +11,24 @@ struct CharactersListView: View {
     
     @State private var viewModel: CharactersListViewModel = CharactersListViewModel()
     @State private var clearAll: Bool = false
+    @Binding var navigationPath: NavigationPath
     
     var body: some View {
-        NavigationStack(path: $viewModel.navigationPath) {
+        NavigationStack(path: $navigationPath) {
             List(viewModel.characters, id: \.self) { character in
                 CharactersListRowView(model: character.character, isOnline: character.isOnline ?? false)
                     .contentShape(Rectangle())
                     .onTapGesture {
-                        viewModel.navigationPath.append(NavigationRoutes.Characters.details(with: character))
+                        navigationPath.append(NavigationRoutes.Characters.details(with: character))
                     }
             }
             .disabled(viewModel.isLoading)
             .navigationTitle(viewModel.viewTitle)
             .task {
                 await viewModel.checkUserDefaults()
+            }
+            .refreshable {
+                await viewModel.checkUserDefaults(isRefreshing: true)
             }
             .alert("Clear all saved characters?", isPresented: $clearAll, actions: {
                 Button("Yes", role: .destructive) {
@@ -48,7 +52,7 @@ struct CharactersListView: View {
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button("Search for character", systemImage: .SFImages.magnifyingglass) {
-                        viewModel.navigationPath.append(NavigationRoutes.Characters.search)
+                        navigationPath.append(NavigationRoutes.Characters.search)
                     }
                 }
                 
@@ -63,12 +67,12 @@ struct CharactersListView: View {
             .navigationDestination(for: NavigationRoutes.Characters.self) { route in
                 switch route {
                 case .search:
-                    CharactersSearchView(navigationPath: $viewModel.navigationPath)
+                    CharactersSearchView(navigationPath: $navigationPath)
                 case .detailsFromSearch(let model):
-                    CharacterSearchDetailsView(navigationPath: $viewModel.navigationPath,
+                    CharacterSearchDetailsView(navigationPath: $navigationPath,
                                                viewModel: CharacterSearchDetailsViewModel(model: model))
                 case .details(let model):
-                    CharacterSearchDetailsView(navigationPath: $viewModel.navigationPath,
+                    CharacterSearchDetailsView(navigationPath: $navigationPath,
                                                viewModel: CharacterSearchDetailsViewModel(model: model, isFromSearch: false))
                 }
             }
@@ -78,5 +82,5 @@ struct CharactersListView: View {
 }
 
 #Preview {
-    CharactersListView()
+    CharactersListView(navigationPath: Binding.constant(NavigationPath()))
 }

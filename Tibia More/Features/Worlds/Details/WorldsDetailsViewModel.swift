@@ -60,6 +60,7 @@ final class WorldsDetailsViewModel {
         do {
             let result = try await CharactersService.shared.fetch(name: name)
             self.characterModel = result
+            self.characterModel?.isOnline = true
             self.isLoadingCharacter = false
         } catch {
             print("Some error occured on fetch character from worlds: \(error)")

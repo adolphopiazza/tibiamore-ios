@@ -12,7 +12,6 @@ final class NewsListViewModel {
     
     let viewTitle: String = "Latest news"
     
-    var navigationPath: NavigationPath = .init()
     var news: [NewsInformationModel] = []
     var isLoading: Bool = false
     var showInfoAlert: Bool = false

@@ -12,11 +12,10 @@ final class CharactersListViewModel {
     
     let viewTitle = "Characters"
     
-    var navigationPath: NavigationPath = NavigationPath()
     var characters: [CharacterModel] = []
     var isLoading = false
     
-    func checkUserDefaults() async {
+    func checkUserDefaults(isRefreshing: Bool = false) async {
         guard let savedCharacters = DefaultStorage.shared.retrieveArray(key: .character) else {
             return
         }
@@ -30,6 +29,11 @@ final class CharactersListViewModel {
             self.characters.removeAll()
             await fetch(characters: savedCharacters)
         }
+        
+        if isRefreshing {
+            self.characters.removeAll()
+            await fetch(characters: savedCharacters)
+        }
     }
     
     private func fetch(characters: [String]) async {
@@ -38,7 +42,10 @@ final class CharactersListViewModel {
         for character in characters {
             await fetch(name: character)
             let players = await playersOnlineFrom(world: self.characters.last?.character.world ?? "")
-            self.characters[self.characters.count - 1].isOnline = players.contains(where: { $0.name == character })
+            
+            if !players.isEmpty {
+                self.characters[self.characters.count - 1].isOnline = players.contains(where: { $0.name == character })
+            }
         }
         
         self.isLoading = false

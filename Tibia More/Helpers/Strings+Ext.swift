@@ -44,6 +44,7 @@ extension String {
         static let infoCircle = "info.circle"
         static let magnifyingglass = "magnifyingglass"
         static let trash = "trash"
+        static let keyboardBadgeEllipsis = "keyboard.badge.ellipsis"
     }
     
 }
