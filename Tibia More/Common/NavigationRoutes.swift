@@ -25,4 +25,8 @@ enum NavigationRoutes {
         case characterDetails(with: CharacterModel)
     }
     
+    enum Utils: Hashable {
+        case go(to: UtilsListViewModel.Utils)
+    }
+    
 }

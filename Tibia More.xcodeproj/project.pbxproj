@@ -10,6 +10,8 @@
 		3800FC702B34DC8B00685C5E /* CharacterSearchDetailsViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800FC6F2B34DC8B00685C5E /* CharacterSearchDetailsViewRow.swift */; };
 		3800FC722B35D90700685C5E /* CharacterSearchDetailsAchievementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800FC712B35D90700685C5E /* CharacterSearchDetailsAchievementView.swift */; };
 		3800FC742B35DD6600685C5E /* CharacterSearchDetailsOtherCharactersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800FC732B35DD6600685C5E /* CharacterSearchDetailsOtherCharactersView.swift */; };
+		38084D472B538164003FCD1B /* UtilsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38084D462B538164003FCD1B /* UtilsListViewModel.swift */; };
+		38084D492B5386B6003FCD1B /* UtilsListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38084D482B5386B6003FCD1B /* UtilsListRowView.swift */; };
 		3823D5EB2B5227B0000677CB /* WorldsDetailsViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3823D5EA2B5227B0000677CB /* WorldsDetailsViewRow.swift */; };
 		382A29C22B1EA97500961FE2 /* Tibia_MoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A29C12B1EA97500961FE2 /* Tibia_MoreApp.swift */; };
 		382A29C42B1EA97500961FE2 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A29C32B1EA97500961FE2 /* TabBarView.swift */; };
@@ -77,6 +79,8 @@
 		3800FC6F2B34DC8B00685C5E /* CharacterSearchDetailsViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSearchDetailsViewRow.swift; sourceTree = "<group>"; };
 		3800FC712B35D90700685C5E /* CharacterSearchDetailsAchievementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSearchDetailsAchievementView.swift; sourceTree = "<group>"; };
 		3800FC732B35DD6600685C5E /* CharacterSearchDetailsOtherCharactersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSearchDetailsOtherCharactersView.swift; sourceTree = "<group>"; };
+		38084D462B538164003FCD1B /* UtilsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsListViewModel.swift; sourceTree = "<group>"; };
+		38084D482B5386B6003FCD1B /* UtilsListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsListRowView.swift; sourceTree = "<group>"; };
 		3823D5EA2B5227B0000677CB /* WorldsDetailsViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldsDetailsViewRow.swift; sourceTree = "<group>"; };
 		382A29BE2B1EA97500961FE2 /* Tibia More.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tibia More.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		382A29C12B1EA97500961FE2 /* Tibia_MoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tibia_MoreApp.swift; sourceTree = "<group>"; };
@@ -419,6 +423,8 @@
 			isa = PBXGroup;
 			children = (
 				38D6708E2B52E8840043A093 /* UtilsListView.swift */,
+				38084D462B538164003FCD1B /* UtilsListViewModel.swift */,
+				38084D482B5386B6003FCD1B /* UtilsListRowView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -568,6 +574,7 @@
 				38D6708F2B52E8840043A093 /* UtilsListView.swift in Sources */,
 				38A3EDF82B2F2DE2003C7BDA /* CharactersSearchViewModel.swift in Sources */,
 				38AC7CF72B254B2A00B6DF29 /* NavigationRoutes.swift in Sources */,
+				38084D472B538164003FCD1B /* UtilsListViewModel.swift in Sources */,
 				38F31AD62B39E3C800FF6BA8 /* DefaultStorage.swift in Sources */,
 				38A3EDFA2B2F32E0003C7BDA /* Custom+Styles.swift in Sources */,
 				382A29C42B1EA97500961FE2 /* TabBarView.swift in Sources */,
@@ -585,6 +592,7 @@
 				38CC6C072B2DDEAF00E5BB67 /* CharactersService.swift in Sources */,
 				38A28AA72B2B7AED00C707F7 /* SafariView.swift in Sources */,
 				38AC7CEA2B24BD7000B6DF29 /* NewsListRowView.swift in Sources */,
+				38084D492B5386B6003FCD1B /* UtilsListRowView.swift in Sources */,
 				38C09ADF2B48A86B006B6B34 /* CharacterSearchDetailsViewModel.swift in Sources */,
 				38A3EDFD2B2F3DE1003C7BDA /* CharacterSearchDetailsView.swift in Sources */,
 				382A29FC2B1EAF1100961FE2 /* TabBarItem.swift in Sources */,
