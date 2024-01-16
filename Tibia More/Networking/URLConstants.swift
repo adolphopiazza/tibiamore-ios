@@ -32,6 +32,7 @@ extension String {
         
         struct Utils {
             static let rashid = "rashid/city"
+            static let creatures = "creatures"
         }
     }
 }
