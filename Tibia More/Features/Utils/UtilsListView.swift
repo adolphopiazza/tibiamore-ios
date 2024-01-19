@@ -47,8 +47,8 @@ struct UtilsListView: View {
             }
             .navigationDestination(for: NavigationRoutes.Utils.Creatures.self) { route in
                 switch route {
-                case .details(let name):
-                    Text(name)
+                case .details(let race):
+                    CreaturesDetailView(viewModel: CreaturesDetailViewModel(creatureRace: race))
                 }
             }
         }

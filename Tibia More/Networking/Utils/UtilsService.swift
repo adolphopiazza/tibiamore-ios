@@ -42,4 +42,16 @@ final class UtilsService {
         }
     }
     
+    func fetchCreature(race: String) async throws -> SpecificCreatureInfoModel {
+        let service = NetworkService<SpecificCreatureModel>()
+        
+        do {
+            let result = try await service.fetch(url: .Endpoints.Utils.creature + race)
+            return result.creature
+        } catch {
+            print("Some error on Utils service, fetchCreatures: \(error)")
+            throw error
+        }
+    }
+    
 }

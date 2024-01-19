@@ -26,7 +26,7 @@ struct CreaturesView: View {
             CreaturesRowView(creature: creature)
                 .contentShape(.rect)
                 .onTapGesture {
-                    navigationPath.append(NavigationRoutes.Utils.Creatures.details(of: creature.name))
+                    navigationPath.append(NavigationRoutes.Utils.Creatures.details(of: creature.race))
                 }
         }
         .navigationTitle(viewModel.viewTitle)

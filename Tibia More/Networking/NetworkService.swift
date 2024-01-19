@@ -15,7 +15,11 @@ final class NetworkService<T: Decodable> {
         }
         
         do {
-            let (data, _) = try await URLSession.shared.data(from: url)
+            let (data, response) = try await URLSession.shared.data(from: url)
+            
+            if let httpCode = response as? HTTPURLResponse, 500...599 ~= httpCode.statusCode {
+                throw APIErrors.serverError(httpCode: httpCode.statusCode)
+            }
             
             if baseURL == .tibiaDataURL {
                 let decoder = JSONDecoder()
