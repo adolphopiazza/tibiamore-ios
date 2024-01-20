@@ -12,7 +12,12 @@ extension URL {
 }
 
 extension String {
-    static let tibiaDataURL = "https://api.tibiadata.com/v4/"
+    #if DEBUG
+        static let tibiaDataURL = "https://dev.tibiadata.com/v4/"
+    #else
+        static let tibiaDataURL = "https://api.tibiadata.com/v4/"
+    #endif
+    
     static let tibiaLabsURL = "https://api.tibialabs.com/v2/"
     
     struct Endpoints {
@@ -32,6 +37,9 @@ extension String {
         
         struct Utils {
             static let rashid = "rashid/city"
+            static let creatures = "creatures"
+            static let creature = "creature/"
+            static let boostable = "boostablebosses"
         }
     }
 }

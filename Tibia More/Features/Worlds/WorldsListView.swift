@@ -16,10 +16,19 @@ struct WorldsListView: View {
         NavigationStack(path: $navigationPath) {
             Form {
                 Section("About") {
-                    LabeledContent("Players Online", value: String(viewModel.model?.playersOnline ?? 0))
-                    LabeledContent("Record Players", value: String(viewModel.model?.recordPlayers ?? 0))
-                    LabeledContent("Record Date", value: viewModel.model?.recordDate.formatDate(with: .yyyyMMddTHHmmssZ) ?? "")
+                    if let playersOnline = viewModel.model?.playersOnline {
+                        LabeledContent("Players Online", value: String(playersOnline))
+                    }
+                    
+                    if let recordPlayers = viewModel.model?.recordPlayers {
+                        LabeledContent("Record Players", value: String(recordPlayers))
+                    }
+                    
+                    if let recordDate = viewModel.model?.recordDate.formatDate(with: .yyyyMMddTHHmmssZ) {
+                        LabeledContent("Record Date", value: recordDate)
+                    }
                 }
+                .opacity(viewModel.hasError ? 0 : 1)
                 
                 Section("Worlds") {
                     List(viewModel.model?.regularWorlds ?? [], id: \.name) { world in
@@ -30,6 +39,7 @@ struct WorldsListView: View {
                             }
                     }
                 }
+                .opacity(viewModel.hasError ? 0 : 1)
             }
             .fontDesign(.serif)
             .navigationTitle(viewModel.viewTitle)
@@ -52,6 +62,12 @@ struct WorldsListView: View {
             .overlay {
                 if viewModel.isLoading {
                     ProgressView()
+                }
+                
+                if viewModel.hasError && !viewModel.isLoading {
+                    ContentUnavailableView("Sorry, we got an error",
+                                           systemImage: .SFImages.networkSlash,
+                                           description: Text("Please pull-to-refresh to try again"))
                 }
             }
         }

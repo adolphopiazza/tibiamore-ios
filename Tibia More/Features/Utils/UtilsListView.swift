@@ -29,11 +29,11 @@ struct UtilsListView: View {
                     case .rashid:
                         RashidView()
                     case .creatures:
-                        Text("Creatures")
+                        CreaturesView(navigationPath: $navigationPath)
                     case .boostedBoss:
-                        Text("Boosted Boss")
+                        BoostedBossView()
                     case .boostedCreature:
-                        Text("Boosted Creature")
+                        BoostedCreatureView()
                     case .highscores:
                         Text("Highscores")
                     case .killStatistics:
@@ -43,6 +43,12 @@ struct UtilsListView: View {
                     case .guilds:
                         Text("Guilds")
                     }
+                }
+            }
+            .navigationDestination(for: NavigationRoutes.Utils.Creatures.self) { route in
+                switch route {
+                case .details(let race):
+                    CreaturesDetailView(viewModel: CreaturesDetailViewModel(creatureRace: race))
                 }
             }
         }

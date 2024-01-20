@@ -13,6 +13,7 @@ final class WorldsListViewModel {
     let viewTitle: String = "Worlds"
     
     var isLoading: Bool = false
+    var hasError: Bool = false
     var model: WorldsInfoModel?
     
     init() {
@@ -22,15 +23,19 @@ final class WorldsListViewModel {
     }
     
     @MainActor func fetch() async {
+        defer {
+            self.isLoading = false
+        }
+        
         self.isLoading = true
         
         do {
             let result = try await WorldsService.shared.fetch()
             self.model = result
-            self.isLoading = false
+            self.hasError = false
         } catch {
             print("some error on worlds list view model: \(error)")
-            self.isLoading = false
+            self.hasError = true
         }
     }
     
