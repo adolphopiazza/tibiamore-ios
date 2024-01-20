@@ -49,7 +49,7 @@ final class BoostedCreatureViewModel {
         do {
             let result = try await UtilsService.shared.fetchCreatures()
             self.hasError = false
-            return result.boosted.name
+            return result.boosted.race
         } catch {
             print("Some error on BoostedCreatureViewModel: \(error)")
             self.hasError = true

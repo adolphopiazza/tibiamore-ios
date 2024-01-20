@@ -54,4 +54,16 @@ final class UtilsService {
         }
     }
     
+    func fetchBoostableBosses() async throws -> BoostableBossesInfoModel {
+        let service = NetworkService<BoostableBossesModel>()
+        
+        do {
+            let result = try await service.fetch(url: .Endpoints.Utils.boostable)
+            return result.boostableBosses
+        } catch {
+            print("Some error on Utils service, fetchBoostableBosses: \(error)")
+            throw error
+        }
+    }
+    
 }

@@ -11,9 +11,9 @@ final class NetworkService<T: Decodable> {
     
     func fetch(baseURL: String = .tibiaDataURL, url: String) async throws -> T {
         #if DEBUG
-        print("We are fetching with debug mode, dev API")
+        print("We are fetching with debug mode, dev API, endpoint -> \(url)")
         #else
-        print("We are fetching with release mode, prod API")
+        print("We are fetching with release mode, prod API, endpoint -> \(url)")
         #endif
         
         guard let url = URL(string: baseURL + url) else {

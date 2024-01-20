@@ -31,7 +31,7 @@ struct UtilsListView: View {
                     case .creatures:
                         CreaturesView(navigationPath: $navigationPath)
                     case .boostedBoss:
-                        Text("Boosted Boss")
+                        BoostedBossView()
                     case .boostedCreature:
                         BoostedCreatureView()
                     case .highscores:
