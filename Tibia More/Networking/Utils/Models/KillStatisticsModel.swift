@@ -7,16 +7,16 @@
 
 import Foundation
 
-struct KillStatisticsModel: Decodable {
+struct KillStatisticsModel: Decodable, Hashable {
     let killstatistics: KillStatisticsInfoModel
 }
 
-struct KillStatisticsInfoModel: Decodable {
+struct KillStatisticsInfoModel: Decodable, Hashable {
     let entries: [KillStatisticsDataModel]
     let total: KillStatisticsDataModel
 }
 
-struct KillStatisticsDataModel: Decodable {
+struct KillStatisticsDataModel: Decodable, Hashable {
     let lastDayKilled: Int
     let lastDayPlayersKilled: Int
     let lastWeekKilled: Int

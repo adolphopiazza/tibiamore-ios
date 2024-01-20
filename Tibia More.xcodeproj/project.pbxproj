@@ -20,6 +20,8 @@
 		38084D592B543F04003FCD1B /* CreaturesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38084D582B543F04003FCD1B /* CreaturesViewModel.swift */; };
 		3808B1ED2B5C688A003E4AB8 /* KillStatisticsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3808B1EC2B5C688A003E4AB8 /* KillStatisticsModel.swift */; };
 		3808B1F02B5C6A55003E4AB8 /* KillStatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3808B1EF2B5C6A55003E4AB8 /* KillStatisticsView.swift */; };
+		3808B1F22B5C6B94003E4AB8 /* KillStatisticsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3808B1F12B5C6B94003E4AB8 /* KillStatisticsViewModel.swift */; };
+		3808B1F42B5C845C003E4AB8 /* KillStatisticsTotalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3808B1F32B5C845C003E4AB8 /* KillStatisticsTotalsView.swift */; };
 		3823D5EB2B5227B0000677CB /* WorldsDetailsViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3823D5EA2B5227B0000677CB /* WorldsDetailsViewRow.swift */; };
 		382A29C22B1EA97500961FE2 /* Tibia_MoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A29C12B1EA97500961FE2 /* Tibia_MoreApp.swift */; };
 		382A29C42B1EA97500961FE2 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A29C32B1EA97500961FE2 /* TabBarView.swift */; };
@@ -109,6 +111,8 @@
 		38084D582B543F04003FCD1B /* CreaturesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreaturesViewModel.swift; sourceTree = "<group>"; };
 		3808B1EC2B5C688A003E4AB8 /* KillStatisticsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KillStatisticsModel.swift; sourceTree = "<group>"; };
 		3808B1EF2B5C6A55003E4AB8 /* KillStatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KillStatisticsView.swift; sourceTree = "<group>"; };
+		3808B1F12B5C6B94003E4AB8 /* KillStatisticsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KillStatisticsViewModel.swift; sourceTree = "<group>"; };
+		3808B1F32B5C845C003E4AB8 /* KillStatisticsTotalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KillStatisticsTotalsView.swift; sourceTree = "<group>"; };
 		3823D5EA2B5227B0000677CB /* WorldsDetailsViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldsDetailsViewRow.swift; sourceTree = "<group>"; };
 		382A29BE2B1EA97500961FE2 /* Tibia More.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tibia More.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		382A29C12B1EA97500961FE2 /* Tibia_MoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tibia_MoreApp.swift; sourceTree = "<group>"; };
@@ -239,6 +243,8 @@
 			isa = PBXGroup;
 			children = (
 				3808B1EF2B5C6A55003E4AB8 /* KillStatisticsView.swift */,
+				3808B1F12B5C6B94003E4AB8 /* KillStatisticsViewModel.swift */,
+				3808B1F32B5C845C003E4AB8 /* KillStatisticsTotalsView.swift */,
 			);
 			path = KillStatistics;
 			sourceTree = "<group>";
@@ -749,10 +755,12 @@
 				38C09ADF2B48A86B006B6B34 /* CharacterSearchDetailsViewModel.swift in Sources */,
 				38A3EDFD2B2F3DE1003C7BDA /* CharacterSearchDetailsView.swift in Sources */,
 				382A29FC2B1EAF1100961FE2 /* TabBarItem.swift in Sources */,
+				3808B1F42B5C845C003E4AB8 /* KillStatisticsTotalsView.swift in Sources */,
 				3800FC702B34DC8B00685C5E /* CharacterSearchDetailsViewRow.swift in Sources */,
 				387E5A032B5B42F4009CA577 /* CreaturesDetailAboutView.swift in Sources */,
 				38AC7CEC2B24BD7900B6DF29 /* NewsListRowViewModel.swift in Sources */,
 				3808B1ED2B5C688A003E4AB8 /* KillStatisticsModel.swift in Sources */,
+				3808B1F22B5C6B94003E4AB8 /* KillStatisticsViewModel.swift in Sources */,
 				382A29C22B1EA97500961FE2 /* Tibia_MoreApp.swift in Sources */,
 				3800FC722B35D90700685C5E /* CharacterSearchDetailsAchievementView.swift in Sources */,
 				38AC7CF12B253FEE00B6DF29 /* NewsListDetailViewModel.swift in Sources */,

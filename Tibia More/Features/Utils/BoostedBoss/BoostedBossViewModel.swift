@@ -37,7 +37,7 @@ final class BoostedBossViewModel {
         }
     }
     
-    @MainActor func fetch() async {
+    @MainActor private func fetch() async {
         defer {
             self.isLoading = false
         }

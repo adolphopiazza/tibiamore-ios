@@ -32,7 +32,7 @@ final class HighscoresViewModel {
         }
     }
     
-    @MainActor func fetchWorlds() async {
+    @MainActor private func fetchWorlds() async {
         defer {
             self.isLoading = false
         }

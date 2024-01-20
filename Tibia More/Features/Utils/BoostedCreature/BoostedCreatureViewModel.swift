@@ -39,7 +39,7 @@ final class BoostedCreatureViewModel {
         }
     }
     
-    @MainActor func fetch() async -> String? {
+    @MainActor private func fetch() async -> String? {
         defer {
             self.isLoading = false
         }
@@ -57,7 +57,7 @@ final class BoostedCreatureViewModel {
         }
     }
     
-    @MainActor func fetchDetails(of race: String) async {
+    @MainActor private func fetchDetails(of race: String) async {
         defer {
             self.isLoading = false
         }
