@@ -22,6 +22,8 @@
 		3808B1F02B5C6A55003E4AB8 /* KillStatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3808B1EF2B5C6A55003E4AB8 /* KillStatisticsView.swift */; };
 		3808B1F22B5C6B94003E4AB8 /* KillStatisticsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3808B1F12B5C6B94003E4AB8 /* KillStatisticsViewModel.swift */; };
 		3808B1F42B5C845C003E4AB8 /* KillStatisticsTotalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3808B1F32B5C845C003E4AB8 /* KillStatisticsTotalsView.swift */; };
+		3808B1F62B5C8CF0003E4AB8 /* FansitesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3808B1F52B5C8CF0003E4AB8 /* FansitesModel.swift */; };
+		3808B1F92B5C8E6F003E4AB8 /* FansitesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3808B1F82B5C8E6F003E4AB8 /* FansitesView.swift */; };
 		3823D5EB2B5227B0000677CB /* WorldsDetailsViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3823D5EA2B5227B0000677CB /* WorldsDetailsViewRow.swift */; };
 		382A29C22B1EA97500961FE2 /* Tibia_MoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A29C12B1EA97500961FE2 /* Tibia_MoreApp.swift */; };
 		382A29C42B1EA97500961FE2 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A29C32B1EA97500961FE2 /* TabBarView.swift */; };
@@ -113,6 +115,8 @@
 		3808B1EF2B5C6A55003E4AB8 /* KillStatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KillStatisticsView.swift; sourceTree = "<group>"; };
 		3808B1F12B5C6B94003E4AB8 /* KillStatisticsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KillStatisticsViewModel.swift; sourceTree = "<group>"; };
 		3808B1F32B5C845C003E4AB8 /* KillStatisticsTotalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KillStatisticsTotalsView.swift; sourceTree = "<group>"; };
+		3808B1F52B5C8CF0003E4AB8 /* FansitesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FansitesModel.swift; sourceTree = "<group>"; };
+		3808B1F82B5C8E6F003E4AB8 /* FansitesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FansitesView.swift; sourceTree = "<group>"; };
 		3823D5EA2B5227B0000677CB /* WorldsDetailsViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldsDetailsViewRow.swift; sourceTree = "<group>"; };
 		382A29BE2B1EA97500961FE2 /* Tibia More.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tibia More.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		382A29C12B1EA97500961FE2 /* Tibia_MoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tibia_MoreApp.swift; sourceTree = "<group>"; };
@@ -224,6 +228,7 @@
 				387E5A092B5B4C35009CA577 /* BoostableBossesModel.swift */,
 				387E5A0B2B5C0CE5009CA577 /* HighscoresModel.swift */,
 				3808B1EC2B5C688A003E4AB8 /* KillStatisticsModel.swift */,
+				3808B1F52B5C8CF0003E4AB8 /* FansitesModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -247,6 +252,14 @@
 				3808B1F32B5C845C003E4AB8 /* KillStatisticsTotalsView.swift */,
 			);
 			path = KillStatistics;
+			sourceTree = "<group>";
+		};
+		3808B1F72B5C8E64003E4AB8 /* Fansites */ = {
+			isa = PBXGroup;
+			children = (
+				3808B1F82B5C8E6F003E4AB8 /* FansitesView.swift */,
+			);
+			path = Fansites;
 			sourceTree = "<group>";
 		};
 		382A29B52B1EA97500961FE2 = {
@@ -560,6 +573,7 @@
 				387E59FD2B5B3D35009CA577 /* BoostedCreature */,
 				387E5A0D2B5C132F009CA577 /* Highscores */,
 				3808B1EE2B5C6A46003E4AB8 /* KillStatistics */,
+				3808B1F72B5C8E64003E4AB8 /* Fansites */,
 				38D6708E2B52E8840043A093 /* UtilsListView.swift */,
 				38084D462B538164003FCD1B /* UtilsListViewModel.swift */,
 				38084D482B5386B6003FCD1B /* UtilsListRowView.swift */,
@@ -706,6 +720,7 @@
 				382A2A002B1EBB0900961FE2 /* NewsModel.swift in Sources */,
 				38B1E4772B499C5000A18AB5 /* WorldsService.swift in Sources */,
 				38084D4E2B538AFD003FCD1B /* RashidViewModel.swift in Sources */,
+				3808B1F92B5C8E6F003E4AB8 /* FansitesView.swift in Sources */,
 				3808B1F02B5C6A55003E4AB8 /* KillStatisticsView.swift in Sources */,
 				382A29F52B1EAD4200961FE2 /* WorldsListView.swift in Sources */,
 				385D6EB02B4AF2E800839091 /* WorldsDetailsViewModel.swift in Sources */,
@@ -716,6 +731,7 @@
 				38A28AAA2B2B7CD500C707F7 /* BrowserView.swift in Sources */,
 				3823D5EB2B5227B0000677CB /* WorldsDetailsViewRow.swift in Sources */,
 				3838176B2B49A660000E13D7 /* WorldsListViewModel.swift in Sources */,
+				3808B1F62B5C8CF0003E4AB8 /* FansitesModel.swift in Sources */,
 				3872B0302B56099F00725178 /* CreaturesDetailViewModel.swift in Sources */,
 				387E5A112B5C4BBF009CA577 /* HighscoresViewModel.swift in Sources */,
 				38B1E47A2B499C8900A18AB5 /* WorldsModel.swift in Sources */,

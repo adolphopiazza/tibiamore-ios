@@ -42,6 +42,7 @@ extension String {
             static let boostable = "boostablebosses"
             static let highscores = "highscores"
             static let killStatistics = "killstatistics/"
+            static let fansites = "fansites"
         }
     }
 }

@@ -92,4 +92,16 @@ final class UtilsService {
         }
     }
     
+    func fetchFansites() async throws -> FansitesInfoModel {
+        let service = NetworkService<FansitesModel>()
+        
+        do {
+            let result = try await service.fetch(url: .Endpoints.Utils.fansites)
+            return result.fansites
+        } catch {
+            print("Some error on Utils service, fetchHighscores: \(error)")
+            throw error
+        }
+    }
+    
 }
