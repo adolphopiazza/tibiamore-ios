@@ -40,6 +40,7 @@ extension String {
             static let creatures = "creatures"
             static let creature = "creature/"
             static let boostable = "boostablebosses"
+            static let highscores = "highscores"
         }
     }
 }
