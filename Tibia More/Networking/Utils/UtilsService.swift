@@ -80,4 +80,16 @@ final class UtilsService {
         }
     }
     
+    func fetchKillStatistics(world: String) async throws -> KillStatisticsInfoModel {
+        let service = NetworkService<KillStatisticsModel>()
+        
+        do {
+            let result = try await service.fetch(url: .Endpoints.Utils.killStatistics + world)
+            return result.killstatistics
+        } catch {
+            print("Some error on Utils service, fetchHighscores: \(error)")
+            throw error
+        }
+    }
+    
 }
