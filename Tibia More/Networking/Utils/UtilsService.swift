@@ -66,4 +66,18 @@ final class UtilsService {
         }
     }
     
+    func fetchHighscores(world: String = "all", 
+                         category: HighscoresCategories = .experience,
+                         vocation: HighscoresVocations = .all) async throws -> HighscoresInfoModel {
+        let service = NetworkService<HighscoresModel>()
+        
+        do {
+            let result = try await service.fetch(url: "\(String.Endpoints.Utils.highscores)/\(world)/\(category.rawValue)/\(vocation.rawValue)/1")
+            return result.highscores
+        } catch {
+            print("Some error on Utils service, fetchHighscores: \(error)")
+            throw error
+        }
+    }
+    
 }

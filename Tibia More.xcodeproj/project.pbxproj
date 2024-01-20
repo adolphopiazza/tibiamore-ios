@@ -46,6 +46,8 @@
 		387E5A062B5B4ABC009CA577 /* BoostedBossView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387E5A052B5B4ABC009CA577 /* BoostedBossView.swift */; };
 		387E5A082B5B4AC9009CA577 /* BoostedBossViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387E5A072B5B4AC9009CA577 /* BoostedBossViewModel.swift */; };
 		387E5A0A2B5B4C35009CA577 /* BoostableBossesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387E5A092B5B4C35009CA577 /* BoostableBossesModel.swift */; };
+		387E5A0C2B5C0CE5009CA577 /* HighscoresModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387E5A0B2B5C0CE5009CA577 /* HighscoresModel.swift */; };
+		387E5A0F2B5C133D009CA577 /* HighscoresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387E5A0E2B5C133D009CA577 /* HighscoresView.swift */; };
 		38A28A822B27C2D800C707F7 /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A28A812B27C2D800C707F7 /* NetworkErrors.swift */; };
 		38A28AA52B2B75E300C707F7 /* Strings+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A28AA42B2B75E300C707F7 /* Strings+Ext.swift */; };
 		38A28AA72B2B7AED00C707F7 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A28AA62B2B7AED00C707F7 /* SafariView.swift */; };
@@ -133,6 +135,8 @@
 		387E5A052B5B4ABC009CA577 /* BoostedBossView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoostedBossView.swift; sourceTree = "<group>"; };
 		387E5A072B5B4AC9009CA577 /* BoostedBossViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoostedBossViewModel.swift; sourceTree = "<group>"; };
 		387E5A092B5B4C35009CA577 /* BoostableBossesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoostableBossesModel.swift; sourceTree = "<group>"; };
+		387E5A0B2B5C0CE5009CA577 /* HighscoresModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighscoresModel.swift; sourceTree = "<group>"; };
+		387E5A0E2B5C133D009CA577 /* HighscoresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighscoresView.swift; sourceTree = "<group>"; };
 		38A28A812B27C2D800C707F7 /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
 		38A28AA42B2B75E300C707F7 /* Strings+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+Ext.swift"; sourceTree = "<group>"; };
 		38A28AA62B2B7AED00C707F7 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
@@ -208,6 +212,7 @@
 			children = (
 				38084D532B543D83003FCD1B /* CreaturesModel.swift */,
 				387E5A092B5B4C35009CA577 /* BoostableBossesModel.swift */,
+				387E5A0B2B5C0CE5009CA577 /* HighscoresModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -409,6 +414,14 @@
 			path = BoostedBoss;
 			sourceTree = "<group>";
 		};
+		387E5A0D2B5C132F009CA577 /* Highscores */ = {
+			isa = PBXGroup;
+			children = (
+				387E5A0E2B5C133D009CA577 /* HighscoresView.swift */,
+			);
+			path = Highscores;
+			sourceTree = "<group>";
+		};
 		38A28AA32B2B75CF00C707F7 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -523,6 +536,7 @@
 				38084D552B543EE6003FCD1B /* Creatures */,
 				387E5A042B5B4AAB009CA577 /* BoostedBoss */,
 				387E59FD2B5B3D35009CA577 /* BoostedCreature */,
+				387E5A0D2B5C132F009CA577 /* Highscores */,
 				38D6708E2B52E8840043A093 /* UtilsListView.swift */,
 				38084D462B538164003FCD1B /* UtilsListViewModel.swift */,
 				38084D482B5386B6003FCD1B /* UtilsListRowView.swift */,
@@ -680,6 +694,7 @@
 				3838176B2B49A660000E13D7 /* WorldsListViewModel.swift in Sources */,
 				3872B0302B56099F00725178 /* CreaturesDetailViewModel.swift in Sources */,
 				38B1E47A2B499C8900A18AB5 /* WorldsModel.swift in Sources */,
+				387E5A0C2B5C0CE5009CA577 /* HighscoresModel.swift in Sources */,
 				38D6708F2B52E8840043A093 /* UtilsListView.swift in Sources */,
 				38A3EDF82B2F2DE2003C7BDA /* CharactersSearchViewModel.swift in Sources */,
 				387E5A082B5B4AC9009CA577 /* BoostedBossViewModel.swift in Sources */,
@@ -706,6 +721,7 @@
 				38F2416F2B2D04BE003CC100 /* NetworkService.swift in Sources */,
 				3872B02E2B56099700725178 /* CreaturesDetailView.swift in Sources */,
 				38CC6C072B2DDEAF00E5BB67 /* CharactersService.swift in Sources */,
+				387E5A0F2B5C133D009CA577 /* HighscoresView.swift in Sources */,
 				38A28AA72B2B7AED00C707F7 /* SafariView.swift in Sources */,
 				38AC7CEA2B24BD7000B6DF29 /* NewsListRowView.swift in Sources */,
 				38084D492B5386B6003FCD1B /* UtilsListRowView.swift in Sources */,
