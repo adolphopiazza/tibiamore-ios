@@ -24,9 +24,10 @@ struct HighscoresPlayersModel: Decodable {
     let vocation: String
     let world: String
     let level: Int
+    let value: Int
 }
 
-enum HighscoresVocations: String, Decodable {
+enum HighscoresVocations: String, Decodable, CaseIterable {
     case all
     case knights
     case druids
@@ -44,12 +45,12 @@ enum HighscoresVocations: String, Decodable {
         case .sorcerers:
             return "Sorcerers"
         case .paladins:
-            return "Paladinds"
+            return "Paladins"
         }
     }
 }
 
-enum HighscoresCategories: String, Decodable {
+enum HighscoresCategories: String, Decodable, CaseIterable {
     case achievements
     case axefighting
     case charmpoints

@@ -48,6 +48,7 @@
 		387E5A0A2B5B4C35009CA577 /* BoostableBossesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387E5A092B5B4C35009CA577 /* BoostableBossesModel.swift */; };
 		387E5A0C2B5C0CE5009CA577 /* HighscoresModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387E5A0B2B5C0CE5009CA577 /* HighscoresModel.swift */; };
 		387E5A0F2B5C133D009CA577 /* HighscoresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387E5A0E2B5C133D009CA577 /* HighscoresView.swift */; };
+		387E5A112B5C4BBF009CA577 /* HighscoresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387E5A102B5C4BBF009CA577 /* HighscoresViewModel.swift */; };
 		38A28A822B27C2D800C707F7 /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A28A812B27C2D800C707F7 /* NetworkErrors.swift */; };
 		38A28AA52B2B75E300C707F7 /* Strings+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A28AA42B2B75E300C707F7 /* Strings+Ext.swift */; };
 		38A28AA72B2B7AED00C707F7 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A28AA62B2B7AED00C707F7 /* SafariView.swift */; };
@@ -137,6 +138,7 @@
 		387E5A092B5B4C35009CA577 /* BoostableBossesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoostableBossesModel.swift; sourceTree = "<group>"; };
 		387E5A0B2B5C0CE5009CA577 /* HighscoresModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighscoresModel.swift; sourceTree = "<group>"; };
 		387E5A0E2B5C133D009CA577 /* HighscoresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighscoresView.swift; sourceTree = "<group>"; };
+		387E5A102B5C4BBF009CA577 /* HighscoresViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighscoresViewModel.swift; sourceTree = "<group>"; };
 		38A28A812B27C2D800C707F7 /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
 		38A28AA42B2B75E300C707F7 /* Strings+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+Ext.swift"; sourceTree = "<group>"; };
 		38A28AA62B2B7AED00C707F7 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
@@ -418,6 +420,7 @@
 			isa = PBXGroup;
 			children = (
 				387E5A0E2B5C133D009CA577 /* HighscoresView.swift */,
+				387E5A102B5C4BBF009CA577 /* HighscoresViewModel.swift */,
 			);
 			path = Highscores;
 			sourceTree = "<group>";
@@ -693,6 +696,7 @@
 				3823D5EB2B5227B0000677CB /* WorldsDetailsViewRow.swift in Sources */,
 				3838176B2B49A660000E13D7 /* WorldsListViewModel.swift in Sources */,
 				3872B0302B56099F00725178 /* CreaturesDetailViewModel.swift in Sources */,
+				387E5A112B5C4BBF009CA577 /* HighscoresViewModel.swift in Sources */,
 				38B1E47A2B499C8900A18AB5 /* WorldsModel.swift in Sources */,
 				387E5A0C2B5C0CE5009CA577 /* HighscoresModel.swift in Sources */,
 				38D6708F2B52E8840043A093 /* UtilsListView.swift in Sources */,
