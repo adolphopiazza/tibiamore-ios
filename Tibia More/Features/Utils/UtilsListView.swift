@@ -37,7 +37,7 @@ struct UtilsListView: View {
                     case .highscores:
                         HighscoresView()
                     case .killStatistics:
-                        Text("Kill Statistics")
+                        KillStatisticsView()
                     case .fansites:
                         Text("Fansites")
                     case .guilds:
