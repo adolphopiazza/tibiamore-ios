@@ -40,6 +40,9 @@
 		3872B02B2B5608D700725178 /* CreaturesRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3872B02A2B5608D700725178 /* CreaturesRowView.swift */; };
 		3872B02E2B56099700725178 /* CreaturesDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3872B02D2B56099700725178 /* CreaturesDetailView.swift */; };
 		3872B0302B56099F00725178 /* CreaturesDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3872B02F2B56099F00725178 /* CreaturesDetailViewModel.swift */; };
+		387E59FF2B5B3D4E009CA577 /* BoostedCreatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387E59FE2B5B3D4E009CA577 /* BoostedCreatureView.swift */; };
+		387E5A012B5B3D5A009CA577 /* BoostedCreatureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387E5A002B5B3D5A009CA577 /* BoostedCreatureViewModel.swift */; };
+		387E5A032B5B42F4009CA577 /* CreaturesDetailAboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387E5A022B5B42F4009CA577 /* CreaturesDetailAboutView.swift */; };
 		38A28A822B27C2D800C707F7 /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A28A812B27C2D800C707F7 /* NetworkErrors.swift */; };
 		38A28AA52B2B75E300C707F7 /* Strings+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A28AA42B2B75E300C707F7 /* Strings+Ext.swift */; };
 		38A28AA72B2B7AED00C707F7 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A28AA62B2B7AED00C707F7 /* SafariView.swift */; };
@@ -121,6 +124,9 @@
 		3872B02A2B5608D700725178 /* CreaturesRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreaturesRowView.swift; sourceTree = "<group>"; };
 		3872B02D2B56099700725178 /* CreaturesDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreaturesDetailView.swift; sourceTree = "<group>"; };
 		3872B02F2B56099F00725178 /* CreaturesDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreaturesDetailViewModel.swift; sourceTree = "<group>"; };
+		387E59FE2B5B3D4E009CA577 /* BoostedCreatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoostedCreatureView.swift; sourceTree = "<group>"; };
+		387E5A002B5B3D5A009CA577 /* BoostedCreatureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoostedCreatureViewModel.swift; sourceTree = "<group>"; };
+		387E5A022B5B42F4009CA577 /* CreaturesDetailAboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreaturesDetailAboutView.swift; sourceTree = "<group>"; };
 		38A28A812B27C2D800C707F7 /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
 		38A28AA42B2B75E300C707F7 /* Strings+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+Ext.swift"; sourceTree = "<group>"; };
 		38A28AA62B2B7AED00C707F7 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
@@ -373,8 +379,18 @@
 			children = (
 				3872B02D2B56099700725178 /* CreaturesDetailView.swift */,
 				3872B02F2B56099F00725178 /* CreaturesDetailViewModel.swift */,
+				387E5A022B5B42F4009CA577 /* CreaturesDetailAboutView.swift */,
 			);
 			path = Details;
+			sourceTree = "<group>";
+		};
+		387E59FD2B5B3D35009CA577 /* BoostedCreature */ = {
+			isa = PBXGroup;
+			children = (
+				387E59FE2B5B3D4E009CA577 /* BoostedCreatureView.swift */,
+				387E5A002B5B3D5A009CA577 /* BoostedCreatureViewModel.swift */,
+			);
+			path = BoostedCreature;
 			sourceTree = "<group>";
 		};
 		38A28AA32B2B75CF00C707F7 /* Helpers */ = {
@@ -489,6 +505,7 @@
 			children = (
 				38084D4A2B538AD7003FCD1B /* Rashid */,
 				38084D552B543EE6003FCD1B /* Creatures */,
+				387E59FD2B5B3D35009CA577 /* BoostedCreature */,
 				38D6708E2B52E8840043A093 /* UtilsListView.swift */,
 				38084D462B538164003FCD1B /* UtilsListViewModel.swift */,
 				38084D482B5386B6003FCD1B /* UtilsListRowView.swift */,
@@ -662,6 +679,7 @@
 				38CC6C052B2DD0FB00E5BB67 /* CharactersModel.swift in Sources */,
 				382A2A042B1EBC8A00961FE2 /* URLConstants.swift in Sources */,
 				38AC7CF42B25411800B6DF29 /* NewsDetailModel.swift in Sources */,
+				387E59FF2B5B3D4E009CA577 /* BoostedCreatureView.swift in Sources */,
 				38084D542B543D83003FCD1B /* CreaturesModel.swift in Sources */,
 				38084D572B543EF1003FCD1B /* CreaturesView.swift in Sources */,
 				38A28AA52B2B75E300C707F7 /* Strings+Ext.swift in Sources */,
@@ -677,11 +695,13 @@
 				38A3EDFD2B2F3DE1003C7BDA /* CharacterSearchDetailsView.swift in Sources */,
 				382A29FC2B1EAF1100961FE2 /* TabBarItem.swift in Sources */,
 				3800FC702B34DC8B00685C5E /* CharacterSearchDetailsViewRow.swift in Sources */,
+				387E5A032B5B42F4009CA577 /* CreaturesDetailAboutView.swift in Sources */,
 				38AC7CEC2B24BD7900B6DF29 /* NewsListRowViewModel.swift in Sources */,
 				382A29C22B1EA97500961FE2 /* Tibia_MoreApp.swift in Sources */,
 				3800FC722B35D90700685C5E /* CharacterSearchDetailsAchievementView.swift in Sources */,
 				38AC7CF12B253FEE00B6DF29 /* NewsListDetailViewModel.swift in Sources */,
 				38AC7CEF2B253FE400B6DF29 /* NewsListDetailView.swift in Sources */,
+				387E5A012B5B3D5A009CA577 /* BoostedCreatureViewModel.swift in Sources */,
 				38C09AE92B48EF30006B6B34 /* CharactersListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

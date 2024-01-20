@@ -10,6 +10,12 @@ import Foundation
 final class NetworkService<T: Decodable> {
     
     func fetch(baseURL: String = .tibiaDataURL, url: String) async throws -> T {
+        #if DEBUG
+        print("We are fetching with debug mode, dev API")
+        #else
+        print("We are fetching with release mode, prod API")
+        #endif
+        
         guard let url = URL(string: baseURL + url) else {
             throw APIErrors.malformedURL
         }
