@@ -104,4 +104,28 @@ final class UtilsService {
         }
     }
     
+    func fetchGuilds(of world: String) async throws -> GuildsInfoModel {
+        let service = NetworkService<GuildsModel>()
+        
+        do {
+            let result = try await service.fetch(url: .Endpoints.Utils.guilds + world)
+            return result.guilds
+        } catch {
+            print("Some error on Utils service, fetchGuilds: \(error)")
+            throw error
+        }
+    }
+    
+    func fetchGuild(name: String) async throws -> SpecificGuildInfoModel {
+        let service = NetworkService<SpecificGuildModel>()
+        
+        do {
+            let result = try await service.fetch(url: .Endpoints.Utils.guild + name)
+            return result.guild
+        } catch {
+            print("Some error on Utils service, fetchGuilds: \(error)")
+            throw error
+        }
+    }
+    
 }
