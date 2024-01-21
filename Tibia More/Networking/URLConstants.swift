@@ -43,6 +43,8 @@ extension String {
             static let highscores = "highscores"
             static let killStatistics = "killstatistics/"
             static let fansites = "fansites"
+            static let guilds = "guilds/"
+            static let guild = "guild/"
         }
     }
 }
