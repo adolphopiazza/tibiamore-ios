@@ -31,6 +31,11 @@ enum NavigationRoutes {
         enum Creatures: Hashable {
             case details(of: String)
         }
+        
+        enum Fansites: Hashable {
+            case details(of: FansiteModel)
+            case browser(with: String)
+        }
     }
     
 }

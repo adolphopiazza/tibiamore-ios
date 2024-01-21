@@ -39,7 +39,7 @@ struct UtilsListView: View {
                     case .killStatistics:
                         KillStatisticsView()
                     case .fansites:
-                        Text("Fansites")
+                        FansitesView(navigationPath: $navigationPath)
                     case .guilds:
                         Text("Guilds")
                     }
@@ -49,6 +49,14 @@ struct UtilsListView: View {
                 switch route {
                 case .details(let race):
                     CreaturesDetailView(viewModel: CreaturesDetailViewModel(creatureRace: race))
+                }
+            }
+            .navigationDestination(for: NavigationRoutes.Utils.Fansites.self) { route in
+                switch route {
+                case .details(let model):
+                    FansitesDetailView(navigationPath: $navigationPath, model: model)
+                case .browser(let url):
+                    BrowserView(navigationPath: $navigationPath, url: url, fromNews: false)
                 }
             }
         }
