@@ -41,7 +41,7 @@ struct UtilsListView: View {
                     case .fansites:
                         FansitesView(navigationPath: $navigationPath)
                     case .guilds:
-                        Text("Guilds")
+                        GuildsView(navigationPath: $navigationPath)
                     }
                 }
             }
@@ -57,6 +57,12 @@ struct UtilsListView: View {
                     FansitesDetailView(navigationPath: $navigationPath, model: model)
                 case .browser(let url):
                     BrowserView(navigationPath: $navigationPath, url: url, fromNews: false)
+                }
+            }
+            .navigationDestination(for: NavigationRoutes.Utils.Guilds.self) { route in
+                switch route {
+                case .details(let name):
+                    GuildDetailsView(viewModel: GuildDetailsViewModel(name: name))
                 }
             }
         }

@@ -19,7 +19,7 @@ struct GuildsInfoModel: Decodable {
 
 struct ActiveGuildsModel: Decodable {
     let name: String
-    let logo: String?
+    let logoUrl: String?
     let description: String
 }
 
