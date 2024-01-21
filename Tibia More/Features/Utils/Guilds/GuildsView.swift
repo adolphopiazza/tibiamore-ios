@@ -41,6 +41,14 @@ struct GuildsView: View {
                                     .font(.footnote)
                             }
                         }
+                        
+                        Spacer()
+                        
+                        Image(systemName: .SFImages.chevronRight)
+                    }
+                    .contentShape(.rect)
+                    .onTapGesture {
+                        self.navigationPath.append(NavigationRoutes.Utils.Guilds.details(of: guild.name))
                     }
                 }
             }

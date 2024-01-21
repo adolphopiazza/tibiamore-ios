@@ -30,6 +30,8 @@
 		3808B2022B5DA1BC003E4AB8 /* GuildsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3808B2012B5DA1BC003E4AB8 /* GuildsModel.swift */; };
 		3808B2052B5DA4EC003E4AB8 /* GuildsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3808B2042B5DA4EC003E4AB8 /* GuildsView.swift */; };
 		3808B2072B5DA779003E4AB8 /* GuildsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3808B2062B5DA779003E4AB8 /* GuildsViewModel.swift */; };
+		3808B20A2B5DB596003E4AB8 /* GuildDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3808B2092B5DB596003E4AB8 /* GuildDetailsView.swift */; };
+		3808B20C2B5DB5A5003E4AB8 /* GuildDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3808B20B2B5DB5A5003E4AB8 /* GuildDetailsViewModel.swift */; };
 		3823D5EB2B5227B0000677CB /* WorldsDetailsViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3823D5EA2B5227B0000677CB /* WorldsDetailsViewRow.swift */; };
 		382A29C22B1EA97500961FE2 /* Tibia_MoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A29C12B1EA97500961FE2 /* Tibia_MoreApp.swift */; };
 		382A29C42B1EA97500961FE2 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A29C32B1EA97500961FE2 /* TabBarView.swift */; };
@@ -129,6 +131,8 @@
 		3808B2012B5DA1BC003E4AB8 /* GuildsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuildsModel.swift; sourceTree = "<group>"; };
 		3808B2042B5DA4EC003E4AB8 /* GuildsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuildsView.swift; sourceTree = "<group>"; };
 		3808B2062B5DA779003E4AB8 /* GuildsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuildsViewModel.swift; sourceTree = "<group>"; };
+		3808B2092B5DB596003E4AB8 /* GuildDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuildDetailsView.swift; sourceTree = "<group>"; };
+		3808B20B2B5DB5A5003E4AB8 /* GuildDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuildDetailsViewModel.swift; sourceTree = "<group>"; };
 		3823D5EA2B5227B0000677CB /* WorldsDetailsViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldsDetailsViewRow.swift; sourceTree = "<group>"; };
 		382A29BE2B1EA97500961FE2 /* Tibia More.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tibia More.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		382A29C12B1EA97500961FE2 /* Tibia_MoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tibia_MoreApp.swift; sourceTree = "<group>"; };
@@ -289,10 +293,20 @@
 		3808B2032B5DA4E1003E4AB8 /* Guilds */ = {
 			isa = PBXGroup;
 			children = (
+				3808B2082B5DB58B003E4AB8 /* Details */,
 				3808B2042B5DA4EC003E4AB8 /* GuildsView.swift */,
 				3808B2062B5DA779003E4AB8 /* GuildsViewModel.swift */,
 			);
 			path = Guilds;
+			sourceTree = "<group>";
+		};
+		3808B2082B5DB58B003E4AB8 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				3808B2092B5DB596003E4AB8 /* GuildDetailsView.swift */,
+				3808B20B2B5DB5A5003E4AB8 /* GuildDetailsViewModel.swift */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 		382A29B52B1EA97500961FE2 = {
@@ -802,11 +816,13 @@
 				38A28AA72B2B7AED00C707F7 /* SafariView.swift in Sources */,
 				38AC7CEA2B24BD7000B6DF29 /* NewsListRowView.swift in Sources */,
 				38084D492B5386B6003FCD1B /* UtilsListRowView.swift in Sources */,
+				3808B20C2B5DB5A5003E4AB8 /* GuildDetailsViewModel.swift in Sources */,
 				3808B2052B5DA4EC003E4AB8 /* GuildsView.swift in Sources */,
 				3808B1FD2B5C9254003E4AB8 /* FansiteRowView.swift in Sources */,
 				3872B02B2B5608D700725178 /* CreaturesRowView.swift in Sources */,
 				387E5A062B5B4ABC009CA577 /* BoostedBossView.swift in Sources */,
 				38C09ADF2B48A86B006B6B34 /* CharacterSearchDetailsViewModel.swift in Sources */,
+				3808B20A2B5DB596003E4AB8 /* GuildDetailsView.swift in Sources */,
 				38A3EDFD2B2F3DE1003C7BDA /* CharacterSearchDetailsView.swift in Sources */,
 				382A29FC2B1EAF1100961FE2 /* TabBarItem.swift in Sources */,
 				3808B2072B5DA779003E4AB8 /* GuildsViewModel.swift in Sources */,

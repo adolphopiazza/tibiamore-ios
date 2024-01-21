@@ -59,6 +59,12 @@ struct UtilsListView: View {
                     BrowserView(navigationPath: $navigationPath, url: url, fromNews: false)
                 }
             }
+            .navigationDestination(for: NavigationRoutes.Utils.Guilds.self) { route in
+                switch route {
+                case .details(let name):
+                    GuildDetailsView(viewModel: GuildDetailsViewModel(name: name))
+                }
+            }
         }
     }
 }

@@ -76,7 +76,7 @@ final class GuildsViewModel {
             self.guilds = result.active
             self.hasError = false
         } catch {
-            print("Some error on GuildsViewModel, fetchWorlds: \(error)")
+            print("Some error on GuildsViewModel, fetchGuilds: \(error)")
             self.hasError = true
         }
     }

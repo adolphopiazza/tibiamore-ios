@@ -36,6 +36,10 @@ enum NavigationRoutes {
             case details(of: FansiteModel)
             case browser(with: String)
         }
+        
+        enum Guilds: Hashable {
+            case details(of: String)
+        }
     }
     
 }
