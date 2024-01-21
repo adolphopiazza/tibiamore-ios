@@ -41,7 +41,7 @@ struct UtilsListView: View {
                     case .fansites:
                         FansitesView(navigationPath: $navigationPath)
                     case .guilds:
-                        Text("Guilds")
+                        GuildsView(navigationPath: $navigationPath)
                     }
                 }
             }
