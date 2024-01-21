@@ -16,7 +16,7 @@ struct FansitesInfoModel: Decodable {
     let supported: [FansiteModel]
 }
 
-struct FansiteModel: Decodable {
+struct FansiteModel: Decodable, Hashable, Equatable {
     let contact: String
     let contentType: FansiteContentModel
     let fansiteItem: Bool
@@ -29,14 +29,14 @@ struct FansiteModel: Decodable {
     let specials: [String]
 }
 
-struct FansiteContentModel: Decodable {
+struct FansiteContentModel: Decodable, Hashable, Equatable {
     let statistics: Bool
     let texts: Bool
     let tools: Bool
     let wiki: Bool
 }
 
-struct FansiteSocialModel: Decodable {
+struct FansiteSocialModel: Decodable, Hashable, Equatable {
     let discord: Bool
     let facebook: Bool
     let instagram: Bool
