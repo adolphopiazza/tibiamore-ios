@@ -21,9 +21,18 @@ struct UtilsListView: View {
                         navigationPath.append(NavigationRoutes.Utils.go(to: item))
                     }
             }
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("About", systemImage: .SFImages.infoCircle) {
+                        navigationPath.append(NavigationRoutes.Utils.about)
+                    }
+                }
+            }
             .navigationTitle(viewModel.viewTitle)
             .navigationDestination(for: NavigationRoutes.Utils.self) { route in
                 switch route {
+                case .about:
+                    AboutView(navigationPath: $navigationPath)
                 case .go(let destination):
                     switch destination {
                     case .rashid:
@@ -63,6 +72,12 @@ struct UtilsListView: View {
                 switch route {
                 case .details(let name):
                     GuildDetailsView(viewModel: GuildDetailsViewModel(name: name))
+                }
+            }
+            .navigationDestination(for: NavigationRoutes.Utils.About.self) { route in
+                switch route {
+                case .browser(let url):
+                    BrowserView(navigationPath: $navigationPath, url: url)
                 }
             }
         }

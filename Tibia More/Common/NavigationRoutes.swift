@@ -27,6 +27,7 @@ enum NavigationRoutes {
     
     enum Utils: Hashable {
         case go(to: UtilsListViewModel.Utils)
+        case about
         
         enum Creatures: Hashable {
             case details(of: String)
@@ -39,6 +40,10 @@ enum NavigationRoutes {
         
         enum Guilds: Hashable {
             case details(of: String)
+        }
+        
+        enum About: Hashable {
+            case browser(with: String)
         }
     }
     
