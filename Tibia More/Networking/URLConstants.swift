@@ -24,6 +24,7 @@ extension String {
         struct News {
             static let latest = "news/latest"
             static let details = "news/id/"
+            static let ticker = "news/newsticker"
         }
         
         struct Characters {

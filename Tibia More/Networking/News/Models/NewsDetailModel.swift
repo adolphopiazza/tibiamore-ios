@@ -17,7 +17,7 @@ struct NewsDetailInformationModel: Decodable {
     let contentHtml: String
     let date: String
     let id: Int
-    let title: String
+    let title: String?
     let type: String?
     let url: String
     

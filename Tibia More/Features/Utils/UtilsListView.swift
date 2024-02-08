@@ -56,7 +56,7 @@ struct UtilsListView: View {
                 case .details(let model):
                     FansitesDetailView(navigationPath: $navigationPath, model: model)
                 case .browser(let url):
-                    BrowserView(navigationPath: $navigationPath, url: url, fromNews: false)
+                    BrowserView(navigationPath: $navigationPath, url: url)
                 }
             }
             .navigationDestination(for: NavigationRoutes.Utils.Guilds.self) { route in

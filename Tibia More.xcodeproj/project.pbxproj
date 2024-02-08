@@ -32,6 +32,7 @@
 		3808B2072B5DA779003E4AB8 /* GuildsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3808B2062B5DA779003E4AB8 /* GuildsViewModel.swift */; };
 		3808B20A2B5DB596003E4AB8 /* GuildDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3808B2092B5DB596003E4AB8 /* GuildDetailsView.swift */; };
 		3808B20C2B5DB5A5003E4AB8 /* GuildDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3808B20B2B5DB5A5003E4AB8 /* GuildDetailsViewModel.swift */; };
+		381A66582B756AA600933467 /* NewsTickerListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381A66572B756AA600933467 /* NewsTickerListRowView.swift */; };
 		3823D5EB2B5227B0000677CB /* WorldsDetailsViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3823D5EA2B5227B0000677CB /* WorldsDetailsViewRow.swift */; };
 		382A29C22B1EA97500961FE2 /* Tibia_MoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A29C12B1EA97500961FE2 /* Tibia_MoreApp.swift */; };
 		382A29C42B1EA97500961FE2 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A29C32B1EA97500961FE2 /* TabBarView.swift */; };
@@ -75,7 +76,7 @@
 		38AC7CE72B24B22200B6DF29 /* NewsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AC7CE62B24B22200B6DF29 /* NewsListViewModel.swift */; };
 		38AC7CEA2B24BD7000B6DF29 /* NewsListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AC7CE92B24BD7000B6DF29 /* NewsListRowView.swift */; };
 		38AC7CEC2B24BD7900B6DF29 /* NewsListRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AC7CEB2B24BD7900B6DF29 /* NewsListRowViewModel.swift */; };
-		38AC7CEF2B253FE400B6DF29 /* NewsListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AC7CEE2B253FE400B6DF29 /* NewsListDetailView.swift */; };
+		38AC7CEF2B253FE400B6DF29 /* NewsListTickerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AC7CEE2B253FE400B6DF29 /* NewsListTickerDetailView.swift */; };
 		38AC7CF12B253FEE00B6DF29 /* NewsListDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AC7CF02B253FEE00B6DF29 /* NewsListDetailViewModel.swift */; };
 		38AC7CF42B25411800B6DF29 /* NewsDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AC7CF32B25411800B6DF29 /* NewsDetailModel.swift */; };
 		38AC7CF72B254B2A00B6DF29 /* NavigationRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AC7CF62B254B2A00B6DF29 /* NavigationRoutes.swift */; };
@@ -133,6 +134,7 @@
 		3808B2062B5DA779003E4AB8 /* GuildsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuildsViewModel.swift; sourceTree = "<group>"; };
 		3808B2092B5DB596003E4AB8 /* GuildDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuildDetailsView.swift; sourceTree = "<group>"; };
 		3808B20B2B5DB5A5003E4AB8 /* GuildDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuildDetailsViewModel.swift; sourceTree = "<group>"; };
+		381A66572B756AA600933467 /* NewsTickerListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTickerListRowView.swift; sourceTree = "<group>"; };
 		3823D5EA2B5227B0000677CB /* WorldsDetailsViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldsDetailsViewRow.swift; sourceTree = "<group>"; };
 		382A29BE2B1EA97500961FE2 /* Tibia More.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tibia More.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		382A29C12B1EA97500961FE2 /* Tibia_MoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tibia_MoreApp.swift; sourceTree = "<group>"; };
@@ -179,7 +181,7 @@
 		38AC7CE62B24B22200B6DF29 /* NewsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewModel.swift; sourceTree = "<group>"; };
 		38AC7CE92B24BD7000B6DF29 /* NewsListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListRowView.swift; sourceTree = "<group>"; };
 		38AC7CEB2B24BD7900B6DF29 /* NewsListRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListRowViewModel.swift; sourceTree = "<group>"; };
-		38AC7CEE2B253FE400B6DF29 /* NewsListDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListDetailView.swift; sourceTree = "<group>"; };
+		38AC7CEE2B253FE400B6DF29 /* NewsListTickerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListTickerDetailView.swift; sourceTree = "<group>"; };
 		38AC7CF02B253FEE00B6DF29 /* NewsListDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListDetailViewModel.swift; sourceTree = "<group>"; };
 		38AC7CF32B25411800B6DF29 /* NewsDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailModel.swift; sourceTree = "<group>"; };
 		38AC7CF62B254B2A00B6DF29 /* NavigationRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRoutes.swift; sourceTree = "<group>"; };
@@ -309,6 +311,15 @@
 			path = Details;
 			sourceTree = "<group>";
 		};
+		381A66562B7522EA00933467 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				38AC7CEE2B253FE400B6DF29 /* NewsListTickerDetailView.swift */,
+				38AC7CF02B253FEE00B6DF29 /* NewsListDetailViewModel.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
 		382A29B52B1EA97500961FE2 = {
 			isa = PBXGroup;
 			children = (
@@ -394,7 +405,7 @@
 			isa = PBXGroup;
 			children = (
 				38A28AA82B2B7CB700C707F7 /* Browser */,
-				38AC7CED2B253FD300B6DF29 /* Details */,
+				38AC7CED2B253FD300B6DF29 /* Ticker */,
 				38AC7CE82B24BD5300B6DF29 /* Row */,
 				382A29F02B1EACFB00961FE2 /* NewsListView.swift */,
 				38AC7CE62B24B22200B6DF29 /* NewsListViewModel.swift */,
@@ -549,13 +560,13 @@
 			path = Row;
 			sourceTree = "<group>";
 		};
-		38AC7CED2B253FD300B6DF29 /* Details */ = {
+		38AC7CED2B253FD300B6DF29 /* Ticker */ = {
 			isa = PBXGroup;
 			children = (
-				38AC7CEE2B253FE400B6DF29 /* NewsListDetailView.swift */,
-				38AC7CF02B253FEE00B6DF29 /* NewsListDetailViewModel.swift */,
+				381A66562B7522EA00933467 /* Details */,
+				381A66572B756AA600933467 /* NewsTickerListRowView.swift */,
 			);
-			path = Details;
+			path = Ticker;
 			sourceTree = "<group>";
 		};
 		38AC7CF22B25410500B6DF29 /* Models */ = {
@@ -825,6 +836,7 @@
 				3808B20A2B5DB596003E4AB8 /* GuildDetailsView.swift in Sources */,
 				38A3EDFD2B2F3DE1003C7BDA /* CharacterSearchDetailsView.swift in Sources */,
 				382A29FC2B1EAF1100961FE2 /* TabBarItem.swift in Sources */,
+				381A66582B756AA600933467 /* NewsTickerListRowView.swift in Sources */,
 				3808B2072B5DA779003E4AB8 /* GuildsViewModel.swift in Sources */,
 				3808B1F42B5C845C003E4AB8 /* KillStatisticsTotalsView.swift in Sources */,
 				3800FC702B34DC8B00685C5E /* CharacterSearchDetailsViewRow.swift in Sources */,
@@ -836,7 +848,7 @@
 				382A29C22B1EA97500961FE2 /* Tibia_MoreApp.swift in Sources */,
 				3800FC722B35D90700685C5E /* CharacterSearchDetailsAchievementView.swift in Sources */,
 				38AC7CF12B253FEE00B6DF29 /* NewsListDetailViewModel.swift in Sources */,
-				38AC7CEF2B253FE400B6DF29 /* NewsListDetailView.swift in Sources */,
+				38AC7CEF2B253FE400B6DF29 /* NewsListTickerDetailView.swift in Sources */,
 				387E5A012B5B3D5A009CA577 /* BoostedCreatureViewModel.swift in Sources */,
 				38C09AE92B48EF30006B6B34 /* CharactersListRowView.swift in Sources */,
 			);
