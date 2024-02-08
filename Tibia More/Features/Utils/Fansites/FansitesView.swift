@@ -16,7 +16,7 @@ struct FansitesView: View {
         Form {
             Section("Promoted") {
                 List(viewModel.fansites?.promoted ?? [], id: \.name) { promotedFansite in
-                    FansiteRowView(model: promotedFansite)
+                    FansiteRowView(model: promotedFansite, fansiteType: .promoted)
                         .contentShape(.rect)
                         .onTapGesture {
                             self.navigationPath.append(NavigationRoutes.Utils.Fansites.details(of: promotedFansite))
@@ -26,7 +26,7 @@ struct FansitesView: View {
             
             Section("Supported") {
                 List(viewModel.fansites?.supported ?? [], id: \.name) { supportedFansite in
-                    FansiteRowView(model: supportedFansite)
+                    FansiteRowView(model: supportedFansite, fansiteType: .supported)
                         .contentShape(.rect)
                         .onTapGesture {
                             self.navigationPath.append(NavigationRoutes.Utils.Fansites.details(of: supportedFansite))
