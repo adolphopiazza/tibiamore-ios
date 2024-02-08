@@ -36,6 +36,8 @@ final class NewsListViewModel {
             self.hasError = false
         } catch {
             print("Error when loading fetchNews: \(error)")
+            self.newsTicker.removeAll()
+            self.news.removeAll()
             self.hasError = true
         }
     }
@@ -48,7 +50,6 @@ final class NewsListViewModel {
             self.newsTicker = Array(news.prefix(5))
         } catch {
             print("View model error: \(error)")
-            self.newsTicker.removeAll()
             throw error
         }
     }
@@ -61,7 +62,6 @@ final class NewsListViewModel {
             self.news = news
         } catch {
             print("View model error: \(error)")
-            self.news.removeAll()
             throw error
         }
     }
