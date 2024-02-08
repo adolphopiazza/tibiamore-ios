@@ -9,15 +9,29 @@ import SwiftUI
 
 struct FansiteRowView: View {
     
+    enum FansiteType {
+        case promoted
+        case supported
+    }
+    
     let model: FansiteModel
+    let fansiteType: FansiteType
     
     var body: some View {
         HStack {
             VStack(alignment: .leading, spacing: 16) {
-                AsyncImage(url: URL(string: model.logoUrl)) { image in
-                    image
-                } placeholder: {
-                    ProgressView()
+                AsyncImage(url: URL(string: model.logoUrl)) { phase in
+                    if let image = phase.image {
+                        image
+                    } else if phase.error != nil {
+                        if fansiteType == .promoted {
+                            Image(.promotedfansites)
+                        } else {
+                            Image(.supportedfansite)
+                        }
+                    } else {
+                        ProgressView()
+                    }
                 }
                 
                 Text(model.name)
@@ -51,5 +65,6 @@ struct FansiteRowView: View {
                                                                        twitch: false,
                                                                        twitter: false,
                                                                        youtube: false),
-                                       specials: []))
+                                       specials: []),
+                   fansiteType: .promoted)
 }

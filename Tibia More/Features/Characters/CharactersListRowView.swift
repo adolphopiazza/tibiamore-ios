@@ -29,7 +29,7 @@ struct CharactersListRowView: View {
                     .padding(4)
                     .background {
                         RoundedRectangle(cornerRadius: 4)
-                            .foregroundStyle(model.accountStatus ?? "" == "Free Account" ? .green : .orange)
+                            .foregroundStyle(model.accountStatus ?? "" == "Free Account" ? .yellow : .orange)
                     }
             }
             .fontWeight(.light)
@@ -39,14 +39,18 @@ struct CharactersListRowView: View {
             CharacterSearchDetailsViewRow(title: "Level", value: String(model.level ?? 0))
             CharacterSearchDetailsViewRow(title: "Vocation", value: model.vocation ?? "")
             CharacterSearchDetailsViewRow(title: "Sex", value: model.sex ?? "")
-            CharacterSearchDetailsViewRow(title: "Last seen", value: model.lastLogin?.formatDate(with: .yyyyMMddTHHmmssZ) ?? "")
+            
+            if let lastLogin = model.lastLogin {
+                CharacterSearchDetailsViewRow(title: "Last seen", value: lastLogin.formatDate(with: .yyyyMMddTHHmmssZ))
+            }
+            
             CharacterSearchDetailsViewRow(title: "World", value: model.world ?? "")
         }
     }
 }
 
 #Preview {
-    CharactersListRowView(model: CharacterInfoModel(accountStatus: "Free account",
+    CharactersListRowView(model: CharacterInfoModel(accountStatus: "Free Account",
                                                     achievementPoints: nil,
                                                     comment: nil,
                                                     deletionDate: nil,
