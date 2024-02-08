@@ -20,36 +20,39 @@ struct NewsListView: View {
     
     var body: some View {
         NavigationStack(path: $navigationPath) {
-            List(viewModel.news, id: \.id) { news in
-                NewsListRowView(viewModel: .init(news))
-                    .contentShape(Rectangle())
-                    .onTapGesture {
-                        navigationPath.append(NavigationRoutes.News.details(of: news))
-                    }
-            }
-            .navigationTitle(viewModel.viewTitle)
-            .alert("Important Information",
-                   isPresented: $viewModel.showInfoAlert,
-                   actions: {
-                Button("OK", action: {})
-            }, message: {
-                Text("\nSome news may not be displayed correctly due to some problems when trying to extract the news from Tibia.com\n\nBut you can use the button on the top right corner to read the same news on the Tibia website")
-            })
-            .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button("Info", systemImage: .SFImages.infoCircle) {
-                        viewModel.showInfoAlert.toggle()
+            Form {
+                Section("News Ticker") {
+                    List(viewModel.newsTicker, id: \.id) { news in
+                        NewsTickerListRowView(news: news)
+                            .contentShape(Rectangle())
+                            .onTapGesture {
+                                navigationPath.append(NavigationRoutes.News.details(of: news))
+                            }
                     }
                 }
+                .opacity(viewModel.hasError ? 0 : 1)
+                
+                Section("Latest News") {
+                    List(viewModel.news, id: \.id) { news in
+                        NewsListRowView(viewModel: .init(news))
+                            .contentShape(Rectangle())
+                            .onTapGesture {
+                                navigationPath.append(NavigationRoutes.News.browser(with: news.url))
+                            }
+                    }
+                }
+                .opacity(viewModel.hasError ? 0 : 1)
             }
+            .navigationTitle(viewModel.viewTitle)
             .refreshable {
-                await viewModel.fetchLatestNews()
+                await viewModel.fetchNews()
             }
+            .opacity(viewModel.isLoading ? 0 : 1)
             .overlay {
-                if viewModel.news.isEmpty && !viewModel.isLoading {
-                    ContentUnavailableView("No news found",
-                                           systemImage: .SFImages.newspaper,
-                                           description: Text("Please pull-to-refresh to get the latest Tibia news"))
+                if viewModel.hasError && !viewModel.isLoading {
+                    ContentUnavailableView("Sorry, we got an error",
+                                           systemImage: .SFImages.networkSlash,
+                                           description: Text("Please pull-to-refresh to try again"))
                 }
                 
                 if viewModel.isLoading {
@@ -59,7 +62,7 @@ struct NewsListView: View {
             .navigationDestination(for: NavigationRoutes.News.self) { route in
                 switch route {
                 case .details(let news):
-                    NewsListDetailView(viewModel: .init(newsID: news.id), navigationPath: $navigationPath)
+                    NewsListTickerDetailView(viewModel: .init(newsID: news.id), navigationPath: $navigationPath)
                 case .browser(let url):
                     BrowserView(navigationPath: $navigationPath, url: url)
                 }

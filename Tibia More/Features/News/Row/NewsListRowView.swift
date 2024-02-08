@@ -26,13 +26,24 @@ struct NewsListRowView: View {
                 .font(.title)
                 .fontWeight(.light)
             
-            Text(viewModel.news.category)
-                .font(.footnote)
-                .padding(6)
-                .background {
-                    RoundedRectangle(cornerRadius: 4)
-                        .foregroundStyle(.green)
-                }
+            HStack {
+                Text(viewModel.news.category)
+                    .padding(6)
+                    .background {
+                        RoundedRectangle(cornerRadius: 4)
+                            .foregroundStyle(.green)
+                    }
+                
+                Spacer()
+                
+                Text("Read on Tibia.com")
+                    .padding(6)
+                    .background {
+                        RoundedRectangle(cornerRadius: 4)
+                            .foregroundStyle(.orange)
+                    }
+            }
+            .font(.footnote)
         }
         .fontDesign(.serif)
     }
@@ -40,7 +51,7 @@ struct NewsListRowView: View {
 }
 
 #Preview("List style") {
-    let model = NewsInformationModel(category: "develpment",
+    let model = NewsInformationModel(category: "development",
                                      date: "2023-12-04",
                                      id: 7639,
                                      news: "Winter Update 2023",

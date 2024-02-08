@@ -13,11 +13,11 @@ final class NewsService {
     
     init() {}
     
-    func fetch() async throws -> [NewsInformationModel] {
+    func fetch(endpoint: String = .Endpoints.News.latest) async throws -> [NewsInformationModel] {
         let service = NetworkService<NewsModel>()
         
         do {
-            let result = try await service.fetch(url: .Endpoints.News.latest)
+            let result = try await service.fetch(url: endpoint)
             guard let news = result.news else {
                 throw APIErrors.errorOnAPI
             }
@@ -34,7 +34,7 @@ final class NewsService {
         
         do {
             let result = try await service.fetch(url: .Endpoints.News.details + String(id))
-            guard let news = result.news, !news.title.isEmpty else {
+            guard let news = result.news else {
                 throw APIErrors.errorOnAPI
             }
             

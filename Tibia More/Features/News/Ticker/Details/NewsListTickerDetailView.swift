@@ -1,5 +1,5 @@
 //
-//  NewsListDetailView.swift
+//  NewsListTickerDetailView.swift
 //  Tibia More
 //
 //  Created by Adolpho Francisco Zimmermann Piazza on 09/12/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct NewsListDetailView: View {
+struct NewsListTickerDetailView: View {
     
     @State var viewModel: NewsListDetailViewModel
     @Binding var navigationPath: NavigationPath
@@ -33,14 +33,6 @@ struct NewsListDetailView: View {
                 await viewModel.fetch()
             }
         }
-        .toolbar {
-            ToolbarItem(placement: .topBarTrailing) {
-                Button("Read it on Tibia.com") {
-                    let route = NavigationRoutes.News.browser(with: viewModel.detailedNews.url)
-                    self.navigationPath.append(route)
-                }
-            }
-        }
         .overlay {
             if viewModel.isLoading {
                 ProgressView()
@@ -50,36 +42,47 @@ struct NewsListDetailView: View {
     
     private var bodyContent: some View {
         VStack(alignment: .leading) {
-            Text(viewModel.detailedNews.title)
-                .font(.largeTitle)
-            
-            Text(viewModel.detailedNews.date.formatDate(with: .yyyyMMdd))
-                .font(.footnote)
-                .padding(.top, 6)
+            HStack {
+                Text("ticker news")
+                    .font(.footnote)
+                    .padding(6)
+                    .background(
+                        RoundedRectangle(cornerRadius: 4)
+                            .foregroundStyle(.green)
+                    )
+                    .padding(.top, 6)
+                
+                Spacer()
+                
+                Text(viewModel.detailedNews.date.formatDate(with: .yyyyMMdd))
+                    .font(.footnote)
+                    .padding(.top, 6)
+            }
             
             Text(viewModel.detailedNews.content)
                 .font(.title3)
-                .padding(.top, 2)
+                .padding(.top, 4)
             
-            Text(viewModel.detailedNews.category)
-                .font(.footnote)
-                .padding(6)
-                .background(
-                    RoundedRectangle(cornerRadius: 4)
-                        .foregroundStyle(.green)
-                )
-                .padding(.top, 6)
+            Button(action: {
+                let route = NavigationRoutes.News.browser(with: viewModel.detailedNews.url)
+                self.navigationPath.append(route)
+            }, label: {
+                Text("Read on Tibia.com")
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 30)
+            })
+            .buttonStyle(.borderedProminent)
         }
     }
     
 }
 
 #Preview("Light Mode") {
-    NewsListDetailView(viewModel: .init(newsID: 7639), navigationPath: Binding.constant(NavigationPath()))
+    NewsListTickerDetailView(viewModel: .init(newsID: 7750), navigationPath: Binding.constant(NavigationPath()))
         .preferredColorScheme(.light)
 }
 
 #Preview("Dark Mode") {
-    NewsListDetailView(viewModel: .init(newsID: 7639), navigationPath: Binding.constant(NavigationPath()))
+    NewsListTickerDetailView(viewModel: .init(newsID: 7750), navigationPath: Binding.constant(NavigationPath()))
         .preferredColorScheme(.dark)
 }
