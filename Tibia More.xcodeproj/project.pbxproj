@@ -33,6 +33,8 @@
 		3808B20A2B5DB596003E4AB8 /* GuildDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3808B2092B5DB596003E4AB8 /* GuildDetailsView.swift */; };
 		3808B20C2B5DB5A5003E4AB8 /* GuildDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3808B20B2B5DB5A5003E4AB8 /* GuildDetailsViewModel.swift */; };
 		381A66582B756AA600933467 /* NewsTickerListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381A66572B756AA600933467 /* NewsTickerListRowView.swift */; };
+		381A665B2B75998000933467 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381A665A2B75998000933467 /* AboutView.swift */; };
+		381A665D2B75998800933467 /* AboutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381A665C2B75998800933467 /* AboutViewModel.swift */; };
 		3823D5EB2B5227B0000677CB /* WorldsDetailsViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3823D5EA2B5227B0000677CB /* WorldsDetailsViewRow.swift */; };
 		382A29C22B1EA97500961FE2 /* Tibia_MoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A29C12B1EA97500961FE2 /* Tibia_MoreApp.swift */; };
 		382A29C42B1EA97500961FE2 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A29C32B1EA97500961FE2 /* TabBarView.swift */; };
@@ -135,6 +137,8 @@
 		3808B2092B5DB596003E4AB8 /* GuildDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuildDetailsView.swift; sourceTree = "<group>"; };
 		3808B20B2B5DB5A5003E4AB8 /* GuildDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuildDetailsViewModel.swift; sourceTree = "<group>"; };
 		381A66572B756AA600933467 /* NewsTickerListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTickerListRowView.swift; sourceTree = "<group>"; };
+		381A665A2B75998000933467 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		381A665C2B75998800933467 /* AboutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewModel.swift; sourceTree = "<group>"; };
 		3823D5EA2B5227B0000677CB /* WorldsDetailsViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldsDetailsViewRow.swift; sourceTree = "<group>"; };
 		382A29BE2B1EA97500961FE2 /* Tibia More.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tibia More.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		382A29C12B1EA97500961FE2 /* Tibia_MoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tibia_MoreApp.swift; sourceTree = "<group>"; };
@@ -318,6 +322,15 @@
 				38AC7CF02B253FEE00B6DF29 /* NewsListDetailViewModel.swift */,
 			);
 			path = Details;
+			sourceTree = "<group>";
+		};
+		381A66592B75996E00933467 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				381A665A2B75998000933467 /* AboutView.swift */,
+				381A665C2B75998800933467 /* AboutViewModel.swift */,
+			);
+			path = About;
 			sourceTree = "<group>";
 		};
 		382A29B52B1EA97500961FE2 = {
@@ -633,6 +646,7 @@
 				3808B1EE2B5C6A46003E4AB8 /* KillStatistics */,
 				3808B1F72B5C8E64003E4AB8 /* Fansites */,
 				3808B2032B5DA4E1003E4AB8 /* Guilds */,
+				381A66592B75996E00933467 /* About */,
 				38D6708E2B52E8840043A093 /* UtilsListView.swift */,
 				38084D462B538164003FCD1B /* UtilsListViewModel.swift */,
 				38084D482B5386B6003FCD1B /* UtilsListRowView.swift */,
@@ -778,6 +792,7 @@
 				38A3EDF32B2F2A59003C7BDA /* CharactersListViewModel.swift in Sources */,
 				382A2A002B1EBB0900961FE2 /* NewsModel.swift in Sources */,
 				38B1E4772B499C5000A18AB5 /* WorldsService.swift in Sources */,
+				381A665B2B75998000933467 /* AboutView.swift in Sources */,
 				38084D4E2B538AFD003FCD1B /* RashidViewModel.swift in Sources */,
 				3808B1F92B5C8E6F003E4AB8 /* FansitesView.swift in Sources */,
 				3808B1F02B5C6A55003E4AB8 /* KillStatisticsView.swift in Sources */,
@@ -828,6 +843,7 @@
 				38AC7CEA2B24BD7000B6DF29 /* NewsListRowView.swift in Sources */,
 				38084D492B5386B6003FCD1B /* UtilsListRowView.swift in Sources */,
 				3808B20C2B5DB5A5003E4AB8 /* GuildDetailsViewModel.swift in Sources */,
+				381A665D2B75998800933467 /* AboutViewModel.swift in Sources */,
 				3808B2052B5DA4EC003E4AB8 /* GuildsView.swift in Sources */,
 				3808B1FD2B5C9254003E4AB8 /* FansiteRowView.swift in Sources */,
 				3872B02B2B5608D700725178 /* CreaturesRowView.swift in Sources */,
