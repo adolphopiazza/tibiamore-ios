@@ -16,7 +16,12 @@ struct GuildDetailsView: View {
             AsyncImage(url: URL(string: viewModel.guild?.logoUrl ?? "")) { image in
                 HStack {
                     Spacer()
+                    
                     image
+                        .resizable()
+                        .scaledToFit()
+                        .frame(maxHeight: 100)
+                    
                     Spacer()
                 }
             } placeholder: {
