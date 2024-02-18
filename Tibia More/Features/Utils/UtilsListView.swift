@@ -39,6 +39,12 @@ struct UtilsListView: View {
                         RashidView()
                     case .creatures:
                         CreaturesView(navigationPath: $navigationPath)
+                    case .fansites:
+                        FansitesView(navigationPath: $navigationPath)
+                    case .guilds:
+                        GuildsView(navigationPath: $navigationPath)
+                    case .spells:
+                        SpellsView(navigationPath: $navigationPath)
                     case .boostedBoss:
                         BoostedBossView()
                     case .boostedCreature:
@@ -47,10 +53,6 @@ struct UtilsListView: View {
                         HighscoresView()
                     case .killStatistics:
                         KillStatisticsView()
-                    case .fansites:
-                        FansitesView(navigationPath: $navigationPath)
-                    case .guilds:
-                        GuildsView(navigationPath: $navigationPath)
                     }
                 }
             }

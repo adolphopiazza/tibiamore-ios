@@ -75,6 +75,8 @@
 		38A3EDF82B2F2DE2003C7BDA /* CharactersSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A3EDF72B2F2DE2003C7BDA /* CharactersSearchViewModel.swift */; };
 		38A3EDFA2B2F32E0003C7BDA /* Custom+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A3EDF92B2F32E0003C7BDA /* Custom+Styles.swift */; };
 		38A3EDFD2B2F3DE1003C7BDA /* CharacterSearchDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A3EDFC2B2F3DE1003C7BDA /* CharacterSearchDetailsView.swift */; };
+		38A5582C2B82587900F31857 /* SpellsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A5582B2B82587900F31857 /* SpellsView.swift */; };
+		38A5582E2B82588B00F31857 /* SpellsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A5582D2B82588B00F31857 /* SpellsViewModel.swift */; };
 		38AC7CE72B24B22200B6DF29 /* NewsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AC7CE62B24B22200B6DF29 /* NewsListViewModel.swift */; };
 		38AC7CEA2B24BD7000B6DF29 /* NewsListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AC7CE92B24BD7000B6DF29 /* NewsListRowView.swift */; };
 		38AC7CEC2B24BD7900B6DF29 /* NewsListRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AC7CEB2B24BD7900B6DF29 /* NewsListRowViewModel.swift */; };
@@ -182,6 +184,8 @@
 		38A3EDF72B2F2DE2003C7BDA /* CharactersSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersSearchViewModel.swift; sourceTree = "<group>"; };
 		38A3EDF92B2F32E0003C7BDA /* Custom+Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Custom+Styles.swift"; sourceTree = "<group>"; };
 		38A3EDFC2B2F3DE1003C7BDA /* CharacterSearchDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSearchDetailsView.swift; sourceTree = "<group>"; };
+		38A5582B2B82587900F31857 /* SpellsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsView.swift; sourceTree = "<group>"; };
+		38A5582D2B82588B00F31857 /* SpellsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsViewModel.swift; sourceTree = "<group>"; };
 		38AC7CE62B24B22200B6DF29 /* NewsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewModel.swift; sourceTree = "<group>"; };
 		38AC7CE92B24BD7000B6DF29 /* NewsListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListRowView.swift; sourceTree = "<group>"; };
 		38AC7CEB2B24BD7900B6DF29 /* NewsListRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListRowViewModel.swift; sourceTree = "<group>"; };
@@ -564,6 +568,15 @@
 			path = Details;
 			sourceTree = "<group>";
 		};
+		38A5582A2B82586800F31857 /* Spells */ = {
+			isa = PBXGroup;
+			children = (
+				38A5582B2B82587900F31857 /* SpellsView.swift */,
+				38A5582D2B82588B00F31857 /* SpellsViewModel.swift */,
+			);
+			path = Spells;
+			sourceTree = "<group>";
+		};
 		38AC7CE82B24BD5300B6DF29 /* Row */ = {
 			isa = PBXGroup;
 			children = (
@@ -646,6 +659,7 @@
 				3808B1EE2B5C6A46003E4AB8 /* KillStatistics */,
 				3808B1F72B5C8E64003E4AB8 /* Fansites */,
 				3808B2032B5DA4E1003E4AB8 /* Guilds */,
+				38A5582A2B82586800F31857 /* Spells */,
 				381A66592B75996E00933467 /* About */,
 				38D6708E2B52E8840043A093 /* UtilsListView.swift */,
 				38084D462B538164003FCD1B /* UtilsListViewModel.swift */,
@@ -845,6 +859,7 @@
 				3808B20C2B5DB5A5003E4AB8 /* GuildDetailsViewModel.swift in Sources */,
 				381A665D2B75998800933467 /* AboutViewModel.swift in Sources */,
 				3808B2052B5DA4EC003E4AB8 /* GuildsView.swift in Sources */,
+				38A5582C2B82587900F31857 /* SpellsView.swift in Sources */,
 				3808B1FD2B5C9254003E4AB8 /* FansiteRowView.swift in Sources */,
 				3872B02B2B5608D700725178 /* CreaturesRowView.swift in Sources */,
 				387E5A062B5B4ABC009CA577 /* BoostedBossView.swift in Sources */,
@@ -860,6 +875,7 @@
 				387E5A032B5B42F4009CA577 /* CreaturesDetailAboutView.swift in Sources */,
 				38AC7CEC2B24BD7900B6DF29 /* NewsListRowViewModel.swift in Sources */,
 				3808B1ED2B5C688A003E4AB8 /* KillStatisticsModel.swift in Sources */,
+				38A5582E2B82588B00F31857 /* SpellsViewModel.swift in Sources */,
 				3808B1F22B5C6B94003E4AB8 /* KillStatisticsViewModel.swift in Sources */,
 				382A29C22B1EA97500961FE2 /* Tibia_MoreApp.swift in Sources */,
 				3800FC722B35D90700685C5E /* CharacterSearchDetailsAchievementView.swift in Sources */,
