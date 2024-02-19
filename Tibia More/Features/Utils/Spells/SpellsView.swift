@@ -17,6 +17,9 @@ struct SpellsView: View {
             Text("Hello, Spells!")
         }
         .navigationTitle(viewModel.viewTitle)
+        .task {
+            await viewModel.fetchSpells()
+        }
     }
     
 }

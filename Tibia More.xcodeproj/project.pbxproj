@@ -66,6 +66,8 @@
 		387E5A0C2B5C0CE5009CA577 /* HighscoresModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387E5A0B2B5C0CE5009CA577 /* HighscoresModel.swift */; };
 		387E5A0F2B5C133D009CA577 /* HighscoresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387E5A0E2B5C133D009CA577 /* HighscoresView.swift */; };
 		387E5A112B5C4BBF009CA577 /* HighscoresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387E5A102B5C4BBF009CA577 /* HighscoresViewModel.swift */; };
+		3889C4E82B8406D8004F462B /* spellList.json in Resources */ = {isa = PBXBuildFile; fileRef = 3889C4E72B8406D8004F462B /* spellList.json */; };
+		3889C4EA2B840733004F462B /* SpellsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3889C4E92B840733004F462B /* SpellsModel.swift */; };
 		38A28A822B27C2D800C707F7 /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A28A812B27C2D800C707F7 /* NetworkErrors.swift */; };
 		38A28AA52B2B75E300C707F7 /* Strings+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A28AA42B2B75E300C707F7 /* Strings+Ext.swift */; };
 		38A28AA72B2B7AED00C707F7 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A28AA62B2B7AED00C707F7 /* SafariView.swift */; };
@@ -175,6 +177,8 @@
 		387E5A0B2B5C0CE5009CA577 /* HighscoresModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighscoresModel.swift; sourceTree = "<group>"; };
 		387E5A0E2B5C133D009CA577 /* HighscoresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighscoresView.swift; sourceTree = "<group>"; };
 		387E5A102B5C4BBF009CA577 /* HighscoresViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighscoresViewModel.swift; sourceTree = "<group>"; };
+		3889C4E72B8406D8004F462B /* spellList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = spellList.json; sourceTree = "<group>"; };
+		3889C4E92B840733004F462B /* SpellsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsModel.swift; sourceTree = "<group>"; };
 		38A28A812B27C2D800C707F7 /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
 		38A28AA42B2B75E300C707F7 /* Strings+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+Ext.swift"; sourceTree = "<group>"; };
 		38A28AA62B2B7AED00C707F7 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
@@ -256,6 +260,7 @@
 				3808B1EC2B5C688A003E4AB8 /* KillStatisticsModel.swift */,
 				3808B1F52B5C8CF0003E4AB8 /* FansitesModel.swift */,
 				3808B2012B5DA1BC003E4AB8 /* GuildsModel.swift */,
+				3889C4E92B840733004F462B /* SpellsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -465,6 +470,7 @@
 		382A29FD2B1EB9B600961FE2 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				3889C4E62B8406CF004F462B /* JSON */,
 				38084D4F2B539101003FCD1B /* Utils */,
 				38B1E4752B49962900A18AB5 /* Worlds */,
 				38CC6C022B2DD0EB00E5BB67 /* Characters */,
@@ -530,6 +536,14 @@
 				387E5A102B5C4BBF009CA577 /* HighscoresViewModel.swift */,
 			);
 			path = Highscores;
+			sourceTree = "<group>";
+		};
+		3889C4E62B8406CF004F462B /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				3889C4E72B8406D8004F462B /* spellList.json */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 		38A28AA32B2B75CF00C707F7 /* Helpers */ = {
@@ -778,6 +792,7 @@
 			files = (
 				382A29C92B1EA97600961FE2 /* Preview Assets.xcassets in Resources */,
 				382A29C62B1EA97600961FE2 /* Assets.xcassets in Resources */,
+				3889C4E82B8406D8004F462B /* spellList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -872,6 +887,7 @@
 				3808B1F42B5C845C003E4AB8 /* KillStatisticsTotalsView.swift in Sources */,
 				3800FC702B34DC8B00685C5E /* CharacterSearchDetailsViewRow.swift in Sources */,
 				3808B2022B5DA1BC003E4AB8 /* GuildsModel.swift in Sources */,
+				3889C4EA2B840733004F462B /* SpellsModel.swift in Sources */,
 				387E5A032B5B42F4009CA577 /* CreaturesDetailAboutView.swift in Sources */,
 				38AC7CEC2B24BD7900B6DF29 /* NewsListRowViewModel.swift in Sources */,
 				3808B1ED2B5C688A003E4AB8 /* KillStatisticsModel.swift in Sources */,

@@ -128,4 +128,21 @@ final class UtilsService {
         }
     }
     
+    func fetchSpells() async throws -> [SpellsModel] {
+        guard let url = Bundle.main.url(forResource: "spellList", withExtension: "json") else {
+            print("It seems that spellList.json does not exist")
+            return []
+        }
+        
+        do {
+            let data = try Data(contentsOf: url)
+            let spellsData = try JSONDecoder().decode([SpellsModel].self, from: data)
+            
+            return spellsData
+        } catch {
+            print("Error reading JSON: \(error)")
+            throw error
+        }
+    }
+    
 }
