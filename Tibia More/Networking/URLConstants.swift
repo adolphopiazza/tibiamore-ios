@@ -19,6 +19,7 @@ extension String {
     #endif
     
     static let tibiaLabsURL = "https://api.tibialabs.com/v2/"
+    static let tibiaFandomURL = "https://tibia.fandom.com/api.php?"
     
     struct Endpoints {
         struct News {
@@ -46,6 +47,11 @@ extension String {
             static let fansites = "fansites"
             static let guilds = "guilds/"
             static let guild = "guild/"
+        }
+        
+        struct Wiki {
+            // I know I should be doing this by URL query parameters, but 🥱
+            static let search = "action=query&list=search&format=json&srsearch="
         }
     }
 }

@@ -27,7 +27,7 @@ final class NetworkService<T: Decodable> {
                 throw APIErrors.serverError(httpCode: httpCode.statusCode)
             }
             
-            if baseURL == .tibiaDataURL {
+            if baseURL != .tibiaLabsURL {
                 let decoder = JSONDecoder()
                 
                 decoder.keyDecodingStrategy = .convertFromSnakeCase
