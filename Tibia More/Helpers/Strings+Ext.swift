@@ -48,6 +48,7 @@ extension String {
         static let chevronRight = "chevron.right"
         static let networkSlash = "network.slash"
         static let arrowClockwise = "arrow.clockwise"
+        static let wand = "wand.and.rays"
     }
     
 }

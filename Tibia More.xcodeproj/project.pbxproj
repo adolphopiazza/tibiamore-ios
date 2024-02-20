@@ -66,6 +66,12 @@
 		387E5A0C2B5C0CE5009CA577 /* HighscoresModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387E5A0B2B5C0CE5009CA577 /* HighscoresModel.swift */; };
 		387E5A0F2B5C133D009CA577 /* HighscoresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387E5A0E2B5C133D009CA577 /* HighscoresView.swift */; };
 		387E5A112B5C4BBF009CA577 /* HighscoresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387E5A102B5C4BBF009CA577 /* HighscoresViewModel.swift */; };
+		3889C4E82B8406D8004F462B /* spellList.json in Resources */ = {isa = PBXBuildFile; fileRef = 3889C4E72B8406D8004F462B /* spellList.json */; };
+		3889C4EA2B840733004F462B /* SpellsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3889C4E92B840733004F462B /* SpellsModel.swift */; };
+		3889C4EC2B84233D004F462B /* SpellsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3889C4EB2B84233D004F462B /* SpellsRowView.swift */; };
+		3889C4EE2B843224004F462B /* rashidItems.json in Resources */ = {isa = PBXBuildFile; fileRef = 3889C4ED2B843224004F462B /* rashidItems.json */; };
+		3889C4F02B843266004F462B /* RashidModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3889C4EF2B843266004F462B /* RashidModel.swift */; };
+		3889C4F32B843613004F462B /* RashidItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3889C4F22B843613004F462B /* RashidItemsView.swift */; };
 		38A28A822B27C2D800C707F7 /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A28A812B27C2D800C707F7 /* NetworkErrors.swift */; };
 		38A28AA52B2B75E300C707F7 /* Strings+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A28AA42B2B75E300C707F7 /* Strings+Ext.swift */; };
 		38A28AA72B2B7AED00C707F7 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A28AA62B2B7AED00C707F7 /* SafariView.swift */; };
@@ -75,6 +81,8 @@
 		38A3EDF82B2F2DE2003C7BDA /* CharactersSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A3EDF72B2F2DE2003C7BDA /* CharactersSearchViewModel.swift */; };
 		38A3EDFA2B2F32E0003C7BDA /* Custom+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A3EDF92B2F32E0003C7BDA /* Custom+Styles.swift */; };
 		38A3EDFD2B2F3DE1003C7BDA /* CharacterSearchDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A3EDFC2B2F3DE1003C7BDA /* CharacterSearchDetailsView.swift */; };
+		38A5582C2B82587900F31857 /* SpellsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A5582B2B82587900F31857 /* SpellsView.swift */; };
+		38A5582E2B82588B00F31857 /* SpellsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A5582D2B82588B00F31857 /* SpellsViewModel.swift */; };
 		38AC7CE72B24B22200B6DF29 /* NewsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AC7CE62B24B22200B6DF29 /* NewsListViewModel.swift */; };
 		38AC7CEA2B24BD7000B6DF29 /* NewsListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AC7CE92B24BD7000B6DF29 /* NewsListRowView.swift */; };
 		38AC7CEC2B24BD7900B6DF29 /* NewsListRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AC7CEB2B24BD7900B6DF29 /* NewsListRowViewModel.swift */; };
@@ -173,6 +181,12 @@
 		387E5A0B2B5C0CE5009CA577 /* HighscoresModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighscoresModel.swift; sourceTree = "<group>"; };
 		387E5A0E2B5C133D009CA577 /* HighscoresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighscoresView.swift; sourceTree = "<group>"; };
 		387E5A102B5C4BBF009CA577 /* HighscoresViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighscoresViewModel.swift; sourceTree = "<group>"; };
+		3889C4E72B8406D8004F462B /* spellList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = spellList.json; sourceTree = "<group>"; };
+		3889C4E92B840733004F462B /* SpellsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsModel.swift; sourceTree = "<group>"; };
+		3889C4EB2B84233D004F462B /* SpellsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsRowView.swift; sourceTree = "<group>"; };
+		3889C4ED2B843224004F462B /* rashidItems.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rashidItems.json; sourceTree = "<group>"; };
+		3889C4EF2B843266004F462B /* RashidModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RashidModel.swift; sourceTree = "<group>"; };
+		3889C4F22B843613004F462B /* RashidItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RashidItemsView.swift; sourceTree = "<group>"; };
 		38A28A812B27C2D800C707F7 /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
 		38A28AA42B2B75E300C707F7 /* Strings+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+Ext.swift"; sourceTree = "<group>"; };
 		38A28AA62B2B7AED00C707F7 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
@@ -182,6 +196,8 @@
 		38A3EDF72B2F2DE2003C7BDA /* CharactersSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersSearchViewModel.swift; sourceTree = "<group>"; };
 		38A3EDF92B2F32E0003C7BDA /* Custom+Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Custom+Styles.swift"; sourceTree = "<group>"; };
 		38A3EDFC2B2F3DE1003C7BDA /* CharacterSearchDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSearchDetailsView.swift; sourceTree = "<group>"; };
+		38A5582B2B82587900F31857 /* SpellsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsView.swift; sourceTree = "<group>"; };
+		38A5582D2B82588B00F31857 /* SpellsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsViewModel.swift; sourceTree = "<group>"; };
 		38AC7CE62B24B22200B6DF29 /* NewsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewModel.swift; sourceTree = "<group>"; };
 		38AC7CE92B24BD7000B6DF29 /* NewsListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListRowView.swift; sourceTree = "<group>"; };
 		38AC7CEB2B24BD7900B6DF29 /* NewsListRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListRowViewModel.swift; sourceTree = "<group>"; };
@@ -228,6 +244,7 @@
 		38084D4A2B538AD7003FCD1B /* Rashid */ = {
 			isa = PBXGroup;
 			children = (
+				3889C4F12B84360A004F462B /* Items */,
 				38084D4B2B538AEA003FCD1B /* RashidView.swift */,
 				38084D4D2B538AFD003FCD1B /* RashidViewModel.swift */,
 			);
@@ -246,12 +263,14 @@
 		38084D522B543D77003FCD1B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3889C4EF2B843266004F462B /* RashidModel.swift */,
 				38084D532B543D83003FCD1B /* CreaturesModel.swift */,
 				387E5A092B5B4C35009CA577 /* BoostableBossesModel.swift */,
 				387E5A0B2B5C0CE5009CA577 /* HighscoresModel.swift */,
 				3808B1EC2B5C688A003E4AB8 /* KillStatisticsModel.swift */,
 				3808B1F52B5C8CF0003E4AB8 /* FansitesModel.swift */,
 				3808B2012B5DA1BC003E4AB8 /* GuildsModel.swift */,
+				3889C4E92B840733004F462B /* SpellsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -461,6 +480,7 @@
 		382A29FD2B1EB9B600961FE2 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				3889C4E62B8406CF004F462B /* JSON */,
 				38084D4F2B539101003FCD1B /* Utils */,
 				38B1E4752B49962900A18AB5 /* Worlds */,
 				38CC6C022B2DD0EB00E5BB67 /* Characters */,
@@ -528,6 +548,23 @@
 			path = Highscores;
 			sourceTree = "<group>";
 		};
+		3889C4E62B8406CF004F462B /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				3889C4E72B8406D8004F462B /* spellList.json */,
+				3889C4ED2B843224004F462B /* rashidItems.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		3889C4F12B84360A004F462B /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				3889C4F22B843613004F462B /* RashidItemsView.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
 		38A28AA32B2B75CF00C707F7 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -562,6 +599,16 @@
 				38C09ADE2B48A86B006B6B34 /* CharacterSearchDetailsViewModel.swift */,
 			);
 			path = Details;
+			sourceTree = "<group>";
+		};
+		38A5582A2B82586800F31857 /* Spells */ = {
+			isa = PBXGroup;
+			children = (
+				38A5582B2B82587900F31857 /* SpellsView.swift */,
+				38A5582D2B82588B00F31857 /* SpellsViewModel.swift */,
+				3889C4EB2B84233D004F462B /* SpellsRowView.swift */,
+			);
+			path = Spells;
 			sourceTree = "<group>";
 		};
 		38AC7CE82B24BD5300B6DF29 /* Row */ = {
@@ -646,6 +693,7 @@
 				3808B1EE2B5C6A46003E4AB8 /* KillStatistics */,
 				3808B1F72B5C8E64003E4AB8 /* Fansites */,
 				3808B2032B5DA4E1003E4AB8 /* Guilds */,
+				38A5582A2B82586800F31857 /* Spells */,
 				381A66592B75996E00933467 /* About */,
 				38D6708E2B52E8840043A093 /* UtilsListView.swift */,
 				38084D462B538164003FCD1B /* UtilsListViewModel.swift */,
@@ -763,7 +811,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				382A29C92B1EA97600961FE2 /* Preview Assets.xcassets in Resources */,
+				3889C4EE2B843224004F462B /* rashidItems.json in Resources */,
 				382A29C62B1EA97600961FE2 /* Assets.xcassets in Resources */,
+				3889C4E82B8406D8004F462B /* spellList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -809,6 +859,7 @@
 				3872B0302B56099F00725178 /* CreaturesDetailViewModel.swift in Sources */,
 				387E5A112B5C4BBF009CA577 /* HighscoresViewModel.swift in Sources */,
 				38B1E47A2B499C8900A18AB5 /* WorldsModel.swift in Sources */,
+				3889C4F32B843613004F462B /* RashidItemsView.swift in Sources */,
 				387E5A0C2B5C0CE5009CA577 /* HighscoresModel.swift in Sources */,
 				3808B1FB2B5C8F9A003E4AB8 /* FansitesViewModel.swift in Sources */,
 				38D6708F2B52E8840043A093 /* UtilsListView.swift in Sources */,
@@ -816,6 +867,7 @@
 				387E5A082B5B4AC9009CA577 /* BoostedBossViewModel.swift in Sources */,
 				38AC7CF72B254B2A00B6DF29 /* NavigationRoutes.swift in Sources */,
 				38084D472B538164003FCD1B /* UtilsListViewModel.swift in Sources */,
+				3889C4F02B843266004F462B /* RashidModel.swift in Sources */,
 				38F31AD62B39E3C800FF6BA8 /* DefaultStorage.swift in Sources */,
 				38A3EDFA2B2F32E0003C7BDA /* Custom+Styles.swift in Sources */,
 				382A29C42B1EA97500961FE2 /* TabBarView.swift in Sources */,
@@ -824,6 +876,7 @@
 				38A28A822B27C2D800C707F7 /* NetworkErrors.swift in Sources */,
 				3808B2002B5C9415003E4AB8 /* FansitesDetailView.swift in Sources */,
 				3838176D2B4AEAE2000E13D7 /* WorldsListViewRow.swift in Sources */,
+				3889C4EC2B84233D004F462B /* SpellsRowView.swift in Sources */,
 				382A29F32B1EAD1C00961FE2 /* CharactersListView.swift in Sources */,
 				385D6EAE2B4AF2D600839091 /* WorldsDetailsView.swift in Sources */,
 				38CC6C052B2DD0FB00E5BB67 /* CharactersModel.swift in Sources */,
@@ -845,6 +898,7 @@
 				3808B20C2B5DB5A5003E4AB8 /* GuildDetailsViewModel.swift in Sources */,
 				381A665D2B75998800933467 /* AboutViewModel.swift in Sources */,
 				3808B2052B5DA4EC003E4AB8 /* GuildsView.swift in Sources */,
+				38A5582C2B82587900F31857 /* SpellsView.swift in Sources */,
 				3808B1FD2B5C9254003E4AB8 /* FansiteRowView.swift in Sources */,
 				3872B02B2B5608D700725178 /* CreaturesRowView.swift in Sources */,
 				387E5A062B5B4ABC009CA577 /* BoostedBossView.swift in Sources */,
@@ -857,9 +911,11 @@
 				3808B1F42B5C845C003E4AB8 /* KillStatisticsTotalsView.swift in Sources */,
 				3800FC702B34DC8B00685C5E /* CharacterSearchDetailsViewRow.swift in Sources */,
 				3808B2022B5DA1BC003E4AB8 /* GuildsModel.swift in Sources */,
+				3889C4EA2B840733004F462B /* SpellsModel.swift in Sources */,
 				387E5A032B5B42F4009CA577 /* CreaturesDetailAboutView.swift in Sources */,
 				38AC7CEC2B24BD7900B6DF29 /* NewsListRowViewModel.swift in Sources */,
 				3808B1ED2B5C688A003E4AB8 /* KillStatisticsModel.swift in Sources */,
+				38A5582E2B82588B00F31857 /* SpellsViewModel.swift in Sources */,
 				3808B1F22B5C6B94003E4AB8 /* KillStatisticsViewModel.swift in Sources */,
 				382A29C22B1EA97500961FE2 /* Tibia_MoreApp.swift in Sources */,
 				3800FC722B35D90700685C5E /* CharacterSearchDetailsAchievementView.swift in Sources */,

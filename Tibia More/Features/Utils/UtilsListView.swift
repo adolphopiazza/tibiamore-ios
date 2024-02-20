@@ -36,9 +36,15 @@ struct UtilsListView: View {
                 case .go(let destination):
                     switch destination {
                     case .rashid:
-                        RashidView()
+                        RashidView(navigationPath: $navigationPath)
                     case .creatures:
                         CreaturesView(navigationPath: $navigationPath)
+                    case .fansites:
+                        FansitesView(navigationPath: $navigationPath)
+                    case .guilds:
+                        GuildsView(navigationPath: $navigationPath)
+                    case .spells:
+                        SpellsView()
                     case .boostedBoss:
                         BoostedBossView()
                     case .boostedCreature:
@@ -47,13 +53,15 @@ struct UtilsListView: View {
                         HighscoresView()
                     case .killStatistics:
                         KillStatisticsView()
-                    case .fansites:
-                        FansitesView(navigationPath: $navigationPath)
-                    case .guilds:
-                        GuildsView(navigationPath: $navigationPath)
                     }
                 }
             }
+            .navigationDestination(for: NavigationRoutes.Utils.Rashid.self, destination: { route in
+                switch route {
+                case .items(let items):
+                    RashidItemsView(rashidItems: items)
+                }
+            })
             .navigationDestination(for: NavigationRoutes.Utils.Creatures.self) { route in
                 switch route {
                 case .details(let race):

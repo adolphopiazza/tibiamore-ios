@@ -10,6 +10,7 @@ import SwiftUI
 struct RashidView: View {
     
     @State private var viewModel = RashidViewModel()
+    @Binding var navigationPath: NavigationPath
     
     var body: some View {
         Form {
@@ -28,6 +29,18 @@ struct RashidView: View {
                     Text(viewModel.rashidCity)
                         .font(.headline)
                 }
+                
+                Button(action: {
+                    navigationPath.append(NavigationRoutes.Utils.Rashid.items(with: viewModel.rashidItems))
+                }, label: {
+                    HStack {
+                        Spacer()
+                        
+                        Text("See Rashid items")
+                        
+                        Spacer()
+                    }
+                })
             }
             
             Section("Schedule") {
@@ -79,11 +92,12 @@ struct RashidView: View {
         } message: {
             Text("Rashid location respects the Tibia time. The day only changes on server saves.")
         }
-
     }
     
 }
 
 #Preview {
-    RashidView()
+    NavigationStack {
+        RashidView(navigationPath: Binding.constant(NavigationPath()))
+    }
 }

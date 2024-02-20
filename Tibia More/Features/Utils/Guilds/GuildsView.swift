@@ -24,12 +24,18 @@ struct GuildsView: View {
             Section("Active Guilds") {
                 List(viewModel.guilds, id: \.name) { guild in
                     HStack(spacing: 16) {
-                        AsyncImage(url: URL(string: guild.logoUrl ?? "")) { image in
-                            image
-                                .resizable()
-                                .frame(width: 50, height: 50)
-                        } placeholder: {
-                            ProgressView()
+                        AsyncImage(url: URL(string: guild.logoUrl ?? "")) { phase in
+                            if let image = phase.image {
+                                image
+                                    .resizable()
+                                    .frame(width: 50, height: 50)
+                            } else if phase.error != nil {
+                                Image(.guilddefault)
+                                    .resizable()
+                                    .frame(width: 50, height: 50)
+                            } else {
+                                ProgressView()
+                            }
                         }
 
                         VStack(alignment: .leading, spacing: 6) {

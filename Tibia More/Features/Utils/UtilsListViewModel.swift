@@ -13,12 +13,13 @@ final class UtilsListViewModel {
     enum Utils: CaseIterable {
         case rashid
         case creatures
+        case fansites
+        case guilds
+        case spells
         case boostedBoss
         case boostedCreature
         case highscores
         case killStatistics
-        case fansites
-        case guilds
         
         var title: String {
             switch self {
@@ -26,6 +27,12 @@ final class UtilsListViewModel {
                 return "Rashid"
             case .creatures:
                 return "Creatures"
+            case .fansites:
+                return "Fansites"
+            case .guilds:
+                return "Guilds"
+            case .spells:
+                return "Spells"
             case .boostedBoss:
                 return "Boosted Boss"
             case .boostedCreature:
@@ -34,10 +41,6 @@ final class UtilsListViewModel {
                 return "Highscores"
             case .killStatistics:
                 return "Kill Statistics"
-            case .fansites:
-                return "Fansites"
-            case .guilds:
-                return "Guilds"
             }
         }
         
@@ -47,6 +50,12 @@ final class UtilsListViewModel {
                 return "See where Rashid is today to make some money"
             case .creatures:
                 return "Check out all the creatures of the Tibian world"
+            case .fansites:
+                return "Discover some new Tibia Fansites"
+            case .guilds:
+                return "List of all the Tibian guilds"
+            case .spells:
+                return "Discover important spells for your character"
             case .boostedBoss:
                 return "Today's boosted boss!"
             case .boostedCreature:
@@ -55,10 +64,6 @@ final class UtilsListViewModel {
                 return "See who's on the top"
             case .killStatistics:
                 return "Kill statistics of every world"
-            case .fansites:
-                return "Discover some new Tibia Fansites"
-            case .guilds:
-                return "List of all the Tibian guilds"
             }
         }
     }

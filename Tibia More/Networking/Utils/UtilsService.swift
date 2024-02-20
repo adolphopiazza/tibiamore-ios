@@ -30,6 +30,23 @@ final class UtilsService {
         }
     }
     
+    func fetchRashidItems() async throws -> [RashidModel] {
+        guard let url = Bundle.main.url(forResource: "rashidItems", withExtension: "json") else {
+            print("It seems that spellList.json does not exist")
+            return []
+        }
+        
+        do {
+            let data = try Data(contentsOf: url)
+            let rashidItems = try JSONDecoder().decode([RashidModel].self, from: data)
+            
+            return rashidItems
+        } catch {
+            print("Error reading JSON: \(error)")
+            throw error
+        }
+    }
+    
     func fetchCreatures() async throws -> CreaturesInfoModel {
         let service = NetworkService<CreaturesModel>()
         
@@ -124,6 +141,23 @@ final class UtilsService {
             return result.guild
         } catch {
             print("Some error on Utils service, fetchGuilds: \(error)")
+            throw error
+        }
+    }
+    
+    func fetchSpells() async throws -> [SpellsModel] {
+        guard let url = Bundle.main.url(forResource: "spellList", withExtension: "json") else {
+            print("It seems that spellList.json does not exist")
+            return []
+        }
+        
+        do {
+            let data = try Data(contentsOf: url)
+            let spellsData = try JSONDecoder().decode([SpellsModel].self, from: data)
+            
+            return spellsData
+        } catch {
+            print("Error reading JSON: \(error)")
             throw error
         }
     }

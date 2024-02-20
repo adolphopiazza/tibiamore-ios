@@ -22,7 +22,7 @@ struct WorldsListView: View {
             return regularWorlds
         }
         
-        return regularWorlds.filter({ $0.name.contains(searchText) })
+        return regularWorlds.filter({ $0.name.lowercased().contains(searchText.lowercased()) })
     }
     
     var body: some View {
