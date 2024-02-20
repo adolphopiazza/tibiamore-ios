@@ -72,6 +72,7 @@
 		3889C4EE2B843224004F462B /* rashidItems.json in Resources */ = {isa = PBXBuildFile; fileRef = 3889C4ED2B843224004F462B /* rashidItems.json */; };
 		3889C4F02B843266004F462B /* RashidModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3889C4EF2B843266004F462B /* RashidModel.swift */; };
 		3889C4F32B843613004F462B /* RashidItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3889C4F22B843613004F462B /* RashidItemsView.swift */; };
+		3889C4F62B843B6D004F462B /* WikiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3889C4F52B843B6D004F462B /* WikiView.swift */; };
 		38A28A822B27C2D800C707F7 /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A28A812B27C2D800C707F7 /* NetworkErrors.swift */; };
 		38A28AA52B2B75E300C707F7 /* Strings+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A28AA42B2B75E300C707F7 /* Strings+Ext.swift */; };
 		38A28AA72B2B7AED00C707F7 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A28AA62B2B7AED00C707F7 /* SafariView.swift */; };
@@ -187,6 +188,7 @@
 		3889C4ED2B843224004F462B /* rashidItems.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rashidItems.json; sourceTree = "<group>"; };
 		3889C4EF2B843266004F462B /* RashidModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RashidModel.swift; sourceTree = "<group>"; };
 		3889C4F22B843613004F462B /* RashidItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RashidItemsView.swift; sourceTree = "<group>"; };
+		3889C4F52B843B6D004F462B /* WikiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiView.swift; sourceTree = "<group>"; };
 		38A28A812B27C2D800C707F7 /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
 		38A28AA42B2B75E300C707F7 /* Strings+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+Ext.swift"; sourceTree = "<group>"; };
 		38A28AA62B2B7AED00C707F7 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
@@ -418,6 +420,7 @@
 				382A29EE2B1EACD300961FE2 /* Characters */,
 				382A29EF2B1EACDB00961FE2 /* Worlds */,
 				38D6708D2B52E8730043A093 /* Utils */,
+				3889C4F42B843B59004F462B /* Wiki */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -563,6 +566,14 @@
 				3889C4F22B843613004F462B /* RashidItemsView.swift */,
 			);
 			path = Items;
+			sourceTree = "<group>";
+		};
+		3889C4F42B843B59004F462B /* Wiki */ = {
+			isa = PBXGroup;
+			children = (
+				3889C4F52B843B6D004F462B /* WikiView.swift */,
+			);
+			path = Wiki;
 			sourceTree = "<group>";
 		};
 		38A28AA32B2B75CF00C707F7 /* Helpers */ = {
@@ -918,6 +929,7 @@
 				38A5582E2B82588B00F31857 /* SpellsViewModel.swift in Sources */,
 				3808B1F22B5C6B94003E4AB8 /* KillStatisticsViewModel.swift in Sources */,
 				382A29C22B1EA97500961FE2 /* Tibia_MoreApp.swift in Sources */,
+				3889C4F62B843B6D004F462B /* WikiView.swift in Sources */,
 				3800FC722B35D90700685C5E /* CharacterSearchDetailsAchievementView.swift in Sources */,
 				38AC7CF12B253FEE00B6DF29 /* NewsListDetailViewModel.swift in Sources */,
 				38AC7CEF2B253FE400B6DF29 /* NewsListTickerDetailView.swift in Sources */,

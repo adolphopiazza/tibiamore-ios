@@ -15,6 +15,7 @@ struct TabBarView: View {
     @State private var charactersPath: NavigationPath = NavigationPath()
     @State private var worldsPath: NavigationPath = NavigationPath()
     @State private var utilsPath: NavigationPath = NavigationPath()
+    @State private var wikiPath: NavigationPath = NavigationPath()
     
     var selectionBinding: Binding<Int> { Binding(
         get: {
@@ -31,6 +32,8 @@ struct TabBarView: View {
                     worldsPath.removeLast(worldsPath.count)
                 case TabBarItem.utils.rawValue:
                     utilsPath.removeLast(utilsPath.count)
+                case TabBarItem.wiki.rawValue:
+                    wikiPath.removeLast(wikiPath.count)
                 default:
                     break
                 }
@@ -69,6 +72,13 @@ struct TabBarView: View {
                           systemImage: TabBarItem.utils.sfImage)
                 }
                 .tag(TabBarItem.utils.rawValue)
+            
+            TabBarItem.wiki.view(path: $wikiPath)
+                .tabItem {
+                    Label(TabBarItem.wiki.title,
+                          systemImage: TabBarItem.wiki.sfImage)
+                }
+                .tag(TabBarItem.wiki.rawValue)
         }
     }
     

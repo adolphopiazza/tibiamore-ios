@@ -12,6 +12,7 @@ enum TabBarItem: Int {
     case characters
     case worlds
     case utils
+    case wiki
     
     var title: String {
         switch self {
@@ -23,6 +24,8 @@ enum TabBarItem: Int {
             return "Worlds"
         case .utils:
             return "Utils"
+        case .wiki:
+            return "Wiki"
         }
     }
     
@@ -36,6 +39,8 @@ enum TabBarItem: Int {
             return .SFImages.globe
         case .utils:
             return .SFImages.keyboardBadgeEllipsis
+        case .wiki:
+            return .SFImages.book
         }
     }
     
@@ -49,6 +54,8 @@ enum TabBarItem: Int {
             return AnyView(WorldsListView(navigationPath: path))
         case .utils:
             return AnyView(UtilsListView(navigationPath: path))
+        case .wiki:
+            return AnyView(WikiView(navigationPath: path))
         }
     }
 }
