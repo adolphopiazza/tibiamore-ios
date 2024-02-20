@@ -50,6 +50,7 @@ extension String {
         static let arrowClockwise = "arrow.clockwise"
         static let wand = "wand.and.rays"
         static let book = "book"
+        static let xCircleFill = "x.circle.fill"
     }
     
 }

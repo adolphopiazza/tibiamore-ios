@@ -15,18 +15,35 @@ struct WikiView: View {
     var body: some View {
         NavigationStack(path: $navigationPath) {
             Form {
-                TextField("Search on Wiki", text: $viewModel.searchTerm)
-                    .autocorrectionDisabled()
-                    .keyboardType(.default)
+                ZStack {
+                    TextField("Search on Wiki", text: $viewModel.searchTerm)
+                        .autocorrectionDisabled()
+                        .keyboardType(.default)
+                    
+                    HStack {
+                        Spacer()
+                        
+                        Image(systemName: .SFImages.xCircleFill)
+                            .foregroundStyle(.quaternary)
+                            .onTapGesture {
+                                viewModel.searchTerm = ""
+                            }
+                            .opacity(viewModel.searchTerm.isEmpty ? 0 : 1)
+                    }
+                }
                 
                 List(viewModel.searchResults, id: \.self) { text in
-                    LabeledContent(text) {
-                        Image(systemName: .SFImages.chevronRight)
-                    }
-                    .contentShape(.rect)
-                    .onTapGesture {
-                        let url = "https://tibia.fandom.com/wiki/\(text)"
-                        navigationPath.append(NavigationRoutes.Wiki.browser(with: url))
+                    if viewModel.searchResults.isEmpty {
+                        EmptyView() // workaround to not dismiss keyboard on first search
+                    } else {
+                        LabeledContent(text) {
+                            Image(systemName: .SFImages.chevronRight)
+                        }
+                        .contentShape(.rect)
+                        .onTapGesture {
+                            let url = "https://tibia.fandom.com/wiki/\(text)"
+                            navigationPath.append(NavigationRoutes.Wiki.browser(with: url))
+                        }
                     }
                 }
             }
@@ -39,6 +56,18 @@ struct WikiView: View {
                     } else {
                         viewModel.searchResults = []
                     }
+                }
+            }
+            .onSubmit {
+                if viewModel.searchTerm.isEmpty {
+                    viewModel.searchResults = []
+                }
+            }
+            .overlay {
+                if viewModel.searchResults.isEmpty {
+                    ContentUnavailableView("Wiki",
+                                           systemImage: .SFImages.book,
+                                           description: Text("Start typing on the search bar to find something useful on the Wiki"))
                 }
             }
             .navigationDestination(for: NavigationRoutes.Wiki.self) { route in
