@@ -51,4 +51,8 @@ enum NavigationRoutes {
         }
     }
     
+    enum Wiki: Hashable {
+        case browser(with: String)
+    }
+    
 }

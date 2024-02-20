@@ -73,6 +73,9 @@
 		3889C4F02B843266004F462B /* RashidModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3889C4EF2B843266004F462B /* RashidModel.swift */; };
 		3889C4F32B843613004F462B /* RashidItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3889C4F22B843613004F462B /* RashidItemsView.swift */; };
 		3889C4F62B843B6D004F462B /* WikiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3889C4F52B843B6D004F462B /* WikiView.swift */; };
+		3889C4FA2B84438C004F462B /* WikiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3889C4F92B84438C004F462B /* WikiModel.swift */; };
+		3889C4FC2B844766004F462B /* WikiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3889C4FB2B844766004F462B /* WikiService.swift */; };
+		3889C4FE2B844ADF004F462B /* WikiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3889C4FD2B844ADF004F462B /* WikiViewModel.swift */; };
 		38A28A822B27C2D800C707F7 /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A28A812B27C2D800C707F7 /* NetworkErrors.swift */; };
 		38A28AA52B2B75E300C707F7 /* Strings+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A28AA42B2B75E300C707F7 /* Strings+Ext.swift */; };
 		38A28AA72B2B7AED00C707F7 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A28AA62B2B7AED00C707F7 /* SafariView.swift */; };
@@ -189,6 +192,9 @@
 		3889C4EF2B843266004F462B /* RashidModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RashidModel.swift; sourceTree = "<group>"; };
 		3889C4F22B843613004F462B /* RashidItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RashidItemsView.swift; sourceTree = "<group>"; };
 		3889C4F52B843B6D004F462B /* WikiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiView.swift; sourceTree = "<group>"; };
+		3889C4F92B84438C004F462B /* WikiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiModel.swift; sourceTree = "<group>"; };
+		3889C4FB2B844766004F462B /* WikiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiService.swift; sourceTree = "<group>"; };
+		3889C4FD2B844ADF004F462B /* WikiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiViewModel.swift; sourceTree = "<group>"; };
 		38A28A812B27C2D800C707F7 /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
 		38A28AA42B2B75E300C707F7 /* Strings+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+Ext.swift"; sourceTree = "<group>"; };
 		38A28AA62B2B7AED00C707F7 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
@@ -488,6 +494,7 @@
 				38B1E4752B49962900A18AB5 /* Worlds */,
 				38CC6C022B2DD0EB00E5BB67 /* Characters */,
 				382A29FE2B1EB9C800961FE2 /* News */,
+				3889C4F72B844376004F462B /* Wiki */,
 				382A2A032B1EBC8A00961FE2 /* URLConstants.swift */,
 				38A28A812B27C2D800C707F7 /* NetworkErrors.swift */,
 				38F2416E2B2D04BD003CC100 /* NetworkService.swift */,
@@ -572,8 +579,26 @@
 			isa = PBXGroup;
 			children = (
 				3889C4F52B843B6D004F462B /* WikiView.swift */,
+				3889C4FD2B844ADF004F462B /* WikiViewModel.swift */,
 			);
 			path = Wiki;
+			sourceTree = "<group>";
+		};
+		3889C4F72B844376004F462B /* Wiki */ = {
+			isa = PBXGroup;
+			children = (
+				3889C4F82B844384004F462B /* Models */,
+				3889C4FB2B844766004F462B /* WikiService.swift */,
+			);
+			path = Wiki;
+			sourceTree = "<group>";
+		};
+		3889C4F82B844384004F462B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3889C4F92B84438C004F462B /* WikiModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		38A28AA32B2B75CF00C707F7 /* Helpers */ = {
@@ -850,6 +875,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				38084D512B539109003FCD1B /* UtilsService.swift in Sources */,
+				3889C4FC2B844766004F462B /* WikiService.swift in Sources */,
 				38A3EDF32B2F2A59003C7BDA /* CharactersListViewModel.swift in Sources */,
 				382A2A002B1EBB0900961FE2 /* NewsModel.swift in Sources */,
 				38B1E4772B499C5000A18AB5 /* WorldsService.swift in Sources */,
@@ -883,10 +909,12 @@
 				38A3EDFA2B2F32E0003C7BDA /* Custom+Styles.swift in Sources */,
 				382A29C42B1EA97500961FE2 /* TabBarView.swift in Sources */,
 				382A29F12B1EACFB00961FE2 /* NewsListView.swift in Sources */,
+				3889C4FA2B84438C004F462B /* WikiModel.swift in Sources */,
 				38084D592B543F04003FCD1B /* CreaturesViewModel.swift in Sources */,
 				38A28A822B27C2D800C707F7 /* NetworkErrors.swift in Sources */,
 				3808B2002B5C9415003E4AB8 /* FansitesDetailView.swift in Sources */,
 				3838176D2B4AEAE2000E13D7 /* WorldsListViewRow.swift in Sources */,
+				3889C4FE2B844ADF004F462B /* WikiViewModel.swift in Sources */,
 				3889C4EC2B84233D004F462B /* SpellsRowView.swift in Sources */,
 				382A29F32B1EAD1C00961FE2 /* CharactersListView.swift in Sources */,
 				385D6EAE2B4AF2D600839091 /* WorldsDetailsView.swift in Sources */,
