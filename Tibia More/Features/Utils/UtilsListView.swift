@@ -44,7 +44,7 @@ struct UtilsListView: View {
                     case .guilds:
                         GuildsView(navigationPath: $navigationPath)
                     case .spells:
-                        SpellsView(navigationPath: $navigationPath)
+                        SpellsView()
                     case .boostedBoss:
                         BoostedBossView()
                     case .boostedCreature:

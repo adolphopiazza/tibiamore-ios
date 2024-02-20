@@ -11,13 +11,21 @@ import Foundation
 final class SpellsViewModel {
     
     let viewTitle: String = "Spells"
+    var spells: [SpellsModel] = []
+    var hasError: Bool = false
+    
+    var sortLevel: Bool = false
+    var filteredVocation: HighscoresVocations = .all
+    let vocations: [HighscoresVocations] = HighscoresVocations.allCases
     
     @MainActor func fetchSpells() async {
         do {
             let result = try await UtilsService.shared.fetchSpells()
-            dump(result)
+            self.spells = result
+            self.hasError = false
         } catch {
-            print("Error: \(error)")
+            print("Error fetching on SpellsViewModel: \(error)")
+            self.hasError = true
             return
         }
     }
