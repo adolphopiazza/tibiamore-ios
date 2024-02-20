@@ -16,6 +16,9 @@ struct FansitesDetailView: View {
     var body: some View {
         Form {
             headerView
+                .onTapGesture {
+                    self.navigationPath.append(NavigationRoutes.Utils.Fansites.browser(with: model.homepage))
+                }
             
             aboutView
             
