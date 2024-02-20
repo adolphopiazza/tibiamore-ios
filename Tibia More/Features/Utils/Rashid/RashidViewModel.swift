@@ -15,6 +15,7 @@ final class RashidViewModel {
     var isShowingInfo: Bool = false
     var hasError: Bool = false
     var rashidCity: String = ""
+    var rashidItems: [RashidModel] = []
     
     var opacity: Double {
         if isLoading {
@@ -37,7 +38,9 @@ final class RashidViewModel {
         
         do {
             let city = try await UtilsService.shared.fetchRashid()
+            let items = try await UtilsService.shared.fetchRashidItems()
             self.rashidCity = city
+            self.rashidItems = items
             self.hasError = false
         } catch {
             print("Some error on RashidViewModel: \(error)")

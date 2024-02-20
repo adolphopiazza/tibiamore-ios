@@ -47,6 +47,7 @@ struct SpellsView: View {
                 .pickerStyle(.menu)
                 
                 Toggle("Sort by Level", isOn: $viewModel.sortLevel)
+                    .tint(.accent)
             }
             
             List(filteredSpells, id: \.spellId) { spell in

@@ -69,6 +69,9 @@
 		3889C4E82B8406D8004F462B /* spellList.json in Resources */ = {isa = PBXBuildFile; fileRef = 3889C4E72B8406D8004F462B /* spellList.json */; };
 		3889C4EA2B840733004F462B /* SpellsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3889C4E92B840733004F462B /* SpellsModel.swift */; };
 		3889C4EC2B84233D004F462B /* SpellsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3889C4EB2B84233D004F462B /* SpellsRowView.swift */; };
+		3889C4EE2B843224004F462B /* rashidItems.json in Resources */ = {isa = PBXBuildFile; fileRef = 3889C4ED2B843224004F462B /* rashidItems.json */; };
+		3889C4F02B843266004F462B /* RashidModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3889C4EF2B843266004F462B /* RashidModel.swift */; };
+		3889C4F32B843613004F462B /* RashidItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3889C4F22B843613004F462B /* RashidItemsView.swift */; };
 		38A28A822B27C2D800C707F7 /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A28A812B27C2D800C707F7 /* NetworkErrors.swift */; };
 		38A28AA52B2B75E300C707F7 /* Strings+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A28AA42B2B75E300C707F7 /* Strings+Ext.swift */; };
 		38A28AA72B2B7AED00C707F7 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A28AA62B2B7AED00C707F7 /* SafariView.swift */; };
@@ -181,6 +184,9 @@
 		3889C4E72B8406D8004F462B /* spellList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = spellList.json; sourceTree = "<group>"; };
 		3889C4E92B840733004F462B /* SpellsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsModel.swift; sourceTree = "<group>"; };
 		3889C4EB2B84233D004F462B /* SpellsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsRowView.swift; sourceTree = "<group>"; };
+		3889C4ED2B843224004F462B /* rashidItems.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rashidItems.json; sourceTree = "<group>"; };
+		3889C4EF2B843266004F462B /* RashidModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RashidModel.swift; sourceTree = "<group>"; };
+		3889C4F22B843613004F462B /* RashidItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RashidItemsView.swift; sourceTree = "<group>"; };
 		38A28A812B27C2D800C707F7 /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
 		38A28AA42B2B75E300C707F7 /* Strings+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+Ext.swift"; sourceTree = "<group>"; };
 		38A28AA62B2B7AED00C707F7 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
@@ -238,6 +244,7 @@
 		38084D4A2B538AD7003FCD1B /* Rashid */ = {
 			isa = PBXGroup;
 			children = (
+				3889C4F12B84360A004F462B /* Items */,
 				38084D4B2B538AEA003FCD1B /* RashidView.swift */,
 				38084D4D2B538AFD003FCD1B /* RashidViewModel.swift */,
 			);
@@ -256,6 +263,7 @@
 		38084D522B543D77003FCD1B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3889C4EF2B843266004F462B /* RashidModel.swift */,
 				38084D532B543D83003FCD1B /* CreaturesModel.swift */,
 				387E5A092B5B4C35009CA577 /* BoostableBossesModel.swift */,
 				387E5A0B2B5C0CE5009CA577 /* HighscoresModel.swift */,
@@ -544,8 +552,17 @@
 			isa = PBXGroup;
 			children = (
 				3889C4E72B8406D8004F462B /* spellList.json */,
+				3889C4ED2B843224004F462B /* rashidItems.json */,
 			);
 			path = JSON;
+			sourceTree = "<group>";
+		};
+		3889C4F12B84360A004F462B /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				3889C4F22B843613004F462B /* RashidItemsView.swift */,
+			);
+			path = Items;
 			sourceTree = "<group>";
 		};
 		38A28AA32B2B75CF00C707F7 /* Helpers */ = {
@@ -794,6 +811,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				382A29C92B1EA97600961FE2 /* Preview Assets.xcassets in Resources */,
+				3889C4EE2B843224004F462B /* rashidItems.json in Resources */,
 				382A29C62B1EA97600961FE2 /* Assets.xcassets in Resources */,
 				3889C4E82B8406D8004F462B /* spellList.json in Resources */,
 			);
@@ -841,6 +859,7 @@
 				3872B0302B56099F00725178 /* CreaturesDetailViewModel.swift in Sources */,
 				387E5A112B5C4BBF009CA577 /* HighscoresViewModel.swift in Sources */,
 				38B1E47A2B499C8900A18AB5 /* WorldsModel.swift in Sources */,
+				3889C4F32B843613004F462B /* RashidItemsView.swift in Sources */,
 				387E5A0C2B5C0CE5009CA577 /* HighscoresModel.swift in Sources */,
 				3808B1FB2B5C8F9A003E4AB8 /* FansitesViewModel.swift in Sources */,
 				38D6708F2B52E8840043A093 /* UtilsListView.swift in Sources */,
@@ -848,6 +867,7 @@
 				387E5A082B5B4AC9009CA577 /* BoostedBossViewModel.swift in Sources */,
 				38AC7CF72B254B2A00B6DF29 /* NavigationRoutes.swift in Sources */,
 				38084D472B538164003FCD1B /* UtilsListViewModel.swift in Sources */,
+				3889C4F02B843266004F462B /* RashidModel.swift in Sources */,
 				38F31AD62B39E3C800FF6BA8 /* DefaultStorage.swift in Sources */,
 				38A3EDFA2B2F32E0003C7BDA /* Custom+Styles.swift in Sources */,
 				382A29C42B1EA97500961FE2 /* TabBarView.swift in Sources */,

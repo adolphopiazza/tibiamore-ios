@@ -1,0 +1,630 @@
+[
+    {
+        "item": "Abyss Hammer",
+        "value": "20000"
+    },
+    {
+        "item": "Albino Plate",
+        "value": "1500"
+    },
+    {
+        "item": "Amber Staff",
+        "value": "8000"
+    },
+    {
+        "item": "Ancient Amulet",
+        "value": "200000"
+    },
+    {
+        "item": "Assassin Dagger",
+        "value": "20000"
+    },
+    {
+        "item": "Bandana",
+        "value": "150000"
+    },
+    {
+        "item": "Beastslayer Axe",
+        "value": "1500"
+    },
+    {
+        "item": "Beetle Necklace",
+        "value": "1500"
+    },
+    {
+        "item": "Berserker",
+        "value": "40000"
+    },
+    {
+        "item": "Blacksteel Sword",
+        "value": "6000"
+    },
+    {
+        "item": "Blessed Sceptre",
+        "value": "40000"
+    },
+    {
+        "item": "Bone Shield",
+        "value": "80000"
+    },
+    {
+        "item": "Bonelord Helmet",
+        "value": "7500"
+    },
+    {
+        "item": "Brutetamer's Staff",
+        "value": "1500"
+    },
+    {
+        "item": "Buckle",
+        "value": "7000"
+    },
+    {
+        "item": "Castle Shield",
+        "value": "5000"
+    },
+    {
+        "item": "Chain Bolter",
+        "value": "40000"
+    },
+    {
+        "item": "Chaos Mace",
+        "value": "9000"
+    },
+    {
+        "item": "Cobra Crown",
+        "value": "50000"
+    },
+    {
+        "item": "Coconut Shoes",
+        "value": "500000"
+    },
+    {
+        "item": "Composite Hornbow",
+        "value": "25000"
+    },
+    {
+        "item": "Cranial Basher",
+        "value": "30000"
+    },
+    {
+        "item": "Crocodile Boots",
+        "value": "1000"
+    },
+    {
+        "item": "Crystal Crossbow",
+        "value": "35000"
+    },
+    {
+        "item": "Crystal Mace",
+        "value": "12000"
+    },
+    {
+        "item": "Crystal Necklace",
+        "value": "400000"
+    },
+    {
+        "item": "Crystal Ring",
+        "value": "250000"
+    },
+    {
+        "item": "Crystal Sword",
+        "value": "600000"
+    },
+    {
+        "item": "Crystalline Armor",
+        "value": "16000"
+    },
+    {
+        "item": "Daramian Mace",
+        "value": "110000"
+    },
+    {
+        "item": "Daramian Waraxe",
+        "value": "1000"
+    },
+    {
+        "item": "Dark Shield",
+        "value": "400000"
+    },
+    {
+        "item": "Death Ring",
+        "value": "1000"
+    },
+    {
+        "item": "Demon Shield",
+        "value": "30000"
+    },
+    {
+        "item": "Demonbone Amulet",
+        "value": "32000"
+    },
+    {
+        "item": "Demonrage Sword",
+        "value": "36000"
+    },
+    {
+        "item": "Devil Helmet",
+        "value": "1000"
+    },
+    {
+        "item": "Diamond Sceptre",
+        "value": "3000"
+    },
+    {
+        "item": "Divine Plate",
+        "value": "55000"
+    },
+    {
+        "item": "Djinn Blade",
+        "value": "15000"
+    },
+    {
+        "item": "Doll",
+        "value": "200000"
+    },
+    {
+        "item": "Dragon Scale Mail",
+        "value": "40000"
+    },
+    {
+        "item": "Dragon Slayer",
+        "value": "15000"
+    },
+    {
+        "item": "Dragonbone Staff",
+        "value": "3000"
+    },
+    {
+        "item": "Dreaded Cleaver",
+        "value": "10000"
+    },
+    {
+        "item": "Dwarven Armor",
+        "value": "30000"
+    },
+    {
+        "item": "Elvish Bow",
+        "value": "2000"
+    },
+    {
+        "item": "Emerald Bangle",
+        "value": "800000"
+    },
+    {
+        "item": "Epee",
+        "value": "8000"
+    },
+    {
+        "item": "Flower Dress",
+        "value": "1000"
+    },
+    {
+        "item": "Flower Wreath",
+        "value": "500000"
+    },
+    {
+        "item": "Fur Boots",
+        "value": "2000"
+    },
+    {
+        "item": "Furry Club",
+        "value": "1000"
+    },
+    {
+        "item": "Glacier Amulet",
+        "value": "1500"
+    },
+    {
+        "item": "Glacier Kilt",
+        "value": "11000"
+    },
+    {
+        "item": "Glacier Mask",
+        "value": "2500"
+    },
+    {
+        "item": "Glacier Robe",
+        "value": "11000"
+    },
+    {
+        "item": "Glacier Shoes",
+        "value": "2500"
+    },
+    {
+        "item": "Gold Ring",
+        "value": "8000"
+    },
+    {
+        "item": "Golden Armor",
+        "value": "20000"
+    },
+    {
+        "item": "Golden Legs",
+        "value": "30000"
+    },
+    {
+        "item": "Goo Shell",
+        "value": "4000"
+    },
+    {
+        "item": "Griffin Shield",
+        "value": "3000"
+    },
+    {
+        "item": "Guardian Halberd",
+        "value": "11000"
+    },
+    {
+        "item": "Hammer of Wrath",
+        "value": "30000"
+    },
+    {
+        "item": "Headchopper",
+        "value": "6000"
+    },
+    {
+        "item": "Heavy Mace",
+        "value": "50000"
+    },
+    {
+        "item": "Heavy Machete",
+        "value": "90000"
+    },
+    {
+        "item": "Heavy Trident",
+        "value": "2000"
+    },
+    {
+        "item": "Helmet of the Lost",
+        "value": "2000"
+    },
+    {
+        "item": "Heroic Axe",
+        "value": "30000"
+    },
+    {
+        "item": "Hibiscus Dress",
+        "value": "3000"
+    },
+    {
+        "item": "Hieroglyph Banner",
+        "value": "500000"
+    },
+    {
+        "item": "Horn (Ring)",
+        "value": "300000"
+    },
+    {
+        "item": "Jade Hammer",
+        "value": "25000"
+    },
+    {
+        "item": "Krimhorn Helmet",
+        "value": "200000"
+    },
+    {
+        "item": "Lavos Armor",
+        "value": "16000"
+    },
+    {
+        "item": "Leaf Legs",
+        "value": "500000"
+    },
+    {
+        "item": "Leopard Armor",
+        "value": "1000"
+    },
+    {
+        "item": "Leviathan's Amulet",
+        "value": "3000"
+    },
+    {
+        "item": "Light Shovel",
+        "value": "300000"
+    },
+    {
+        "item": "Lightning Boots",
+        "value": "2500"
+    },
+    {
+        "item": "Lightning Headband",
+        "value": "2500"
+    },
+    {
+        "item": "Lightning Legs",
+        "value": "11000"
+    },
+    {
+        "item": "Lightning Pendant",
+        "value": "1500"
+    },
+    {
+        "item": "Lightning Robe",
+        "value": "11000"
+    },
+    {
+        "item": "Lunar Staff",
+        "value": "5000"
+    },
+    {
+        "item": "Magic Plate Armor",
+        "value": "90000"
+    },
+    {
+        "item": "Magma Amulet",
+        "value": "1500"
+    },
+    {
+        "item": "Magma Boots",
+        "value": "2500"
+    },
+    {
+        "item": "Magma Coat",
+        "value": "11000"
+    },
+    {
+        "item": "Magma Legs",
+        "value": "11000"
+    },
+    {
+        "item": "Magma Monocle",
+        "value": "2500"
+    },
+    {
+        "item": "Mammoth Fur Cape",
+        "value": "6000"
+    },
+    {
+        "item": "Mammoth Fur Shorts",
+        "value": "850000"
+    },
+    {
+        "item": "Mammoth Whopper",
+        "value": "300000"
+    },
+    {
+        "item": "Mastermind Shield",
+        "value": "50000"
+    },
+    {
+        "item": "Medusa Shield",
+        "value": "9000"
+    },
+    {
+        "item": "Mercenary Sword",
+        "value": "12000"
+    },
+    {
+        "item": "Model Ship",
+        "value": "1000"
+    },
+    {
+        "item": "Mycological Bow",
+        "value": "35000"
+    },
+    {
+        "item": "Mystic Blade",
+        "value": "30000"
+    },
+    {
+        "item": "Naginata",
+        "value": "2000"
+    },
+    {
+        "item": "Nightmare Blade",
+        "value": "35000"
+    },
+    {
+        "item": "Noble Axe",
+        "value": "10000"
+    },
+    {
+        "item": "Norse Shield",
+        "value": "1500"
+    },
+    {
+        "item": "Onyx Pendant",
+        "value": "3500"
+    },
+    {
+        "item": "Orcish Maul",
+        "value": "6000"
+    },
+    {
+        "item": "Oriental Shoes",
+        "value": "15000"
+    },
+    {
+        "item": "Pair of Iron Fists",
+        "value": "4000"
+    },
+    {
+        "item": "Paladin Armor",
+        "value": "15000"
+    },
+    {
+        "item": "Patched Boots",
+        "value": "2000"
+    },
+    {
+        "item": "Pharaoh Banner",
+        "value": "1000"
+    },
+    {
+        "item": "Pharaoh Sword",
+        "value": "23000"
+    },
+    {
+        "item": "Pirate Boots",
+        "value": "3000"
+    },
+    {
+        "item": "Pirate Hat",
+        "value": "1000"
+    },
+    {
+        "item": "Pirate Knee Breeches",
+        "value": "200000"
+    },
+    {
+        "item": "Pirate Shirt",
+        "value": "500000"
+    },
+    {
+        "item": "Pirate Voodoo Doll",
+        "value": "500000"
+    },
+    {
+        "item": "Platinum Amulet",
+        "value": "2500"
+    },
+    {
+        "item": "Ragnir Helmet",
+        "value": "400000"
+    },
+    {
+        "item": "Relic Sword",
+        "value": "25000"
+    },
+    {
+        "item": "Rift Bow",
+        "value": "45000"
+    },
+    {
+        "item": "Rift Crossbow",
+        "value": "45000"
+    },
+    {
+        "item": "Rift Lance",
+        "value": "30000"
+    },
+    {
+        "item": "Rift Shield",
+        "value": "50000"
+    },
+    {
+        "item": "Ring of the Sky",
+        "value": "30000"
+    },
+    {
+        "item": "Royal Axe",
+        "value": "40000"
+    },
+    {
+        "item": "Ruby Necklace",
+        "value": "2000"
+    },
+    {
+        "item": "Ruthless Axe",
+        "value": "45000"
+    },
+    {
+        "item": "Sacred Tree Amulet",
+        "value": "3000"
+    },
+    {
+        "item": "Sapphire Hammer",
+        "value": "7000"
+    },
+    {
+        "item": "Scarab Amulet",
+        "value": "200000"
+    },
+    {
+        "item": "Scarab Shield",
+        "value": "2000"
+    },
+    {
+        "item": "Shockwave Amulet",
+        "value": "3000"
+    },
+    {
+        "item": "Silver Brooch",
+        "value": "150000"
+    },
+    {
+        "item": "Silver Dagger",
+        "value": "500000"
+    },
+    {
+        "item": "Skull Helmet",
+        "value": "40000"
+    },
+    {
+        "item": "Skullcracker Armor",
+        "value": "18000"
+    },
+    {
+        "item": "Spiked Squelcher",
+        "value": "5000"
+    },
+    {
+        "item": "Steel Boots",
+        "value": "30000"
+    },
+    {
+        "item": "Swamplair Armor",
+        "value": "16000"
+    },
+    {
+        "item": "Taurus Mace",
+        "value": "500000"
+    },
+    {
+        "item": "Tempest Shield",
+        "value": "35000"
+    },
+    {
+        "item": "Terra Amulet",
+        "value": "1500"
+    },
+    {
+        "item": "Terra Boots",
+        "value": "2500"
+    },
+    {
+        "item": "Terra Hood",
+        "value": "2500"
+    },
+    {
+        "item": "Terra Legs",
+        "value": "11000"
+    },
+    {
+        "item": "Terra Mantle",
+        "value": "11000"
+    },
+    {
+        "item": "The Justice Seeker",
+        "value": "40000"
+    },
+    {
+        "item": "Tortoise Shield",
+        "value": "150000"
+    },
+    {
+        "item": "Vile Axe",
+        "value": "30000"
+    },
+    {
+        "item": "Voodoo Doll",
+        "value": "400000"
+    },
+    {
+        "item": "War Axe",
+        "value": "12000"
+    },
+    {
+        "item": "War Horn",
+        "value": "8000"
+    },
+    {
+        "item": "Witch Hat",
+        "value": "5000"
+    },
+    {
+        "item": "Wyvern Fang",
+        "value": "1500"
+    }
+]

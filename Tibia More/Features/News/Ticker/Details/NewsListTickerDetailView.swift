@@ -14,12 +14,26 @@ struct NewsListTickerDetailView: View {
     
     var body: some View {
         ZStack {
-            ScrollView {
-                bodyContent
-                    .fontDesign(.serif)
-                    .padding([.horizontal, .bottom], 20)
-                    .opacity(viewModel.isLoading || viewModel.hasError ? 0 : 1)
+            VStack {
+                ScrollView {
+                    bodyContent
+                        .fontDesign(.serif)
+                        .opacity(viewModel.isLoading || viewModel.hasError ? 0 : 1)
+                }
+                
+                Button(action: {
+                    let route = NavigationRoutes.News.browser(with: viewModel.detailedNews.url)
+                    self.navigationPath.append(route)
+                }, label: {
+                    Text("Read on Tibia.com")
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 30)
+                })
+                .buttonStyle(.borderedProminent)
+                .padding(.bottom, 20)
+                .opacity(viewModel.isLoading || viewModel.hasError ? 0 : 1)
             }
+            .padding(.horizontal, 20)
             
             if viewModel.hasError && !viewModel.isLoading {
                 ContentUnavailableView("Sorry, we are having some issues",
@@ -62,16 +76,6 @@ struct NewsListTickerDetailView: View {
             Text(viewModel.detailedNews.content)
                 .font(.title3)
                 .padding(.top, 4)
-            
-            Button(action: {
-                let route = NavigationRoutes.News.browser(with: viewModel.detailedNews.url)
-                self.navigationPath.append(route)
-            }, label: {
-                Text("Read on Tibia.com")
-                    .frame(maxWidth: .infinity)
-                    .frame(height: 30)
-            })
-            .buttonStyle(.borderedProminent)
         }
     }
     
