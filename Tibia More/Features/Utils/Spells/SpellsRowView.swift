@@ -35,11 +35,15 @@ struct SpellsRowView: View {
                 }
             }
             
-            LabeledContent("Vocation", value: spell.spellInformation.vocation.joined(separator: ", "))
-                .padding(.top, 12)
+            LabeledContent("Vocation") {
+                Text(spell.spellInformation.vocation.joined(separator: ", "))
+                    .multilineTextAlignment(.trailing)
+            }
+            .padding(.top, 12)
             
             LabeledContent("Level", value: String(spell.spellInformation.level))
             LabeledContent("Formula", value: spell.spellInformation.formula)
+            LabeledContent("Price", value: "\(String(spell.spellInformation.price)) gp")
             LabeledContent("Premium", value: spell.spellInformation.premiumOnly ? "✅" : "🚫")
         }
     }
@@ -51,6 +55,7 @@ struct SpellsRowView: View {
                                      spellInformation: SpellInformationModel(vocation: ["Druid", "Sorcerer"],
                                                                              level: 20,
                                                                              premiumOnly: true,
-                                                                             formula: "utani gran hur"),
+                                                                             formula: "utani gran hur", 
+                                                                             price: 1000),
                                      spellId: "stronghaste"))
 }
