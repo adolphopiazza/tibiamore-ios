@@ -11,6 +11,7 @@ struct WikiView: View {
     
     @State private var viewModel: WikiViewModel = WikiViewModel()
     @Binding var navigationPath: NavigationPath
+    @FocusState private var isKeyboardFocused: Bool
     
     var body: some View {
         NavigationStack(path: $navigationPath) {
@@ -19,6 +20,7 @@ struct WikiView: View {
                     TextField("Search on Wiki", text: $viewModel.searchTerm)
                         .autocorrectionDisabled()
                         .keyboardType(.default)
+                        .focused($isKeyboardFocused)
                     
                     HStack {
                         Spacer()
@@ -47,8 +49,12 @@ struct WikiView: View {
                     }
                 }
             }
+            .scrollDisabled(viewModel.searchResults.isEmpty)
             .fontDesign(.serif)
             .navigationTitle(viewModel.viewTitle)
+            .onTapGesture {
+                self.isKeyboardFocused = false
+            }
             .onChange(of: viewModel.searchTerm) { _, newValue in
                 Task {
                     if !newValue.isEmpty {
@@ -64,10 +70,10 @@ struct WikiView: View {
                 }
             }
             .overlay {
-                if viewModel.searchResults.isEmpty {
-                    ContentUnavailableView("Wiki",
+                if viewModel.searchResults.isEmpty && !viewModel.isLoading {
+                    ContentUnavailableView(viewModel.searchTerm.isEmpty ? "Wiki" : "No results",
                                            systemImage: .SFImages.book,
-                                           description: Text("Start typing on the search bar to find something useful on the Wiki"))
+                                           description: Text(viewModel.searchTerm.isEmpty ? "Start typing on the search bar to find something useful on the Wiki" : "Try to make a new search"))
                 }
             }
             .navigationDestination(for: NavigationRoutes.Wiki.self) { route in
