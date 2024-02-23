@@ -19,4 +19,5 @@ struct SpellInformationModel: Decodable {
     let level: Int
     let premiumOnly: Bool
     let formula: String
+    let price: Int
 }

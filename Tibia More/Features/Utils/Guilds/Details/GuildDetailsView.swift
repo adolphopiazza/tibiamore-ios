@@ -46,14 +46,16 @@ struct GuildDetailsView: View {
                 WorldsDetailsViewRow("Invited", value: String(viewModel.guild?.membersInvited ?? 0))
             }
             
-            Section("Guildhalls") {
-                ForEach(viewModel.guild?.guildhalls ?? [], id: \.name) { guildhall in
-                    VStack(alignment: .leading) {
-                        Text(guildhall.name)
-                            .font(.title2)
-                        
-                        WorldsDetailsViewRow("World", value: guildhall.world)
-                        WorldsDetailsViewRow("Paid Until", value: guildhall.paidUntil.formatDate(with: .yyyyMMdd))
+            if let guildhalls = viewModel.guild?.guildhalls {
+                Section("Guildhalls") {
+                    ForEach(guildhalls, id: \.name) { guildhall in
+                        VStack(alignment: .leading) {
+                            Text(guildhall.name)
+                                .font(.title2)
+                            
+                            WorldsDetailsViewRow("World", value: guildhall.world)
+                            WorldsDetailsViewRow("Paid Until", value: guildhall.paidUntil.formatDate(with: .yyyyMMdd))
+                        }
                     }
                 }
             }

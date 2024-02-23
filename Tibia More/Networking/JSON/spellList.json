@@ -1,305 +1,328 @@
 [
     {
         "name": "Animate Dead Rune",
+        "spellId": "animatedeadrune",
         "imageUrl": "https:\/\/static.tibia.com\/images\/library\/animatedeadrune.png",
         "spellInformation": {
+            "premiumOnly": true,
+            "level": 27,
             "vocation": [
                 "Druid",
                 "Sorcerer"
             ],
-            "level": 27,
-            "premiumOnly": true,
-            "formula": "adana mort"
-        },
-        "spellId": "animatedeadrune"
+            "formula": "adana mort",
+            "price": 1200
+        }
     },
     {
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/annihilation.png",
-        "spellId": "annihilation",
-        "name": "Annihilation",
         "spellInformation": {
             "vocation": [
                 "Knight"
             ],
-            "premiumOnly": true,
             "level": 110,
-            "formula": "exori gran ico"
-        }
+            "premiumOnly": true,
+            "formula": "exori gran ico",
+            "price": 20000
+        },
+        "name": "Annihilation",
+        "spellId": "annihilation",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/annihilation.png"
     },
     {
-        "spellId": "apprenticestrike",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/apprenticestrike.png",
-        "name": "Apprentice's Strike",
         "spellInformation": {
+            "level": 8,
+            "formula": "exori min flam",
             "premiumOnly": false,
             "vocation": [
                 "Druid",
                 "Sorcerer"
             ],
-            "level": 8,
-            "formula": "exori min flam"
-        }
+            "price": 0
+        },
+        "name": "Apprentice's Strike",
+        "spellId": "apprenticestrike",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/apprenticestrike.png"
     },
     {
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/arrowcall.png",
         "spellInformation": {
-            "level": 1,
-            "formula": "exevo infir con",
             "vocation": [
                 "Paladin"
             ],
+            "formula": "exevo infir con",
+            "price": 0,
+            "level": 1,
             "premiumOnly": false
         },
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/arrowcall.png",
-        "spellId": "arrowcall",
-        "name": "Arrow Call"
+        "name": "Arrow Call",
+        "spellId": "arrowcall"
     },
     {
-        "name": "Avalanche Rune",
-        "spellId": "avalancherune",
         "imageUrl": "https:\/\/static.tibia.com\/images\/library\/avalancherune.png",
+        "name": "Avalanche Rune",
         "spellInformation": {
+            "vocation": [
+                "Druid"
+            ],
             "formula": "adori mas frigo",
             "premiumOnly": false,
             "level": 30,
-            "vocation": [
-                "Druid"
-            ]
-        }
+            "price": 1200
+        },
+        "spellId": "avalancherune"
     },
     {
+        "name": "Avatar of Light",
         "spellId": "avataroflight",
         "imageUrl": "https:\/\/static.tibia.com\/images\/library\/avataroflight.png",
         "spellInformation": {
+            "premiumOnly": true,
+            "price": 0,
+            "formula": "uteta res sac",
+            "level": 0,
             "vocation": [
                 "Paladin"
-            ],
-            "premiumOnly": true,
-            "formula": "uteta res sac",
-            "level": 0
-        },
-        "name": "Avatar of Light"
-    },
-    {
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/avatarofnature.png",
-        "name": "Avatar of Nature",
-        "spellInformation": {
-            "premiumOnly": true,
-            "level": 0,
-            "vocation": [
-                "Druid"
-            ],
-            "formula": "uteta res dru"
-        },
-        "spellId": "avatarofnature"
-    },
-    {
-        "name": "Avatar of Steel",
-        "spellId": "avatarofsteel",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/avatarofsteel.png",
-        "spellInformation": {
-            "formula": "uteta res eq",
-            "level": 0,
-            "premiumOnly": true,
-            "vocation": [
-                "Knight"
             ]
         }
     },
     {
-        "name": "Avatar of Storm",
-        "spellId": "avatarofstorm",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/avatarofstorm.png",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/avatarofnature.png",
+        "spellId": "avatarofnature",
+        "name": "Avatar of Nature",
         "spellInformation": {
             "level": 0,
+            "premiumOnly": true,
             "vocation": [
-                "Sorcerer"
+                "Druid"
             ],
-            "formula": "uteta res ven",
-            "premiumOnly": true
+            "price": 0,
+            "formula": "uteta res dru"
         }
     },
     {
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/berserk.png",
+        "spellInformation": {
+            "vocation": [
+                "Knight"
+            ],
+            "level": 0,
+            "price": 0,
+            "premiumOnly": true,
+            "formula": "uteta res eq"
+        },
+        "spellId": "avatarofsteel",
+        "name": "Avatar of Steel",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/avatarofsteel.png"
+    },
+    {
+        "name": "Avatar of Storm",
+        "spellInformation": {
+            "formula": "uteta res ven",
+            "vocation": [
+                "Sorcerer"
+            ],
+            "price": 0,
+            "premiumOnly": true,
+            "level": 0
+        },
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/avatarofstorm.png",
+        "spellId": "avatarofstorm"
+    },
+    {
         "spellInformation": {
             "vocation": [
                 "Knight"
             ],
             "formula": "exori",
+            "price": 2500,
             "premiumOnly": true,
             "level": 35
         },
         "name": "Berserk",
-        "spellId": "berserk"
+        "spellId": "berserk",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/berserk.png"
     },
     {
-        "spellId": "bloodrage",
-        "name": "Blood Rage",
         "imageUrl": "https:\/\/static.tibia.com\/images\/library\/bloodrage.png",
         "spellInformation": {
-            "level": 60,
-            "formula": "utito tempo",
             "vocation": [
                 "Knight"
             ],
+            "price": 8000,
+            "level": 60,
+            "formula": "utito tempo",
             "premiumOnly": true
-        }
+        },
+        "spellId": "bloodrage",
+        "name": "Blood Rage"
     },
     {
         "name": "Bruise Bane",
         "spellId": "bruisebane",
         "imageUrl": "https:\/\/static.tibia.com\/images\/library\/bruisebane.png",
         "spellInformation": {
-            "level": 1,
-            "premiumOnly": false,
             "formula": "exura infir ico",
             "vocation": [
                 "Knight"
-            ]
+            ],
+            "price": 0,
+            "level": 1,
+            "premiumOnly": false
         }
     },
     {
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/brutalstrike.png",
-        "spellId": "brutalstrike",
         "name": "Brutal Strike",
         "spellInformation": {
-            "premiumOnly": true,
             "level": 16,
+            "price": 1000,
+            "premiumOnly": true,
             "vocation": [
                 "Knight"
             ],
             "formula": "exori ico"
-        }
+        },
+        "spellId": "brutalstrike",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/brutalstrike.png"
     },
     {
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/buzz.png",
+        "name": "Buzz",
         "spellInformation": {
-            "premiumOnly": false,
-            "formula": "exori infir vis",
-            "level": 1,
             "vocation": [
                 "Sorcerer"
-            ]
+            ],
+            "formula": "exori infir vis",
+            "premiumOnly": false,
+            "level": 1,
+            "price": 0
         },
-        "name": "Buzz",
-        "spellId": "buzz"
+        "spellId": "buzz",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/buzz.png"
     },
     {
+        "spellId": "cancelinvisibility",
+        "name": "Cancel Invisibility",
         "imageUrl": "https:\/\/static.tibia.com\/images\/library\/cancelinvisibility.png",
         "spellInformation": {
-            "premiumOnly": true,
             "vocation": [
                 "Paladin"
             ],
             "level": 26,
-            "formula": "exana ina"
-        },
-        "name": "Cancel Invisibility",
-        "spellId": "cancelinvisibility"
-    },
-    {
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/cancelmagicshield.png",
-        "spellInformation": {
-            "premiumOnly": true,
-            "level": 14,
-            "vocation": [
-                "Druid",
-                "Sorcerer"
-            ],
-            "formula": "exana vita"
-        },
-        "name": "Cancel Magic Shield",
-        "spellId": "cancelmagicshield"
-    },
-    {
-        "name": "Challenge",
-        "spellId": "challenge",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/challenge.png",
-        "spellInformation": {
-            "formula": "exeta res",
-            "level": 20,
-            "vocation": [
-                "Knight"
-            ],
+            "formula": "exana ina",
+            "price": 1600,
             "premiumOnly": true
         }
     },
     {
         "spellInformation": {
+            "vocation": [
+                "Druid",
+                "Sorcerer"
+            ],
+            "level": 14,
+            "price": 450,
+            "premiumOnly": true,
+            "formula": "exana vita"
+        },
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/cancelmagicshield.png",
+        "spellId": "cancelmagicshield",
+        "name": "Cancel Magic Shield"
+    },
+    {
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/challenge.png",
+        "spellInformation": {
+            "formula": "exeta res",
+            "vocation": [
+                "Knight"
+            ],
+            "price": 2000,
+            "level": 20,
+            "premiumOnly": true
+        },
+        "spellId": "challenge",
+        "name": "Challenge"
+    },
+    {
+        "spellInformation": {
             "premiumOnly": false,
             "vocation": [
                 "Druid"
             ],
+            "formula": "adevo ina",
             "level": 27,
-            "formula": "adevo ina"
+            "price": 1300
         },
+        "name": "Chameleon Rune",
         "spellId": "chameleonrune",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/chameleonrune.png",
-        "name": "Chameleon Rune"
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/chameleonrune.png"
     },
     {
         "imageUrl": "https:\/\/static.tibia.com\/images\/library\/charge.png",
-        "name": "Charge",
-        "spellId": "charge",
         "spellInformation": {
+            "level": 25,
+            "price": 1300,
             "formula": "utani tempo hur",
-            "vocation": [
-                "Knight"
-            ],
             "premiumOnly": true,
-            "level": 25
-        }
-    },
-    {
-        "spellId": "chillout",
-        "name": "Chill Out",
-        "spellInformation": {
-            "formula": "exevo infir frigo hur",
-            "vocation": [
-                "Druid"
-            ],
-            "premiumOnly": false,
-            "level": 1
-        },
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/chillout.png"
-    },
-    {
-        "name": "Chivalrous Challenge",
-        "spellId": "chivalrouschallenge",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/chivalrouschallenge.png",
-        "spellInformation": {
-            "level": 150,
-            "premiumOnly": true,
-            "formula": "exeta amp res",
             "vocation": [
                 "Knight"
             ]
+        },
+        "spellId": "charge",
+        "name": "Charge"
+    },
+    {
+        "spellInformation": {
+            "vocation": [
+                "Druid"
+            ],
+            "level": 1,
+            "premiumOnly": false,
+            "price": 0,
+            "formula": "exevo infir frigo hur"
+        },
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/chillout.png",
+        "spellId": "chillout",
+        "name": "Chill Out"
+    },
+    {
+        "spellId": "chivalrouschallenge",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/chivalrouschallenge.png",
+        "name": "Chivalrous Challenge",
+        "spellInformation": {
+            "vocation": [
+                "Knight"
+            ],
+            "price": 250000,
+            "formula": "exeta amp res",
+            "level": 150,
+            "premiumOnly": true
         }
     },
     {
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/conjurearrow.png",
         "spellInformation": {
-            "premiumOnly": false,
             "vocation": [
                 "Paladin"
             ],
-            "formula": "exevo con",
-            "level": 13
+            "level": 13,
+            "price": 450,
+            "premiumOnly": false,
+            "formula": "exevo con"
         },
-        "name": "Conjure Arrow",
-        "spellId": "conjurearrow"
+        "spellId": "conjurearrow",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/conjurearrow.png",
+        "name": "Conjure Arrow"
     },
     {
-        "name": "Conjure Explosive Arrow",
         "spellId": "conjureexplosivearrow",
+        "name": "Conjure Explosive Arrow",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/conjureexplosivearrow.png",
         "spellInformation": {
-            "level": 25,
-            "formula": "exevo con flam",
             "vocation": [
                 "Paladin"
             ],
+            "level": 25,
+            "formula": "exevo con flam",
+            "price": 1000,
             "premiumOnly": false
-        },
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/conjureexplosivearrow.png"
+        }
     },
     {
         "imageUrl": "https:\/\/static.tibia.com\/images\/library\/conjurewandofdarkness.png",
@@ -307,6 +330,7 @@
         "name": "Conjure Wand of Darkness",
         "spellInformation": {
             "formula": "exevo gran mort",
+            "price": 5000,
             "premiumOnly": true,
             "vocation": [
                 "Sorcerer"
@@ -317,206 +341,221 @@
     {
         "name": "Convince Creature Rune",
         "imageUrl": "https:\/\/static.tibia.com\/images\/library\/convincecreaturerune.png",
-        "spellId": "convincecreaturerune",
         "spellInformation": {
-            "formula": "adeta sio",
-            "level": 16,
+            "premiumOnly": false,
             "vocation": [
                 "Druid"
             ],
-            "premiumOnly": false
-        }
+            "price": 800,
+            "level": 16,
+            "formula": "adeta sio"
+        },
+        "spellId": "convincecreaturerune"
     },
     {
+        "name": "Creature Illusion",
+        "spellId": "creatureillusion",
         "imageUrl": "https:\/\/static.tibia.com\/images\/library\/creatureillusion.png",
         "spellInformation": {
+            "level": 23,
             "vocation": [
                 "Druid",
                 "Sorcerer"
             ],
-            "level": 23,
+            "formula": "utevo res ina 'creature'",
             "premiumOnly": false,
-            "formula": "utevo res ina 'creature'"
-        },
-        "spellId": "creatureillusion",
-        "name": "Creature Illusion"
+            "price": 1000
+        }
     },
     {
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/curebleeding.png",
-        "spellId": "curebleeding",
         "name": "Cure Bleeding",
         "spellInformation": {
-            "premiumOnly": true,
             "vocation": [
                 "Knight",
                 "Druid"
             ],
+            "price": 2500,
+            "premiumOnly": true,
             "level": 45,
             "formula": "exana kor"
-        }
+        },
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/curebleeding.png",
+        "spellId": "curebleeding"
     },
     {
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/cureburning.png",
-        "name": "Cure Burning",
         "spellInformation": {
-            "level": 30,
+            "formula": "exana flam",
+            "premiumOnly": true,
             "vocation": [
                 "Druid"
             ],
-            "premiumOnly": true,
-            "formula": "exana flam"
+            "price": 2000,
+            "level": 30
         },
-        "spellId": "cureburning"
+        "name": "Cure Burning",
+        "spellId": "cureburning",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/cureburning.png"
     },
     {
         "imageUrl": "https:\/\/static.tibia.com\/images\/library\/curecurse.png",
-        "spellId": "curecurse",
-        "name": "Cure Curse",
         "spellInformation": {
-            "premiumOnly": true,
-            "level": 80,
+            "price": 6000,
             "vocation": [
                 "Paladin"
             ],
-            "formula": "exana mort"
-        }
+            "level": 80,
+            "formula": "exana mort",
+            "premiumOnly": true
+        },
+        "name": "Cure Curse",
+        "spellId": "curecurse"
     },
     {
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/cureelectrification.png",
+        "name": "Cure Electrification",
+        "spellId": "cureelectrification",
         "spellInformation": {
+            "level": 22,
+            "price": 1000,
+            "premiumOnly": true,
             "vocation": [
                 "Druid"
             ],
-            "premiumOnly": true,
-            "level": 22,
             "formula": "exana vis"
         },
-        "spellId": "cureelectrification",
-        "name": "Cure Electrification"
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/cureelectrification.png"
     },
     {
+        "spellId": "curepoison",
+        "name": "Cure Poison",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/curepoison.png",
         "spellInformation": {
+            "premiumOnly": false,
             "level": 10,
+            "formula": "exana pox",
             "vocation": [
                 "Druid",
                 "Knight",
                 "Paladin",
                 "Sorcerer"
             ],
-            "premiumOnly": false,
-            "formula": "exana pox"
-        },
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/curepoison.png",
-        "spellId": "curepoison",
-        "name": "Cure Poison"
+            "price": 150
+        }
     },
     {
+        "spellId": "curepoisonrune",
         "name": "Cure Poison Rune",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/curepoisonrune.png",
         "spellInformation": {
             "vocation": [
                 "Druid"
             ],
-            "premiumOnly": false,
             "level": 15,
-            "formula": "adana pox"
+            "formula": "adana pox",
+            "price": 600,
+            "premiumOnly": false
         },
-        "spellId": "curepoisonrune"
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/curepoisonrune.png"
     },
     {
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/curse.png",
-        "spellId": "curse",
         "spellInformation": {
+            "formula": "utori mort",
             "premiumOnly": true,
             "vocation": [
                 "Sorcerer"
             ],
             "level": 75,
-            "formula": "utori mort"
+            "price": 6000
         },
-        "name": "Curse"
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/curse.png",
+        "name": "Curse",
+        "spellId": "curse"
     },
     {
+        "spellId": "deathstrike",
         "spellInformation": {
             "vocation": [
                 "Sorcerer"
             ],
+            "price": 800,
             "level": 16,
             "premiumOnly": true,
             "formula": "exori mort"
         },
-        "spellId": "deathstrike",
         "name": "Death Strike",
         "imageUrl": "https:\/\/static.tibia.com\/images\/library\/deathstrike.png"
     },
     {
-        "spellInformation": {
-            "premiumOnly": false,
-            "level": 17,
-            "formula": "adito grav",
-            "vocation": [
-                "Druid",
-                "Paladin",
-                "Sorcerer"
-            ]
-        },
-        "spellId": "destroyfieldrune",
         "imageUrl": "https:\/\/static.tibia.com\/images\/library\/destroyfieldrune.png",
-        "name": "Destroy Field Rune"
-    },
-    {
-        "spellId": "disintegraterune",
-        "name": "Disintegrate Rune",
+        "spellId": "destroyfieldrune",
+        "name": "Destroy Field Rune",
         "spellInformation": {
-            "premiumOnly": true,
+            "level": 17,
+            "price": 700,
             "vocation": [
                 "Druid",
                 "Paladin",
                 "Sorcerer"
             ],
-            "formula": "adito tera",
-            "level": 21
-        },
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/disintegraterune.png"
+            "premiumOnly": false,
+            "formula": "adito grav"
+        }
     },
     {
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/divinecaldera.png",
-        "spellId": "divinecaldera",
+        "spellInformation": {
+            "price": 900,
+            "vocation": [
+                "Druid",
+                "Paladin",
+                "Sorcerer"
+            ],
+            "level": 21,
+            "formula": "adito tera",
+            "premiumOnly": true
+        },
+        "spellId": "disintegraterune",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/disintegraterune.png",
+        "name": "Disintegrate Rune"
+    },
+    {
         "spellInformation": {
             "formula": "exevo mas san",
-            "level": 50,
+            "price": 3000,
             "premiumOnly": true,
+            "level": 50,
             "vocation": [
                 "Paladin"
             ]
         },
-        "name": "Divine Caldera"
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/divinecaldera.png",
+        "name": "Divine Caldera",
+        "spellId": "divinecaldera"
     },
     {
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/divinedazzle.png",
         "spellId": "divinedazzle",
         "name": "Divine Dazzle",
         "spellInformation": {
-            "formula": "exana amp res",
+            "price": 250000,
             "vocation": [
                 "Paladin"
             ],
-            "premiumOnly": true,
-            "level": 250
-        },
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/divinedazzle.png"
+            "level": 250,
+            "formula": "exana amp res",
+            "premiumOnly": true
+        }
     },
     {
-        "name": "Divine Empowerment",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/divineempowerment.png",
         "spellId": "divineempowerment",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/divineempowerment.png",
         "spellInformation": {
-            "level": 0,
             "premiumOnly": true,
+            "price": 0,
             "vocation": [
                 "Paladin"
             ],
+            "level": 0,
             "formula": "utevo grav san"
-        }
+        },
+        "name": "Divine Empowerment"
     },
     {
         "name": "Divine Grenade",
@@ -526,155 +565,167 @@
             "vocation": [
                 "Paladin"
             ],
+            "price": 0,
             "premiumOnly": true,
             "formula": "exevo tempo mas san",
             "level": 0
         }
     },
     {
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/divinehealing.png",
         "spellId": "divinehealing",
-        "spellInformation": {
-            "formula": "exura san",
-            "vocation": [
-                "Paladin"
-            ],
-            "premiumOnly": false,
-            "level": 35
-        },
         "name": "Divine Healing",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/divinehealing.png"
-    },
-    {
-        "name": "Divine Missile",
-        "spellId": "divinemissile",
         "spellInformation": {
-            "level": 40,
             "vocation": [
                 "Paladin"
             ],
-            "formula": "exori san",
-            "premiumOnly": true
-        },
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/divinemissile.png"
-    },
-    {
-        "spellId": "electrify",
-        "name": "Electrify",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/electrify.png",
-        "spellInformation": {
-            "vocation": [
-                "Sorcerer"
-            ],
-            "premiumOnly": true,
-            "level": 34,
-            "formula": "utori vis"
+            "formula": "exura san",
+            "level": 35,
+            "premiumOnly": false,
+            "price": 3000
         }
     },
     {
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/divinemissile.png",
+        "spellId": "divinemissile",
+        "name": "Divine Missile",
         "spellInformation": {
-            "level": 32,
-            "formula": "utori mas sio",
+            "price": 1800,
+            "vocation": [
+                "Paladin"
+            ],
+            "level": 40,
+            "formula": "exori san",
+            "premiumOnly": true
+        }
+    },
+    {
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/electrify.png",
+        "name": "Electrify",
+        "spellInformation": {
             "vocation": [
                 "Sorcerer"
             ],
-            "premiumOnly": true
+            "level": 34,
+            "formula": "utori vis",
+            "premiumOnly": true,
+            "price": 2500
         },
+        "spellId": "electrify"
+    },
+    {
         "spellId": "enchantparty",
+        "spellInformation": {
+            "premiumOnly": true,
+            "price": 4000,
+            "vocation": [
+                "Sorcerer"
+            ],
+            "level": 32,
+            "formula": "utori mas sio"
+        },
         "name": "Enchant Party",
         "imageUrl": "https:\/\/static.tibia.com\/images\/library\/enchantparty.png"
     },
     {
-        "spellId": "enchantspear",
         "name": "Enchant Spear",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/enchantspear.png",
+        "spellId": "enchantspear",
         "spellInformation": {
-            "premiumOnly": true,
             "level": 45,
-            "formula": "exeta con",
+            "premiumOnly": true,
             "vocation": [
                 "Paladin"
-            ]
-        }
+            ],
+            "price": 2000,
+            "formula": "exeta con"
+        },
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/enchantspear.png"
     },
     {
         "name": "Energy Beam",
         "imageUrl": "https:\/\/static.tibia.com\/images\/library\/energybeam.png",
         "spellInformation": {
+            "level": 23,
             "formula": "exevo vis lux",
+            "price": 1000,
             "vocation": [
                 "Sorcerer"
             ],
-            "level": 23,
             "premiumOnly": false
         },
         "spellId": "energybeam"
     },
     {
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/energybombrune.png",
-        "name": "Energy Bomb Rune",
         "spellInformation": {
-            "level": 37,
+            "formula": "adevo mas vis",
             "vocation": [
                 "Sorcerer"
             ],
-            "formula": "adevo mas vis",
-            "premiumOnly": true
+            "premiumOnly": true,
+            "level": 37,
+            "price": 2300
         },
-        "spellId": "energybombrune"
+        "spellId": "energybombrune",
+        "name": "Energy Bomb Rune",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/energybombrune.png"
     },
     {
         "name": "Energy Field Rune",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/energyfieldrune.png",
         "spellId": "energyfieldrune",
         "spellInformation": {
-            "level": 18,
             "formula": "adevo grav vis",
             "vocation": [
                 "Druid",
                 "Sorcerer"
             ],
+            "level": 18,
+            "price": 700,
             "premiumOnly": false
-        },
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/energyfieldrune.png"
+        }
     },
     {
+        "spellId": "energystrike",
         "spellInformation": {
-            "level": 12,
             "vocation": [
                 "Druid",
                 "Sorcerer"
             ],
-            "premiumOnly": true,
-            "formula": "exori vis"
+            "price": 800,
+            "level": 12,
+            "formula": "exori vis",
+            "premiumOnly": true
         },
         "name": "Energy Strike",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/energystrike.png",
-        "spellId": "energystrike"
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/energystrike.png"
     },
     {
-        "spellId": "energywallrune",
-        "name": "Energy Wall Rune",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/energywallrune.png",
         "spellInformation": {
+            "level": 41,
             "formula": "adevo mas grav vis",
             "vocation": [
                 "Druid",
                 "Sorcerer"
             ],
-            "level": 41,
+            "price": 2500,
             "premiumOnly": false
-        }
+        },
+        "spellId": "energywallrune",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/energywallrune.png",
+        "name": "Energy Wall Rune"
     },
     {
+        "spellId": "energywave",
         "name": "Energy Wave",
         "spellInformation": {
-            "level": 38,
+            "formula": "exevo vis hur",
+            "price": 2500,
             "premiumOnly": false,
             "vocation": [
                 "Sorcerer"
             ],
-            "formula": "exevo vis hur"
+            "level": 38
         },
-        "spellId": "energywave",
         "imageUrl": "https:\/\/static.tibia.com\/images\/library\/energywave.png"
     },
     {
@@ -683,207 +734,224 @@
         "imageUrl": "https:\/\/static.tibia.com\/images\/library\/envenom.png",
         "spellInformation": {
             "premiumOnly": true,
+            "price": 6000,
             "level": 50,
+            "formula": "utori pox",
             "vocation": [
                 "Druid"
-            ],
-            "formula": "utori pox"
+            ]
         }
     },
     {
-        "spellId": "eternalwinter",
         "name": "Eternal Winter",
+        "spellId": "eternalwinter",
         "spellInformation": {
             "vocation": [
                 "Druid"
             ],
             "premiumOnly": true,
             "formula": "exevo gran mas frigo",
+            "price": 8000,
             "level": 60
         },
         "imageUrl": "https:\/\/static.tibia.com\/images\/library\/eternalwinter.png"
     },
     {
-        "name": "Ethereal Spear",
         "spellId": "etherealspear",
+        "name": "Ethereal Spear",
         "imageUrl": "https:\/\/static.tibia.com\/images\/library\/etherealspear.png",
         "spellInformation": {
+            "price": 1100,
+            "premiumOnly": true,
+            "level": 23,
+            "formula": "exori con",
             "vocation": [
                 "Paladin"
-            ],
-            "formula": "exori con",
-            "premiumOnly": true,
-            "level": 23
+            ]
         }
     },
     {
         "spellId": "executionersthrow",
+        "name": "Executioner's Throw",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/executionersthrow.png",
         "spellInformation": {
+            "formula": "exori amp kor",
+            "premiumOnly": true,
             "level": 0,
             "vocation": [
                 "Knight"
             ],
-            "premiumOnly": true,
-            "formula": "exori amp kor"
-        },
-        "name": "Executioner's Throw",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/executionersthrow.png"
+            "price": 0
+        }
     },
     {
+        "name": "Explosion Rune",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/explosionrune.png",
+        "spellId": "explosionrune",
         "spellInformation": {
+            "premiumOnly": false,
             "level": 31,
             "formula": "adevo mas hur",
-            "premiumOnly": false,
+            "price": 1800,
             "vocation": [
                 "Druid",
                 "Sorcerer"
             ]
-        },
-        "name": "Explosion Rune",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/explosionrune.png",
-        "spellId": "explosionrune"
+        }
     },
     {
+        "spellId": "exposeweakness",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/exposeweakness.png",
+        "name": "Expose Weakness",
         "spellInformation": {
+            "price": 400000,
+            "level": 275,
+            "premiumOnly": true,
             "vocation": [
                 "Sorcerer"
             ],
-            "premiumOnly": true,
-            "level": 275,
             "formula": "exori moe"
-        },
-        "spellId": "exposeweakness",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/exposeweakness.png",
-        "name": "Expose Weakness"
+        }
     },
     {
         "spellId": "fairwoundcleansing",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/fairwoundcleansing.png",
         "name": "Fair Wound Cleansing",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/fairwoundcleansing.png",
         "spellInformation": {
-            "formula": "exura med ico",
             "premiumOnly": true,
+            "formula": "exura med ico",
             "vocation": [
                 "Knight"
             ],
-            "level": 300
+            "level": 300,
+            "price": 500000
         }
     },
     {
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/fierceberserk.png",
-        "name": "Fierce Berserk",
-        "spellId": "fierceberserk",
         "spellInformation": {
-            "formula": "exori gran",
             "vocation": [
                 "Knight"
             ],
+            "level": 90,
+            "formula": "exori gran",
             "premiumOnly": true,
-            "level": 90
-        }
+            "price": 7500
+        },
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/fierceberserk.png",
+        "name": "Fierce Berserk",
+        "spellId": "fierceberserk"
     },
     {
         "name": "Find Fiend",
-        "spellId": "findfiend",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/findfiend.png",
         "spellInformation": {
-            "premiumOnly": false,
-            "level": 25,
-            "formula": "exiva moe res",
-            "vocation": [
-                "Druid",
-                "Knight",
-                "Paladin",
-                "Sorcerer"
-            ]
-        },
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/findfiend.png"
-    },
-    {
-        "spellId": "findperson",
-        "spellInformation": {
-            "level": 8,
-            "formula": "exiva 'name'",
             "vocation": [
                 "Druid",
                 "Knight",
                 "Paladin",
                 "Sorcerer"
             ],
-            "premiumOnly": false
+            "price": 1000,
+            "formula": "exiva moe res",
+            "premiumOnly": false,
+            "level": 25
         },
-        "name": "Find Person",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/findperson.png"
+        "spellId": "findfiend"
     },
     {
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/firebombrune.png",
+        "name": "Find Person",
+        "spellInformation": {
+            "premiumOnly": false,
+            "price": 80,
+            "vocation": [
+                "Druid",
+                "Knight",
+                "Paladin",
+                "Sorcerer"
+            ],
+            "level": 8,
+            "formula": "exiva 'name'"
+        },
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/findperson.png",
+        "spellId": "findperson"
+    },
+    {
         "name": "Fire Bomb Rune",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/firebombrune.png",
         "spellId": "firebombrune",
         "spellInformation": {
             "vocation": [
                 "Druid",
                 "Sorcerer"
             ],
-            "formula": "adevo mas flam",
+            "level": 27,
+            "price": 1500,
             "premiumOnly": false,
-            "level": 27
+            "formula": "adevo mas flam"
         }
     },
     {
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/firefieldrune.png",
         "spellId": "firefieldrune",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/firefieldrune.png",
         "spellInformation": {
+            "price": 500,
             "vocation": [
                 "Druid",
                 "Sorcerer"
             ],
+            "level": 15,
             "premiumOnly": false,
-            "formula": "adevo grav flam",
-            "level": 15
+            "formula": "adevo grav flam"
         },
         "name": "Fire Field Rune"
     },
     {
-        "spellId": "firewallrune",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/firewallrune.png",
         "spellInformation": {
+            "premiumOnly": false,
+            "level": 33,
             "vocation": [
                 "Druid",
                 "Sorcerer"
             ],
-            "level": 33,
             "formula": "adevo mas grav flam",
-            "premiumOnly": false
+            "price": 2000
         },
-        "name": "Fire Wall Rune"
+        "name": "Fire Wall Rune",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/firewallrune.png",
+        "spellId": "firewallrune"
     },
     {
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/firewave.png",
         "spellId": "firewave",
         "spellInformation": {
-            "premiumOnly": false,
-            "level": 18,
             "formula": "exevo flam hur",
+            "vocation": [
+                "Sorcerer"
+            ],
+            "level": 18,
+            "price": 850,
+            "premiumOnly": false
+        },
+        "name": "Fire Wave",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/firewave.png"
+    },
+    {
+        "name": "Fireball Rune",
+        "spellId": "fireballrune",
+        "spellInformation": {
+            "price": 1600,
+            "premiumOnly": true,
+            "level": 27,
+            "formula": "adori flam",
             "vocation": [
                 "Sorcerer"
             ]
         },
-        "name": "Fire Wave"
-    },
-    {
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/fireballrune.png",
-        "spellInformation": {
-            "vocation": [
-                "Sorcerer"
-            ],
-            "formula": "adori flam",
-            "level": 27,
-            "premiumOnly": true
-        },
-        "spellId": "fireballrune",
-        "name": "Fireball Rune"
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/fireballrune.png"
     },
     {
         "spellId": "flamestrike",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/flamestrike.png",
+        "name": "Flame Strike",
         "spellInformation": {
             "level": 14,
             "formula": "exori flam",
@@ -891,95 +959,99 @@
                 "Druid",
                 "Sorcerer"
             ],
+            "price": 800,
             "premiumOnly": true
-        },
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/flamestrike.png",
-        "name": "Flame Strike"
+        }
     },
     {
         "spellId": "food",
-        "name": "Food",
         "imageUrl": "https:\/\/static.tibia.com\/images\/library\/food.png",
+        "name": "Food",
         "spellInformation": {
-            "level": 14,
-            "formula": "exevo pan",
-            "premiumOnly": false,
+            "price": 300,
             "vocation": [
                 "Druid"
-            ]
+            ],
+            "formula": "exevo pan",
+            "level": 14,
+            "premiumOnly": false
         }
     },
     {
         "spellInformation": {
-            "formula": "exori min",
-            "level": 70,
             "vocation": [
                 "Knight"
             ],
-            "premiumOnly": true
+            "level": 70,
+            "price": 4000,
+            "premiumOnly": true,
+            "formula": "exori min"
         },
         "name": "Front Sweep",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/frontsweep.png",
-        "spellId": "frontsweep"
+        "spellId": "frontsweep",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/frontsweep.png"
     },
     {
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/greatdeathbeam.png",
-        "spellId": "greatdeathbeam",
-        "name": "Great Death Beam",
         "spellInformation": {
-            "level": 0,
+            "price": 0,
+            "premiumOnly": true,
             "vocation": [
                 "Sorcerer"
             ],
-            "formula": "exevo max mort",
-            "premiumOnly": true
+            "level": 0,
+            "formula": "exevo max mort"
+        },
+        "spellId": "greatdeathbeam",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/greatdeathbeam.png",
+        "name": "Great Death Beam"
+    },
+    {
+        "spellInformation": {
+            "level": 29,
+            "premiumOnly": false,
+            "vocation": [
+                "Sorcerer"
+            ],
+            "price": 1800,
+            "formula": "exevo gran vis lux"
+        },
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/greatenergybeam.png",
+        "name": "Great Energy Beam",
+        "spellId": "greatenergybeam"
+    },
+    {
+        "name": "Great Fire Wave",
+        "spellId": "greatfirewave",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/greatfirewave.png",
+        "spellInformation": {
+            "premiumOnly": true,
+            "vocation": [
+                "Sorcerer"
+            ],
+            "formula": "exevo gran flam hur",
+            "level": 38,
+            "price": 25000
         }
     },
     {
-        "name": "Great Energy Beam",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/greatenergybeam.png",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/greatfireballrune.png",
         "spellInformation": {
+            "price": 1200,
+            "formula": "adori mas flam",
             "premiumOnly": false,
-            "formula": "exevo gran vis lux",
-            "level": 29,
+            "level": 30,
             "vocation": [
                 "Sorcerer"
             ]
         },
-        "spellId": "greatenergybeam"
-    },
-    {
-        "spellId": "greatfirewave",
-        "name": "Great Fire Wave",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/greatfirewave.png",
-        "spellInformation": {
-            "premiumOnly": true,
-            "formula": "exevo gran flam hur",
-            "level": 38,
-            "vocation": [
-                "Sorcerer"
-            ]
-        }
-    },
-    {
         "spellId": "greatfireballrune",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/greatfireballrune.png",
-        "name": "Great Fireball Rune",
-        "spellInformation": {
-            "level": 30,
-            "formula": "adori mas flam",
-            "premiumOnly": false,
-            "vocation": [
-                "Sorcerer"
-            ]
-        }
+        "name": "Great Fireball Rune"
     },
     {
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/greatlight.png",
-        "spellId": "greatlight",
         "name": "Great Light",
+        "spellId": "greatlight",
         "spellInformation": {
-            "formula": "utevo gran lux",
+            "price": 500,
             "level": 13,
             "vocation": [
                 "Druid",
@@ -987,381 +1059,413 @@
                 "Paladin",
                 "Sorcerer"
             ],
+            "formula": "utevo gran lux",
             "premiumOnly": false
-        }
+        },
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/greatlight.png"
     },
     {
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/groundshaker.png",
         "spellId": "groundshaker",
-        "name": "Groundshaker",
         "spellInformation": {
-            "premiumOnly": true,
+            "level": 33,
+            "formula": "exori mas",
             "vocation": [
                 "Knight"
             ],
-            "formula": "exori mas",
-            "level": 33
-        }
+            "price": 1500,
+            "premiumOnly": true
+        },
+        "name": "Groundshaker",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/groundshaker.png"
     },
     {
-        "spellId": "haste",
-        "name": "Haste",
         "imageUrl": "https:\/\/static.tibia.com\/images\/library\/haste.png",
+        "name": "Haste",
+        "spellId": "haste",
         "spellInformation": {
-            "formula": "utani hur",
             "vocation": [
                 "Druid",
                 "Knight",
                 "Paladin",
                 "Sorcerer"
             ],
-            "premiumOnly": true,
-            "level": 14
+            "level": 14,
+            "formula": "utani hur",
+            "price": 600,
+            "premiumOnly": true
         }
     },
     {
+        "spellId": "healfriend",
+        "name": "Heal Friend",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/healfriend.png",
+        "spellInformation": {
+            "vocation": [
+                "Druid"
+            ],
+            "formula": "exura sio 'name'",
+            "price": 800,
+            "premiumOnly": true,
+            "level": 18
+        }
+    },
+    {
+        "name": "Heal Party",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/healparty.png",
         "spellInformation": {
             "premiumOnly": true,
-            "formula": "exura sio 'name'",
-            "level": 18,
+            "formula": "utura mas sio",
+            "level": 32,
+            "price": 4000,
             "vocation": [
                 "Druid"
             ]
         },
-        "name": "Heal Friend",
-        "spellId": "healfriend",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/healfriend.png"
-    },
-    {
-        "spellId": "healparty",
-        "spellInformation": {
-            "level": 32,
-            "formula": "utura mas sio",
-            "vocation": [
-                "Druid"
-            ],
-            "premiumOnly": true
-        },
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/healparty.png",
-        "name": "Heal Party"
+        "spellId": "healparty"
     },
     {
         "name": "Heavy Magic Missile Rune",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/heavymagicmissilerune.png",
+        "spellId": "heavymagicmissilerune",
         "spellInformation": {
+            "formula": "adori vis",
+            "price": 1500,
             "level": 25,
+            "premiumOnly": false,
             "vocation": [
                 "Druid",
                 "Sorcerer"
-            ],
-            "formula": "adori vis",
-            "premiumOnly": false
+            ]
         },
-        "spellId": "heavymagicmissilerune"
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/heavymagicmissilerune.png"
     },
     {
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/hellscore.png",
-        "name": "Hell's Core",
         "spellInformation": {
+            "level": 60,
             "vocation": [
                 "Sorcerer"
             ],
             "formula": "exevo gran mas flam",
-            "level": 60,
+            "price": 8000,
             "premiumOnly": true
         },
+        "name": "Hell's Core",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/hellscore.png",
         "spellId": "hellscore"
     },
     {
+        "name": "Holy Flash",
         "spellId": "holyflash",
         "imageUrl": "https:\/\/static.tibia.com\/images\/library\/holyflash.png",
         "spellInformation": {
             "vocation": [
                 "Paladin"
             ],
-            "formula": "utori san",
             "level": 70,
+            "price": 7500,
+            "formula": "utori san",
             "premiumOnly": true
-        },
-        "name": "Holy Flash"
+        }
     },
     {
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/holymissilerune.png",
-        "spellId": "holymissilerune",
         "name": "Holy Missile Rune",
+        "spellId": "holymissilerune",
         "spellInformation": {
-            "level": 27,
             "premiumOnly": true,
-            "formula": "adori san",
             "vocation": [
                 "Paladin"
-            ]
-        }
+            ],
+            "price": 1600,
+            "level": 27,
+            "formula": "adori san"
+        },
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/holymissilerune.png"
     },
     {
         "name": "Ice Burst",
-        "spellId": "iceburst",
         "imageUrl": "https:\/\/static.tibia.com\/images\/library\/iceburst.png",
         "spellInformation": {
             "level": 0,
-            "premiumOnly": true,
             "formula": "exevo ulus frigo",
+            "price": 0,
             "vocation": [
                 "Druid"
-            ]
-        }
+            ],
+            "premiumOnly": true
+        },
+        "spellId": "iceburst"
     },
     {
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/icestrike.png",
         "name": "Ice Strike",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/icestrike.png",
         "spellInformation": {
-            "level": 15,
-            "formula": "exori frigo",
+            "premiumOnly": true,
             "vocation": [
                 "Druid",
                 "Sorcerer"
             ],
-            "premiumOnly": true
+            "formula": "exori frigo",
+            "level": 15,
+            "price": 800
         },
         "spellId": "icestrike"
     },
     {
-        "name": "Ice Wave",
         "spellInformation": {
-            "level": 18,
-            "formula": "exevo frigo hur",
-            "premiumOnly": false,
-            "vocation": [
-                "Druid"
-            ]
-        },
-        "spellId": "icewave",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/icewave.png"
-    },
-    {
-        "name": "Icicle Rune",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/iciclerune.png",
-        "spellInformation": {
-            "level": 28,
             "vocation": [
                 "Druid"
             ],
-            "premiumOnly": true,
-            "formula": "adori frigo"
+            "premiumOnly": false,
+            "price": 850,
+            "formula": "exevo frigo hur",
+            "level": 18
         },
-        "spellId": "iciclerune"
+        "name": "Ice Wave",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/icewave.png",
+        "spellId": "icewave"
     },
     {
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/iciclerune.png",
+        "spellInformation": {
+            "formula": "adori frigo",
+            "level": 28,
+            "price": 1700,
+            "vocation": [
+                "Druid"
+            ],
+            "premiumOnly": true
+        },
+        "spellId": "iciclerune",
+        "name": "Icicle Rune"
+    },
+    {
+        "name": "Ignite",
         "spellId": "ignite",
         "imageUrl": "https:\/\/static.tibia.com\/images\/library\/ignite.png",
-        "name": "Ignite",
         "spellInformation": {
-            "level": 26,
-            "formula": "utori flam",
             "premiumOnly": true,
+            "level": 26,
+            "price": 1500,
             "vocation": [
                 "Sorcerer"
-            ]
+            ],
+            "formula": "utori flam"
         }
     },
     {
         "imageUrl": "https:\/\/static.tibia.com\/images\/library\/inflictwound.png",
-        "spellId": "inflictwound",
         "name": "Inflict Wound",
+        "spellId": "inflictwound",
         "spellInformation": {
-            "premiumOnly": true,
-            "formula": "utori kor",
-            "level": 40,
             "vocation": [
                 "Knight"
-            ]
+            ],
+            "formula": "utori kor",
+            "premiumOnly": true,
+            "level": 40,
+            "price": 2500
         }
     },
     {
-        "spellId": "intensehealing",
         "imageUrl": "https:\/\/static.tibia.com\/images\/library\/intensehealing.png",
         "name": "Intense Healing",
         "spellInformation": {
-            "formula": "exura gran",
-            "level": 20,
+            "price": 350,
             "premiumOnly": false,
+            "level": 20,
+            "formula": "exura gran",
             "vocation": [
                 "Druid",
                 "Paladin",
                 "Sorcerer"
             ]
-        }
+        },
+        "spellId": "intensehealing"
     },
     {
+        "name": "Intense Healing Rune",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/intensehealingrune.png",
         "spellId": "intensehealingrune",
         "spellInformation": {
-            "premiumOnly": false,
-            "level": 15,
             "formula": "adura gran",
             "vocation": [
                 "Druid"
-            ]
-        },
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/intensehealingrune.png",
-        "name": "Intense Healing Rune"
+            ],
+            "price": 600,
+            "level": 15,
+            "premiumOnly": false
+        }
     },
     {
-        "name": "Intense Recovery",
         "imageUrl": "https:\/\/static.tibia.com\/images\/library\/intenserecovery.png",
+        "spellId": "intenserecovery",
+        "name": "Intense Recovery",
         "spellInformation": {
-            "formula": "utura gran",
             "vocation": [
                 "Knight",
                 "Paladin"
             ],
+            "price": 10000,
             "premiumOnly": true,
-            "level": 100
-        },
-        "spellId": "intenserecovery"
+            "level": 100,
+            "formula": "utura gran"
+        }
     },
     {
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/intensewoundcleansing.png",
         "spellInformation": {
             "vocation": [
                 "Knight"
             ],
-            "premiumOnly": true,
             "formula": "exura gran ico",
-            "level": 80
+            "price": 6000,
+            "level": 80,
+            "premiumOnly": true
         },
-        "spellId": "intensewoundcleansing",
         "name": "Intense Wound Cleansing",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/intensewoundcleansing.png"
+        "spellId": "intensewoundcleansing"
     },
     {
-        "spellId": "invisible",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/invisible.png",
+        "name": "Invisible",
         "spellInformation": {
-            "premiumOnly": false,
+            "price": 2000,
             "vocation": [
                 "Druid",
                 "Sorcerer"
             ],
-            "formula": "utana vid",
-            "level": 35
+            "premiumOnly": false,
+            "level": 35,
+            "formula": "utana vid"
         },
-        "name": "Invisible"
+        "spellId": "invisible",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/invisible.png"
     },
     {
+        "name": "Lesser Ethereal Spear",
+        "spellId": "lesseretherealspear",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/lesseretherealspear.png",
         "spellInformation": {
             "premiumOnly": false,
+            "formula": "exori con infir",
+            "level": 0,
             "vocation": [
                 "Paladin"
             ],
-            "formula": "exori con infir",
-            "level": 0
-        },
-        "name": "Lesser Ethereal Spear",
-        "spellId": "lesseretherealspear",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/lesseretherealspear.png"
+            "price": 0
+        }
     },
     {
+        "spellId": "lesserfrontsweep",
         "imageUrl": "https:\/\/static.tibia.com\/images\/library\/lesserfrontsweep.png",
         "name": "Lesser Front Sweep",
         "spellInformation": {
+            "level": 0,
             "vocation": [
                 "Knight"
             ],
-            "premiumOnly": false,
-            "level": 0,
-            "formula": "exori min infir"
-        },
-        "spellId": "lesserfrontsweep"
+            "price": 0,
+            "formula": "exori min infir",
+            "premiumOnly": false
+        }
     },
     {
+        "spellId": "levitate",
         "name": "Levitate",
         "spellInformation": {
-            "premiumOnly": true,
-            "level": 12,
+            "formula": "exani hur 'up|down'",
             "vocation": [
                 "Druid",
                 "Knight",
                 "Paladin",
                 "Sorcerer"
             ],
-            "formula": "exani hur 'up|down'"
+            "level": 12,
+            "price": 500,
+            "premiumOnly": true
         },
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/levitate.png",
-        "spellId": "levitate"
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/levitate.png"
     },
     {
-        "spellId": "light",
         "spellInformation": {
-            "level": 8,
+            "price": 0,
             "vocation": [
                 "Druid",
                 "Knight",
                 "Paladin",
                 "Sorcerer"
             ],
+            "level": 8,
             "formula": "utevo lux",
             "premiumOnly": false
         },
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/light.png",
-        "name": "Light"
+        "name": "Light",
+        "spellId": "light",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/light.png"
     },
     {
-        "spellId": "lighthealing",
         "name": "Light Healing",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/lighthealing.png",
+        "spellId": "lighthealing",
         "spellInformation": {
-            "level": 8,
             "premiumOnly": false,
+            "level": 8,
             "vocation": [
                 "Druid",
                 "Paladin",
                 "Sorcerer"
             ],
-            "formula": "exura"
-        },
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/lighthealing.png"
+            "formula": "exura",
+            "price": 0
+        }
     },
     {
-        "spellId": "lightmagicmissilerune",
+        "name": "Light Magic Missile Rune",
         "spellInformation": {
             "formula": "adori min vis",
-            "level": 15,
+            "price": 500,
             "vocation": [
                 "Druid",
                 "Sorcerer"
             ],
-            "premiumOnly": false
+            "premiumOnly": false,
+            "level": 15
         },
-        "name": "Light Magic Missile Rune",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/lightmagicmissilerune.png"
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/lightmagicmissilerune.png",
+        "spellId": "lightmagicmissilerune"
     },
     {
         "name": "Lightning",
         "imageUrl": "https:\/\/static.tibia.com\/images\/library\/lightning.png",
+        "spellId": "lightning",
         "spellInformation": {
-            "formula": "exori amp vis",
+            "price": 5000,
+            "premiumOnly": true,
             "level": 55,
+            "formula": "exori amp vis",
             "vocation": [
                 "Sorcerer"
-            ],
-            "premiumOnly": true
-        },
-        "spellId": "lightning"
+            ]
+        }
     },
     {
         "spellId": "magicpatch",
+        "name": "Magic Patch",
         "imageUrl": "https:\/\/static.tibia.com\/images\/library\/magicpatch.png",
         "spellInformation": {
-            "formula": "exura infir",
-            "level": 1,
             "premiumOnly": false,
+            "price": 0,
+            "formula": "exura infir",
             "vocation": [
                 "Druid",
                 "Paladin",
                 "Sorcerer"
-            ]
-        },
-        "name": "Magic Patch"
+            ],
+            "level": 1
+        }
     },
     {
+        "spellId": "magicrope",
+        "name": "Magic Rope",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/magicrope.png",
         "spellInformation": {
             "premiumOnly": true,
             "vocation": [
@@ -1371,77 +1475,80 @@
                 "Sorcerer"
             ],
             "level": 9,
-            "formula": "exani tera"
-        },
-        "spellId": "magicrope",
-        "name": "Magic Rope",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/magicrope.png"
+            "formula": "exani tera",
+            "price": 200
+        }
     },
     {
-        "spellId": "magicshield",
         "name": "Magic Shield",
+        "spellId": "magicshield",
         "imageUrl": "https:\/\/static.tibia.com\/images\/library\/magicshield.png",
         "spellInformation": {
+            "premiumOnly": false,
+            "price": 450,
+            "level": 14,
             "vocation": [
                 "Druid",
                 "Sorcerer"
             ],
-            "level": 14,
-            "formula": "utamo vita",
-            "premiumOnly": false
+            "formula": "utamo vita"
         }
     },
     {
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/magicwallrune.png",
+        "name": "Magic Wall Rune",
         "spellId": "magicwallrune",
         "spellInformation": {
+            "price": 2100,
+            "premiumOnly": true,
             "vocation": [
                 "Sorcerer"
             ],
-            "level": 32,
-            "premiumOnly": true,
-            "formula": "adevo grav tera"
-        },
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/magicwallrune.png",
-        "name": "Magic Wall Rune"
-    },
-    {
-        "spellId": "masshealing",
-        "name": "Mass Healing",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/masshealing.png",
-        "spellInformation": {
-            "premiumOnly": true,
-            "level": 36,
-            "formula": "exura gran mas res",
-            "vocation": [
-                "Druid"
-            ]
+            "formula": "adevo grav tera",
+            "level": 32
         }
     },
     {
+        "name": "Mass Healing",
+        "spellInformation": {
+            "price": 2200,
+            "vocation": [
+                "Druid"
+            ],
+            "formula": "exura gran mas res",
+            "level": 36,
+            "premiumOnly": true
+        },
+        "spellId": "masshealing",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/masshealing.png"
+    },
+    {
+        "spellId": "mudattack",
         "name": "Mud Attack",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/mudattack.png",
         "spellInformation": {
             "vocation": [
                 "Druid"
             ],
             "level": 1,
             "formula": "exori infir tera",
+            "price": 0,
             "premiumOnly": false
         },
-        "spellId": "mudattack"
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/mudattack.png"
     },
     {
-        "spellId": "naturesembrace",
         "name": "Nature's Embrace",
+        "spellId": "naturesembrace",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/naturesembrace.png",
         "spellInformation": {
-            "premiumOnly": true,
             "formula": "exura gran sio para",
+            "price": 500000,
+            "level": 275,
             "vocation": [
                 "Druid"
             ],
-            "level": 275
-        },
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/naturesembrace.png"
+            "premiumOnly": true
+        }
     },
     {
         "spellInformation": {
@@ -1449,568 +1556,611 @@
             "vocation": [
                 "Druid"
             ],
-            "level": 54,
-            "premiumOnly": true
+            "price": 1900,
+            "premiumOnly": true,
+            "level": 54
         },
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/paralyserune.png",
         "spellId": "paralyserune",
-        "name": "Paralyse Rune"
+        "name": "Paralyse Rune",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/paralyserune.png"
     },
     {
         "spellInformation": {
-            "level": 16,
+            "formula": "exori moe ico",
+            "price": 800,
+            "premiumOnly": true,
             "vocation": [
                 "Druid"
             ],
-            "premiumOnly": true,
-            "formula": "exori moe ico"
+            "level": 16
         },
+        "name": "Physical Strike",
         "spellId": "physicalstrike",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/physicalstrike.png",
-        "name": "Physical Strike"
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/physicalstrike.png"
     },
     {
-        "name": "Poison Bomb Rune",
         "spellInformation": {
-            "level": 25,
-            "premiumOnly": true,
-            "formula": "adevo mas pox",
             "vocation": [
                 "Druid"
-            ]
+            ],
+            "formula": "adevo mas pox",
+            "level": 25,
+            "price": 1000,
+            "premiumOnly": true
         },
         "spellId": "poisonbombrune",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/poisonbombrune.png"
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/poisonbombrune.png",
+        "name": "Poison Bomb Rune"
     },
     {
         "imageUrl": "https:\/\/static.tibia.com\/images\/library\/poisonfieldrune.png",
+        "name": "Poison Field Rune",
+        "spellId": "poisonfieldrune",
         "spellInformation": {
+            "price": 300,
+            "formula": "adevo grav pox",
+            "premiumOnly": false,
             "vocation": [
                 "Druid",
                 "Sorcerer"
             ],
-            "premiumOnly": false,
-            "level": 14,
-            "formula": "adevo grav pox"
-        },
-        "spellId": "poisonfieldrune",
-        "name": "Poison Field Rune"
+            "level": 14
+        }
     },
     {
         "name": "Poison Wall Rune",
-        "spellId": "poisonwallrune",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/poisonwallrune.png",
         "spellInformation": {
+            "price": 1600,
             "vocation": [
                 "Druid",
                 "Sorcerer"
             ],
+            "level": 29,
             "formula": "adevo mas grav pox",
-            "premiumOnly": false,
-            "level": 29
+            "premiumOnly": false
         },
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/poisonwallrune.png"
+        "spellId": "poisonwallrune"
     },
     {
         "spellId": "protectparty",
         "imageUrl": "https:\/\/static.tibia.com\/images\/library\/protectparty.png",
-        "name": "Protect Party",
         "spellInformation": {
+            "price": 4000,
+            "formula": "utamo mas sio",
             "vocation": [
                 "Paladin"
             ],
+            "level": 32,
+            "premiumOnly": true
+        },
+        "name": "Protect Party"
+    },
+    {
+        "name": "Protector",
+        "spellId": "protector",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/protector.png",
+        "spellInformation": {
+            "price": 6000,
+            "level": 55,
+            "formula": "utamo tempo",
             "premiumOnly": true,
-            "formula": "utamo mas sio",
-            "level": 32
+            "vocation": [
+                "Knight"
+            ]
         }
     },
     {
-        "spellId": "protector",
-        "name": "Protector",
         "spellInformation": {
-            "vocation": [
-                "Knight"
-            ],
-            "formula": "utamo tempo",
-            "premiumOnly": true,
-            "level": 55
-        },
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/protector.png"
-    },
-    {
-        "name": "Rage of the Skies",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/rageoftheskies.png",
-        "spellInformation": {
-            "formula": "exevo gran mas vis",
             "level": 55,
+            "premiumOnly": true,
             "vocation": [
                 "Sorcerer"
             ],
-            "premiumOnly": true
+            "formula": "exevo gran mas vis",
+            "price": 6000
         },
-        "spellId": "rageoftheskies"
+        "name": "Rage of the Skies",
+        "spellId": "rageoftheskies",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/rageoftheskies.png"
     },
     {
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/recovery.png",
-        "spellId": "recovery",
+        "name": "Recovery",
         "spellInformation": {
+            "formula": "utura",
             "vocation": [
                 "Knight",
                 "Paladin"
             ],
-            "premiumOnly": true,
             "level": 50,
-            "formula": "utura"
+            "price": 4000,
+            "premiumOnly": true
         },
-        "name": "Recovery"
+        "spellId": "recovery",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/recovery.png"
     },
     {
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/restoration.png",
+        "name": "Restoration",
         "spellInformation": {
-            "level": 300,
             "vocation": [
                 "Druid",
                 "Sorcerer"
             ],
-            "premiumOnly": true,
-            "formula": "exura max vita"
+            "formula": "exura max vita",
+            "level": 300,
+            "price": 500000,
+            "premiumOnly": true
         },
-        "spellId": "restoration",
-        "name": "Restoration",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/restoration.png"
+        "spellId": "restoration"
     },
     {
-        "name": "Salvation",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/salvation.png",
-        "spellId": "salvation",
         "spellInformation": {
+            "formula": "exura gran san",
             "premiumOnly": true,
-            "level": 60,
             "vocation": [
                 "Paladin"
             ],
-            "formula": "exura gran san"
-        }
+            "price": 8000,
+            "level": 60
+        },
+        "name": "Salvation",
+        "spellId": "salvation",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/salvation.png"
     },
     {
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/sapstrength.png",
-        "name": "Sap Strength",
         "spellId": "sapstrength",
+        "name": "Sap Strength",
         "spellInformation": {
-            "level": 175,
             "vocation": [
                 "Sorcerer"
             ],
             "premiumOnly": true,
+            "price": 200000,
+            "level": 175,
             "formula": "exori kor"
-        }
+        },
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/sapstrength.png"
     },
     {
-        "name": "Scorch",
-        "spellId": "scorch",
         "spellInformation": {
-            "premiumOnly": false,
             "vocation": [
                 "Sorcerer"
             ],
             "level": 1,
-            "formula": "exevo infir flam hur"
+            "formula": "exevo infir flam hur",
+            "price": 0,
+            "premiumOnly": false
         },
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/scorch.png"
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/scorch.png",
+        "name": "Scorch",
+        "spellId": "scorch"
     },
     {
         "name": "Sharpshooter",
-        "spellId": "sharpshooter",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/sharpshooter.png",
         "spellInformation": {
-            "level": 60,
-            "premiumOnly": true,
-            "formula": "utito tempo san",
             "vocation": [
                 "Paladin"
-            ]
-        }
+            ],
+            "formula": "utito tempo san",
+            "level": 60,
+            "price": 8000,
+            "premiumOnly": true
+        },
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/sharpshooter.png",
+        "spellId": "sharpshooter"
     },
     {
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/soulfirerune.png",
+        "name": "Soulfire Rune",
         "spellInformation": {
             "vocation": [
                 "Druid",
                 "Sorcerer"
             ],
+            "price": 1800,
             "premiumOnly": true,
             "level": 27,
             "formula": "adevo res flam"
         },
-        "name": "Soulfire Rune",
-        "spellId": "soulfirerune",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/soulfirerune.png"
+        "spellId": "soulfirerune"
     },
     {
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/stalagmiterune.png",
-        "spellId": "stalagmiterune",
+        "name": "Stalagmite Rune",
         "spellInformation": {
-            "premiumOnly": false,
+            "price": 1400,
             "vocation": [
                 "Druid",
                 "Sorcerer"
             ],
-            "level": 24,
-            "formula": "adori tera"
+            "premiumOnly": false,
+            "formula": "adori tera",
+            "level": 24
         },
-        "name": "Stalagmite Rune"
+        "spellId": "stalagmiterune",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/stalagmiterune.png"
     },
     {
         "spellId": "stoneshowerrune",
+        "name": "Stone Shower Rune",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/stoneshowerrune.png",
         "spellInformation": {
-            "vocation": [
-                "Druid"
-            ],
             "formula": "adori mas tera",
             "premiumOnly": true,
-            "level": 28
-        },
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/stoneshowerrune.png",
-        "name": "Stone Shower Rune"
-    },
-    {
-        "spellId": "strongenergystrike",
-        "spellInformation": {
-            "formula": "exori gran vis",
-            "premiumOnly": true,
-            "level": 80,
+            "level": 28,
+            "price": 1100,
             "vocation": [
-                "Sorcerer"
-            ]
-        },
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/strongenergystrike.png",
-        "name": "Strong Energy Strike"
-    },
-    {
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/strongetherealspear.png",
-        "spellId": "strongetherealspear",
-        "name": "Strong Ethereal Spear",
-        "spellInformation": {
-            "premiumOnly": true,
-            "formula": "exori gran con",
-            "level": 90,
-            "vocation": [
-                "Paladin"
+                "Druid"
             ]
         }
     },
     {
-        "spellId": "strongflamestrike",
-        "name": "Strong Flame Strike",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/strongflamestrike.png",
+        "name": "Strong Energy Strike",
+        "spellId": "strongenergystrike",
         "spellInformation": {
-            "premiumOnly": true,
-            "formula": "exori gran flam",
-            "level": 70,
+            "formula": "exori gran vis",
             "vocation": [
                 "Sorcerer"
-            ]
+            ],
+            "premiumOnly": true,
+            "level": 80,
+            "price": 7500
+        },
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/strongenergystrike.png"
+    },
+    {
+        "spellId": "strongetherealspear",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/strongetherealspear.png",
+        "name": "Strong Ethereal Spear",
+        "spellInformation": {
+            "formula": "exori gran con",
+            "level": 90,
+            "premiumOnly": true,
+            "vocation": [
+                "Paladin"
+            ],
+            "price": 10000
+        }
+    },
+    {
+        "name": "Strong Flame Strike",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/strongflamestrike.png",
+        "spellId": "strongflamestrike",
+        "spellInformation": {
+            "formula": "exori gran flam",
+            "price": 6000,
+            "premiumOnly": true,
+            "vocation": [
+                "Sorcerer"
+            ],
+            "level": 70
         }
     },
     {
         "spellId": "stronghaste",
         "name": "Strong Haste",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/stronghaste.png",
         "spellInformation": {
-            "premiumOnly": true,
-            "level": 20,
             "formula": "utani gran hur",
+            "premiumOnly": true,
+            "price": 1300,
             "vocation": [
                 "Druid",
                 "Sorcerer"
-            ]
-        },
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/stronghaste.png"
-    },
-    {
-        "spellInformation": {
-            "vocation": [
-                "Druid"
             ],
-            "premiumOnly": true,
-            "level": 80,
-            "formula": "exori gran frigo"
-        },
-        "spellId": "strongicestrike",
-        "name": "Strong Ice Strike",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/strongicestrike.png"
-    },
-    {
-        "name": "Strong Ice Wave",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/strongicewave.png",
-        "spellInformation": {
-            "level": 40,
-            "formula": "exevo gran frigo hur",
-            "premiumOnly": true,
-            "vocation": [
-                "Druid"
-            ]
-        },
-        "spellId": "strongicewave"
-    },
-    {
-        "spellId": "strongterrastrike",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/strongterrastrike.png",
-        "name": "Strong Terra Strike",
-        "spellInformation": {
-            "premiumOnly": true,
-            "level": 70,
-            "vocation": [
-                "Druid"
-            ],
-            "formula": "exori gran tera"
+            "level": 20
         }
     },
     {
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/suddendeathrune.png",
-        "spellId": "suddendeathrune",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/strongicestrike.png",
+        "spellInformation": {
+            "vocation": [
+                "Druid"
+            ],
+            "formula": "exori gran frigo",
+            "level": 80,
+            "price": 6000,
+            "premiumOnly": true
+        },
+        "spellId": "strongicestrike",
+        "name": "Strong Ice Strike"
+    },
+    {
+        "spellInformation": {
+            "level": 40,
+            "premiumOnly": true,
+            "vocation": [
+                "Druid"
+            ],
+            "price": 7500,
+            "formula": "exevo gran frigo hur"
+        },
+        "spellId": "strongicewave",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/strongicewave.png",
+        "name": "Strong Ice Wave"
+    },
+    {
+        "spellId": "strongterrastrike",
+        "spellInformation": {
+            "vocation": [
+                "Druid"
+            ],
+            "level": 70,
+            "formula": "exori gran tera",
+            "premiumOnly": true,
+            "price": 6000
+        },
+        "name": "Strong Terra Strike",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/strongterrastrike.png"
+    },
+    {
         "name": "Sudden Death Rune",
         "spellInformation": {
-            "level": 45,
-            "formula": "adori gran mort",
             "vocation": [
                 "Sorcerer"
             ],
+            "price": 3000,
+            "level": 45,
+            "formula": "adori gran mort",
+            "premiumOnly": false
+        },
+        "spellId": "suddendeathrune",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/suddendeathrune.png"
+    },
+    {
+        "spellInformation": {
+            "premiumOnly": false,
+            "vocation": [
+                "Druid",
+                "Sorcerer"
+            ],
+            "level": 25,
+            "formula": "utevo res 'creature'",
+            "price": 2000
+        },
+        "spellId": "summoncreature",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/summoncreature.png",
+        "name": "Summon Creature"
+    },
+    {
+        "spellId": "swiftfoot",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/swiftfoot.png",
+        "name": "Swift Foot",
+        "spellInformation": {
+            "premiumOnly": true,
+            "vocation": [
+                "Paladin"
+            ],
+            "formula": "utamo tempo san",
+            "level": 55,
+            "price": 6000
+        }
+    },
+    {
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/terraburst.png",
+        "spellId": "terraburst",
+        "spellInformation": {
+            "level": 0,
+            "formula": "exevo ulus tera",
+            "price": 0,
+            "premiumOnly": true,
+            "vocation": [
+                "Druid"
+            ]
+        },
+        "name": "Terra Burst"
+    },
+    {
+        "spellInformation": {
+            "premiumOnly": true,
+            "price": 800,
+            "level": 13,
+            "vocation": [
+                "Druid",
+                "Sorcerer"
+            ],
+            "formula": "exori tera"
+        },
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/terrastrike.png",
+        "spellId": "terrastrike",
+        "name": "Terra Strike"
+    },
+    {
+        "name": "Terra Wave",
+        "spellId": "terrawave",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/terrawave.png",
+        "spellInformation": {
+            "level": 38,
+            "formula": "exevo tera hur",
+            "vocation": [
+                "Druid"
+            ],
+            "price": 2500,
             "premiumOnly": false
         }
     },
     {
-        "spellId": "summoncreature",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/summoncreature.png",
-        "spellInformation": {
-            "vocation": [
-                "Druid",
-                "Sorcerer"
-            ],
-            "premiumOnly": false,
-            "level": 25,
-            "formula": "utevo res 'creature'"
-        },
-        "name": "Summon Creature"
-    },
-    {
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/swiftfoot.png",
-        "spellId": "swiftfoot",
-        "name": "Swift Foot",
-        "spellInformation": {
-            "level": 55,
-            "formula": "utamo tempo san",
-            "vocation": [
-                "Paladin"
-            ],
-            "premiumOnly": true
-        }
-    },
-    {
-        "name": "Terra Burst",
-        "spellInformation": {
-            "premiumOnly": true,
-            "vocation": [
-                "Druid"
-            ],
-            "level": 0,
-            "formula": "exevo ulus tera"
-        },
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/terraburst.png",
-        "spellId": "terraburst"
-    },
-    {
-        "name": "Terra Strike",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/terrastrike.png",
-        "spellId": "terrastrike",
-        "spellInformation": {
-            "vocation": [
-                "Druid",
-                "Sorcerer"
-            ],
-            "formula": "exori tera",
-            "level": 13,
-            "premiumOnly": true
-        }
-    },
-    {
-        "spellId": "terrawave",
-        "name": "Terra Wave",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/terrawave.png",
-        "spellInformation": {
-            "formula": "exevo tera hur",
-            "premiumOnly": false,
-            "level": 38,
-            "vocation": [
-                "Druid"
-            ]
-        }
-    },
-    {
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/thunderstormrune.png",
+        "spellId": "thunderstormrune",
+        "name": "Thunderstorm Rune",
         "spellInformation": {
             "premiumOnly": true,
             "level": 28,
+            "price": 1100,
+            "formula": "adori mas vis",
             "vocation": [
                 "Sorcerer"
-            ],
-            "formula": "adori mas vis"
-        },
-        "spellId": "thunderstormrune",
-        "name": "Thunderstorm Rune",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/thunderstormrune.png"
+            ]
+        }
     },
     {
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/trainparty.png",
         "spellId": "trainparty",
+        "name": "Train Party",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/trainparty.png",
         "spellInformation": {
-            "level": 32,
-            "formula": "utito mas sio",
+            "price": 4000,
             "premiumOnly": true,
+            "formula": "utito mas sio",
             "vocation": [
                 "Knight"
-            ]
-        },
-        "name": "Train Party"
+            ],
+            "level": 32
+        }
     },
     {
-        "name": "Ultimate Energy Strike",
         "spellId": "ultimateenergystrike",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/ultimateenergystrike.png",
         "spellInformation": {
-            "level": 100,
-            "formula": "exori max vis",
-            "premiumOnly": true,
-            "vocation": [
-                "Sorcerer"
-            ]
-        },
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/ultimateenergystrike.png"
-    },
-    {
-        "spellId": "ultimateflamestrike",
-        "name": "Ultimate Flame Strike",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/ultimateflamestrike.png",
-        "spellInformation": {
+            "price": 15000,
             "vocation": [
                 "Sorcerer"
             ],
-            "level": 90,
+            "premiumOnly": true,
+            "formula": "exori max vis",
+            "level": 100
+        },
+        "name": "Ultimate Energy Strike"
+    },
+    {
+        "spellInformation": {
             "formula": "exori max flam",
-            "premiumOnly": true
-        }
+            "price": 15000,
+            "premiumOnly": true,
+            "vocation": [
+                "Sorcerer"
+            ],
+            "level": 90
+        },
+        "spellId": "ultimateflamestrike",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/ultimateflamestrike.png",
+        "name": "Ultimate Flame Strike"
     },
     {
         "name": "Ultimate Healing",
         "imageUrl": "https:\/\/static.tibia.com\/images\/library\/ultimatehealing.png",
+        "spellId": "ultimatehealing",
         "spellInformation": {
+            "level": 30,
+            "formula": "exura vita",
             "vocation": [
                 "Druid",
                 "Sorcerer"
             ],
-            "level": 30,
             "premiumOnly": false,
-            "formula": "exura vita"
-        },
-        "spellId": "ultimatehealing"
+            "price": 1000
+        }
     },
     {
+        "name": "Ultimate Healing Rune",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/ultimatehealingrune.png",
+        "spellId": "ultimatehealingrune",
         "spellInformation": {
-            "level": 24,
+            "price": 1500,
             "formula": "adura vita",
             "premiumOnly": false,
+            "level": 24,
             "vocation": [
                 "Druid"
             ]
-        },
-        "name": "Ultimate Healing Rune",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/ultimatehealingrune.png",
-        "spellId": "ultimatehealingrune"
+        }
     },
     {
-        "spellId": "ultimateicestrike",
         "name": "Ultimate Ice Strike",
+        "spellId": "ultimateicestrike",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/ultimateicestrike.png",
         "spellInformation": {
+            "level": 100,
+            "formula": "exori max frigo",
+            "price": 15000,
+            "premiumOnly": true,
             "vocation": [
                 "Druid"
-            ],
-            "premiumOnly": true,
-            "level": 100,
-            "formula": "exori max frigo"
-        },
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/ultimateicestrike.png"
+            ]
+        }
     },
     {
         "spellId": "ultimatelight",
         "name": "Ultimate Light",
         "spellInformation": {
-            "formula": "utevo vis lux",
-            "premiumOnly": true,
             "level": 26,
             "vocation": [
                 "Druid",
                 "Sorcerer"
-            ]
+            ],
+            "price": 1600,
+            "formula": "utevo vis lux",
+            "premiumOnly": true
         },
         "imageUrl": "https:\/\/static.tibia.com\/images\/library\/ultimatelight.png"
     },
     {
-        "spellId": "ultimateterrastrike",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/ultimateterrastrike.png",
         "name": "Ultimate Terra Strike",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/ultimateterrastrike.png",
         "spellInformation": {
+            "level": 90,
+            "formula": "exori max tera",
+            "price": 15000,
             "premiumOnly": true,
             "vocation": [
                 "Druid"
-            ],
-            "formula": "exori max tera",
-            "level": 90
-        }
+            ]
+        },
+        "spellId": "ultimateterrastrike"
     },
     {
-        "spellId": "whirlwindthrow",
-        "name": "Whirlwind Throw",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/whirlwindthrow.png",
         "spellInformation": {
-            "level": 28,
             "vocation": [
                 "Knight"
             ],
-            "formula": "exori hur",
-            "premiumOnly": true
-        }
+            "price": 1500,
+            "premiumOnly": true,
+            "level": 28,
+            "formula": "exori hur"
+        },
+        "name": "Whirlwind Throw",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/whirlwindthrow.png",
+        "spellId": "whirlwindthrow"
     },
     {
         "spellId": "wildgrowthrune",
-        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/wildgrowthrune.png",
         "name": "Wild Growth Rune",
+        "imageUrl": "https:\/\/static.tibia.com\/images\/library\/wildgrowthrune.png",
         "spellInformation": {
+            "price": 2000,
             "vocation": [
                 "Druid"
             ],
+            "formula": "adevo grav vita",
             "premiumOnly": true,
-            "level": 27,
-            "formula": "adevo grav vita"
+            "level": 27
         }
     },
     {
+        "spellId": "woundcleansing",
         "imageUrl": "https:\/\/static.tibia.com\/images\/library\/woundcleansing.png",
-        "name": "Wound Cleansing",
         "spellInformation": {
-            "premiumOnly": false,
-            "level": 8,
             "formula": "exura ico",
+            "level": 8,
+            "price": 0,
             "vocation": [
                 "Knight"
-            ]
+            ],
+            "premiumOnly": false
         },
-        "spellId": "woundcleansing"
+        "name": "Wound Cleansing"
     },
     {
-        "name": "Wrath of Nature",
         "imageUrl": "https:\/\/static.tibia.com\/images\/library\/wrathofnature.png",
+        "spellId": "wrathofnature",
+        "name": "Wrath of Nature",
         "spellInformation": {
+            "price": 6000,
             "formula": "exevo gran mas tera",
-            "level": 55,
-            "premiumOnly": true,
             "vocation": [
                 "Druid"
-            ]
-        },
-        "spellId": "wrathofnature"
+            ],
+            "level": 55,
+            "premiumOnly": true
+        }
     }
 ]
