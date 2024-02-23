@@ -51,7 +51,7 @@ final class UtilsListViewModel {
             case .creatures:
                 return "Check out all the creatures of the Tibian world"
             case .fansites:
-                return "Discover some new Tibia Fansites"
+                return "Discover some new Tibia fansites"
             case .guilds:
                 return "List of all the Tibian guilds"
             case .spells:
