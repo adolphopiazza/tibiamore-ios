@@ -7,6 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3800FC702B34DC8B00685C5E /* CharacterSearchDetailsViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800FC6F2B34DC8B00685C5E /* CharacterSearchDetailsViewRow.swift */; };
+		3800FC722B35D90700685C5E /* CharacterSearchDetailsAchievementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800FC712B35D90700685C5E /* CharacterSearchDetailsAchievementView.swift */; };
+		3800FC742B35DD6600685C5E /* CharacterSearchDetailsOtherCharactersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800FC732B35DD6600685C5E /* CharacterSearchDetailsOtherCharactersView.swift */; };
+		38084D472B538164003FCD1B /* UtilsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38084D462B538164003FCD1B /* UtilsListViewModel.swift */; };
+		38084D492B5386B6003FCD1B /* UtilsListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38084D482B5386B6003FCD1B /* UtilsListRowView.swift */; };
+		38084D4C2B538AEA003FCD1B /* RashidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38084D4B2B538AEA003FCD1B /* RashidView.swift */; };
+		38084D4E2B538AFD003FCD1B /* RashidViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38084D4D2B538AFD003FCD1B /* RashidViewModel.swift */; };
+		38084D512B539109003FCD1B /* UtilsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38084D502B539109003FCD1B /* UtilsService.swift */; };
+		38084D542B543D83003FCD1B /* CreaturesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38084D532B543D83003FCD1B /* CreaturesModel.swift */; };
+		38084D572B543EF1003FCD1B /* CreaturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38084D562B543EF1003FCD1B /* CreaturesView.swift */; };
+		38084D592B543F04003FCD1B /* CreaturesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38084D582B543F04003FCD1B /* CreaturesViewModel.swift */; };
+		3808B1ED2B5C688A003E4AB8 /* KillStatisticsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3808B1EC2B5C688A003E4AB8 /* KillStatisticsModel.swift */; };
+		3808B1F02B5C6A55003E4AB8 /* KillStatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3808B1EF2B5C6A55003E4AB8 /* KillStatisticsView.swift */; };
+		3808B1F22B5C6B94003E4AB8 /* KillStatisticsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3808B1F12B5C6B94003E4AB8 /* KillStatisticsViewModel.swift */; };
+		3808B1F42B5C845C003E4AB8 /* KillStatisticsTotalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3808B1F32B5C845C003E4AB8 /* KillStatisticsTotalsView.swift */; };
+		3808B1F62B5C8CF0003E4AB8 /* FansitesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3808B1F52B5C8CF0003E4AB8 /* FansitesModel.swift */; };
+		3808B1F92B5C8E6F003E4AB8 /* FansitesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3808B1F82B5C8E6F003E4AB8 /* FansitesView.swift */; };
+		3808B1FB2B5C8F9A003E4AB8 /* FansitesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3808B1FA2B5C8F9A003E4AB8 /* FansitesViewModel.swift */; };
+		3808B1FD2B5C9254003E4AB8 /* FansiteRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3808B1FC2B5C9254003E4AB8 /* FansiteRowView.swift */; };
+		3808B2002B5C9415003E4AB8 /* FansitesDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3808B1FF2B5C9415003E4AB8 /* FansitesDetailView.swift */; };
+		3808B2022B5DA1BC003E4AB8 /* GuildsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3808B2012B5DA1BC003E4AB8 /* GuildsModel.swift */; };
+		3808B2052B5DA4EC003E4AB8 /* GuildsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3808B2042B5DA4EC003E4AB8 /* GuildsView.swift */; };
+		3808B2072B5DA779003E4AB8 /* GuildsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3808B2062B5DA779003E4AB8 /* GuildsViewModel.swift */; };
+		3808B20A2B5DB596003E4AB8 /* GuildDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3808B2092B5DB596003E4AB8 /* GuildDetailsView.swift */; };
+		3808B20C2B5DB5A5003E4AB8 /* GuildDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3808B20B2B5DB5A5003E4AB8 /* GuildDetailsViewModel.swift */; };
+		381A66582B756AA600933467 /* NewsTickerListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381A66572B756AA600933467 /* NewsTickerListRowView.swift */; };
+		381A665B2B75998000933467 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381A665A2B75998000933467 /* AboutView.swift */; };
+		381A665D2B75998800933467 /* AboutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381A665C2B75998800933467 /* AboutViewModel.swift */; };
+		3823D5EB2B5227B0000677CB /* WorldsDetailsViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3823D5EA2B5227B0000677CB /* WorldsDetailsViewRow.swift */; };
 		382A29C22B1EA97500961FE2 /* Tibia_MoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A29C12B1EA97500961FE2 /* Tibia_MoreApp.swift */; };
 		382A29C42B1EA97500961FE2 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A29C32B1EA97500961FE2 /* TabBarView.swift */; };
 		382A29C62B1EA97600961FE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 382A29C52B1EA97600961FE2 /* Assets.xcassets */; };
@@ -18,6 +47,62 @@
 		382A29F32B1EAD1C00961FE2 /* CharactersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A29F22B1EAD1C00961FE2 /* CharactersListView.swift */; };
 		382A29F52B1EAD4200961FE2 /* WorldsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A29F42B1EAD4200961FE2 /* WorldsListView.swift */; };
 		382A29FC2B1EAF1100961FE2 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A29FB2B1EAF1100961FE2 /* TabBarItem.swift */; };
+		382A2A002B1EBB0900961FE2 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A29FF2B1EBB0900961FE2 /* NewsModel.swift */; };
+		382A2A022B1EBBA000961FE2 /* NewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A2A012B1EBBA000961FE2 /* NewsService.swift */; };
+		382A2A042B1EBC8A00961FE2 /* URLConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A2A032B1EBC8A00961FE2 /* URLConstants.swift */; };
+		3838176B2B49A660000E13D7 /* WorldsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3838176A2B49A660000E13D7 /* WorldsListViewModel.swift */; };
+		3838176D2B4AEAE2000E13D7 /* WorldsListViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3838176C2B4AEAE2000E13D7 /* WorldsListViewRow.swift */; };
+		385D6EAE2B4AF2D600839091 /* WorldsDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385D6EAD2B4AF2D600839091 /* WorldsDetailsView.swift */; };
+		385D6EB02B4AF2E800839091 /* WorldsDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385D6EAF2B4AF2E800839091 /* WorldsDetailsViewModel.swift */; };
+		3872B02B2B5608D700725178 /* CreaturesRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3872B02A2B5608D700725178 /* CreaturesRowView.swift */; };
+		3872B02E2B56099700725178 /* CreaturesDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3872B02D2B56099700725178 /* CreaturesDetailView.swift */; };
+		3872B0302B56099F00725178 /* CreaturesDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3872B02F2B56099F00725178 /* CreaturesDetailViewModel.swift */; };
+		387E59FF2B5B3D4E009CA577 /* BoostedCreatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387E59FE2B5B3D4E009CA577 /* BoostedCreatureView.swift */; };
+		387E5A012B5B3D5A009CA577 /* BoostedCreatureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387E5A002B5B3D5A009CA577 /* BoostedCreatureViewModel.swift */; };
+		387E5A032B5B42F4009CA577 /* CreaturesDetailAboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387E5A022B5B42F4009CA577 /* CreaturesDetailAboutView.swift */; };
+		387E5A062B5B4ABC009CA577 /* BoostedBossView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387E5A052B5B4ABC009CA577 /* BoostedBossView.swift */; };
+		387E5A082B5B4AC9009CA577 /* BoostedBossViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387E5A072B5B4AC9009CA577 /* BoostedBossViewModel.swift */; };
+		387E5A0A2B5B4C35009CA577 /* BoostableBossesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387E5A092B5B4C35009CA577 /* BoostableBossesModel.swift */; };
+		387E5A0C2B5C0CE5009CA577 /* HighscoresModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387E5A0B2B5C0CE5009CA577 /* HighscoresModel.swift */; };
+		387E5A0F2B5C133D009CA577 /* HighscoresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387E5A0E2B5C133D009CA577 /* HighscoresView.swift */; };
+		387E5A112B5C4BBF009CA577 /* HighscoresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387E5A102B5C4BBF009CA577 /* HighscoresViewModel.swift */; };
+		3889C4E82B8406D8004F462B /* spellList.json in Resources */ = {isa = PBXBuildFile; fileRef = 3889C4E72B8406D8004F462B /* spellList.json */; };
+		3889C4EA2B840733004F462B /* SpellsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3889C4E92B840733004F462B /* SpellsModel.swift */; };
+		3889C4EC2B84233D004F462B /* SpellsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3889C4EB2B84233D004F462B /* SpellsRowView.swift */; };
+		3889C4EE2B843224004F462B /* rashidItems.json in Resources */ = {isa = PBXBuildFile; fileRef = 3889C4ED2B843224004F462B /* rashidItems.json */; };
+		3889C4F02B843266004F462B /* RashidModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3889C4EF2B843266004F462B /* RashidModel.swift */; };
+		3889C4F32B843613004F462B /* RashidItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3889C4F22B843613004F462B /* RashidItemsView.swift */; };
+		3889C4F62B843B6D004F462B /* WikiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3889C4F52B843B6D004F462B /* WikiView.swift */; };
+		3889C4FA2B84438C004F462B /* WikiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3889C4F92B84438C004F462B /* WikiModel.swift */; };
+		3889C4FC2B844766004F462B /* WikiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3889C4FB2B844766004F462B /* WikiService.swift */; };
+		3889C4FE2B844ADF004F462B /* WikiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3889C4FD2B844ADF004F462B /* WikiViewModel.swift */; };
+		38A28A822B27C2D800C707F7 /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A28A812B27C2D800C707F7 /* NetworkErrors.swift */; };
+		38A28AA52B2B75E300C707F7 /* Strings+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A28AA42B2B75E300C707F7 /* Strings+Ext.swift */; };
+		38A28AA72B2B7AED00C707F7 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A28AA62B2B7AED00C707F7 /* SafariView.swift */; };
+		38A28AAA2B2B7CD500C707F7 /* BrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A28AA92B2B7CD500C707F7 /* BrowserView.swift */; };
+		38A3EDF32B2F2A59003C7BDA /* CharactersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A3EDF22B2F2A59003C7BDA /* CharactersListViewModel.swift */; };
+		38A3EDF62B2F2DC8003C7BDA /* CharactersSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A3EDF52B2F2DC8003C7BDA /* CharactersSearchView.swift */; };
+		38A3EDF82B2F2DE2003C7BDA /* CharactersSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A3EDF72B2F2DE2003C7BDA /* CharactersSearchViewModel.swift */; };
+		38A3EDFA2B2F32E0003C7BDA /* Custom+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A3EDF92B2F32E0003C7BDA /* Custom+Styles.swift */; };
+		38A3EDFD2B2F3DE1003C7BDA /* CharacterSearchDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A3EDFC2B2F3DE1003C7BDA /* CharacterSearchDetailsView.swift */; };
+		38A5582C2B82587900F31857 /* SpellsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A5582B2B82587900F31857 /* SpellsView.swift */; };
+		38A5582E2B82588B00F31857 /* SpellsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A5582D2B82588B00F31857 /* SpellsViewModel.swift */; };
+		38AC7CE72B24B22200B6DF29 /* NewsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AC7CE62B24B22200B6DF29 /* NewsListViewModel.swift */; };
+		38AC7CEA2B24BD7000B6DF29 /* NewsListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AC7CE92B24BD7000B6DF29 /* NewsListRowView.swift */; };
+		38AC7CEC2B24BD7900B6DF29 /* NewsListRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AC7CEB2B24BD7900B6DF29 /* NewsListRowViewModel.swift */; };
+		38AC7CEF2B253FE400B6DF29 /* NewsListTickerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AC7CEE2B253FE400B6DF29 /* NewsListTickerDetailView.swift */; };
+		38AC7CF12B253FEE00B6DF29 /* NewsListDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AC7CF02B253FEE00B6DF29 /* NewsListDetailViewModel.swift */; };
+		38AC7CF42B25411800B6DF29 /* NewsDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AC7CF32B25411800B6DF29 /* NewsDetailModel.swift */; };
+		38AC7CF72B254B2A00B6DF29 /* NavigationRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AC7CF62B254B2A00B6DF29 /* NavigationRoutes.swift */; };
+		38B1E4772B499C5000A18AB5 /* WorldsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B1E4762B499C5000A18AB5 /* WorldsService.swift */; };
+		38B1E47A2B499C8900A18AB5 /* WorldsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B1E4792B499C8900A18AB5 /* WorldsModel.swift */; };
+		38C09ADF2B48A86B006B6B34 /* CharacterSearchDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C09ADE2B48A86B006B6B34 /* CharacterSearchDetailsViewModel.swift */; };
+		38C09AE92B48EF30006B6B34 /* CharactersListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C09AE82B48EF30006B6B34 /* CharactersListRowView.swift */; };
+		38CC6C052B2DD0FB00E5BB67 /* CharactersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC6C042B2DD0FB00E5BB67 /* CharactersModel.swift */; };
+		38CC6C072B2DDEAF00E5BB67 /* CharactersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC6C062B2DDEAF00E5BB67 /* CharactersService.swift */; };
+		38D6708F2B52E8840043A093 /* UtilsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D6708E2B52E8840043A093 /* UtilsListView.swift */; };
+		38F2416F2B2D04BE003CC100 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F2416E2B2D04BD003CC100 /* NetworkService.swift */; };
+		38F31AD62B39E3C800FF6BA8 /* DefaultStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F31AD52B39E3C800FF6BA8 /* DefaultStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +123,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3800FC6F2B34DC8B00685C5E /* CharacterSearchDetailsViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSearchDetailsViewRow.swift; sourceTree = "<group>"; };
+		3800FC712B35D90700685C5E /* CharacterSearchDetailsAchievementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSearchDetailsAchievementView.swift; sourceTree = "<group>"; };
+		3800FC732B35DD6600685C5E /* CharacterSearchDetailsOtherCharactersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSearchDetailsOtherCharactersView.swift; sourceTree = "<group>"; };
+		38084D462B538164003FCD1B /* UtilsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsListViewModel.swift; sourceTree = "<group>"; };
+		38084D482B5386B6003FCD1B /* UtilsListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsListRowView.swift; sourceTree = "<group>"; };
+		38084D4B2B538AEA003FCD1B /* RashidView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RashidView.swift; sourceTree = "<group>"; };
+		38084D4D2B538AFD003FCD1B /* RashidViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RashidViewModel.swift; sourceTree = "<group>"; };
+		38084D502B539109003FCD1B /* UtilsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsService.swift; sourceTree = "<group>"; };
+		38084D532B543D83003FCD1B /* CreaturesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreaturesModel.swift; sourceTree = "<group>"; };
+		38084D562B543EF1003FCD1B /* CreaturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreaturesView.swift; sourceTree = "<group>"; };
+		38084D582B543F04003FCD1B /* CreaturesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreaturesViewModel.swift; sourceTree = "<group>"; };
+		3808B1EC2B5C688A003E4AB8 /* KillStatisticsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KillStatisticsModel.swift; sourceTree = "<group>"; };
+		3808B1EF2B5C6A55003E4AB8 /* KillStatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KillStatisticsView.swift; sourceTree = "<group>"; };
+		3808B1F12B5C6B94003E4AB8 /* KillStatisticsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KillStatisticsViewModel.swift; sourceTree = "<group>"; };
+		3808B1F32B5C845C003E4AB8 /* KillStatisticsTotalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KillStatisticsTotalsView.swift; sourceTree = "<group>"; };
+		3808B1F52B5C8CF0003E4AB8 /* FansitesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FansitesModel.swift; sourceTree = "<group>"; };
+		3808B1F82B5C8E6F003E4AB8 /* FansitesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FansitesView.swift; sourceTree = "<group>"; };
+		3808B1FA2B5C8F9A003E4AB8 /* FansitesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FansitesViewModel.swift; sourceTree = "<group>"; };
+		3808B1FC2B5C9254003E4AB8 /* FansiteRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FansiteRowView.swift; sourceTree = "<group>"; };
+		3808B1FF2B5C9415003E4AB8 /* FansitesDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FansitesDetailView.swift; sourceTree = "<group>"; };
+		3808B2012B5DA1BC003E4AB8 /* GuildsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuildsModel.swift; sourceTree = "<group>"; };
+		3808B2042B5DA4EC003E4AB8 /* GuildsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuildsView.swift; sourceTree = "<group>"; };
+		3808B2062B5DA779003E4AB8 /* GuildsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuildsViewModel.swift; sourceTree = "<group>"; };
+		3808B2092B5DB596003E4AB8 /* GuildDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuildDetailsView.swift; sourceTree = "<group>"; };
+		3808B20B2B5DB5A5003E4AB8 /* GuildDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuildDetailsViewModel.swift; sourceTree = "<group>"; };
+		381A66572B756AA600933467 /* NewsTickerListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTickerListRowView.swift; sourceTree = "<group>"; };
+		381A665A2B75998000933467 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		381A665C2B75998800933467 /* AboutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewModel.swift; sourceTree = "<group>"; };
+		3823D5EA2B5227B0000677CB /* WorldsDetailsViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldsDetailsViewRow.swift; sourceTree = "<group>"; };
 		382A29BE2B1EA97500961FE2 /* Tibia More.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tibia More.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		382A29C12B1EA97500961FE2 /* Tibia_MoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tibia_MoreApp.swift; sourceTree = "<group>"; };
 		382A29C32B1EA97500961FE2 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
@@ -52,6 +166,62 @@
 		382A29F22B1EAD1C00961FE2 /* CharactersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListView.swift; sourceTree = "<group>"; };
 		382A29F42B1EAD4200961FE2 /* WorldsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldsListView.swift; sourceTree = "<group>"; };
 		382A29FB2B1EAF1100961FE2 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		382A29FF2B1EBB0900961FE2 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		382A2A012B1EBBA000961FE2 /* NewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsService.swift; sourceTree = "<group>"; };
+		382A2A032B1EBC8A00961FE2 /* URLConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConstants.swift; sourceTree = "<group>"; };
+		3838176A2B49A660000E13D7 /* WorldsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldsListViewModel.swift; sourceTree = "<group>"; };
+		3838176C2B4AEAE2000E13D7 /* WorldsListViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldsListViewRow.swift; sourceTree = "<group>"; };
+		385D6EAD2B4AF2D600839091 /* WorldsDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldsDetailsView.swift; sourceTree = "<group>"; };
+		385D6EAF2B4AF2E800839091 /* WorldsDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldsDetailsViewModel.swift; sourceTree = "<group>"; };
+		3872B02A2B5608D700725178 /* CreaturesRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreaturesRowView.swift; sourceTree = "<group>"; };
+		3872B02D2B56099700725178 /* CreaturesDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreaturesDetailView.swift; sourceTree = "<group>"; };
+		3872B02F2B56099F00725178 /* CreaturesDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreaturesDetailViewModel.swift; sourceTree = "<group>"; };
+		387E59FE2B5B3D4E009CA577 /* BoostedCreatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoostedCreatureView.swift; sourceTree = "<group>"; };
+		387E5A002B5B3D5A009CA577 /* BoostedCreatureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoostedCreatureViewModel.swift; sourceTree = "<group>"; };
+		387E5A022B5B42F4009CA577 /* CreaturesDetailAboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreaturesDetailAboutView.swift; sourceTree = "<group>"; };
+		387E5A052B5B4ABC009CA577 /* BoostedBossView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoostedBossView.swift; sourceTree = "<group>"; };
+		387E5A072B5B4AC9009CA577 /* BoostedBossViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoostedBossViewModel.swift; sourceTree = "<group>"; };
+		387E5A092B5B4C35009CA577 /* BoostableBossesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoostableBossesModel.swift; sourceTree = "<group>"; };
+		387E5A0B2B5C0CE5009CA577 /* HighscoresModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighscoresModel.swift; sourceTree = "<group>"; };
+		387E5A0E2B5C133D009CA577 /* HighscoresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighscoresView.swift; sourceTree = "<group>"; };
+		387E5A102B5C4BBF009CA577 /* HighscoresViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighscoresViewModel.swift; sourceTree = "<group>"; };
+		3889C4E72B8406D8004F462B /* spellList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = spellList.json; sourceTree = "<group>"; };
+		3889C4E92B840733004F462B /* SpellsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsModel.swift; sourceTree = "<group>"; };
+		3889C4EB2B84233D004F462B /* SpellsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsRowView.swift; sourceTree = "<group>"; };
+		3889C4ED2B843224004F462B /* rashidItems.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rashidItems.json; sourceTree = "<group>"; };
+		3889C4EF2B843266004F462B /* RashidModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RashidModel.swift; sourceTree = "<group>"; };
+		3889C4F22B843613004F462B /* RashidItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RashidItemsView.swift; sourceTree = "<group>"; };
+		3889C4F52B843B6D004F462B /* WikiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiView.swift; sourceTree = "<group>"; };
+		3889C4F92B84438C004F462B /* WikiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiModel.swift; sourceTree = "<group>"; };
+		3889C4FB2B844766004F462B /* WikiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiService.swift; sourceTree = "<group>"; };
+		3889C4FD2B844ADF004F462B /* WikiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiViewModel.swift; sourceTree = "<group>"; };
+		38A28A812B27C2D800C707F7 /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
+		38A28AA42B2B75E300C707F7 /* Strings+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+Ext.swift"; sourceTree = "<group>"; };
+		38A28AA62B2B7AED00C707F7 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		38A28AA92B2B7CD500C707F7 /* BrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserView.swift; sourceTree = "<group>"; };
+		38A3EDF22B2F2A59003C7BDA /* CharactersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListViewModel.swift; sourceTree = "<group>"; };
+		38A3EDF52B2F2DC8003C7BDA /* CharactersSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersSearchView.swift; sourceTree = "<group>"; };
+		38A3EDF72B2F2DE2003C7BDA /* CharactersSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersSearchViewModel.swift; sourceTree = "<group>"; };
+		38A3EDF92B2F32E0003C7BDA /* Custom+Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Custom+Styles.swift"; sourceTree = "<group>"; };
+		38A3EDFC2B2F3DE1003C7BDA /* CharacterSearchDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSearchDetailsView.swift; sourceTree = "<group>"; };
+		38A5582B2B82587900F31857 /* SpellsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsView.swift; sourceTree = "<group>"; };
+		38A5582D2B82588B00F31857 /* SpellsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsViewModel.swift; sourceTree = "<group>"; };
+		38AC7CE62B24B22200B6DF29 /* NewsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewModel.swift; sourceTree = "<group>"; };
+		38AC7CE92B24BD7000B6DF29 /* NewsListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListRowView.swift; sourceTree = "<group>"; };
+		38AC7CEB2B24BD7900B6DF29 /* NewsListRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListRowViewModel.swift; sourceTree = "<group>"; };
+		38AC7CEE2B253FE400B6DF29 /* NewsListTickerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListTickerDetailView.swift; sourceTree = "<group>"; };
+		38AC7CF02B253FEE00B6DF29 /* NewsListDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListDetailViewModel.swift; sourceTree = "<group>"; };
+		38AC7CF32B25411800B6DF29 /* NewsDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailModel.swift; sourceTree = "<group>"; };
+		38AC7CF62B254B2A00B6DF29 /* NavigationRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRoutes.swift; sourceTree = "<group>"; };
+		38B1E4762B499C5000A18AB5 /* WorldsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldsService.swift; sourceTree = "<group>"; };
+		38B1E4792B499C8900A18AB5 /* WorldsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldsModel.swift; sourceTree = "<group>"; };
+		38C09ADE2B48A86B006B6B34 /* CharacterSearchDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSearchDetailsViewModel.swift; sourceTree = "<group>"; };
+		38C09AE82B48EF30006B6B34 /* CharactersListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListRowView.swift; sourceTree = "<group>"; };
+		38CC6C042B2DD0FB00E5BB67 /* CharactersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersModel.swift; sourceTree = "<group>"; };
+		38CC6C062B2DDEAF00E5BB67 /* CharactersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersService.swift; sourceTree = "<group>"; };
+		38D6708E2B52E8840043A093 /* UtilsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsListView.swift; sourceTree = "<group>"; };
+		38F2416E2B2D04BD003CC100 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		38F31AD52B39E3C800FF6BA8 /* DefaultStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +249,117 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38084D4A2B538AD7003FCD1B /* Rashid */ = {
+			isa = PBXGroup;
+			children = (
+				3889C4F12B84360A004F462B /* Items */,
+				38084D4B2B538AEA003FCD1B /* RashidView.swift */,
+				38084D4D2B538AFD003FCD1B /* RashidViewModel.swift */,
+			);
+			path = Rashid;
+			sourceTree = "<group>";
+		};
+		38084D4F2B539101003FCD1B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				38084D522B543D77003FCD1B /* Models */,
+				38084D502B539109003FCD1B /* UtilsService.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		38084D522B543D77003FCD1B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3889C4EF2B843266004F462B /* RashidModel.swift */,
+				38084D532B543D83003FCD1B /* CreaturesModel.swift */,
+				387E5A092B5B4C35009CA577 /* BoostableBossesModel.swift */,
+				387E5A0B2B5C0CE5009CA577 /* HighscoresModel.swift */,
+				3808B1EC2B5C688A003E4AB8 /* KillStatisticsModel.swift */,
+				3808B1F52B5C8CF0003E4AB8 /* FansitesModel.swift */,
+				3808B2012B5DA1BC003E4AB8 /* GuildsModel.swift */,
+				3889C4E92B840733004F462B /* SpellsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		38084D552B543EE6003FCD1B /* Creatures */ = {
+			isa = PBXGroup;
+			children = (
+				3872B02C2B56097700725178 /* Details */,
+				38084D562B543EF1003FCD1B /* CreaturesView.swift */,
+				38084D582B543F04003FCD1B /* CreaturesViewModel.swift */,
+				3872B02A2B5608D700725178 /* CreaturesRowView.swift */,
+			);
+			path = Creatures;
+			sourceTree = "<group>";
+		};
+		3808B1EE2B5C6A46003E4AB8 /* KillStatistics */ = {
+			isa = PBXGroup;
+			children = (
+				3808B1EF2B5C6A55003E4AB8 /* KillStatisticsView.swift */,
+				3808B1F12B5C6B94003E4AB8 /* KillStatisticsViewModel.swift */,
+				3808B1F32B5C845C003E4AB8 /* KillStatisticsTotalsView.swift */,
+			);
+			path = KillStatistics;
+			sourceTree = "<group>";
+		};
+		3808B1F72B5C8E64003E4AB8 /* Fansites */ = {
+			isa = PBXGroup;
+			children = (
+				3808B1FE2B5C93C9003E4AB8 /* Details */,
+				3808B1F82B5C8E6F003E4AB8 /* FansitesView.swift */,
+				3808B1FA2B5C8F9A003E4AB8 /* FansitesViewModel.swift */,
+				3808B1FC2B5C9254003E4AB8 /* FansiteRowView.swift */,
+			);
+			path = Fansites;
+			sourceTree = "<group>";
+		};
+		3808B1FE2B5C93C9003E4AB8 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				3808B1FF2B5C9415003E4AB8 /* FansitesDetailView.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		3808B2032B5DA4E1003E4AB8 /* Guilds */ = {
+			isa = PBXGroup;
+			children = (
+				3808B2082B5DB58B003E4AB8 /* Details */,
+				3808B2042B5DA4EC003E4AB8 /* GuildsView.swift */,
+				3808B2062B5DA779003E4AB8 /* GuildsViewModel.swift */,
+			);
+			path = Guilds;
+			sourceTree = "<group>";
+		};
+		3808B2082B5DB58B003E4AB8 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				3808B2092B5DB596003E4AB8 /* GuildDetailsView.swift */,
+				3808B20B2B5DB5A5003E4AB8 /* GuildDetailsViewModel.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		381A66562B7522EA00933467 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				38AC7CEE2B253FE400B6DF29 /* NewsListTickerDetailView.swift */,
+				38AC7CF02B253FEE00B6DF29 /* NewsListDetailViewModel.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		381A66592B75996E00933467 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				381A665A2B75998000933467 /* AboutView.swift */,
+				381A665C2B75998800933467 /* AboutViewModel.swift */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
 		382A29B52B1EA97500961FE2 = {
 			isa = PBXGroup;
 			children = (
@@ -102,8 +383,10 @@
 		382A29C02B1EA97500961FE2 /* Tibia More */ = {
 			isa = PBXGroup;
 			children = (
+				38A28AA32B2B75CF00C707F7 /* Helpers */,
 				382A29EC2B1EACC300961FE2 /* Common */,
 				382A29EB2B1EACA600961FE2 /* Features */,
+				382A29FD2B1EB9B600961FE2 /* Networking */,
 				382A29C12B1EA97500961FE2 /* Tibia_MoreApp.swift */,
 				382A29C52B1EA97600961FE2 /* Assets.xcassets */,
 				382A29C72B1EA97600961FE2 /* Preview Content */,
@@ -142,6 +425,8 @@
 				382A29ED2B1EACCE00961FE2 /* News */,
 				382A29EE2B1EACD300961FE2 /* Characters */,
 				382A29EF2B1EACDB00961FE2 /* Worlds */,
+				38D6708D2B52E8730043A093 /* Utils */,
+				3889C4F42B843B59004F462B /* Wiki */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -150,6 +435,9 @@
 			isa = PBXGroup;
 			children = (
 				382A29F82B1EADDA00961FE2 /* TabBar */,
+				38AC7CF62B254B2A00B6DF29 /* NavigationRoutes.swift */,
+				38A28AA62B2B7AED00C707F7 /* SafariView.swift */,
+				38F31AD52B39E3C800FF6BA8 /* DefaultStorage.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -157,7 +445,11 @@
 		382A29ED2B1EACCE00961FE2 /* News */ = {
 			isa = PBXGroup;
 			children = (
+				38A28AA82B2B7CB700C707F7 /* Browser */,
+				38AC7CED2B253FD300B6DF29 /* Ticker */,
+				38AC7CE82B24BD5300B6DF29 /* Row */,
 				382A29F02B1EACFB00961FE2 /* NewsListView.swift */,
+				38AC7CE62B24B22200B6DF29 /* NewsListViewModel.swift */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -165,7 +457,11 @@
 		382A29EE2B1EACD300961FE2 /* Characters */ = {
 			isa = PBXGroup;
 			children = (
+				38A3EDF42B2F2DB8003C7BDA /* Search */,
+				38A3EDFB2B2F3DD6003C7BDA /* Details */,
 				382A29F22B1EAD1C00961FE2 /* CharactersListView.swift */,
+				38A3EDF22B2F2A59003C7BDA /* CharactersListViewModel.swift */,
+				38C09AE82B48EF30006B6B34 /* CharactersListRowView.swift */,
 			);
 			path = Characters;
 			sourceTree = "<group>";
@@ -173,7 +469,10 @@
 		382A29EF2B1EACDB00961FE2 /* Worlds */ = {
 			isa = PBXGroup;
 			children = (
+				385D6EAC2B4AF2C100839091 /* Details */,
 				382A29F42B1EAD4200961FE2 /* WorldsListView.swift */,
+				3838176A2B49A660000E13D7 /* WorldsListViewModel.swift */,
+				3838176C2B4AEAE2000E13D7 /* WorldsListViewRow.swift */,
 			);
 			path = Worlds;
 			sourceTree = "<group>";
@@ -185,6 +484,258 @@
 				382A29FB2B1EAF1100961FE2 /* TabBarItem.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		382A29FD2B1EB9B600961FE2 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				3889C4E62B8406CF004F462B /* JSON */,
+				38084D4F2B539101003FCD1B /* Utils */,
+				38B1E4752B49962900A18AB5 /* Worlds */,
+				38CC6C022B2DD0EB00E5BB67 /* Characters */,
+				382A29FE2B1EB9C800961FE2 /* News */,
+				3889C4F72B844376004F462B /* Wiki */,
+				382A2A032B1EBC8A00961FE2 /* URLConstants.swift */,
+				38A28A812B27C2D800C707F7 /* NetworkErrors.swift */,
+				38F2416E2B2D04BD003CC100 /* NetworkService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		382A29FE2B1EB9C800961FE2 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				38AC7CF22B25410500B6DF29 /* Models */,
+				382A2A012B1EBBA000961FE2 /* NewsService.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		385D6EAC2B4AF2C100839091 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				385D6EAD2B4AF2D600839091 /* WorldsDetailsView.swift */,
+				385D6EAF2B4AF2E800839091 /* WorldsDetailsViewModel.swift */,
+				3823D5EA2B5227B0000677CB /* WorldsDetailsViewRow.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		3872B02C2B56097700725178 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				3872B02D2B56099700725178 /* CreaturesDetailView.swift */,
+				3872B02F2B56099F00725178 /* CreaturesDetailViewModel.swift */,
+				387E5A022B5B42F4009CA577 /* CreaturesDetailAboutView.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		387E59FD2B5B3D35009CA577 /* BoostedCreature */ = {
+			isa = PBXGroup;
+			children = (
+				387E59FE2B5B3D4E009CA577 /* BoostedCreatureView.swift */,
+				387E5A002B5B3D5A009CA577 /* BoostedCreatureViewModel.swift */,
+			);
+			path = BoostedCreature;
+			sourceTree = "<group>";
+		};
+		387E5A042B5B4AAB009CA577 /* BoostedBoss */ = {
+			isa = PBXGroup;
+			children = (
+				387E5A052B5B4ABC009CA577 /* BoostedBossView.swift */,
+				387E5A072B5B4AC9009CA577 /* BoostedBossViewModel.swift */,
+			);
+			path = BoostedBoss;
+			sourceTree = "<group>";
+		};
+		387E5A0D2B5C132F009CA577 /* Highscores */ = {
+			isa = PBXGroup;
+			children = (
+				387E5A0E2B5C133D009CA577 /* HighscoresView.swift */,
+				387E5A102B5C4BBF009CA577 /* HighscoresViewModel.swift */,
+			);
+			path = Highscores;
+			sourceTree = "<group>";
+		};
+		3889C4E62B8406CF004F462B /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				3889C4E72B8406D8004F462B /* spellList.json */,
+				3889C4ED2B843224004F462B /* rashidItems.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		3889C4F12B84360A004F462B /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				3889C4F22B843613004F462B /* RashidItemsView.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		3889C4F42B843B59004F462B /* Wiki */ = {
+			isa = PBXGroup;
+			children = (
+				3889C4F52B843B6D004F462B /* WikiView.swift */,
+				3889C4FD2B844ADF004F462B /* WikiViewModel.swift */,
+			);
+			path = Wiki;
+			sourceTree = "<group>";
+		};
+		3889C4F72B844376004F462B /* Wiki */ = {
+			isa = PBXGroup;
+			children = (
+				3889C4F82B844384004F462B /* Models */,
+				3889C4FB2B844766004F462B /* WikiService.swift */,
+			);
+			path = Wiki;
+			sourceTree = "<group>";
+		};
+		3889C4F82B844384004F462B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3889C4F92B84438C004F462B /* WikiModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		38A28AA32B2B75CF00C707F7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				38A28AA42B2B75E300C707F7 /* Strings+Ext.swift */,
+				38A3EDF92B2F32E0003C7BDA /* Custom+Styles.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		38A28AA82B2B7CB700C707F7 /* Browser */ = {
+			isa = PBXGroup;
+			children = (
+				38A28AA92B2B7CD500C707F7 /* BrowserView.swift */,
+			);
+			path = Browser;
+			sourceTree = "<group>";
+		};
+		38A3EDF42B2F2DB8003C7BDA /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				38A3EDF52B2F2DC8003C7BDA /* CharactersSearchView.swift */,
+				38A3EDF72B2F2DE2003C7BDA /* CharactersSearchViewModel.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		38A3EDFB2B2F3DD6003C7BDA /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				38C09AE02B48A873006B6B34 /* Views */,
+				38A3EDFC2B2F3DE1003C7BDA /* CharacterSearchDetailsView.swift */,
+				38C09ADE2B48A86B006B6B34 /* CharacterSearchDetailsViewModel.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		38A5582A2B82586800F31857 /* Spells */ = {
+			isa = PBXGroup;
+			children = (
+				38A5582B2B82587900F31857 /* SpellsView.swift */,
+				38A5582D2B82588B00F31857 /* SpellsViewModel.swift */,
+				3889C4EB2B84233D004F462B /* SpellsRowView.swift */,
+			);
+			path = Spells;
+			sourceTree = "<group>";
+		};
+		38AC7CE82B24BD5300B6DF29 /* Row */ = {
+			isa = PBXGroup;
+			children = (
+				38AC7CE92B24BD7000B6DF29 /* NewsListRowView.swift */,
+				38AC7CEB2B24BD7900B6DF29 /* NewsListRowViewModel.swift */,
+			);
+			path = Row;
+			sourceTree = "<group>";
+		};
+		38AC7CED2B253FD300B6DF29 /* Ticker */ = {
+			isa = PBXGroup;
+			children = (
+				381A66562B7522EA00933467 /* Details */,
+				381A66572B756AA600933467 /* NewsTickerListRowView.swift */,
+			);
+			path = Ticker;
+			sourceTree = "<group>";
+		};
+		38AC7CF22B25410500B6DF29 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				382A29FF2B1EBB0900961FE2 /* NewsModel.swift */,
+				38AC7CF32B25411800B6DF29 /* NewsDetailModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		38B1E4752B49962900A18AB5 /* Worlds */ = {
+			isa = PBXGroup;
+			children = (
+				38B1E4782B499C7F00A18AB5 /* Models */,
+				38B1E4762B499C5000A18AB5 /* WorldsService.swift */,
+			);
+			path = Worlds;
+			sourceTree = "<group>";
+		};
+		38B1E4782B499C7F00A18AB5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				38B1E4792B499C8900A18AB5 /* WorldsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		38C09AE02B48A873006B6B34 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3800FC6F2B34DC8B00685C5E /* CharacterSearchDetailsViewRow.swift */,
+				3800FC712B35D90700685C5E /* CharacterSearchDetailsAchievementView.swift */,
+				3800FC732B35DD6600685C5E /* CharacterSearchDetailsOtherCharactersView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		38CC6C022B2DD0EB00E5BB67 /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+				38CC6C032B2DD0F100E5BB67 /* Models */,
+				38CC6C062B2DDEAF00E5BB67 /* CharactersService.swift */,
+			);
+			path = Characters;
+			sourceTree = "<group>";
+		};
+		38CC6C032B2DD0F100E5BB67 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				38CC6C042B2DD0FB00E5BB67 /* CharactersModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		38D6708D2B52E8730043A093 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				38084D4A2B538AD7003FCD1B /* Rashid */,
+				38084D552B543EE6003FCD1B /* Creatures */,
+				387E5A042B5B4AAB009CA577 /* BoostedBoss */,
+				387E59FD2B5B3D35009CA577 /* BoostedCreature */,
+				387E5A0D2B5C132F009CA577 /* Highscores */,
+				3808B1EE2B5C6A46003E4AB8 /* KillStatistics */,
+				3808B1F72B5C8E64003E4AB8 /* Fansites */,
+				3808B2032B5DA4E1003E4AB8 /* Guilds */,
+				38A5582A2B82586800F31857 /* Spells */,
+				381A66592B75996E00933467 /* About */,
+				38D6708E2B52E8840043A093 /* UtilsListView.swift */,
+				38084D462B538164003FCD1B /* UtilsListViewModel.swift */,
+				38084D482B5386B6003FCD1B /* UtilsListRowView.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +754,8 @@
 			dependencies = (
 			);
 			name = "Tibia More";
+			packageProductDependencies = (
+			);
 			productName = "Tibia More";
 			productReference = 382A29BE2B1EA97500961FE2 /* Tibia More.app */;
 			productType = "com.apple.product-type.application";
@@ -275,6 +828,8 @@
 				Base,
 			);
 			mainGroup = 382A29B52B1EA97500961FE2;
+			packageReferences = (
+			);
 			productRefGroup = 382A29BF2B1EA97500961FE2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -292,7 +847,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				382A29C92B1EA97600961FE2 /* Preview Assets.xcassets in Resources */,
+				3889C4EE2B843224004F462B /* rashidItems.json in Resources */,
 				382A29C62B1EA97600961FE2 /* Assets.xcassets in Resources */,
+				3889C4E82B8406D8004F462B /* spellList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,12 +874,95 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38084D512B539109003FCD1B /* UtilsService.swift in Sources */,
+				3889C4FC2B844766004F462B /* WikiService.swift in Sources */,
+				38A3EDF32B2F2A59003C7BDA /* CharactersListViewModel.swift in Sources */,
+				382A2A002B1EBB0900961FE2 /* NewsModel.swift in Sources */,
+				38B1E4772B499C5000A18AB5 /* WorldsService.swift in Sources */,
+				381A665B2B75998000933467 /* AboutView.swift in Sources */,
+				38084D4E2B538AFD003FCD1B /* RashidViewModel.swift in Sources */,
+				3808B1F92B5C8E6F003E4AB8 /* FansitesView.swift in Sources */,
+				3808B1F02B5C6A55003E4AB8 /* KillStatisticsView.swift in Sources */,
 				382A29F52B1EAD4200961FE2 /* WorldsListView.swift in Sources */,
+				385D6EB02B4AF2E800839091 /* WorldsDetailsViewModel.swift in Sources */,
+				382A2A022B1EBBA000961FE2 /* NewsService.swift in Sources */,
+				3800FC742B35DD6600685C5E /* CharacterSearchDetailsOtherCharactersView.swift in Sources */,
+				38A3EDF62B2F2DC8003C7BDA /* CharactersSearchView.swift in Sources */,
+				38084D4C2B538AEA003FCD1B /* RashidView.swift in Sources */,
+				38A28AAA2B2B7CD500C707F7 /* BrowserView.swift in Sources */,
+				3823D5EB2B5227B0000677CB /* WorldsDetailsViewRow.swift in Sources */,
+				3838176B2B49A660000E13D7 /* WorldsListViewModel.swift in Sources */,
+				3808B1F62B5C8CF0003E4AB8 /* FansitesModel.swift in Sources */,
+				3872B0302B56099F00725178 /* CreaturesDetailViewModel.swift in Sources */,
+				387E5A112B5C4BBF009CA577 /* HighscoresViewModel.swift in Sources */,
+				38B1E47A2B499C8900A18AB5 /* WorldsModel.swift in Sources */,
+				3889C4F32B843613004F462B /* RashidItemsView.swift in Sources */,
+				387E5A0C2B5C0CE5009CA577 /* HighscoresModel.swift in Sources */,
+				3808B1FB2B5C8F9A003E4AB8 /* FansitesViewModel.swift in Sources */,
+				38D6708F2B52E8840043A093 /* UtilsListView.swift in Sources */,
+				38A3EDF82B2F2DE2003C7BDA /* CharactersSearchViewModel.swift in Sources */,
+				387E5A082B5B4AC9009CA577 /* BoostedBossViewModel.swift in Sources */,
+				38AC7CF72B254B2A00B6DF29 /* NavigationRoutes.swift in Sources */,
+				38084D472B538164003FCD1B /* UtilsListViewModel.swift in Sources */,
+				3889C4F02B843266004F462B /* RashidModel.swift in Sources */,
+				38F31AD62B39E3C800FF6BA8 /* DefaultStorage.swift in Sources */,
+				38A3EDFA2B2F32E0003C7BDA /* Custom+Styles.swift in Sources */,
 				382A29C42B1EA97500961FE2 /* TabBarView.swift in Sources */,
 				382A29F12B1EACFB00961FE2 /* NewsListView.swift in Sources */,
+				3889C4FA2B84438C004F462B /* WikiModel.swift in Sources */,
+				38084D592B543F04003FCD1B /* CreaturesViewModel.swift in Sources */,
+				38A28A822B27C2D800C707F7 /* NetworkErrors.swift in Sources */,
+				3808B2002B5C9415003E4AB8 /* FansitesDetailView.swift in Sources */,
+				3838176D2B4AEAE2000E13D7 /* WorldsListViewRow.swift in Sources */,
+				3889C4FE2B844ADF004F462B /* WikiViewModel.swift in Sources */,
+				3889C4EC2B84233D004F462B /* SpellsRowView.swift in Sources */,
 				382A29F32B1EAD1C00961FE2 /* CharactersListView.swift in Sources */,
+				385D6EAE2B4AF2D600839091 /* WorldsDetailsView.swift in Sources */,
+				38CC6C052B2DD0FB00E5BB67 /* CharactersModel.swift in Sources */,
+				382A2A042B1EBC8A00961FE2 /* URLConstants.swift in Sources */,
+				38AC7CF42B25411800B6DF29 /* NewsDetailModel.swift in Sources */,
+				387E5A0A2B5B4C35009CA577 /* BoostableBossesModel.swift in Sources */,
+				387E59FF2B5B3D4E009CA577 /* BoostedCreatureView.swift in Sources */,
+				38084D542B543D83003FCD1B /* CreaturesModel.swift in Sources */,
+				38084D572B543EF1003FCD1B /* CreaturesView.swift in Sources */,
+				38A28AA52B2B75E300C707F7 /* Strings+Ext.swift in Sources */,
+				38AC7CE72B24B22200B6DF29 /* NewsListViewModel.swift in Sources */,
+				38F2416F2B2D04BE003CC100 /* NetworkService.swift in Sources */,
+				3872B02E2B56099700725178 /* CreaturesDetailView.swift in Sources */,
+				38CC6C072B2DDEAF00E5BB67 /* CharactersService.swift in Sources */,
+				387E5A0F2B5C133D009CA577 /* HighscoresView.swift in Sources */,
+				38A28AA72B2B7AED00C707F7 /* SafariView.swift in Sources */,
+				38AC7CEA2B24BD7000B6DF29 /* NewsListRowView.swift in Sources */,
+				38084D492B5386B6003FCD1B /* UtilsListRowView.swift in Sources */,
+				3808B20C2B5DB5A5003E4AB8 /* GuildDetailsViewModel.swift in Sources */,
+				381A665D2B75998800933467 /* AboutViewModel.swift in Sources */,
+				3808B2052B5DA4EC003E4AB8 /* GuildsView.swift in Sources */,
+				38A5582C2B82587900F31857 /* SpellsView.swift in Sources */,
+				3808B1FD2B5C9254003E4AB8 /* FansiteRowView.swift in Sources */,
+				3872B02B2B5608D700725178 /* CreaturesRowView.swift in Sources */,
+				387E5A062B5B4ABC009CA577 /* BoostedBossView.swift in Sources */,
+				38C09ADF2B48A86B006B6B34 /* CharacterSearchDetailsViewModel.swift in Sources */,
+				3808B20A2B5DB596003E4AB8 /* GuildDetailsView.swift in Sources */,
+				38A3EDFD2B2F3DE1003C7BDA /* CharacterSearchDetailsView.swift in Sources */,
 				382A29FC2B1EAF1100961FE2 /* TabBarItem.swift in Sources */,
+				381A66582B756AA600933467 /* NewsTickerListRowView.swift in Sources */,
+				3808B2072B5DA779003E4AB8 /* GuildsViewModel.swift in Sources */,
+				3808B1F42B5C845C003E4AB8 /* KillStatisticsTotalsView.swift in Sources */,
+				3800FC702B34DC8B00685C5E /* CharacterSearchDetailsViewRow.swift in Sources */,
+				3808B2022B5DA1BC003E4AB8 /* GuildsModel.swift in Sources */,
+				3889C4EA2B840733004F462B /* SpellsModel.swift in Sources */,
+				387E5A032B5B42F4009CA577 /* CreaturesDetailAboutView.swift in Sources */,
+				38AC7CEC2B24BD7900B6DF29 /* NewsListRowViewModel.swift in Sources */,
+				3808B1ED2B5C688A003E4AB8 /* KillStatisticsModel.swift in Sources */,
+				38A5582E2B82588B00F31857 /* SpellsViewModel.swift in Sources */,
+				3808B1F22B5C6B94003E4AB8 /* KillStatisticsViewModel.swift in Sources */,
 				382A29C22B1EA97500961FE2 /* Tibia_MoreApp.swift in Sources */,
+				3889C4F62B843B6D004F462B /* WikiView.swift in Sources */,
+				3800FC722B35D90700685C5E /* CharacterSearchDetailsAchievementView.swift in Sources */,
+				38AC7CF12B253FEE00B6DF29 /* NewsListDetailViewModel.swift in Sources */,
+				38AC7CEF2B253FE400B6DF29 /* NewsListTickerDetailView.swift in Sources */,
+				387E5A012B5B3D5A009CA577 /* BoostedCreatureViewModel.swift in Sources */,
+				38C09AE92B48EF30006B6B34 /* CharactersListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,7 +1124,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"Tibia More/Preview Content\"";
 				DEVELOPMENT_TEAM = H574TJ3JKS;
 				ENABLE_PREVIEWS = YES;
@@ -495,7 +1135,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -515,7 +1155,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"Tibia More/Preview Content\"";
 				DEVELOPMENT_TEAM = H574TJ3JKS;
 				ENABLE_PREVIEWS = YES;
@@ -526,7 +1166,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
