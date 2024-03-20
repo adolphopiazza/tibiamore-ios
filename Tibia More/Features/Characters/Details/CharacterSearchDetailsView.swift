@@ -12,7 +12,7 @@ struct CharacterSearchDetailsView: View {
     @Binding var navigationPath: NavigationPath
     @State private var removeCharacter: Bool = false
     
-    var viewModel: CharacterSearchDetailsViewModel
+    @State var viewModel: CharacterSearchDetailsViewModel
     
     var body: some View {
         List {
@@ -36,6 +36,13 @@ struct CharacterSearchDetailsView: View {
         }, message: {
             Text("This action cannot be undone")
         })
+        .disabled(viewModel.isLoading)
+        .opacity(viewModel.isLoading ? 0.5 : 1)
+        .overlay {
+            if viewModel.isLoading {
+                ProgressView()
+            }
+        }
         .toolbar {
             if viewModel.isFromSearch {
                 ToolbarItem(placement: .topBarTrailing) {
@@ -168,7 +175,13 @@ struct CharacterSearchDetailsView: View {
         Group {
             if let otherCharacters = viewModel.model.otherCharacters {
                 Section("Characters") {
-                    CharacterSearchDetailsOtherCharactersView(characters: otherCharacters)
+                    CharacterSearchDetailsOtherCharactersView(characters: otherCharacters) { name in
+                        if let currentName = viewModel.model.character.name, name != currentName {
+                            Task {
+                                await routeTo(character: name)
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -178,6 +191,15 @@ struct CharacterSearchDetailsView: View {
 
 // MARK: - Actions
 extension CharacterSearchDetailsView {
+    
+    private func routeTo(character: String) async {
+        do {
+            let characterModel = try await viewModel.fetchCharacter(name: character)
+            self.navigationPath.append(NavigationRoutes.Characters.detailsFromSearch(with: characterModel))
+        } catch {
+            print("Error on fetching character model: \(error)")
+        }
+    }
     
     private func save() {
         guard var characters = DefaultStorage.shared.retrieveArray(key: .character) else {
