@@ -18,20 +18,26 @@ final class CharactersSearchViewModel {
     var model: CharacterModel?
     
     @MainActor func fetch() async {
-        self.isLoading = true
+        defer {
+            self.isLoading = false
+        }
         
+        self.isLoading = true
         do {
             let result = try await CharactersService.shared.fetch(name: characterName)
             self.model = result
-            self.isLoading = false
         } catch {
             print("Some error occured on characters search view model: \(error)")
             self.hasError = true
-            self.isLoading = false
         }
     }
     
     func playersOnlineFrom(world name: String) async -> [OnlinePlayersModel] {
+        defer {
+            self.isLoading = false
+        }
+        
+        self.isLoading = true
         do {
             let model = try await WorldsService.shared.fetch(world: name)
             return model.onlinePlayers
