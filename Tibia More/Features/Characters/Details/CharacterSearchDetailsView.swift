@@ -22,6 +22,8 @@ struct CharacterSearchDetailsView: View {
             
             accountInformationView
             
+            deathsView
+            
             otherCharactersView
         }
         .navigationTitle(viewModel.model.character.name ?? "Character")
@@ -66,7 +68,11 @@ struct CharacterSearchDetailsView: View {
             }
             
             CharacterSearchDetailsViewRow(title: "Title", value: viewModel.model.character.title ?? "None")
-            CharacterSearchDetailsViewRow(title: "Status", value: viewModel.model.isOnline ?? false ? "Online" : "Offline")
+            
+            if let isOnline = viewModel.model.isOnline {
+                CharacterSearchDetailsViewRow(title: "Status", value: isOnline ? "Online" : "Offline")
+            }
+            
             CharacterSearchDetailsViewRow(title: "Unlocked Titles", value: String(viewModel.model.character.unlockedTitles ?? 0))
             CharacterSearchDetailsViewRow(title: "Sex", value: viewModel.model.character.sex ?? "No sex found")
             CharacterSearchDetailsViewRow(title: "Vocation", value: viewModel.model.character.vocation ?? "No vocation found")
@@ -144,6 +150,16 @@ struct CharacterSearchDetailsView: View {
                         CharacterSearchDetailsViewRow(title: "Loyalty Title", value: loyaltyTitle)
                         CharacterSearchDetailsViewRow(title: "Created", value: created.formatDate(with: .yyyyMMddTHHmmssZ))
                     }
+            }
+        }
+    }
+    
+    private var deathsView: some View {
+        Group {
+            if let deaths = viewModel.model.deaths, !deaths.isEmpty {
+                Section("Deaths") {
+                    CharacterSearchDetailsDeathsView(deathsModel: deaths)
+                }
             }
         }
     }
@@ -230,6 +246,7 @@ extension CharacterSearchDetailsView {
                                                                                    AchievementsModel(grade: 3, name: "Herbicide", secret: true),
                                                                                    AchievementsModel(grade: 3, name: "Unleash the Beast", secret: false),
                                                                                    AchievementsModel(grade: 3, name: "You Got Horse Power", secret: false)],
+                                                               deaths: nil,
                                                                     otherCharacters: [OtherCharactersModel(deleted: nil,
                                                                                                            main: true,
                                                                                                            name: "Otavio Invencivel",
