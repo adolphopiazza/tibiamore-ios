@@ -26,14 +26,7 @@ final class CharactersSearchViewModel {
         self.model = nil
         
         do {
-            var character = try await fetchCharacter()
-            var onlinePlayers: [OnlinePlayersModel] = []
-            
-            if let charWorld = character.character.world {
-                onlinePlayers = await playersOnlineFrom(world: charWorld)
-            }
-            
-            character.isOnline = onlinePlayers.contains(where: { $0.name == characterName })
+            let character = try await CharactersService.shared.fetchWithStatus(name: characterName)
             self.model = character
         } catch {
             print("Some error occured on characters search view model, fetchAllInfo: \(error)")
@@ -41,23 +34,4 @@ final class CharactersSearchViewModel {
         }
     }
     
-    private func fetchCharacter() async throws -> CharacterModel {
-        do {
-            let result = try await CharactersService.shared.fetch(name: characterName)
-            return result
-        } catch {
-            print("Some error occured on characters search view model: \(error)")
-            throw error
-        }
-    }
-    
-    private func playersOnlineFrom(world name: String) async -> [OnlinePlayersModel] {
-        do {
-            let model = try await WorldsService.shared.fetch(world: name)
-            return model.onlinePlayers
-        } catch {
-            print("Some world error: \(error)")
-            return []
-        }
-    }
 }

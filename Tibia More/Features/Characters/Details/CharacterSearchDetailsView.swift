@@ -36,6 +36,13 @@ struct CharacterSearchDetailsView: View {
         }, message: {
             Text("This action cannot be undone")
         })
+        .alert("Sorry 🙁", isPresented: $viewModel.hasError) {
+            Button("OK") {
+                viewModel.characterModel = nil
+            }
+        } message: {
+            Text("\nWe couldn't fetch data for this character\nPlease try again")
+        }
         .disabled(viewModel.isLoading)
         .opacity(viewModel.isLoading ? 0.5 : 1)
         .overlay {
@@ -177,8 +184,12 @@ struct CharacterSearchDetailsView: View {
                 Section("Characters") {
                     CharacterSearchDetailsOtherCharactersView(characters: otherCharacters) { name in
                         if let currentName = viewModel.model.character.name, name != currentName {
-                            Task {
-                                await routeTo(character: name)
+                            await viewModel.fetch(character: name)
+                            viewModel.isLoading = false
+                            
+                            if let characterModel = viewModel.characterModel {
+                                let route = NavigationRoutes.Characters.detailsFromSearch(with: characterModel)
+                                self.navigationPath.append(route)
                             }
                         }
                     }
@@ -191,15 +202,6 @@ struct CharacterSearchDetailsView: View {
 
 // MARK: - Actions
 extension CharacterSearchDetailsView {
-    
-    private func routeTo(character: String) async {
-        do {
-            let characterModel = try await viewModel.fetchCharacter(name: character)
-            self.navigationPath.append(NavigationRoutes.Characters.detailsFromSearch(with: characterModel))
-        } catch {
-            print("Error on fetching character model: \(error)")
-        }
-    }
     
     private func save() {
         guard var characters = DefaultStorage.shared.retrieveArray(key: .character) else {

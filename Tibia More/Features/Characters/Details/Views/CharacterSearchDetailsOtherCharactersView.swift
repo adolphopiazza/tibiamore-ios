@@ -10,7 +10,7 @@ import SwiftUI
 struct CharacterSearchDetailsOtherCharactersView: View {
     
     let characters: [OtherCharactersModel]
-    let action: (String) -> ()
+    let action: (String) async -> ()
     
     var body: some View {
         ForEach(characters, id: \.name) { character in
@@ -34,7 +34,9 @@ struct CharacterSearchDetailsOtherCharactersView: View {
                 .fontDesign(.serif)
                 .contentShape(.rect)
                 .onTapGesture {
-                    action(name)
+                    Task {
+                        await action(name)
+                    }
                 }
             }
         }
