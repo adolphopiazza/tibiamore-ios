@@ -57,7 +57,7 @@ struct CharacterSearchDetailsView: View {
                         self.save()
                     }
                 }
-            } else if !viewModel.isFromWorlds {
+            } else if !viewModel.isFromWorlds && !viewModel.isFromHighscores {
                 ToolbarItem(placement: .topBarTrailing) {
                     HStack {
                         Button("All characters") {
@@ -188,6 +188,18 @@ struct CharacterSearchDetailsView: View {
                             viewModel.isLoading = false
                             
                             if let characterModel = viewModel.characterModel {
+                                if viewModel.isFromWorlds {
+                                    let route = NavigationRoutes.Worlds.characterDetails(with: characterModel)
+                                    self.navigationPath.append(route)
+                                    return
+                                }
+                                
+                                if viewModel.isFromHighscores {
+                                    let route = NavigationRoutes.Utils.Highscores.characterDetails(with: characterModel)
+                                    self.navigationPath.append(route)
+                                    return
+                                }
+                                
                                 let route = NavigationRoutes.Characters.detailsFromSearch(with: characterModel)
                                 self.navigationPath.append(route)
                             }

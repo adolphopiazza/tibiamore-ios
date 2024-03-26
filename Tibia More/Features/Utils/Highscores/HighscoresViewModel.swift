@@ -25,6 +25,25 @@ final class HighscoresViewModel {
     
     var highscores: [HighscoresPlayersModel] = []
     
+    var characterModel: CharacterModel?
+    var isLoadingCharacter: Bool = false
+    
+    var opacity: Double {
+        if isLoading {
+            return 0
+        }
+        
+        if isLoadingCharacter {
+            return 0.5
+        }
+        
+        if hasError && !isLoading {
+            return 0
+        }
+        
+        return 1
+    }
+    
     init() {
         Task {
             await self.fetchWorlds()
@@ -32,7 +51,7 @@ final class HighscoresViewModel {
         }
     }
     
-    @MainActor private func fetchWorlds() async {
+    @MainActor func fetchWorlds() async {
         defer {
             self.isLoading = false
         }
@@ -69,6 +88,23 @@ final class HighscoresViewModel {
             self.hasError = false
         } catch {
             print("Some error fetching highscores on HighscoresViewModel: \(error)")
+            self.hasError = true
+        }
+    }
+    
+    @MainActor func fetchCharacter(name: String) async {
+        defer {
+            self.isLoadingCharacter = false
+        }
+        
+        self.isLoadingCharacter = true
+        self.characterModel = nil
+        
+        do {
+            let result = try await CharactersService.shared.fetchWithStatus(name: name)
+            self.characterModel = result
+        } catch {
+            print("Some error fetching character on HighscoresViewModel: \(error)")
             self.hasError = true
         }
     }
