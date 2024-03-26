@@ -36,6 +36,7 @@
 		381A665B2B75998000933467 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381A665A2B75998000933467 /* AboutView.swift */; };
 		381A665D2B75998800933467 /* AboutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381A665C2B75998800933467 /* AboutViewModel.swift */; };
 		3823D5EB2B5227B0000677CB /* WorldsDetailsViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3823D5EA2B5227B0000677CB /* WorldsDetailsViewRow.swift */; };
+		38294DEF2BAB9D3A005F4FAC /* CharacterSearchDetailsDeathsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38294DEE2BAB9D3A005F4FAC /* CharacterSearchDetailsDeathsView.swift */; };
 		382A29C22B1EA97500961FE2 /* Tibia_MoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A29C12B1EA97500961FE2 /* Tibia_MoreApp.swift */; };
 		382A29C42B1EA97500961FE2 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A29C32B1EA97500961FE2 /* TabBarView.swift */; };
 		382A29C62B1EA97600961FE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 382A29C52B1EA97600961FE2 /* Assets.xcassets */; };
@@ -152,6 +153,7 @@
 		381A665A2B75998000933467 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		381A665C2B75998800933467 /* AboutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewModel.swift; sourceTree = "<group>"; };
 		3823D5EA2B5227B0000677CB /* WorldsDetailsViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldsDetailsViewRow.swift; sourceTree = "<group>"; };
+		38294DEE2BAB9D3A005F4FAC /* CharacterSearchDetailsDeathsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSearchDetailsDeathsView.swift; sourceTree = "<group>"; };
 		382A29BE2B1EA97500961FE2 /* Tibia More.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tibia More.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		382A29C12B1EA97500961FE2 /* Tibia_MoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tibia_MoreApp.swift; sourceTree = "<group>"; };
 		382A29C32B1EA97500961FE2 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
@@ -697,6 +699,7 @@
 				3800FC6F2B34DC8B00685C5E /* CharacterSearchDetailsViewRow.swift */,
 				3800FC712B35D90700685C5E /* CharacterSearchDetailsAchievementView.swift */,
 				3800FC732B35DD6600685C5E /* CharacterSearchDetailsOtherCharactersView.swift */,
+				38294DEE2BAB9D3A005F4FAC /* CharacterSearchDetailsDeathsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -924,6 +927,7 @@
 				387E5A0A2B5B4C35009CA577 /* BoostableBossesModel.swift in Sources */,
 				387E59FF2B5B3D4E009CA577 /* BoostedCreatureView.swift in Sources */,
 				38084D542B543D83003FCD1B /* CreaturesModel.swift in Sources */,
+				38294DEF2BAB9D3A005F4FAC /* CharacterSearchDetailsDeathsView.swift in Sources */,
 				38084D572B543EF1003FCD1B /* CreaturesView.swift in Sources */,
 				38A28AA52B2B75E300C707F7 /* Strings+Ext.swift in Sources */,
 				38AC7CE72B24B22200B6DF29 /* NewsListViewModel.swift in Sources */,
@@ -1124,7 +1128,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Tibia More/Preview Content\"";
 				DEVELOPMENT_TEAM = H574TJ3JKS;
 				ENABLE_PREVIEWS = YES;
@@ -1140,7 +1144,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.adolphopiazza.Tibia-More";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1155,7 +1159,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Tibia More/Preview Content\"";
 				DEVELOPMENT_TEAM = H574TJ3JKS;
 				ENABLE_PREVIEWS = YES;
@@ -1171,7 +1175,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.adolphopiazza.Tibia-More";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

@@ -12,7 +12,7 @@ struct CharacterSearchDetailsView: View {
     @Binding var navigationPath: NavigationPath
     @State private var removeCharacter: Bool = false
     
-    var viewModel: CharacterSearchDetailsViewModel
+    @State var viewModel: CharacterSearchDetailsViewModel
     
     var body: some View {
         List {
@@ -21,6 +21,8 @@ struct CharacterSearchDetailsView: View {
             achievementsView
             
             accountInformationView
+            
+            deathsView
             
             otherCharactersView
         }
@@ -34,6 +36,20 @@ struct CharacterSearchDetailsView: View {
         }, message: {
             Text("This action cannot be undone")
         })
+        .alert("Sorry 🙁", isPresented: $viewModel.hasError) {
+            Button("OK") {
+                viewModel.characterModel = nil
+            }
+        } message: {
+            Text("\nWe couldn't fetch data for this character\nPlease try again")
+        }
+        .disabled(viewModel.isLoading)
+        .opacity(viewModel.isLoading ? 0.5 : 1)
+        .overlay {
+            if viewModel.isLoading {
+                ProgressView()
+            }
+        }
         .toolbar {
             if viewModel.isFromSearch {
                 ToolbarItem(placement: .topBarTrailing) {
@@ -66,7 +82,11 @@ struct CharacterSearchDetailsView: View {
             }
             
             CharacterSearchDetailsViewRow(title: "Title", value: viewModel.model.character.title ?? "None")
-            CharacterSearchDetailsViewRow(title: "Status", value: viewModel.model.isOnline ?? false ? "Online" : "Offline")
+            
+            if let isOnline = viewModel.model.isOnline {
+                CharacterSearchDetailsViewRow(title: "Status", value: isOnline ? "Online" : "Offline")
+            }
+            
             CharacterSearchDetailsViewRow(title: "Unlocked Titles", value: String(viewModel.model.character.unlockedTitles ?? 0))
             CharacterSearchDetailsViewRow(title: "Sex", value: viewModel.model.character.sex ?? "No sex found")
             CharacterSearchDetailsViewRow(title: "Vocation", value: viewModel.model.character.vocation ?? "No vocation found")
@@ -148,11 +168,31 @@ struct CharacterSearchDetailsView: View {
         }
     }
     
+    private var deathsView: some View {
+        Group {
+            if let deaths = viewModel.model.deaths, !deaths.isEmpty {
+                Section("Deaths") {
+                    CharacterSearchDetailsDeathsView(deathsModel: deaths)
+                }
+            }
+        }
+    }
+    
     private var otherCharactersView: some View {
         Group {
             if let otherCharacters = viewModel.model.otherCharacters {
                 Section("Characters") {
-                    CharacterSearchDetailsOtherCharactersView(characters: otherCharacters)
+                    CharacterSearchDetailsOtherCharactersView(characters: otherCharacters) { name in
+                        if let currentName = viewModel.model.character.name, name != currentName {
+                            await viewModel.fetch(character: name)
+                            viewModel.isLoading = false
+                            
+                            if let characterModel = viewModel.characterModel {
+                                let route = NavigationRoutes.Characters.detailsFromSearch(with: characterModel)
+                                self.navigationPath.append(route)
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -230,6 +270,7 @@ extension CharacterSearchDetailsView {
                                                                                    AchievementsModel(grade: 3, name: "Herbicide", secret: true),
                                                                                    AchievementsModel(grade: 3, name: "Unleash the Beast", secret: false),
                                                                                    AchievementsModel(grade: 3, name: "You Got Horse Power", secret: false)],
+                                                               deaths: nil,
                                                                     otherCharacters: [OtherCharactersModel(deleted: nil,
                                                                                                            main: true,
                                                                                                            name: "Otavio Invencivel",

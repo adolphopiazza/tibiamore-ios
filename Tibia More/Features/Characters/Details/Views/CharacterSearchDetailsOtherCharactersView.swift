@@ -10,6 +10,7 @@ import SwiftUI
 struct CharacterSearchDetailsOtherCharactersView: View {
     
     let characters: [OtherCharactersModel]
+    let action: (String) async -> ()
     
     var body: some View {
         ForEach(characters, id: \.name) { character in
@@ -31,6 +32,12 @@ struct CharacterSearchDetailsOtherCharactersView: View {
                         .foregroundStyle(.secondary)
                 }
                 .fontDesign(.serif)
+                .contentShape(.rect)
+                .onTapGesture {
+                    Task {
+                        await action(name)
+                    }
+                }
             }
         }
     }
@@ -44,5 +51,6 @@ struct CharacterSearchDetailsOtherCharactersView: View {
                                                                                 position: nil,
                                                                                 status: "online",
                                                                                 traded: nil,
-                                                                                world: "Inabra")])
+                                                                                world: "Inabra")], 
+                                              action: {_ in })
 }

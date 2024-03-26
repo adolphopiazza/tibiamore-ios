@@ -29,4 +29,31 @@ final class CharactersService {
         }
     }
     
+    func fetchWithStatus(name: String) async throws -> CharacterModel {
+        do {
+            var characterInfo = try await fetch(name: name)
+            var onlinePlayers: [OnlinePlayersModel] = []
+            
+            if let charWorld = characterInfo.character.world {
+                onlinePlayers = await playersOnlineFrom(world: charWorld)
+            }
+            
+            characterInfo.isOnline = onlinePlayers.contains(where: { $0.name == name })
+            return characterInfo
+        } catch {
+            print("Some error occured on the characters service: \(error)")
+            throw error
+        }
+    }
+    
+    private func playersOnlineFrom(world name: String) async -> [OnlinePlayersModel] {
+        do {
+            let model = try await WorldsService.shared.fetch(world: name)
+            return model.onlinePlayers
+        } catch {
+            print("Some world error: \(error)")
+            return []
+        }
+    }
+    
 }

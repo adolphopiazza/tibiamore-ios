@@ -22,7 +22,11 @@ struct CharactersSearchView: View {
                 
                 Button(action: {
                     Task {
-                        await routeToDetails()
+                        await viewModel.fetchAllInfo()
+                        
+                        if let model = viewModel.model {
+                            self.navigationPath.append(NavigationRoutes.Characters.detailsFromSearch(with: model))
+                        }
                     }
                 }, label: {
                     Text("exiva \"\(viewModel.characterName)\"")
@@ -48,23 +52,12 @@ struct CharactersSearchView: View {
         }
         .onSubmit {
             Task {
-                await routeToDetails()
+                await viewModel.fetchAllInfo()
+                
+                if let model = viewModel.model {
+                    self.navigationPath.append(NavigationRoutes.Characters.detailsFromSearch(with: model))
+                }
             }
-        }
-    }
-    
-}
-
-// MARK: - Routes
-extension CharactersSearchView {
-    
-    private func routeToDetails() async {
-        await viewModel.fetch()
-        let players = await viewModel.playersOnlineFrom(world: viewModel.model?.character.world ?? "")
-        viewModel.model?.isOnline = players.contains(where: { $0.name == viewModel.model?.character.name ?? "" })
-        
-        if let model = viewModel.model {
-            self.navigationPath.append(NavigationRoutes.Characters.detailsFromSearch(with: model))
         }
     }
     
