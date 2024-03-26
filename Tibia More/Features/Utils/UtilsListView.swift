@@ -50,7 +50,7 @@ struct UtilsListView: View {
                     case .boostedCreature:
                         BoostedCreatureView()
                     case .highscores:
-                        HighscoresView()
+                        HighscoresView(navigationPath: $navigationPath)
                     case .killStatistics:
                         KillStatisticsView()
                     }
@@ -86,6 +86,12 @@ struct UtilsListView: View {
                 switch route {
                 case .browser(let url):
                     BrowserView(navigationPath: $navigationPath, url: url)
+                }
+            }
+            .navigationDestination(for: NavigationRoutes.Utils.Highscores.self) { route in
+                switch route {
+                case .characterDetails(let model):
+                    CharacterSearchDetailsView(navigationPath: $navigationPath, viewModel: CharacterSearchDetailsViewModel(model: model, isFromHighscores: true))
                 }
             }
         }
