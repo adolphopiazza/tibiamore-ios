@@ -43,7 +43,7 @@ struct NewsListView: View {
                 }
                 .opacity(viewModel.hasError ? 0 : 1)
             }
-            .navigationTitle(viewModel.viewTitle)
+            .navigationTitle("News")
             .refreshable {
                 await viewModel.fetchNews()
             }
