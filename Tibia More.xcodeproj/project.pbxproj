@@ -55,7 +55,6 @@
 		3838176D2B4AEAE2000E13D7 /* WorldsListViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3838176C2B4AEAE2000E13D7 /* WorldsListViewRow.swift */; };
 		385D6EAE2B4AF2D600839091 /* WorldsDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385D6EAD2B4AF2D600839091 /* WorldsDetailsView.swift */; };
 		385D6EB02B4AF2E800839091 /* WorldsDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385D6EAF2B4AF2E800839091 /* WorldsDetailsViewModel.swift */; };
-		38713F462BB4509D00327618 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 38713F452BB4509D00327618 /* Localizable.xcstrings */; };
 		3872B02B2B5608D700725178 /* CreaturesRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3872B02A2B5608D700725178 /* CreaturesRowView.swift */; };
 		3872B02E2B56099700725178 /* CreaturesDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3872B02D2B56099700725178 /* CreaturesDetailView.swift */; };
 		3872B0302B56099F00725178 /* CreaturesDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3872B02F2B56099F00725178 /* CreaturesDetailViewModel.swift */; };
@@ -100,6 +99,7 @@
 		38B1E47A2B499C8900A18AB5 /* WorldsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B1E4792B499C8900A18AB5 /* WorldsModel.swift */; };
 		38C09ADF2B48A86B006B6B34 /* CharacterSearchDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C09ADE2B48A86B006B6B34 /* CharacterSearchDetailsViewModel.swift */; };
 		38C09AE92B48EF30006B6B34 /* CharactersListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C09AE82B48EF30006B6B34 /* CharactersListRowView.swift */; };
+		38C546AC2BC2EFBE0039E589 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 38C546AB2BC2EFBE0039E589 /* Localizable.xcstrings */; };
 		38CC6C052B2DD0FB00E5BB67 /* CharactersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC6C042B2DD0FB00E5BB67 /* CharactersModel.swift */; };
 		38CC6C072B2DDEAF00E5BB67 /* CharactersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC6C062B2DDEAF00E5BB67 /* CharactersService.swift */; };
 		38D6708F2B52E8840043A093 /* UtilsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D6708E2B52E8840043A093 /* UtilsListView.swift */; };
@@ -176,7 +176,6 @@
 		3838176C2B4AEAE2000E13D7 /* WorldsListViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldsListViewRow.swift; sourceTree = "<group>"; };
 		385D6EAD2B4AF2D600839091 /* WorldsDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldsDetailsView.swift; sourceTree = "<group>"; };
 		385D6EAF2B4AF2E800839091 /* WorldsDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldsDetailsViewModel.swift; sourceTree = "<group>"; };
-		38713F452BB4509D00327618 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		3872B02A2B5608D700725178 /* CreaturesRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreaturesRowView.swift; sourceTree = "<group>"; };
 		3872B02D2B56099700725178 /* CreaturesDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreaturesDetailView.swift; sourceTree = "<group>"; };
 		3872B02F2B56099F00725178 /* CreaturesDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreaturesDetailViewModel.swift; sourceTree = "<group>"; };
@@ -221,6 +220,7 @@
 		38B1E4792B499C8900A18AB5 /* WorldsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldsModel.swift; sourceTree = "<group>"; };
 		38C09ADE2B48A86B006B6B34 /* CharacterSearchDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSearchDetailsViewModel.swift; sourceTree = "<group>"; };
 		38C09AE82B48EF30006B6B34 /* CharactersListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListRowView.swift; sourceTree = "<group>"; };
+		38C546AB2BC2EFBE0039E589 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		38CC6C042B2DD0FB00E5BB67 /* CharactersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersModel.swift; sourceTree = "<group>"; };
 		38CC6C062B2DDEAF00E5BB67 /* CharactersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersService.swift; sourceTree = "<group>"; };
 		38D6708E2B52E8840043A093 /* UtilsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsListView.swift; sourceTree = "<group>"; };
@@ -442,7 +442,7 @@
 				38AC7CF62B254B2A00B6DF29 /* NavigationRoutes.swift */,
 				38A28AA62B2B7AED00C707F7 /* SafariView.swift */,
 				38F31AD52B39E3C800FF6BA8 /* DefaultStorage.swift */,
-				38713F452BB4509D00327618 /* Localizable.xcstrings */,
+				38C546AB2BC2EFBE0039E589 /* Localizable.xcstrings */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -854,7 +854,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				382A29C92B1EA97600961FE2 /* Preview Assets.xcassets in Resources */,
-				38713F462BB4509D00327618 /* Localizable.xcstrings in Resources */,
+				38C546AC2BC2EFBE0039E589 /* Localizable.xcstrings in Resources */,
 				3889C4EE2B843224004F462B /* rashidItems.json in Resources */,
 				382A29C62B1EA97600961FE2 /* Assets.xcassets in Resources */,
 				3889C4E82B8406D8004F462B /* spellList.json in Resources */,

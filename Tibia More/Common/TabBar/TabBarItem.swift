@@ -14,6 +14,21 @@ enum TabBarItem: Int {
     case utils
     case wiki
     
+    var title: String {
+        switch self {
+        case .news:
+            return "TabBar.News"
+        case .characters:
+            return "TabBar.Characters"
+        case .worlds:
+            return "TabBar.Worlds"
+        case .utils:
+            return "TabBar.Utils"
+        case .wiki:
+            return "TabBar.Wiki"
+        }
+    }
+    
     var sfImage: String {
         switch self {
         case .news:
