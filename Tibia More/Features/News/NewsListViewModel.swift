@@ -10,6 +10,7 @@ import SwiftUI
 @Observable
 final class NewsListViewModel {
     
+    var viewTitle: String = "News.ViewTitle"
     var isLoading: Bool = false
     var hasError: Bool = false
     

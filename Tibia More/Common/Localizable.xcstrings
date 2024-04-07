@@ -140,20 +140,113 @@
     "Last week players died" : {
 
     },
-    "Latest News" : {
-
-    },
     "Level" : {
 
     },
     "Mondays" : {
 
     },
-    "News" : {
-
+    "Networking.Error.Description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please pull-to-refresh to try again"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Por favor, tente novamente com o pull-to-refresh"
+          }
+        }
+      }
     },
-    "News Ticker" : {
-
+    "Networking.Error.Title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sorry, we are having some issues 😞"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desculpe, estamos  com alguns problemas 😞"
+          }
+        }
+      }
+    },
+    "News.Latest" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Latest News"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Últimas Notícias"
+          }
+        }
+      }
+    },
+    "News.Row.TibiaWebsite" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Read on Tibia.com"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leia em Tibia.com"
+          }
+        }
+      }
+    },
+    "News.Ticker" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "News Ticker"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notícias Rápidas"
+          }
+        }
+      }
+    },
+    "News.ViewTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "News"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notícias"
+          }
+        }
+      }
     },
     "No characters found" : {
 
@@ -185,9 +278,6 @@
     "Please pull-to-refresh to try again" : {
 
     },
-    "Please pull-to-refresh to try to get this news" : {
-
-    },
     "Please tap the top right icon to try again" : {
 
     },
@@ -213,9 +303,6 @@
 
     },
     "Rashid location respects the Tibia time. The day only changes on server saves." : {
-
-    },
-    "Read on Tibia.com" : {
 
     },
     "Record Date" : {
@@ -261,9 +348,6 @@
 
     },
     "Sorry 🙁" : {
-
-    },
-    "Sorry, we are having some issues" : {
 
     },
     "Sorry, we got an error" : {

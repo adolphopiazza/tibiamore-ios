@@ -21,7 +21,7 @@ struct NewsListView: View {
     var body: some View {
         NavigationStack(path: $navigationPath) {
             Form {
-                Section("News Ticker") {
+                Section("News.Ticker") {
                     List(viewModel.newsTicker, id: \.id) { news in
                         NewsTickerListRowView(news: news)
                             .contentShape(Rectangle())
@@ -32,7 +32,7 @@ struct NewsListView: View {
                 }
                 .opacity(viewModel.hasError ? 0 : 1)
                 
-                Section("Latest News") {
+                Section("News.Latest") {
                     List(viewModel.news, id: \.id) { news in
                         NewsListRowView(viewModel: .init(news))
                             .contentShape(Rectangle())
@@ -43,16 +43,16 @@ struct NewsListView: View {
                 }
                 .opacity(viewModel.hasError ? 0 : 1)
             }
-            .navigationTitle("News")
+            .navigationTitle(viewModel.viewTitle.localized)
             .refreshable {
                 await viewModel.fetchNews()
             }
             .opacity(viewModel.isLoading ? 0 : 1)
             .overlay {
                 if viewModel.hasError && !viewModel.isLoading {
-                    ContentUnavailableView("Sorry, we got an error",
+                    ContentUnavailableView("Networking.Error.Title",
                                            systemImage: .SFImages.networkSlash,
-                                           description: Text("Please pull-to-refresh to try again"))
+                                           description: Text("Networking.Error.Description"))
                 }
                 
                 if viewModel.isLoading {
