@@ -15,7 +15,7 @@ struct CharactersSearchView: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 30) {
-                TextField("Insert your character name", text: $viewModel.characterName)
+                TextField("Character.Search.Name", text: $viewModel.characterName)
                     .textFieldStyle(CharacterSearchTextFieldStyle())
                     .autocorrectionDisabled()
                     .textInputAutocapitalization(.words)
@@ -36,14 +36,14 @@ struct CharactersSearchView: View {
             }
             .padding([.horizontal, .top], 20)
         }
-        .navigationTitle(viewModel.viewTitle)
+        .navigationTitle(viewModel.viewTitle.localized)
         .disabled(viewModel.isLoading)
-        .alert("Sorry 🙁", isPresented: $viewModel.hasError) {
+        .alert("App.Sorry", isPresented: $viewModel.hasError) {
             Button("OK") {
                 viewModel.characterName.removeAll()
             }
         } message: {
-            Text("\nIt seems this character does not exist\nPlease try again")
+            Text("Character.Search.NotFound")
         }
         .overlay {
             if viewModel.isLoading {

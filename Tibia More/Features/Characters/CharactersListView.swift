@@ -23,26 +23,26 @@ struct CharactersListView: View {
                     }
             }
             .disabled(viewModel.isLoading)
-            .navigationTitle(viewModel.viewTitle)
+            .navigationTitle(viewModel.viewTitle.localized)
             .task {
                 await viewModel.checkUserDefaults()
             }
             .refreshable {
                 await viewModel.checkUserDefaults(isRefreshing: true)
             }
-            .alert("Clear all saved characters?", isPresented: $clearAll, actions: {
-                Button("Yes", role: .destructive) {
+            .alert("Characters.Clear", isPresented: $clearAll, actions: {
+                Button("App.Yes", role: .destructive) {
                     DefaultStorage.shared.clear(key: .character)
                     viewModel.characters.removeAll()
                 }
             }, message: {
-                Text("This action cannot be undone")
+                Text("Error.Undone")
             })
             .overlay {
                 if !viewModel.isLoading && viewModel.characters.isEmpty {
-                    ContentUnavailableView("No characters found",
+                    ContentUnavailableView("Characters.NoFound",
                                            systemImage: .SFImages.person2Slash,
-                                           description: Text("Tap the top right icon to search for a character"))
+                                           description: Text("Character.TapToSearch"))
                 }
                 
                 if viewModel.isLoading {
@@ -51,14 +51,14 @@ struct CharactersListView: View {
             }
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
-                    Button("Search for character", systemImage: .SFImages.magnifyingglass) {
+                    Button("Character.Search", systemImage: .SFImages.magnifyingglass) {
                         navigationPath.append(NavigationRoutes.Characters.search)
                     }
                 }
                 
                 if !viewModel.characters.isEmpty {
                     ToolbarItem(placement: .topBarLeading) {
-                        Button("Clear All", systemImage: .SFImages.trash) {
+                        Button("Characters.ClearAll", systemImage: .SFImages.trash) {
                             self.clearAll = true
                         }
                     }

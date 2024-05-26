@@ -1,12 +1,6 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "\nIt seems this character does not exist\nPlease try again" : {
-
-    },
-    "\nWe couldn't fetch data for this character\nPlease try again" : {
-
-    },
     "%@ points of mana" : {
 
     },
@@ -23,20 +17,130 @@
     "About" : {
 
     },
-    "Account Achievements" : {
-
+    "Account.Achievements" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Account Achievements"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conquistas da Conta"
+          }
+        }
+      }
     },
-    "Account Information" : {
-
+    "Account.Information" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Account Information"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Informações da Conta"
+          }
+        }
+      }
+    },
+    "Account.Status" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Account Status"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Status da Conta"
+          }
+        }
+      }
+    },
+    "Account.Status.NoFound" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No account status found"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Status da conta não encontrado"
+          }
+        }
+      }
+    },
+    "Achievement.Points" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Achievement Points"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conquistas"
+          }
+        }
+      }
     },
     "Active Guilds" : {
 
     },
-    "All characters" : {
-
-    },
     "App Info" : {
 
+    },
+    "App.Sorry" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sorry 😞"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desculpe 😞"
+          }
+        }
+      }
+    },
+    "App.Yes" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yes"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sim"
+          }
+        }
+      }
     },
     "Battleye Date" : {
 
@@ -50,20 +154,260 @@
     "Category" : {
 
     },
-    "Character Information" : {
-
+    "Character.Detail.Remove" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remove this character from the list?"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remover esse personagem da lista?"
+          }
+        }
+      }
+    },
+    "Character.Detail.ViewTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Character"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personagem"
+          }
+        }
+      }
+    },
+    "Character.Information" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Character Information"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Informações do Personagem"
+          }
+        }
+      }
+    },
+    "Character.Remove" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remove character"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remover personagem"
+          }
+        }
+      }
+    },
+    "Character.Search" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search for character"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pesquisar personagem"
+          }
+        }
+      }
+    },
+    "Character.Search.Find" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Find Character"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pesquisar personagem"
+          }
+        }
+      }
+    },
+    "Character.Search.Name" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Insert your character name"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Insira o nome do personagem"
+          }
+        }
+      }
+    },
+    "Character.Search.NotFound" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\nIt seems this character does not exist\nPlease try again"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\nParece que esse personagem não existe\nPor favor tente novamente"
+          }
+        }
+      }
+    },
+    "Character.TapToSearch" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tap the top right icon to search for a character"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toque no ícone superior direito para pesquisar um personagem"
+          }
+        }
+      }
     },
     "Characters" : {
 
     },
+    "Characters.All" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All characters"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Todos os personagens"
+          }
+        }
+      }
+    },
+    "Characters.Clear" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clear all saved characters?"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deletar todos os personagens?"
+          }
+        }
+      }
+    },
+    "Characters.ClearAll" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clear All"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deletar todos"
+          }
+        }
+      }
+    },
+    "Characters.NoFound" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No characters found"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nenhum personagem encontrado"
+          }
+        }
+      }
+    },
+    "Characters.ViewTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Characters"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personagens"
+          }
+        }
+      }
+    },
     "CipSoft website" : {
 
     },
-    "Clear All" : {
-
-    },
-    "Clear all saved characters?" : {
-
+    "Comment" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comentário"
+          }
+        }
+      }
     },
     "Contact" : {
 
@@ -74,6 +418,17 @@
     "Convince with" : {
 
     },
+    "Created" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Criado em"
+          }
+        }
+      }
+    },
     "Creature Description" : {
 
     },
@@ -81,7 +436,31 @@
 
     },
     "Deaths" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mortes"
+          }
+        }
+      }
+    },
+    "Deletion.Date" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deletion Date"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Data de exclusão"
+          }
+        }
+      }
     },
     "Description" : {
 
@@ -91,6 +470,43 @@
     },
     "Discord" : {
 
+    },
+    "Error.fetch" : {
+
+    },
+    "Error.Fetch" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\nWe couldn't fetch data for this character\nPlease try again"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\nNão foi possível carregar os dados desse personagem\nPor favor tente novamente"
+          }
+        }
+      }
+    },
+    "Error.Undone" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This action cannot be undone"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não é possível desfazer essa ação"
+          }
+        }
+      }
     },
     "exiva \"%@\"" : {
 
@@ -110,11 +526,39 @@
     "Fridays" : {
 
     },
+    "Guild.Membership" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guild Membership"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Associação a Guild"
+          }
+        }
+      }
+    },
     "Guildhalls" : {
 
     },
     "Highscores" : {
 
+    },
+    "House" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Casa"
+          }
+        }
+      }
     },
     "Insert your character name" : {
 
@@ -140,11 +584,148 @@
     "Last week players died" : {
 
     },
+    "Last.Login" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Last Login"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Último Login"
+          }
+        }
+      }
+    },
+    "Last.Login.NoFound" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No last login found"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Último login não encontrado"
+          }
+        }
+      }
+    },
+    "Last.Seen" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Last seen"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Visto por último"
+          }
+        }
+      }
+    },
     "Level" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nível"
+          }
+        }
+      }
+    },
+    "Loyalty.Title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Loyalty Title"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pontos de lealdade"
+          }
+        }
+      }
+    },
+    "Married.To" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Married to"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Casado(a) com"
+          }
+        }
+      }
     },
     "Mondays" : {
 
+    },
+    "Name" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nome"
+          }
+        }
+      }
+    },
+    "Name.Former" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Former Names"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nomes anteriores"
+          }
+        }
+      }
+    },
+    "Name.NoFound" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No name found"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nome não encontrado"
+          }
+        }
+      }
     },
     "Networking.Error.Description" : {
       "extractionState" : "manual",
@@ -248,23 +829,41 @@
         }
       }
     },
-    "No characters found" : {
-
-    },
     "No data available 😟" : {
 
     },
     "No results" : {
 
     },
-    "No world found" : {
-
+    "None" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nenhum"
+          }
+        }
+      }
     },
     "Note" : {
 
     },
     "OK" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        }
+      }
     },
     "Online Players" : {
 
@@ -280,6 +879,17 @@
     },
     "Please tap the top right icon to try again" : {
 
+    },
+    "Position" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Posição"
+          }
+        }
+      }
     },
     "Premium" : {
 
@@ -317,22 +927,55 @@
     "Reload" : {
 
     },
-    "Remove character" : {
-
+    "Residence" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Residência"
+          }
+        }
+      }
     },
-    "Remove this character from the list?" : {
-
+    "Residence.NoFound" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No residence found"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Residência não encontrada"
+          }
+        }
+      }
     },
     "Saturdays" : {
 
     },
-    "Save on list" : {
-
+    "Save.List" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Save on list"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salvar na lista"
+          }
+        }
+      }
     },
     "Schedule" : {
-
-    },
-    "Search for character" : {
 
     },
     "Search on Wiki" : {
@@ -341,13 +984,38 @@
     "See Rashid items" : {
 
     },
+    "Sex" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sexo"
+          }
+        }
+      }
+    },
+    "Sex.NoFound" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No sex found"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nenhum sexo encontrado"
+          }
+        }
+      }
+    },
     "Socials" : {
 
     },
     "Sorry 😞" : {
-
-    },
-    "Sorry 🙁" : {
 
     },
     "Sorry, we got an error" : {
@@ -462,13 +1130,7 @@
         }
       }
     },
-    "Tap the top right icon to search for a character" : {
-
-    },
     "Texts" : {
-
-    },
-    "This action cannot be undone" : {
 
     },
     "Thursdays" : {
@@ -486,6 +1148,34 @@
     "ticker news" : {
 
     },
+    "Title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Título"
+          }
+        }
+      }
+    },
+    "Titles.Unlocked" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unlocked Titles"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Títulos Desbloqueados"
+          }
+        }
+      }
+    },
     "Today" : {
 
     },
@@ -497,6 +1187,17 @@
     },
     "Touch here" : {
 
+    },
+    "Traded" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Negociado"
+          }
+        }
+      }
     },
     "Transfer" : {
 
@@ -526,7 +1227,31 @@
 
     },
     "Vocation" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vocação"
+          }
+        }
+      }
+    },
+    "Vocation.NoFound" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No vocation found"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vocação não encontrada"
+          }
+        }
+      }
     },
     "We were unable to get this player data\nPlease try again" : {
 
@@ -538,15 +1263,53 @@
 
     },
     "World" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mundo"
+          }
+        }
+      }
+    },
+    "World.NoFound" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No world found"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mundo não encontrado"
+          }
+        }
+      }
     },
     "Worlds" : {
 
     },
-    "X" : {
-
+    "Worlds.Former" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Former Worlds"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mundos anteriores"
+          }
+        }
+      }
     },
-    "Yes" : {
+    "X" : {
 
     },
     "You need to win his trust before selling any items to him.\n\nHe travels to a different city everyday." : {

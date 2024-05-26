@@ -10,7 +10,7 @@ import SwiftUI
 @Observable
 final class CharactersListViewModel {
     
-    let viewTitle = "Characters"
+    let viewTitle = "Characters.ViewTitle"
     
     var characters: [CharacterModel] = []
     var isLoading = false

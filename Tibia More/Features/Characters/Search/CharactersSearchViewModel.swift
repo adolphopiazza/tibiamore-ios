@@ -10,7 +10,7 @@ import SwiftUI
 @Observable
 final class CharactersSearchViewModel {
     
-    let viewTitle = "Find Character"
+    let viewTitle = "Character.Search.Find"
     
     var characterName: String = ""
     var isLoading: Bool = false
