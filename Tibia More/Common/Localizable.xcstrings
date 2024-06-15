@@ -1517,9 +1517,6 @@
         }
       }
     },
-    "No results" : {
-
-    },
     "None" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -1904,9 +1901,6 @@
         }
       }
     },
-    "Search on Wiki" : {
-
-    },
     "Sex" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -1991,9 +1985,6 @@
           }
         }
       }
-    },
-    "Start typing on the search bar to find something useful on the Wiki" : {
-
     },
     "Statistics" : {
       "localizations" : {
@@ -2320,9 +2311,6 @@
         }
       }
     },
-    "Try to make a new search" : {
-
-    },
     "Tuesdays" : {
       "localizations" : {
         "pt-BR" : {
@@ -2593,6 +2581,74 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Wiki"
+          }
+        }
+      }
+    },
+    "Wiki.NewSearch" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Try to make a new search"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Faça uma nova busca"
+          }
+        }
+      }
+    },
+    "Wiki.NoResults" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No results"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sem resultados"
+          }
+        }
+      }
+    },
+    "Wiki.Search" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search on Wiki"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pesquisar na Wiki"
+          }
+        }
+      }
+    },
+    "Wiki.StartSearch" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start typing on the search bar to find something useful on the Wiki"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Digite algo na busca para achar algo útil na Wiki"
           }
         }
       }

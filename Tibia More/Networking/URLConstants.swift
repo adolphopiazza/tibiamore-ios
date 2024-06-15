@@ -20,6 +20,7 @@ extension String {
     
     static let tibiaLabsURL = "https://api.tibialabs.com/v2/"
     static let tibiaFandomURL = "https://tibia.fandom.com/api.php?"
+    static let tibiaWikiURL = "https://www.tibiawiki.com.br/api.php?"
     
     struct Endpoints {
         struct News {
