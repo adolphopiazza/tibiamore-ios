@@ -30,16 +30,16 @@ struct WorldsListViewRow: View {
                 Image(setWorld(location: model.location))
             }
             
-            LabeledContent("Players Online", value: String(model.playersOnline))
-            LabeledContent("PvP Type", value: model.pvpType)
-            LabeledContent("Transfer", value: model.transferType)
+            LabeledContent("Players.Online", value: String(model.playersOnline))
+            LabeledContent("PvP.Type", value: model.pvpType)
+            LabeledContent("Transfer.Type", value: model.transferType)
             
             if model.battleyeProtected {
-                LabeledContent("Battleye Date", value: model.battleyeDate.formatDate(with: .yyyyMMdd))
+                LabeledContent("Battleye.Date", value: model.battleyeDate.formatDate(with: .yyyyMMdd))
             }
             
             if model.premiumOnly {
-                Text("Premium Only")
+                Text("Premium.Only")
                     .padding(6)
                     .background {
                         RoundedRectangle(cornerRadius: 4)

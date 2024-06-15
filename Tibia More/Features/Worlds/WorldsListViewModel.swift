@@ -10,7 +10,7 @@ import SwiftUI
 @Observable
 final class WorldsListViewModel {
     
-    let viewTitle: String = "Worlds"
+    let viewTitle: String = "TabBar.Worlds"
     
     var isLoading: Bool = false
     var hasError: Bool = false

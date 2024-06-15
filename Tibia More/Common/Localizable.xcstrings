@@ -15,7 +15,14 @@
       }
     },
     "About" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sobre"
+          }
+        }
+      }
     },
     "Account.Achievements" : {
       "extractionState" : "manual",
@@ -142,8 +149,39 @@
         }
       }
     },
-    "Battleye Date" : {
-
+    "Battleye.Date" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Battleye Date"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Data do Battleye"
+          }
+        }
+      }
+    },
+    "BattlEye.Status" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "BattlEye Status"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Status do BattlEye"
+          }
+        }
+      }
     },
     "Boostable Bosses" : {
 
@@ -307,9 +345,6 @@
         }
       }
     },
-    "Characters" : {
-
-    },
     "Characters.All" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -435,6 +470,23 @@
     "Creatures" : {
 
     },
+    "Date.Creation" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Creation Date"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Data de Criação"
+          }
+        }
+      }
+    },
     "Deaths" : {
       "localizations" : {
         "pt-BR" : {
@@ -471,9 +523,6 @@
     "Discord" : {
 
     },
-    "Error.fetch" : {
-
-    },
     "Error.Fetch" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -487,6 +536,40 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "\nNão foi possível carregar os dados desse personagem\nPor favor tente novamente"
+          }
+        }
+      }
+    },
+    "Error.NoData" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No data available 😟"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dados não encontrados 😟"
+          }
+        }
+      }
+    },
+    "Error.NoPlayerData" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "We were unable to get this player data\nPlease try again"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não foi possível carregar os dados desse personagem\nPor favor tente novamente"
           }
         }
       }
@@ -525,6 +608,23 @@
     },
     "Fridays" : {
 
+    },
+    "Game.W.Type" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Game World Type"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tipo de mundo"
+          }
+        }
+      }
     },
     "Guild.Membership" : {
       "extractionState" : "manual",
@@ -641,6 +741,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nível"
+          }
+        }
+      }
+    },
+    "Location" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Local"
           }
         }
       }
@@ -829,9 +940,6 @@
         }
       }
     },
-    "No data available 😟" : {
-
-    },
     "No results" : {
 
     },
@@ -865,14 +973,56 @@
         }
       }
     },
-    "Online Players" : {
-
+    "Online.Players" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Online Players"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Players Online"
+          }
+        }
+      }
     },
-    "Players Online" : {
-
+    "Online.Record" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Online Record"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recorde players online"
+          }
+        }
+      }
     },
-    "Please pull-to-refresh to get new data" : {
-
+    "Players.Online" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Players Online"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jogadores Online"
+          }
+        }
+      }
     },
     "Please pull-to-refresh to try again" : {
 
@@ -894,8 +1044,22 @@
     "Premium" : {
 
     },
-    "Premium Only" : {
-
+    "Premium.Only" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Premium Only"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apenas Premium"
+          }
+        }
+      }
     },
     "Price" : {
 
@@ -903,8 +1067,22 @@
     "Promoted" : {
 
     },
-    "PvP Type" : {
-
+    "PvP.Type" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PvP Type"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tipo de PvP"
+          }
+        }
+      }
     },
     "Rashid is located on" : {
 
@@ -915,11 +1093,39 @@
     "Rashid location respects the Tibia time. The day only changes on server saves." : {
 
     },
-    "Record Date" : {
-
+    "Record.Date" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Record Date"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Data do recorde"
+          }
+        }
+      }
     },
-    "Record Players" : {
-
+    "Record.Players" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Record Players"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recorde de Players"
+          }
+        }
+      }
     },
     "Reddit" : {
 
@@ -1013,9 +1219,6 @@
       }
     },
     "Socials" : {
-
-    },
-    "Sorry 😞" : {
 
     },
     "Sorry, we got an error" : {
@@ -1199,16 +1402,27 @@
         }
       }
     },
-    "Transfer" : {
-
+    "Transfer.Type" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transfer Type"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tipo de transferência"
+          }
+        }
+      }
     },
     "Try to make a new search" : {
 
     },
     "Try to refresh the page tapping on the top right icon" : {
-
-    },
-    "Try to search for another one, example: Kalibra" : {
 
     },
     "Tuesdays" : {
@@ -1253,9 +1467,6 @@
         }
       }
     },
-    "We were unable to get this player data\nPlease try again" : {
-
-    },
     "Wednesdays" : {
 
     },
@@ -1268,6 +1479,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mundo"
+          }
+        }
+      }
+    },
+    "World.ErrorDescription" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Try to search for another one, example: Kalibra"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tente pesquisar por outro mundo, exemplo: Kalibra"
           }
         }
       }
@@ -1289,8 +1517,22 @@
         }
       }
     },
-    "Worlds" : {
-
+    "World.Q.Titles" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "World Quest Titles"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Títulos de conquista por mundo"
+          }
+        }
+      }
     },
     "Worlds.Former" : {
       "extractionState" : "manual",

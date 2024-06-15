@@ -41,7 +41,7 @@ struct CharacterSearchDetailsView: View {
                 viewModel.characterModel = nil
             }
         } message: {
-            Text("Error.fetch")
+            Text("Error.Fetch")
         }
         .disabled(viewModel.isLoading)
         .opacity(viewModel.isLoading ? 0.5 : 1)
