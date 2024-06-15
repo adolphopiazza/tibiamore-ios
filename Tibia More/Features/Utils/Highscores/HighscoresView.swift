@@ -70,9 +70,9 @@ struct HighscoresView: View {
             }
             
             if viewModel.hasError && !viewModel.isLoading {
-                ContentUnavailableView("Sorry, we got an error", 
+                ContentUnavailableView("Networking.Error.Title",
                                        image: .SFImages.networkSlash,
-                                       description: Text("Try to refresh the page tapping on the top right icon"))
+                                       description: Text("Error.TapRightIcon"))
             }
         }
         .toolbar {
@@ -93,7 +93,7 @@ struct HighscoresView: View {
         Group {
             Picker("World", selection: $viewModel.selectedWorld) {
                 ForEach(viewModel.worlds, id: \.self) { world in
-                    Text(world)
+                    Text(world.localized)
                 }
             }
             .pickerStyle(.navigationLink)
@@ -107,7 +107,7 @@ struct HighscoresView: View {
             
             Picker("Vocation", selection: $viewModel.selectedVocation) {
                 ForEach(viewModel.vocations, id: \.self) { vocation in
-                    Text(vocation.title)
+                    Text(vocation.title.localized)
                 }
             }
             .pickerStyle(.menu)

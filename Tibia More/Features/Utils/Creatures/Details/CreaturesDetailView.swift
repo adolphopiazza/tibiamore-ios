@@ -28,7 +28,7 @@ struct CreaturesDetailView: View {
                 }
 
                 if let creatureDescription = viewModel.model?.description {
-                    DisclosureGroup("Creature Description") {
+                    DisclosureGroup("Creature.Description") {
                         Text(creatureDescription)
                     }
                 }
@@ -49,9 +49,9 @@ struct CreaturesDetailView: View {
             }
             
             if viewModel.hasError && !viewModel.isLoading {
-                ContentUnavailableView("Sorry, we got an error",
+                ContentUnavailableView("Networking.Error.Title",
                                        systemImage: .SFImages.networkSlash,
-                                       description: Text("Please pull-to-refresh to try again"))
+                                       description: Text("Networking.Error.Description"))
             }
         }
     }

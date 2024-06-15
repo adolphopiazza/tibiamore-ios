@@ -29,7 +29,7 @@ struct CreaturesView: View {
                     navigationPath.append(NavigationRoutes.Utils.Creatures.details(of: creature.race))
                 }
         }
-        .navigationTitle(viewModel.viewTitle)
+        .navigationTitle(viewModel.viewTitle.localized)
         .refreshable {
             await viewModel.fetch(refreshing: true)
         }
@@ -40,9 +40,9 @@ struct CreaturesView: View {
             }
             
             if viewModel.hasError && !viewModel.isLoading {
-                ContentUnavailableView("Sorry, we got an error",
+                ContentUnavailableView("Networking.Error.Title",
                                        systemImage: .SFImages.networkSlash,
-                                       description: Text("Please pull-to-refresh to try again"))
+                                       description: Text("Networking.Error.Description"))
             }
         }
     }

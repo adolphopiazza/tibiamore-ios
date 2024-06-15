@@ -42,7 +42,7 @@ struct BoostedBossView: View {
             }
             
             if viewModel.hasError && !viewModel.isLoading {
-                ContentUnavailableView("Sorry, we got an error",
+                ContentUnavailableView("Networking.Error.Title",
                                        systemImage: .SFImages.networkSlash)
             }
         }

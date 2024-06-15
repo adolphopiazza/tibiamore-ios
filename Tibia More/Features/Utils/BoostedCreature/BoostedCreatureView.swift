@@ -35,7 +35,7 @@ struct BoostedCreatureView: View {
                 Spacer()
             }
             
-            DisclosureGroup("Creature Description") {
+            DisclosureGroup("Creature.Description") {
                 Text(viewModel.boostedCreature?.description ?? "")
             }
             
@@ -50,7 +50,7 @@ struct BoostedCreatureView: View {
             }
             
             if viewModel.hasError && !viewModel.isLoading {
-                ContentUnavailableView("Sorry, we got an error",
+                ContentUnavailableView("Networking.Error.Title",
                                        systemImage: .SFImages.networkSlash)
             }
         }

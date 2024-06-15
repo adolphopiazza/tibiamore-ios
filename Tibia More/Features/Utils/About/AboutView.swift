@@ -52,14 +52,14 @@ struct AboutView: View {
                     }
                 }
                 
-                Text("Tibia is a game developed by CipSoft and all it's content is copyrighted by CipSoft")
+                Text("Tibia.CipSoft")
                     .font(.footnote)
                     .multilineTextAlignment(.center)
                     .padding(4)
             }
         }
         .fontDesign(.serif)
-        .navigationTitle(viewModel.viewTitle)
+        .navigationTitle(viewModel.viewTitle.localized)
     }
 }
 

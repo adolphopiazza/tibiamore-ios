@@ -2,7 +2,14 @@
   "sourceLanguage" : "en",
   "strings" : {
     "%@ points of mana" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ pontos de mana"
+          }
+        }
+      }
     },
     "%lld. %@" : {
       "localizations" : {
@@ -109,11 +116,43 @@
         }
       }
     },
-    "Active Guilds" : {
-
+    "Active.Guilds" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Active Guilds"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guildas Ativas"
+          }
+        }
+      }
+    },
+    "All" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Todos"
+          }
+        }
+      }
     },
     "App Info" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Informações do App"
+          }
+        }
+      }
     },
     "App.Sorry" : {
       "extractionState" : "manual",
@@ -187,10 +226,24 @@
 
     },
     "Build" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Build"
+          }
+        }
+      }
     },
     "Category" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Categoria"
+          }
+        }
+      }
     },
     "Character.Detail.Remove" : {
       "extractionState" : "manual",
@@ -431,7 +484,14 @@
       }
     },
     "CipSoft website" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Website da CipSoft"
+          }
+        }
+      }
     },
     "Comment" : {
       "extractionState" : "manual",
@@ -445,13 +505,31 @@
       }
     },
     "Contact" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contato"
+          }
+        }
+      }
     },
-    "Content Type" : {
-
-    },
-    "Convince with" : {
-
+    "Content.Type" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Content Type"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tipo de conteúdo"
+          }
+        }
+      }
     },
     "Created" : {
       "extractionState" : "manual",
@@ -464,11 +542,236 @@
         }
       }
     },
-    "Creature Description" : {
-
+    "Creature.Behaviour" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Behaviour"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comportamento"
+          }
+        }
+      }
+    },
+    "Creature.Convince" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Convince with"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Convencer com"
+          }
+        }
+      }
+    },
+    "Creature.Description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Creature Description"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sobre o monstro"
+          }
+        }
+      }
+    },
+    "Creature.Hitpoints" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hitpoints"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pontos de Vida"
+          }
+        }
+      }
+    },
+    "Creature.Immune" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Immune to"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Imune a"
+          }
+        }
+      }
+    },
+    "Creature.Invisible" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "See invisible"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enxerga invisível"
+          }
+        }
+      }
+    },
+    "Creature.LootList" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Loot List"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lista de Loot"
+          }
+        }
+      }
+    },
+    "Creature.Paralysed" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Can be Paralysed"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pode ser paralizada"
+          }
+        }
+      }
+    },
+    "Creature.Strong" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Strong against"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forte contra"
+          }
+        }
+      }
+    },
+    "Creature.Summon" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Summon with"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sumonar com"
+          }
+        }
+      }
+    },
+    "Creature.Weak" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weakness for"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fraqueza por"
+          }
+        }
+      }
+    },
+    "Creature.XP" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Experience Points"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pontos de Experiência"
+          }
+        }
+      }
     },
     "Creatures" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Creatures"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Criaturas"
+          }
+        }
+      }
+    },
+    "Date" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Data"
+          }
+        }
+      }
     },
     "Date.Creation" : {
       "extractionState" : "manual",
@@ -515,13 +818,34 @@
       }
     },
     "Description" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Descrição"
+          }
+        }
+      }
     },
     "Developer" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desenvolvedor"
+          }
+        }
+      }
     },
     "Discord" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Discord"
+          }
+        }
+      }
     },
     "Error.Fetch" : {
       "extractionState" : "manual",
@@ -574,6 +898,23 @@
         }
       }
     },
+    "Error.TapRightIcon" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please tap the top right icon to try again"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toque no ícone superior direto para tentar novamente"
+          }
+        }
+      }
+    },
     "Error.Undone" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -592,22 +933,64 @@
       }
     },
     "exiva \"%@\"" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "exiva \"%@\""
+          }
+        }
+      }
     },
     "Facebook" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Facebook"
+          }
+        }
+      }
     },
     "Fansite Item" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Item do Fansite"
+          }
+        }
+      }
     },
     "Filters" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filtros"
+          }
+        }
+      }
     },
     "Formula" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Formula"
+          }
+        }
+      }
     },
     "Fridays" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sextas-Feiras"
+          }
+        }
+      }
     },
     "Game.W.Type" : {
       "extractionState" : "manual",
@@ -622,6 +1005,91 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tipo de mundo"
+          }
+        }
+      }
+    },
+    "Guild.Active" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Active"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ativa"
+          }
+        }
+      }
+    },
+    "Guild.Applications" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Applications Open"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vagas Abertas"
+          }
+        }
+      }
+    },
+    "Guild.Founded" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Founded"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fundação"
+          }
+        }
+      }
+    },
+    "Guild.Invited" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Invited"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Convidados"
+          }
+        }
+      }
+    },
+    "Guild.InvitedMembers" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Invited Members"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Membros Convidados"
           }
         }
       }
@@ -643,11 +1111,80 @@
         }
       }
     },
+    "Guild.Paid" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paid Until"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pago até"
+          }
+        }
+      }
+    },
+    "Guild.TotalMembers" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Total of Members"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Total de Membros"
+          }
+        }
+      }
+    },
+    "Guild.War" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In War"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Em guerra"
+          }
+        }
+      }
+    },
     "Guildhalls" : {
 
     },
+    "Guilds" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guildas"
+          }
+        }
+      }
+    },
     "Highscores" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Highscores"
+          }
+        }
+      }
     },
     "House" : {
       "extractionState" : "manual",
@@ -664,25 +1201,58 @@
 
     },
     "Instagram" : {
-
-    },
-    "Invited Members" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instagram"
+          }
+        }
+      }
     },
     "Item" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Item"
+          }
+        }
+      }
     },
-    "Last day killed by players" : {
-
+    "Kill Statistics" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kill Statistics"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Estatísticas de Mortes"
+          }
+        }
+      }
     },
-    "Last day players died" : {
-
-    },
-    "Last week killed by players" : {
-
-    },
-    "Last week players died" : {
-
+    "Languages" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Languages"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Linguas"
+          }
+        }
+      }
     },
     "Last.Login" : {
       "extractionState" : "manual",
@@ -791,7 +1361,14 @@
       }
     },
     "Mondays" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Segundas-Feiras"
+          }
+        }
+      }
     },
     "Name" : {
       "extractionState" : "manual",
@@ -955,7 +1532,14 @@
       }
     },
     "Note" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nota"
+          }
+        }
+      }
     },
     "OK" : {
       "localizations" : {
@@ -1007,6 +1591,23 @@
         }
       }
     },
+    "Players.Offline" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Players Offline"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personagens Offline"
+          }
+        }
+      }
+    },
     "Players.Online" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -1024,12 +1625,6 @@
         }
       }
     },
-    "Please pull-to-refresh to try again" : {
-
-    },
-    "Please tap the top right icon to try again" : {
-
-    },
     "Position" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -1042,7 +1637,14 @@
       }
     },
     "Premium" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Premium"
+          }
+        }
+      }
     },
     "Premium.Only" : {
       "extractionState" : "manual",
@@ -1062,10 +1664,24 @@
       }
     },
     "Price" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Preço"
+          }
+        }
+      }
     },
     "Promoted" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Promovidos"
+          }
+        }
+      }
     },
     "PvP.Type" : {
       "extractionState" : "manual",
@@ -1084,14 +1700,90 @@
         }
       }
     },
-    "Rashid is located on" : {
-
+    "Rashid.Alert" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rashid location respects the Tibia time. The day only changes on server saves."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A localização do Rashid respeita o horário do Tibia. O dia só muda no server save."
+          }
+        }
+      }
     },
-    "Rashid Items" : {
-
+    "Rashid.Description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You need to win his trust before selling any items to him.\n\nHe travels to a different city everyday."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Você necessita conquistar a sua confiança antes de negociar com ele.\n\nEle viaja para uma cidade diferente todo dia."
+          }
+        }
+      }
     },
-    "Rashid location respects the Tibia time. The day only changes on server saves." : {
-
+    "Rashid.Items" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "See Rashid items"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Items do Rashid"
+          }
+        }
+      }
+    },
+    "Rashid.Items.Desc" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rashid Items"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Itens do Rashid"
+          }
+        }
+      }
+    },
+    "Rashid.Location" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rashid is located on"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rashid está localizado em"
+          }
+        }
+      }
     },
     "Record.Date" : {
       "extractionState" : "manual",
@@ -1128,10 +1820,24 @@
       }
     },
     "Reddit" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reddit"
+          }
+        }
+      }
     },
     "Reload" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recarregar"
+          }
+        }
+      }
     },
     "Residence" : {
       "extractionState" : "manual",
@@ -1162,7 +1868,14 @@
       }
     },
     "Saturdays" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sábados"
+          }
+        }
+      }
     },
     "Save.List" : {
       "extractionState" : "manual",
@@ -1182,12 +1895,16 @@
       }
     },
     "Schedule" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agenda"
+          }
+        }
+      }
     },
     "Search on Wiki" : {
-
-    },
-    "See Rashid items" : {
 
     },
     "Sex" : {
@@ -1219,34 +1936,162 @@
       }
     },
     "Socials" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Redes Sociais"
+          }
+        }
+      }
     },
     "Sorry, we got an error" : {
 
     },
-    "Sorry, we got an error 😞" : {
-
-    },
-    "Sort by Level" : {
-
-    },
     "Sources" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fontes"
+          }
+        }
+      }
+    },
+    "Specials" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Specials"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Especiais"
+          }
+        }
+      }
+    },
+    "Spells" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spells"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Magias"
+          }
+        }
+      }
     },
     "Start typing on the search bar to find something useful on the Wiki" : {
 
     },
     "Statistics" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Estatísticas"
+          }
+        }
+      }
     },
-    "Summon with" : {
-
+    "Statistics.LastDayDied" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Last day players died"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jogadores abatidos ontem"
+          }
+        }
+      }
+    },
+    "Statistics.LastDayKilled" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Last day killed by players"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abates por jogadores ontem"
+          }
+        }
+      }
+    },
+    "Statistics.LastWeekDied" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Last week players died"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jogadores abatidos na última semana"
+          }
+        }
+      }
+    },
+    "Statistics.LastWeekKilled" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Last week killed by players"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abates por jogadores na última semana"
+          }
+        }
+      }
     },
     "Sundays" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Domingos"
+          }
+        }
+      }
     },
     "Supported" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suportados"
+          }
+        }
+      }
     },
     "TabBar.Characters" : {
       "extractionState" : "manual",
@@ -1334,16 +2179,51 @@
       }
     },
     "Texts" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Textos"
+          }
+        }
+      }
     },
     "Thursdays" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quintas-Feiras"
+          }
+        }
+      }
     },
     "Tibia" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tibia"
+          }
+        }
+      }
     },
-    "Tibia is a game developed by CipSoft and all it's content is copyrighted by CipSoft" : {
-
+    "Tibia.CipSoft" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tibia is a game developed by CipSoft and all it's content is copyrighted by CipSoft"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tibia é um jogo desenvolvido pela CipSoft e todo o conteúdo tem copyright pela CipSoft"
+          }
+        }
+      }
     },
     "ticker" : {
 
@@ -1380,13 +2260,34 @@
       }
     },
     "Today" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hoje"
+          }
+        }
+      }
     },
     "Tools" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ferramentas"
+          }
+        }
+      }
     },
     "Totals" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Totais"
+          }
+        }
+      }
     },
     "Touch here" : {
 
@@ -1422,23 +2323,198 @@
     "Try to make a new search" : {
 
     },
-    "Try to refresh the page tapping on the top right icon" : {
-
-    },
     "Tuesdays" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terças-Feiras"
+          }
+        }
+      }
     },
     "Twitch" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Twitch"
+          }
+        }
+      }
+    },
+    "Utils.BoostedBoss" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Today's boosted boss!"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Boosted boss de hoje!"
+          }
+        }
+      }
+    },
+    "Utils.BoostedCreature" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Today's boosted creature!"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Boosted creature de hoje!"
+          }
+        }
+      }
+    },
+    "Utils.Creatures" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Check out all the creatures of the Tibian world"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confira todas as criaturas do mundo Tibiano"
+          }
+        }
+      }
+    },
+    "Utils.Fansites" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Discover some new Tibia fansites"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Descubra novos fansites de Tibia"
+          }
+        }
+      }
+    },
+    "Utils.Guilds" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "List of all the Tibian guilds"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lista com todas as guildas Tibianas"
+          }
+        }
+      }
+    },
+    "Utils.Highscores" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "See who's on the top"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confira quem está no topo"
+          }
+        }
+      }
+    },
+    "Utils.KillStatistics" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kill statistics of every world"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Estatísticas de mortes de todos os mundos"
+          }
+        }
+      }
+    },
+    "Utils.Rashid" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "See where Rashid is today to make some money"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veja onde o Rashid está hoje para fazer um dinheiro"
+          }
+        }
+      }
+    },
+    "Utils.Spells" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Discover important spells for your character"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Descubra magias importantes para seu personagem"
+          }
+        }
+      }
     },
     "Value" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valor"
+          }
+        }
+      }
     },
     "Version" : {
-
-    },
-    "Visit this website" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Versão"
+          }
+        }
+      }
     },
     "Vocation" : {
       "localizations" : {
@@ -1467,11 +2543,59 @@
         }
       }
     },
+    "Vocation.SortByLevel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sort by Level"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filtrar por Nível"
+          }
+        }
+      }
+    },
+    "Website.Visit" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Visit this website"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Visitar o site"
+          }
+        }
+      }
+    },
     "Wednesdays" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quartas-Feiras"
+          }
+        }
+      }
     },
     "Wiki" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wiki"
+          }
+        }
+      }
     },
     "World" : {
       "localizations" : {
@@ -1552,13 +2676,24 @@
       }
     },
     "X" : {
-
-    },
-    "You need to win his trust before selling any items to him.\n\nHe travels to a different city everyday." : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "X"
+          }
+        }
+      }
     },
     "Youtube" : {
-
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Youtube"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"

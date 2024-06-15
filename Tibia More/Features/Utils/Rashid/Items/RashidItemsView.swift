@@ -29,7 +29,7 @@ struct RashidItemsView: View {
             }
         }
         .fontDesign(.serif)
-        .navigationTitle("Rashid Items")
+        .navigationTitle("Rashid.Items.Desc")
         .searchable(text: $searchItem)
     }
 }

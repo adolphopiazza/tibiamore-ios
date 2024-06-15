@@ -71,7 +71,7 @@ final class KillStatisticsViewModel {
             self.killStatistics = result
             self.hasError = false
         } catch {
-            print("Some error occured on fetching worlds on KillStatisticsViewModel: \(error)")
+            print("Some error occured on fetching kill statistics on KillStatisticsViewModel: \(error)")
             self.hasError = true
         }
     }
