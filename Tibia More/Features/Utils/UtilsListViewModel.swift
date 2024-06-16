@@ -47,28 +47,28 @@ final class UtilsListViewModel {
         var description: String {
             switch self {
             case .rashid:
-                return "See where Rashid is today to make some money"
+                return "Utils.Rashid"
             case .creatures:
-                return "Check out all the creatures of the Tibian world"
+                return "Utils.Creatures"
             case .fansites:
-                return "Discover some new Tibia fansites"
+                return "Utils.Fansites"
             case .guilds:
-                return "List of all the Tibian guilds"
+                return "Utils.Guilds"
             case .spells:
-                return "Discover important spells for your character"
+                return "Utils.Spells"
             case .boostedBoss:
-                return "Today's boosted boss!"
+                return "Utils.BoostedBoss"
             case .boostedCreature:
-                return "Today's boosted creature!"
+                return "Utils.BoostedCreature"
             case .highscores:
-                return "See who's on the top"
+                return "Utils.Highscores"
             case .killStatistics:
-                return "Kill statistics of every world"
+                return "Utils.KillStatistics"
             }
         }
     }
     
     let menuItems = UtilsListViewModel.Utils.allCases
-    let viewTitle: String = "Utils"
+    let viewTitle: String = "TabBar.Utils"
     
 }

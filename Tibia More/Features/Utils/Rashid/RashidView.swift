@@ -19,13 +19,13 @@ struct RashidView: View {
                     .resizable()
                     .frame(width: 200, height: 200, alignment: .center)
                 
-                Text("You need to win his trust before selling any items to him.\n\nHe travels to a different city everyday.")
+                Text("Rashid.Description")
                     .font(.title3)
                     .multilineTextAlignment(.center)
             }
             
             Section("Today") {
-                LabeledContent("Rashid is located on") {
+                LabeledContent("Rashid.Location") {
                     Text(viewModel.rashidCity)
                         .font(.headline)
                 }
@@ -36,7 +36,7 @@ struct RashidView: View {
                     HStack {
                         Spacer()
                         
-                        Text("See Rashid items")
+                        Text("Rashid.Items")
                         
                         Spacer()
                     }
@@ -65,9 +65,9 @@ struct RashidView: View {
             }
             
             if viewModel.hasError && !viewModel.isLoading {
-                ContentUnavailableView("Sorry, we got an error 😞",
+                ContentUnavailableView("Networking.Error.Title",
                                        systemImage: .SFImages.networkSlash,
-                                       description: Text("Please tap the top right icon to try again"))
+                                       description: Text("Error.TapRightIcon"))
             }
         }
         .toolbar {
@@ -90,7 +90,7 @@ struct RashidView: View {
         .alert("About", isPresented: $viewModel.isShowingInfo) {
             Button("OK", action: {})
         } message: {
-            Text("Rashid location respects the Tibia time. The day only changes on server saves.")
+            Text("Rashid.Alert")
         }
     }
     

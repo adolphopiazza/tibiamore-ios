@@ -21,7 +21,7 @@ struct GuildsView: View {
             }
             .pickerStyle(.navigationLink)
             
-            Section("Active Guilds") {
+            Section("Active.Guilds") {
                 List(viewModel.guilds, id: \.name) { guild in
                     HStack(spacing: 16) {
                         AsyncImage(url: URL(string: guild.logoUrl ?? "")) { phase in
@@ -61,7 +61,7 @@ struct GuildsView: View {
         }
         .opacity(viewModel.opacity)
         .fontDesign(.serif)
-        .navigationTitle(viewModel.viewTitle)
+        .navigationTitle(viewModel.viewTitle.localized)
         .onChange(of: viewModel.selectedWorld) { _, _ in
             Task {
                 await viewModel.fetchGuilds()
@@ -73,7 +73,7 @@ struct GuildsView: View {
             }
             
             if viewModel.hasError && !viewModel.isLoading {
-                ContentUnavailableView("Sorry, we got an error",
+                ContentUnavailableView("Networking.Error.Description",
                                        systemImage: .SFImages.networkSlash)
             }
         }

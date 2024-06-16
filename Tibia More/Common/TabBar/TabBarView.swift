@@ -47,35 +47,35 @@ struct TabBarView: View {
         TabView(selection: selectionBinding) {
             TabBarItem.news.view(path: $newsPath)
                 .tabItem {
-                    Label(TabBarItem.news.title,
+                    Label(TabBarItem.news.title.localized,
                           systemImage: TabBarItem.news.sfImage)
                 }
                 .tag(TabBarItem.news.rawValue)
             
             TabBarItem.characters.view(path: $charactersPath)
                 .tabItem {
-                    Label(TabBarItem.characters.title,
+                    Label(TabBarItem.characters.title.localized,
                           systemImage: TabBarItem.characters.sfImage)
                 }
                 .tag(TabBarItem.characters.rawValue)
             
             TabBarItem.worlds.view(path: $worldsPath)
                 .tabItem {
-                    Label(TabBarItem.worlds.title,
+                    Label(TabBarItem.worlds.title.localized,
                           systemImage: TabBarItem.worlds.sfImage)
                 }
                 .tag(TabBarItem.worlds.rawValue)
             
             TabBarItem.utils.view(path: $utilsPath)
                 .tabItem {
-                    Label(TabBarItem.utils.title,
+                    Label(TabBarItem.utils.title.localized,
                           systemImage: TabBarItem.utils.sfImage)
                 }
                 .tag(TabBarItem.utils.rawValue)
             
             TabBarItem.wiki.view(path: $wikiPath)
                 .tabItem {
-                    Label(TabBarItem.wiki.title,
+                    Label(TabBarItem.wiki.title.localized,
                           systemImage: TabBarItem.wiki.sfImage)
                 }
                 .tag(TabBarItem.wiki.rawValue)

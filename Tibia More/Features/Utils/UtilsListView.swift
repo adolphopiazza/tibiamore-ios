@@ -28,7 +28,7 @@ struct UtilsListView: View {
                     }
                 }
             }
-            .navigationTitle(viewModel.viewTitle)
+            .navigationTitle(viewModel.viewTitle.localized)
             .navigationDestination(for: NavigationRoutes.Utils.self) { route in
                 switch route {
                 case .about:

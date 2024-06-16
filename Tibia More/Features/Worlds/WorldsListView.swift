@@ -31,21 +31,21 @@ struct WorldsListView: View {
                 if !worldsFiltered.isEmpty {
                     Section("About") {
                         if let playersOnline = viewModel.model?.playersOnline {
-                            LabeledContent("Players Online", value: String(playersOnline))
+                            LabeledContent("Players.Online", value: String(playersOnline))
                         }
                         
                         if let recordPlayers = viewModel.model?.recordPlayers {
-                            LabeledContent("Record Players", value: String(recordPlayers))
+                            LabeledContent("Record.Players", value: String(recordPlayers))
                         }
                         
                         if let recordDate = viewModel.model?.recordDate.formatDate(with: .yyyyMMddTHHmmssZ) {
-                            LabeledContent("Record Date", value: recordDate)
+                            LabeledContent("Record.Date", value: recordDate)
                         }
                     }
                     .opacity(viewModel.hasError ? 0 : 1)
                 }
                 
-                Section("Worlds") {
+                Section("TabBar.Worlds") {
                     List(worldsFiltered, id: \.name) { world in
                         WorldsListViewRow(model: world)
                             .contentShape(Rectangle())
@@ -57,7 +57,7 @@ struct WorldsListView: View {
                 .opacity(viewModel.hasError ? 0 : 1)
             }
             .fontDesign(.serif)
-            .navigationTitle(viewModel.viewTitle)
+            .navigationTitle(viewModel.viewTitle.localized)
             .refreshable {
                 viewModel.model = nil
                 await viewModel.fetch()
@@ -81,15 +81,15 @@ struct WorldsListView: View {
                 }
                 
                 if viewModel.hasError && !viewModel.isLoading {
-                    ContentUnavailableView("Sorry, we got an error",
+                    ContentUnavailableView("Networking.Error.Title",
                                            systemImage: .SFImages.networkSlash,
-                                           description: Text("Please pull-to-refresh to try again"))
+                                           description: Text("Networking.Error.Description"))
                 }
                 
                 if worldsFiltered.isEmpty && !viewModel.hasError && !viewModel.isLoading {
-                    ContentUnavailableView("No world found",
+                    ContentUnavailableView("World.NoFound",
                                            systemImage: .SFImages.globe,
-                                           description: Text("Try to search for another one, example: Kalibra"))
+                                           description: Text("World.ErrorDescription"))
                 }
             }
         }

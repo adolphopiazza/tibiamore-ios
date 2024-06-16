@@ -33,10 +33,10 @@ struct WorldsDetailsViewRow: View {
     var body: some View {
         if let value = value, !value.isEmpty {
             if orientation == .horizontal {
-                LabeledContent(title, value: value)
+                LabeledContent(title.localized, value: value)
             } else {
                 VStack(alignment: .leading, spacing: 4) {
-                    Text(title)
+                    Text(title.localized)
                     
                     Text(value)
                         .foregroundStyle(.secondary)

@@ -36,14 +36,14 @@ struct GuildDetailsView: View {
 
             Section("About") {
                 // create a more generic view row later!
-                WorldsDetailsViewRow("Founded", value: viewModel.guild?.founded.formatDate(with: .yyyyMMdd))
-                WorldsDetailsViewRow("Active", value: viewModel.guild?.active ?? false ? "✅" : "🚫")
-                WorldsDetailsViewRow("Applications Open", value: viewModel.guild?.openApplications ?? false ? "✅" : "🚫")
-                WorldsDetailsViewRow("In War", value: viewModel.guild?.inWar ?? false ? "✅" : "🚫")
-                WorldsDetailsViewRow("Players Online", value: String(viewModel.guild?.playersOnline ?? 0))
-                WorldsDetailsViewRow("Players Offline", value: String(viewModel.guild?.playersOffline ?? 0))
-                WorldsDetailsViewRow("Total of Members", value: String(viewModel.guild?.membersTotal ?? 0))
-                WorldsDetailsViewRow("Invited", value: String(viewModel.guild?.membersInvited ?? 0))
+                WorldsDetailsViewRow("Guild.Founded", value: viewModel.guild?.founded.formatDate(with: .yyyyMMdd))
+                WorldsDetailsViewRow("Guild.Active", value: viewModel.guild?.active ?? false ? "✅" : "🚫")
+                WorldsDetailsViewRow("Guild.Applications", value: viewModel.guild?.openApplications ?? false ? "✅" : "🚫")
+                WorldsDetailsViewRow("Guild.War", value: viewModel.guild?.inWar ?? false ? "✅" : "🚫")
+                WorldsDetailsViewRow("Players.Online", value: String(viewModel.guild?.playersOnline ?? 0))
+                WorldsDetailsViewRow("Players.Offline", value: String(viewModel.guild?.playersOffline ?? 0))
+                WorldsDetailsViewRow("Guild.TotalMembers", value: String(viewModel.guild?.membersTotal ?? 0))
+                WorldsDetailsViewRow("Guild.Invited", value: String(viewModel.guild?.membersInvited ?? 0))
             }
             
             if let guildhalls = viewModel.guild?.guildhalls {
@@ -54,14 +54,14 @@ struct GuildDetailsView: View {
                                 .font(.title2)
                             
                             WorldsDetailsViewRow("World", value: guildhall.world)
-                            WorldsDetailsViewRow("Paid Until", value: guildhall.paidUntil.formatDate(with: .yyyyMMdd))
+                            WorldsDetailsViewRow("Guild.Paid", value: guildhall.paidUntil.formatDate(with: .yyyyMMdd))
                         }
                     }
                 }
             }
             
             if let invitedMembers = viewModel.guild?.invites {
-                Section("Invited Members") {
+                Section("Guild.InvitedMembers") {
                     ForEach(invitedMembers, id: \.name) { invite in
                         VStack(alignment: .leading) {
                             WorldsDetailsViewRow("Name", value: invite.name)
@@ -80,7 +80,7 @@ struct GuildDetailsView: View {
             }
             
             if viewModel.hasError && !viewModel.isLoading {
-                ContentUnavailableView("Sorry, we got an error",
+                ContentUnavailableView("Networking.Error.Title",
                                        systemImage: .SFImages.networkSlash)
             }
         }

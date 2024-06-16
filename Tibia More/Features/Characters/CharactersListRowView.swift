@@ -41,7 +41,7 @@ struct CharactersListRowView: View {
             CharacterSearchDetailsViewRow(title: "Sex", value: model.sex ?? "")
             
             if let lastLogin = model.lastLogin {
-                CharacterSearchDetailsViewRow(title: "Last seen", value: lastLogin.formatDate(with: .yyyyMMddTHHmmssZ))
+                CharacterSearchDetailsViewRow(title: "Last.Seen", value: lastLogin.formatDate(with: .yyyyMMddTHHmmssZ))
             }
             
             CharacterSearchDetailsViewRow(title: "World", value: model.world ?? "")

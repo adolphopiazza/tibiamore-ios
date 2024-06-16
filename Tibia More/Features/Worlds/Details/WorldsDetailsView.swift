@@ -16,20 +16,24 @@ struct WorldsDetailsView: View {
         Form {
             Section("About") {
                 WorldsDetailsViewRow("Status", value: viewModel.model?.status)
-                WorldsDetailsViewRow("Players Online", value: viewModel.model?.playersOnline)
-                WorldsDetailsViewRow("Online Record", value: viewModel.model?.recordPlayers)
-                WorldsDetailsViewRow("Record Date", value: viewModel.model?.recordDate.formatDate(with: .yyyyMMddTHHmmssZ))
-                WorldsDetailsViewRow("Creation Date", value: viewModel.model?.creationDate.formatDate(with: .yyyyMM))
+                WorldsDetailsViewRow("Players.Online", value: viewModel.model?.playersOnline)
+                WorldsDetailsViewRow("Online.Record", value: viewModel.model?.recordPlayers)
+                WorldsDetailsViewRow("Record.Date", value: viewModel.model?.recordDate.formatDate(with: .yyyyMMddTHHmmssZ))
+                WorldsDetailsViewRow("Date.Creation", value: viewModel.model?.creationDate.formatDate(with: .yyyyMM))
                 WorldsDetailsViewRow("Location", value: viewModel.model?.location)
-                WorldsDetailsViewRow("PvP Type", value: viewModel.model?.pvpType)
-                WorldsDetailsViewRow("Transfer Type", value: viewModel.model?.transferType)
-                WorldsDetailsViewRow("World Quest Titles", value: viewModel.model?.worldQuestTitles.joined(separator: ", "), orientation: .vertical)
-                WorldsDetailsViewRow("BattlEye Status", value: viewModel.model?.battleyeDate.formatDate(with: .yyyyMMdd))
-                WorldsDetailsViewRow("Game World Type", value: viewModel.model?.gameWorldType)
+                WorldsDetailsViewRow("PvP.Type", value: viewModel.model?.pvpType)
+                WorldsDetailsViewRow("Transfer.Type", value: viewModel.model?.transferType)
+                
+                if let worldQuestTitles = viewModel.model?.worldQuestTitles {
+                    WorldsDetailsViewRow("World.Q.Titles", value: worldQuestTitles.joined(separator: ", "), orientation: .vertical)
+                }
+                
+                WorldsDetailsViewRow("BattlEye.Status", value: viewModel.model?.battleyeDate.formatDate(with: .yyyyMMdd))
+                WorldsDetailsViewRow("Game.W.Type", value: viewModel.model?.gameWorldType)
             }
             .opacity(viewModel.opacity)
             
-            Section("Online Players") {
+            Section("Online.Players") {
                 List(viewModel.model?.onlinePlayers ?? [], id: \.name) { player in
                     VStack(alignment: .leading) {
                         Text(player.name)
@@ -65,17 +69,17 @@ struct WorldsDetailsView: View {
             }
             
             if viewModel.model == nil && !viewModel.isLoading {
-                ContentUnavailableView("No data available 😟",
+                ContentUnavailableView("Error.NoData",
                                        systemImage: .SFImages.networkSlash,
-                                       description: Text("Please pull-to-refresh to get new data"))
+                                       description: Text("Networking.Error.Description"))
             }
         }
-        .alert("Sorry 😞", isPresented: $viewModel.errorLoadingCharacter) {
+        .alert("App.Sorry", isPresented: $viewModel.errorLoadingCharacter) {
             Button("OK", action: {
                 viewModel.errorLoadingCharacter = false
             })
         } message: {
-            Text("We were unable to get this player data\nPlease try again")
+            Text("Error.NoPlayerData")
         }
 
     }

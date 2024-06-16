@@ -53,7 +53,7 @@ struct KillStatisticsView: View {
         }
         .fontDesign(.serif)
         .opacity(viewModel.opacity)
-        .navigationTitle(viewModel.viewTitle)
+        .navigationTitle(viewModel.viewTitle.localized)
         .searchable(text: $searchedText)
         .onChange(of: viewModel.selectedWorld, { _, _ in
             Task {

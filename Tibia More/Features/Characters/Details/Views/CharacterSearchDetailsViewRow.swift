@@ -16,7 +16,7 @@ struct CharacterSearchDetailsViewRow: View {
     var body: some View {
         if orientation == .horizontal {
             HStack {
-                Text(self.title)
+                Text(self.title.localized)
                 
                 Spacer()
                 
@@ -26,7 +26,7 @@ struct CharacterSearchDetailsViewRow: View {
             .fontDesign(.serif)
         } else {
             VStack(alignment: .leading, spacing: 4) {
-                Text(self.title)
+                Text(self.title.localized)
                 
                 Text(self.value)
                     .foregroundStyle(.secondary)

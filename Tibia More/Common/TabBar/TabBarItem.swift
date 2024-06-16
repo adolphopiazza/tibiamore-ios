@@ -17,15 +17,15 @@ enum TabBarItem: Int {
     var title: String {
         switch self {
         case .news:
-            return "News"
+            return "TabBar.News"
         case .characters:
-            return "Characters"
+            return "TabBar.Characters"
         case .worlds:
-            return "Worlds"
+            return "TabBar.Worlds"
         case .utils:
-            return "Utils"
+            return "TabBar.Utils"
         case .wiki:
-            return "Wiki"
+            return "TabBar.Wiki"
         }
     }
     

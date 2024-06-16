@@ -35,6 +35,7 @@
 		381A66582B756AA600933467 /* NewsTickerListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381A66572B756AA600933467 /* NewsTickerListRowView.swift */; };
 		381A665B2B75998000933467 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381A665A2B75998000933467 /* AboutView.swift */; };
 		381A665D2B75998800933467 /* AboutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381A665C2B75998800933467 /* AboutViewModel.swift */; };
+		381F0E762C1F413300CD26F4 /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381F0E752C1F413300CD26F4 /* AppLanguage.swift */; };
 		3823D5EB2B5227B0000677CB /* WorldsDetailsViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3823D5EA2B5227B0000677CB /* WorldsDetailsViewRow.swift */; };
 		38294DEF2BAB9D3A005F4FAC /* CharacterSearchDetailsDeathsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38294DEE2BAB9D3A005F4FAC /* CharacterSearchDetailsDeathsView.swift */; };
 		382A29C22B1EA97500961FE2 /* Tibia_MoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A29C12B1EA97500961FE2 /* Tibia_MoreApp.swift */; };
@@ -99,6 +100,7 @@
 		38B1E47A2B499C8900A18AB5 /* WorldsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B1E4792B499C8900A18AB5 /* WorldsModel.swift */; };
 		38C09ADF2B48A86B006B6B34 /* CharacterSearchDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C09ADE2B48A86B006B6B34 /* CharacterSearchDetailsViewModel.swift */; };
 		38C09AE92B48EF30006B6B34 /* CharactersListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C09AE82B48EF30006B6B34 /* CharactersListRowView.swift */; };
+		38C546AC2BC2EFBE0039E589 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 38C546AB2BC2EFBE0039E589 /* Localizable.xcstrings */; };
 		38CC6C052B2DD0FB00E5BB67 /* CharactersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC6C042B2DD0FB00E5BB67 /* CharactersModel.swift */; };
 		38CC6C072B2DDEAF00E5BB67 /* CharactersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC6C062B2DDEAF00E5BB67 /* CharactersService.swift */; };
 		38D6708F2B52E8840043A093 /* UtilsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D6708E2B52E8840043A093 /* UtilsListView.swift */; };
@@ -152,6 +154,7 @@
 		381A66572B756AA600933467 /* NewsTickerListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTickerListRowView.swift; sourceTree = "<group>"; };
 		381A665A2B75998000933467 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		381A665C2B75998800933467 /* AboutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewModel.swift; sourceTree = "<group>"; };
+		381F0E752C1F413300CD26F4 /* AppLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLanguage.swift; sourceTree = "<group>"; };
 		3823D5EA2B5227B0000677CB /* WorldsDetailsViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldsDetailsViewRow.swift; sourceTree = "<group>"; };
 		38294DEE2BAB9D3A005F4FAC /* CharacterSearchDetailsDeathsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSearchDetailsDeathsView.swift; sourceTree = "<group>"; };
 		382A29BE2B1EA97500961FE2 /* Tibia More.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tibia More.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -219,6 +222,7 @@
 		38B1E4792B499C8900A18AB5 /* WorldsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldsModel.swift; sourceTree = "<group>"; };
 		38C09ADE2B48A86B006B6B34 /* CharacterSearchDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSearchDetailsViewModel.swift; sourceTree = "<group>"; };
 		38C09AE82B48EF30006B6B34 /* CharactersListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListRowView.swift; sourceTree = "<group>"; };
+		38C546AB2BC2EFBE0039E589 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		38CC6C042B2DD0FB00E5BB67 /* CharactersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersModel.swift; sourceTree = "<group>"; };
 		38CC6C062B2DDEAF00E5BB67 /* CharactersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersService.swift; sourceTree = "<group>"; };
 		38D6708E2B52E8840043A093 /* UtilsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsListView.swift; sourceTree = "<group>"; };
@@ -440,6 +444,7 @@
 				38AC7CF62B254B2A00B6DF29 /* NavigationRoutes.swift */,
 				38A28AA62B2B7AED00C707F7 /* SafariView.swift */,
 				38F31AD52B39E3C800FF6BA8 /* DefaultStorage.swift */,
+				38C546AB2BC2EFBE0039E589 /* Localizable.xcstrings */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -608,6 +613,7 @@
 			children = (
 				38A28AA42B2B75E300C707F7 /* Strings+Ext.swift */,
 				38A3EDF92B2F32E0003C7BDA /* Custom+Styles.swift */,
+				381F0E752C1F413300CD26F4 /* AppLanguage.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -828,6 +834,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"pt-BR",
 				Base,
 			);
 			mainGroup = 382A29B52B1EA97500961FE2;
@@ -850,6 +857,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				382A29C92B1EA97600961FE2 /* Preview Assets.xcassets in Resources */,
+				38C546AC2BC2EFBE0039E589 /* Localizable.xcstrings in Resources */,
 				3889C4EE2B843224004F462B /* rashidItems.json in Resources */,
 				382A29C62B1EA97600961FE2 /* Assets.xcassets in Resources */,
 				3889C4E82B8406D8004F462B /* spellList.json in Resources */,
@@ -885,6 +893,7 @@
 				381A665B2B75998000933467 /* AboutView.swift in Sources */,
 				38084D4E2B538AFD003FCD1B /* RashidViewModel.swift in Sources */,
 				3808B1F92B5C8E6F003E4AB8 /* FansitesView.swift in Sources */,
+				381F0E762C1F413300CD26F4 /* AppLanguage.swift in Sources */,
 				3808B1F02B5C6A55003E4AB8 /* KillStatisticsView.swift in Sources */,
 				382A29F52B1EAD4200961FE2 /* WorldsListView.swift in Sources */,
 				385D6EB02B4AF2E800839091 /* WorldsDetailsViewModel.swift in Sources */,
