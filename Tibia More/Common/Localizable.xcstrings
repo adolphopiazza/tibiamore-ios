@@ -31,6 +31,23 @@
         }
       }
     },
+    "About.Language" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Change Language"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mudar Idioma"
+          }
+        }
+      }
+    },
     "Account.Achievements" : {
       "extractionState" : "manual",
       "localizations" : {

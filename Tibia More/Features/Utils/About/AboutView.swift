@@ -14,6 +14,19 @@ struct AboutView: View {
     
     var body: some View {
         Form {
+            LabeledContent("About.Language") {
+                Button {
+                    Task {
+                        if let url = URL(string: UIApplication.openSettingsURLString) {
+                            await UIApplication.shared.open(url)
+                        }
+                    }
+                } label: {
+                    Image(systemName: .SFImages.chevronRight)
+                }
+
+            }
+            
             Section("App Info") {
                 LabeledContent("Version", value: UIApplication.appVersion ?? "")
                 LabeledContent("Build", value: UIApplication.buildVersionNumber ?? "")
