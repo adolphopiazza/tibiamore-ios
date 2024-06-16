@@ -36,6 +36,7 @@
 		381A665B2B75998000933467 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381A665A2B75998000933467 /* AboutView.swift */; };
 		381A665D2B75998800933467 /* AboutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381A665C2B75998800933467 /* AboutViewModel.swift */; };
 		381F0E762C1F413300CD26F4 /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381F0E752C1F413300CD26F4 /* AppLanguage.swift */; };
+		381F0E782C1F476200CD26F4 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 381F0E772C1F476200CD26F4 /* PrivacyInfo.xcprivacy */; };
 		3823D5EB2B5227B0000677CB /* WorldsDetailsViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3823D5EA2B5227B0000677CB /* WorldsDetailsViewRow.swift */; };
 		38294DEF2BAB9D3A005F4FAC /* CharacterSearchDetailsDeathsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38294DEE2BAB9D3A005F4FAC /* CharacterSearchDetailsDeathsView.swift */; };
 		382A29C22B1EA97500961FE2 /* Tibia_MoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A29C12B1EA97500961FE2 /* Tibia_MoreApp.swift */; };
@@ -155,6 +156,7 @@
 		381A665A2B75998000933467 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		381A665C2B75998800933467 /* AboutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewModel.swift; sourceTree = "<group>"; };
 		381F0E752C1F413300CD26F4 /* AppLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLanguage.swift; sourceTree = "<group>"; };
+		381F0E772C1F476200CD26F4 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		3823D5EA2B5227B0000677CB /* WorldsDetailsViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldsDetailsViewRow.swift; sourceTree = "<group>"; };
 		38294DEE2BAB9D3A005F4FAC /* CharacterSearchDetailsDeathsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSearchDetailsDeathsView.swift; sourceTree = "<group>"; };
 		382A29BE2B1EA97500961FE2 /* Tibia More.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tibia More.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -369,6 +371,7 @@
 		382A29B52B1EA97500961FE2 = {
 			isa = PBXGroup;
 			children = (
+				381F0E772C1F476200CD26F4 /* PrivacyInfo.xcprivacy */,
 				382A29C02B1EA97500961FE2 /* Tibia More */,
 				382A29D12B1EA97600961FE2 /* Tibia MoreTests */,
 				382A29DB2B1EA97600961FE2 /* Tibia MoreUITests */,
@@ -856,6 +859,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				381F0E782C1F476200CD26F4 /* PrivacyInfo.xcprivacy in Resources */,
 				382A29C92B1EA97600961FE2 /* Preview Assets.xcassets in Resources */,
 				38C546AC2BC2EFBE0039E589 /* Localizable.xcstrings in Resources */,
 				3889C4EE2B843224004F462B /* rashidItems.json in Resources */,
