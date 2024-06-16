@@ -17,7 +17,7 @@ final class WikiService {
         let service = NetworkService<WikiModel>()
         
         do {
-            let result = try await service.fetch(baseURL: .tibiaFandomURL, url: .Endpoints.Wiki.search + text)
+            let result = try await service.fetch(baseURL: AppLanguage.shared.wikiSearchURL, url: .Endpoints.Wiki.search + text)
             return result.query.search.map { $0.title }
         } catch {
             print("Some error occurred in fetch on WikiService: \(error)")

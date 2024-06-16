@@ -35,6 +35,7 @@
 		381A66582B756AA600933467 /* NewsTickerListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381A66572B756AA600933467 /* NewsTickerListRowView.swift */; };
 		381A665B2B75998000933467 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381A665A2B75998000933467 /* AboutView.swift */; };
 		381A665D2B75998800933467 /* AboutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381A665C2B75998800933467 /* AboutViewModel.swift */; };
+		381F0E762C1F413300CD26F4 /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381F0E752C1F413300CD26F4 /* AppLanguage.swift */; };
 		3823D5EB2B5227B0000677CB /* WorldsDetailsViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3823D5EA2B5227B0000677CB /* WorldsDetailsViewRow.swift */; };
 		38294DEF2BAB9D3A005F4FAC /* CharacterSearchDetailsDeathsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38294DEE2BAB9D3A005F4FAC /* CharacterSearchDetailsDeathsView.swift */; };
 		382A29C22B1EA97500961FE2 /* Tibia_MoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A29C12B1EA97500961FE2 /* Tibia_MoreApp.swift */; };
@@ -153,6 +154,7 @@
 		381A66572B756AA600933467 /* NewsTickerListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTickerListRowView.swift; sourceTree = "<group>"; };
 		381A665A2B75998000933467 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		381A665C2B75998800933467 /* AboutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewModel.swift; sourceTree = "<group>"; };
+		381F0E752C1F413300CD26F4 /* AppLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLanguage.swift; sourceTree = "<group>"; };
 		3823D5EA2B5227B0000677CB /* WorldsDetailsViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldsDetailsViewRow.swift; sourceTree = "<group>"; };
 		38294DEE2BAB9D3A005F4FAC /* CharacterSearchDetailsDeathsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSearchDetailsDeathsView.swift; sourceTree = "<group>"; };
 		382A29BE2B1EA97500961FE2 /* Tibia More.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tibia More.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -611,6 +613,7 @@
 			children = (
 				38A28AA42B2B75E300C707F7 /* Strings+Ext.swift */,
 				38A3EDF92B2F32E0003C7BDA /* Custom+Styles.swift */,
+				381F0E752C1F413300CD26F4 /* AppLanguage.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -890,6 +893,7 @@
 				381A665B2B75998000933467 /* AboutView.swift in Sources */,
 				38084D4E2B538AFD003FCD1B /* RashidViewModel.swift in Sources */,
 				3808B1F92B5C8E6F003E4AB8 /* FansitesView.swift in Sources */,
+				381F0E762C1F413300CD26F4 /* AppLanguage.swift in Sources */,
 				3808B1F02B5C6A55003E4AB8 /* KillStatisticsView.swift in Sources */,
 				382A29F52B1EAD4200961FE2 /* WorldsListView.swift in Sources */,
 				385D6EB02B4AF2E800839091 /* WorldsDetailsViewModel.swift in Sources */,

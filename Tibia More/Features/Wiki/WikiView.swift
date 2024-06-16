@@ -43,8 +43,7 @@ struct WikiView: View {
                         }
                         .contentShape(.rect)
                         .onTapGesture {
-                            let url = "https://tibia.fandom.com/wiki/\(text)"
-//                            let url = "https://www.tibiawiki.com.br/wiki/\(text)"
+                            let url = AppLanguage.shared.wikiDetailURL + text
                             navigationPath.append(NavigationRoutes.Wiki.browser(with: url))
                         }
                     }
