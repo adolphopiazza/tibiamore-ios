@@ -25,7 +25,7 @@ struct NewsListTickerDetailView: View {
                     let route = NavigationRoutes.News.browser(with: viewModel.detailedNews.url)
                     self.navigationPath.append(route)
                 }, label: {
-                    Text("Read on Tibia.com")
+                    Text("News.Row.TibiaWebsite")
                         .frame(maxWidth: .infinity)
                         .frame(height: 30)
                 })
@@ -36,9 +36,9 @@ struct NewsListTickerDetailView: View {
             .padding(.horizontal, 20)
             
             if viewModel.hasError && !viewModel.isLoading {
-                ContentUnavailableView("Sorry, we are having some issues",
+                ContentUnavailableView("Networking.Error.Title",
                                        systemImage: .SFImages.xmarkIcloud,
-                                       description: Text("Please pull-to-refresh to try to get this news"))
+                                       description: Text("Networking.Error.Description"))
             }
         }
         .navigationBarTitleDisplayMode(.inline)

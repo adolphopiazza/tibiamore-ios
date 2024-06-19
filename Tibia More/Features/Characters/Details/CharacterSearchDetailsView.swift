@@ -12,7 +12,7 @@ struct CharacterSearchDetailsView: View {
     @Binding var navigationPath: NavigationPath
     @State private var removeCharacter: Bool = false
     
-    var viewModel: CharacterSearchDetailsViewModel
+    @State var viewModel: CharacterSearchDetailsViewModel
     
     var body: some View {
         List {
@@ -22,33 +22,49 @@ struct CharacterSearchDetailsView: View {
             
             accountInformationView
             
+            deathsView
+            
             otherCharactersView
         }
-        .navigationTitle(viewModel.model.character.name ?? "Character")
-        .alert("Remove this character from the list?", isPresented: $removeCharacter, actions: {
-            Button("Yes", role: .destructive) {
+        .navigationTitle(viewModel.model.character.name ?? "Character.Detail.ViewTitle")
+        .alert("Character.Detail.Remove", isPresented: $removeCharacter, actions: {
+            Button("App.Yes", role: .destructive) {
                 if DefaultStorage.shared.removeString(value: viewModel.model.character.name ?? "", from: .character) {
                     navigationPath.removeLast(navigationPath.count)
                 }
             }
         }, message: {
-            Text("This action cannot be undone")
+            Text("Error.Undone")
         })
+        .alert("App.Sorry", isPresented: $viewModel.hasError) {
+            Button("OK") {
+                viewModel.characterModel = nil
+            }
+        } message: {
+            Text("Error.Fetch")
+        }
+        .disabled(viewModel.isLoading)
+        .opacity(viewModel.isLoading ? 0.5 : 1)
+        .overlay {
+            if viewModel.isLoading {
+                ProgressView()
+            }
+        }
         .toolbar {
             if viewModel.isFromSearch {
                 ToolbarItem(placement: .topBarTrailing) {
-                    Button("Save on list") {
+                    Button("Save.List") {
                         self.save()
                     }
                 }
-            } else if !viewModel.isFromWorlds {
+            } else if !viewModel.isFromWorlds && !viewModel.isFromHighscores {
                 ToolbarItem(placement: .topBarTrailing) {
                     HStack {
-                        Button("All characters") {
+                        Button("Characters.All") {
                             self.navigationPath.removeLast(self.navigationPath.count)
                         }
                         
-                        Button("Remove character", systemImage: .SFImages.trash) {
+                        Button("Character.Remove", systemImage: .SFImages.trash) {
                             self.removeCharacter = true
                         }
                     }
@@ -58,27 +74,31 @@ struct CharacterSearchDetailsView: View {
     }
     
     private var characterInfoView: some View {
-        Section("Character Information") {
-            CharacterSearchDetailsViewRow(title: "Name", value: viewModel.model.character.name ?? "No name found")
+        Section("Character.Information") {
+            CharacterSearchDetailsViewRow(title: "Name", value: viewModel.model.character.name ?? "Name.NoFound")
             
             if let formerNames = viewModel.model.character.formerNames {
-                CharacterSearchDetailsViewRow(title: "Former Names", value: formerNames.joined(separator: ", "), orientation: .vertical)
+                CharacterSearchDetailsViewRow(title: "Name.Former", value: formerNames.joined(separator: ", "), orientation: .vertical)
             }
             
             CharacterSearchDetailsViewRow(title: "Title", value: viewModel.model.character.title ?? "None")
-            CharacterSearchDetailsViewRow(title: "Status", value: viewModel.model.isOnline ?? false ? "Online" : "Offline")
-            CharacterSearchDetailsViewRow(title: "Unlocked Titles", value: String(viewModel.model.character.unlockedTitles ?? 0))
-            CharacterSearchDetailsViewRow(title: "Sex", value: viewModel.model.character.sex ?? "No sex found")
-            CharacterSearchDetailsViewRow(title: "Vocation", value: viewModel.model.character.vocation ?? "No vocation found")
-            CharacterSearchDetailsViewRow(title: "Level", value: String(viewModel.model.character.level ?? 0))
-            CharacterSearchDetailsViewRow(title: "Achievement Points", value: String(viewModel.model.character.achievementPoints ?? 0))
-            CharacterSearchDetailsViewRow(title: "World", value: viewModel.model.character.world ?? "No world found")
             
-            if let formerWorlds = viewModel.model.character.formerWorlds {
-                CharacterSearchDetailsViewRow(title: "Former Worlds", value: formerWorlds.joined(separator: ", "), orientation: .vertical)
+            if let isOnline = viewModel.model.isOnline {
+                CharacterSearchDetailsViewRow(title: "Status", value: isOnline ? "Online" : "Offline")
             }
             
-            CharacterSearchDetailsViewRow(title: "Residence", value: viewModel.model.character.residence ?? "No residence found")
+            CharacterSearchDetailsViewRow(title: "Titles.Unlocked", value: String(viewModel.model.character.unlockedTitles ?? 0))
+            CharacterSearchDetailsViewRow(title: "Sex", value: viewModel.model.character.sex ?? "Sex.NoFound")
+            CharacterSearchDetailsViewRow(title: "Vocation", value: viewModel.model.character.vocation ?? "Vocation.NoFound")
+            CharacterSearchDetailsViewRow(title: "Level", value: String(viewModel.model.character.level ?? 0))
+            CharacterSearchDetailsViewRow(title: "Achievement.Points", value: String(viewModel.model.character.achievementPoints ?? 0))
+            CharacterSearchDetailsViewRow(title: "World", value: viewModel.model.character.world ?? "World.NoFound")
+            
+            if let formerWorlds = viewModel.model.character.formerWorlds {
+                CharacterSearchDetailsViewRow(title: "Worlds.Former", value: formerWorlds.joined(separator: ", "), orientation: .vertical)
+            }
+            
+            CharacterSearchDetailsViewRow(title: "Residence", value: viewModel.model.character.residence ?? "Residence.NoFound")
             
             if let houses = viewModel.model.character.houses {
                 ForEach(houses, id: \.houseid) { house in
@@ -95,20 +115,20 @@ struct CharacterSearchDetailsView: View {
             if let guild = viewModel.model.character.guild {
                 if let guildRank = guild.rank, !guildRank.isEmpty,
                    let guildName = guild.name, !guildName.isEmpty {
-                        CharacterSearchDetailsViewRow(title: "Guild Membership", value: "\(guildRank) of the \(guildName)", orientation: .vertical)
+                        CharacterSearchDetailsViewRow(title: "Guild.Membership", value: "\(guildRank) of the \(guildName)", orientation: .vertical)
                 }
             }
             
-            CharacterSearchDetailsViewRow(title: "Last Login", value: viewModel.model.character.lastLogin?.formatDate(with: .yyyyMMddTHHmmssZ) ?? "No last login found")
+            CharacterSearchDetailsViewRow(title: "Last.Login", value: viewModel.model.character.lastLogin?.formatDate(with: .yyyyMMddTHHmmssZ) ?? "Last.Login.NoFound")
             
             if let comment = viewModel.model.character.comment {
                 CharacterSearchDetailsViewRow(title: "Comment", value: comment, orientation: .vertical)
             }
             
-            CharacterSearchDetailsViewRow(title: "Account Status", value: viewModel.model.character.accountStatus ?? "No account status found")
+            CharacterSearchDetailsViewRow(title: "Account.Status", value: viewModel.model.character.accountStatus ?? "Account.Status.NoFound")
             
             if let deletionDate = viewModel.model.character.deletionDate {
-                CharacterSearchDetailsViewRow(title: "Deletion Date", value: deletionDate.formatDate(with: .yyyyMMddTHHmmssZ))
+                CharacterSearchDetailsViewRow(title: "Deletion.Date", value: deletionDate.formatDate(with: .yyyyMMddTHHmmssZ))
             }
             
             if let position = viewModel.model.character.position {
@@ -116,7 +136,7 @@ struct CharacterSearchDetailsView: View {
             }
             
             if let marriedTo = viewModel.model.character.marriedTo {
-                CharacterSearchDetailsViewRow(title: "Married to", value: marriedTo)
+                CharacterSearchDetailsViewRow(title: "Married.To", value: marriedTo)
             }
             
             if let traded = viewModel.model.character.traded {
@@ -128,7 +148,7 @@ struct CharacterSearchDetailsView: View {
     private var achievementsView: some View {
         Group {
             if let achievements = viewModel.model.achievements {
-                Section("Account Achievements") {
+                Section("Account.Achievements") {
                     CharacterSearchDetailsAchievementView(achievements: achievements)
                 }
             }
@@ -140,10 +160,20 @@ struct CharacterSearchDetailsView: View {
             if let accountInformation = viewModel.model.accountInformation,
                 let loyaltyTitle = accountInformation.loyaltyTitle, !loyaltyTitle.isEmpty,
                 let created = accountInformation.created, !created.isEmpty {
-                    Section("Account Information") {
-                        CharacterSearchDetailsViewRow(title: "Loyalty Title", value: loyaltyTitle)
+                    Section("Account.Information") {
+                        CharacterSearchDetailsViewRow(title: "Loyalty.Title", value: loyaltyTitle)
                         CharacterSearchDetailsViewRow(title: "Created", value: created.formatDate(with: .yyyyMMddTHHmmssZ))
                     }
+            }
+        }
+    }
+    
+    private var deathsView: some View {
+        Group {
+            if let deaths = viewModel.model.deaths, !deaths.isEmpty {
+                Section("Deaths") {
+                    CharacterSearchDetailsDeathsView(deathsModel: deaths)
+                }
             }
         }
     }
@@ -151,8 +181,30 @@ struct CharacterSearchDetailsView: View {
     private var otherCharactersView: some View {
         Group {
             if let otherCharacters = viewModel.model.otherCharacters {
-                Section("Characters") {
-                    CharacterSearchDetailsOtherCharactersView(characters: otherCharacters)
+                Section("Characters.ViewTitle") {
+                    CharacterSearchDetailsOtherCharactersView(characters: otherCharacters) { name in
+                        if let currentName = viewModel.model.character.name, name != currentName {
+                            await viewModel.fetch(character: name)
+                            viewModel.isLoading = false
+                            
+                            if let characterModel = viewModel.characterModel {
+                                if viewModel.isFromWorlds {
+                                    let route = NavigationRoutes.Worlds.characterDetails(with: characterModel)
+                                    self.navigationPath.append(route)
+                                    return
+                                }
+                                
+                                if viewModel.isFromHighscores {
+                                    let route = NavigationRoutes.Utils.Highscores.characterDetails(with: characterModel)
+                                    self.navigationPath.append(route)
+                                    return
+                                }
+                                
+                                let route = NavigationRoutes.Characters.detailsFromSearch(with: characterModel)
+                                self.navigationPath.append(route)
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -230,6 +282,7 @@ extension CharacterSearchDetailsView {
                                                                                    AchievementsModel(grade: 3, name: "Herbicide", secret: true),
                                                                                    AchievementsModel(grade: 3, name: "Unleash the Beast", secret: false),
                                                                                    AchievementsModel(grade: 3, name: "You Got Horse Power", secret: false)],
+                                                               deaths: nil,
                                                                     otherCharacters: [OtherCharactersModel(deleted: nil,
                                                                                                            main: true,
                                                                                                            name: "Otavio Invencivel",

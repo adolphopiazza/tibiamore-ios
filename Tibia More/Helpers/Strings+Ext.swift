@@ -5,7 +5,7 @@
 //  Created by Adolpho Francisco Zimmermann Piazza on 14/12/23.
 //
 
-import Foundation
+import SwiftUI
 
 extension String {
     
@@ -28,6 +28,10 @@ extension String {
         }
         
         return formatter.string(from: date)
+    }
+    
+    var localized: LocalizedStringKey {
+        return LocalizedStringKey(self)
     }
     
 }

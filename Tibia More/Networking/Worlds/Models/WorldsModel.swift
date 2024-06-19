@@ -49,7 +49,7 @@ struct SpecificWorldInfoModel: Decodable {
     let pvpType: String
     let premiumOnly: Bool
     let transferType: String
-    let worldQuestTitles: [String]
+    let worldQuestTitles: [String]?
     let battleyeProtected: Bool
     let battleyeDate: String
     let gameWorldType: String

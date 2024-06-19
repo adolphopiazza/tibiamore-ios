@@ -49,6 +49,10 @@ enum NavigationRoutes {
         enum About: Hashable {
             case browser(with: String)
         }
+        
+        enum Highscores: Hashable {
+            case characterDetails(with: CharacterModel)
+        }
     }
     
     enum Wiki: Hashable {

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HighscoresView: View {
     
+    @Binding var navigationPath: NavigationPath
     @State private var viewModel = HighscoresViewModel()
     
     var body: some View {
@@ -29,10 +30,21 @@ struct HighscoresView: View {
                         LabeledContent(viewModel.selectedCategory.title, value: String(player.value))
                             .font(.headline)
                     }
+                    .contentShape(.rect)
+                    .onTapGesture {
+                        Task {
+                            await viewModel.fetchCharacter(name: player.name)
+                            
+                            if let charModel = viewModel.characterModel {
+                                self.navigationPath.append(NavigationRoutes.Utils.Highscores.characterDetails(with: charModel))
+                            }
+                        }
+                    }
                 }
             }
         }
-        .opacity(viewModel.hasError || viewModel.isLoading ? 0 : 1)
+        .disabled(viewModel.isLoadingCharacter)
+        .opacity(viewModel.opacity)
         .fontDesign(.serif)
         .navigationTitle(viewModel.viewTitle)
         // yeah these onChanges are ugly as hell =[
@@ -53,13 +65,26 @@ struct HighscoresView: View {
             }
         })
         .overlay {
-            if viewModel.isLoading {
+            if viewModel.isLoading || viewModel.isLoadingCharacter {
                 ProgressView()
             }
             
             if viewModel.hasError && !viewModel.isLoading {
-                ContentUnavailableView("Sorry, we got an error",
-                                       systemImage: .SFImages.networkSlash)
+                ContentUnavailableView("Networking.Error.Title",
+                                       image: .SFImages.networkSlash,
+                                       description: Text("Error.TapRightIcon"))
+            }
+        }
+        .toolbar {
+            if viewModel.hasError {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("Reload", systemImage: .SFImages.arrowClockwise) {
+                        Task {
+                            await viewModel.fetchWorlds()
+                            await viewModel.fetchHighscores()
+                        }
+                    }
+                }
             }
         }
     }
@@ -68,7 +93,7 @@ struct HighscoresView: View {
         Group {
             Picker("World", selection: $viewModel.selectedWorld) {
                 ForEach(viewModel.worlds, id: \.self) { world in
-                    Text(world)
+                    Text(world.localized)
                 }
             }
             .pickerStyle(.navigationLink)
@@ -82,7 +107,7 @@ struct HighscoresView: View {
             
             Picker("Vocation", selection: $viewModel.selectedVocation) {
                 ForEach(viewModel.vocations, id: \.self) { vocation in
-                    Text(vocation.title)
+                    Text(vocation.title.localized)
                 }
             }
             .pickerStyle(.menu)
@@ -92,6 +117,6 @@ struct HighscoresView: View {
 
 #Preview {
     NavigationStack {
-        HighscoresView()
+        HighscoresView(navigationPath: Binding.constant(NavigationPath()))
     }
 }

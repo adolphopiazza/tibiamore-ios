@@ -31,7 +31,7 @@ struct FansitesDetailView: View {
         .navigationTitle(model.name)
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
-                Button("Visit this website") {
+                Button("Website.Visit") {
                     self.navigationPath.append(NavigationRoutes.Utils.Fansites.browser(with: model.homepage))
                 }
             }
@@ -79,7 +79,7 @@ struct FansitesDetailView: View {
     }
     
     private var contentTypeView: some View {
-        Section("Content Type") {
+        Section("Content.Type") {
             LabeledContent("Statistics", value: model.contentType.statistics ? "✅" : "🚫")
             LabeledContent("Texts", value: model.contentType.texts ? "✅" : "🚫")
             LabeledContent("Tools", value: model.contentType.tools ? "✅" : "🚫")

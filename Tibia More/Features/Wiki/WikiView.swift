@@ -17,7 +17,7 @@ struct WikiView: View {
         NavigationStack(path: $navigationPath) {
             Form {
                 ZStack {
-                    TextField("Search on Wiki", text: $viewModel.searchTerm)
+                    TextField("Wiki.Search", text: $viewModel.searchTerm)
                         .autocorrectionDisabled()
                         .keyboardType(.default)
                         .focused($isKeyboardFocused)
@@ -43,7 +43,7 @@ struct WikiView: View {
                         }
                         .contentShape(.rect)
                         .onTapGesture {
-                            let url = "https://tibia.fandom.com/wiki/\(text)"
+                            let url = AppLanguage.shared.wikiDetailURL + text
                             navigationPath.append(NavigationRoutes.Wiki.browser(with: url))
                         }
                     }
@@ -71,9 +71,9 @@ struct WikiView: View {
             }
             .overlay {
                 if viewModel.searchResults.isEmpty && !viewModel.isLoading {
-                    ContentUnavailableView(viewModel.searchTerm.isEmpty ? "Wiki" : "No results",
+                    ContentUnavailableView(viewModel.searchTerm.isEmpty ? "Wiki" : "Wiki.NoResults",
                                            systemImage: .SFImages.book,
-                                           description: Text(viewModel.searchTerm.isEmpty ? "Start typing on the search bar to find something useful on the Wiki" : "Try to make a new search"))
+                                           description: Text(viewModel.searchTerm.isEmpty ? "Wiki.StartSearch" : "Wiki.NewSearch"))
                 }
             }
             .navigationDestination(for: NavigationRoutes.Wiki.self) { route in

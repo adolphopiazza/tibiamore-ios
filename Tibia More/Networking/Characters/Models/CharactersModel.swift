@@ -15,6 +15,7 @@ struct CharacterModel: Decodable, Hashable, Equatable {
     let character: CharacterInfoModel
     let accountInformation: AccountInformationModel?
     let achievements: [AchievementsModel]?
+    let deaths: [DeathsModel]?
     let otherCharacters: [OtherCharactersModel]?
     var isOnline: Bool?
 }
@@ -67,6 +68,22 @@ struct AchievementsModel: Decodable, Hashable, Equatable {
     let grade: Int?
     let name: String?
     let secret: Bool?
+}
+
+// MARK: - Deaths Info
+struct DeathsModel: Decodable, Hashable, Equatable {
+    let level: Int?
+    let reason: String?
+    let time: String?
+    let assists: [DeathsDetailsModel]?
+    let killers: [DeathsDetailsModel]?
+}
+
+struct DeathsDetailsModel: Decodable, Hashable, Equatable {
+    let name: String?
+    let player: Bool?
+    let summon: String?
+    let traded: Bool?
 }
 
 // MARK: - Other Characters Info

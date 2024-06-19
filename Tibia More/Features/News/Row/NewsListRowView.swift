@@ -36,7 +36,7 @@ struct NewsListRowView: View {
                 
                 Spacer()
                 
-                Text("Read on Tibia.com")
+                Text("News.Row.TibiaWebsite")
                     .padding(6)
                     .background {
                         RoundedRectangle(cornerRadius: 4)

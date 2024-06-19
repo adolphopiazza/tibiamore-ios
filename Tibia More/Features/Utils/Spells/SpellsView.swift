@@ -41,12 +41,12 @@ struct SpellsView: View {
             Section {
                 Picker("Vocation", selection: $viewModel.filteredVocation) {
                     ForEach(viewModel.vocations, id: \.self) { vocation in
-                        Text(vocation.title)
+                        Text(vocation.title.localized)
                     }
                 }
                 .pickerStyle(.menu)
                 
-                Toggle("Sort by Level", isOn: $viewModel.sortLevel)
+                Toggle("Vocation.SortByLevel", isOn: $viewModel.sortLevel)
                     .tint(.accent)
             }
             
@@ -55,7 +55,7 @@ struct SpellsView: View {
             }
         }
         .fontDesign(.serif)
-        .navigationTitle(viewModel.viewTitle)
+        .navigationTitle(viewModel.viewTitle.localized)
         .task {
             await viewModel.fetchSpells()
         }

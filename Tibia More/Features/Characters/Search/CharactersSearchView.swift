@@ -15,14 +15,18 @@ struct CharactersSearchView: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 30) {
-                TextField("Insert your character name", text: $viewModel.characterName)
+                TextField("Character.Search.Name", text: $viewModel.characterName)
                     .textFieldStyle(CharacterSearchTextFieldStyle())
                     .autocorrectionDisabled()
                     .textInputAutocapitalization(.words)
                 
                 Button(action: {
                     Task {
-                        await routeToDetails()
+                        await viewModel.fetchAllInfo()
+                        
+                        if let model = viewModel.model {
+                            self.navigationPath.append(NavigationRoutes.Characters.detailsFromSearch(with: model))
+                        }
                     }
                 }, label: {
                     Text("exiva \"\(viewModel.characterName)\"")
@@ -32,14 +36,14 @@ struct CharactersSearchView: View {
             }
             .padding([.horizontal, .top], 20)
         }
-        .navigationTitle(viewModel.viewTitle)
+        .navigationTitle(viewModel.viewTitle.localized)
         .disabled(viewModel.isLoading)
-        .alert("Sorry 🙁", isPresented: $viewModel.hasError) {
+        .alert("App.Sorry", isPresented: $viewModel.hasError) {
             Button("OK") {
                 viewModel.characterName.removeAll()
             }
         } message: {
-            Text("\nIt seems this character does not exist\nPlease try again")
+            Text("Character.Search.NotFound")
         }
         .overlay {
             if viewModel.isLoading {
@@ -48,23 +52,12 @@ struct CharactersSearchView: View {
         }
         .onSubmit {
             Task {
-                await routeToDetails()
+                await viewModel.fetchAllInfo()
+                
+                if let model = viewModel.model {
+                    self.navigationPath.append(NavigationRoutes.Characters.detailsFromSearch(with: model))
+                }
             }
-        }
-    }
-    
-}
-
-// MARK: - Routes
-extension CharactersSearchView {
-    
-    private func routeToDetails() async {
-        await viewModel.fetch()
-        let players = await viewModel.playersOnlineFrom(world: viewModel.model?.character.world ?? "")
-        viewModel.model?.isOnline = players.contains(where: { $0.name == viewModel.model?.character.name ?? "" })
-        
-        if let model = viewModel.model {
-            self.navigationPath.append(NavigationRoutes.Characters.detailsFromSearch(with: model))
         }
     }
     

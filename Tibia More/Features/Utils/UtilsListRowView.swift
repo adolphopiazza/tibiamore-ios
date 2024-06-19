@@ -14,10 +14,10 @@ struct UtilsListRowView: View {
     var body: some View {
         HStack {
             VStack(alignment: .leading) {
-                Text(menuItem.title)
+                Text(menuItem.title.localized)
                     .font(.title)
                 
-                Text(menuItem.description)
+                Text(menuItem.description.localized)
                     .font(.footnote)
             }
             

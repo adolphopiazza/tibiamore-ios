@@ -12,10 +12,10 @@ struct KillStatisticsTotalsView: View {
     let model: KillStatisticsDataModel
     
     var body: some View {
-        LabeledContent("Last day killed by players", value: String(model.lastDayKilled ))
-        LabeledContent("Last day players died", value: String(model.lastDayPlayersKilled ))
-        LabeledContent("Last week killed by players", value: String(model.lastWeekKilled ))
-        LabeledContent("Last week players died", value: String(model.lastWeekPlayersKilled ))
+        LabeledContent("Statistics.LastDayKilled", value: String(model.lastDayKilled ))
+        LabeledContent("Statistics.LastDayDied", value: String(model.lastDayPlayersKilled ))
+        LabeledContent("Statistics.LastWeekKilled", value: String(model.lastWeekKilled ))
+        LabeledContent("Statistics.LastWeekDied", value: String(model.lastWeekPlayersKilled ))
     }
 }
 
