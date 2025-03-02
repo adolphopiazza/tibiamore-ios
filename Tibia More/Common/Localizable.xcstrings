@@ -1214,9 +1214,6 @@
         }
       }
     },
-    "Insert your character name" : {
-
-    },
     "Instagram" : {
       "localizations" : {
         "pt-BR" : {
@@ -2296,9 +2293,6 @@
           }
         }
       }
-    },
-    "Touch here" : {
-
     },
     "Traded" : {
       "extractionState" : "manual",
