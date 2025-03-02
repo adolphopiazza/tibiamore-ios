@@ -32,7 +32,7 @@ final class UtilsService {
     
     func fetchRashidItems() async throws -> [RashidModel] {
         guard let url = Bundle.main.url(forResource: "rashidItems", withExtension: "json") else {
-            print("It seems that spellList.json does not exist")
+            print("It seems that rashidItems.json does not exist")
             return []
         }
         
