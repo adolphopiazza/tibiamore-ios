@@ -33,6 +33,7 @@ enum HighscoresVocations: String, Decodable, CaseIterable {
     case druids
     case sorcerers
     case paladins
+    case monks
     
     var title: String {
         switch self {
@@ -46,6 +47,8 @@ enum HighscoresVocations: String, Decodable, CaseIterable {
             return "Sorcerers"
         case .paladins:
             return "Paladins"
+        case .monks:
+            return "Monks"
         }
     }
 }
