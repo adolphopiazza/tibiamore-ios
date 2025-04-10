@@ -46,12 +46,16 @@ final class HighscoresViewModel {
     
     init() {
         Task {
-            await self.fetchWorlds()
-            await self.fetchHighscores()
+            do {
+                try await self.fetchWorlds()
+                try await self.fetchHighscores()
+            } catch {
+                hasError = true
+            }
         }
     }
     
-    @MainActor func fetchWorlds() async {
+    @MainActor func fetchWorlds() async throws {
         defer {
             self.isLoading = false
         }
@@ -68,11 +72,11 @@ final class HighscoresViewModel {
             self.hasError = false
         } catch {
             print("Some error on fetching worlds on HighscoresViewModel: \(error)")
-            self.hasError = true
+            throw error
         }
     }
     
-    @MainActor func fetchHighscores() async {
+    @MainActor func fetchHighscores() async throws {
         defer {
             self.isLoading = false
         }
@@ -88,7 +92,7 @@ final class HighscoresViewModel {
             self.hasError = false
         } catch {
             print("Some error fetching highscores on HighscoresViewModel: \(error)")
-            self.hasError = true
+            throw error
         }
     }
     
