@@ -51,17 +51,29 @@ struct HighscoresView: View {
         // maybe refactor to use combine (with subscribers?)
         .onChange(of: viewModel.selectedWorld, { _, _ in
             Task {
-                await viewModel.fetchHighscores()
+                do {
+                    try await viewModel.fetchHighscores()
+                } catch {
+                    viewModel.hasError = true
+                }
             }
         })
         .onChange(of: viewModel.selectedCategory, { _, _ in
             Task {
-                await viewModel.fetchHighscores()
+                do {
+                    try await viewModel.fetchHighscores()
+                } catch {
+                    viewModel.hasError = true
+                }
             }
         })
         .onChange(of: viewModel.selectedVocation, { _, _ in
             Task {
-                await viewModel.fetchHighscores()
+                do {
+                    try await viewModel.fetchHighscores()
+                } catch {
+                    viewModel.hasError = true
+                }
             }
         })
         .overlay {
@@ -71,7 +83,7 @@ struct HighscoresView: View {
             
             if viewModel.hasError && !viewModel.isLoading {
                 ContentUnavailableView("Networking.Error.Title",
-                                       image: .SFImages.networkSlash,
+                                       systemImage: .SFImages.networkSlash,
                                        description: Text("Error.TapRightIcon"))
             }
         }
@@ -80,8 +92,12 @@ struct HighscoresView: View {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button("Reload", systemImage: .SFImages.arrowClockwise) {
                         Task {
-                            await viewModel.fetchWorlds()
-                            await viewModel.fetchHighscores()
+                            do {
+                                try await viewModel.fetchWorlds()
+                                try await viewModel.fetchHighscores()
+                            } catch {
+                                viewModel.hasError = true
+                            }
                         }
                     }
                 }
@@ -105,12 +121,17 @@ struct HighscoresView: View {
             }
             .pickerStyle(.navigationLink)
             
+            // Vocation filter is now restricted by TibiaData on the Production API,
+            // on the DevAPI is works, but this environtment has restrictions
+            // (1 request per second, 100 per hour)
+            /*
             Picker("Vocation", selection: $viewModel.selectedVocation) {
                 ForEach(viewModel.vocations, id: \.self) { vocation in
                     Text(vocation.title.localized)
                 }
             }
             .pickerStyle(.menu)
+             */
         }
     }
 }

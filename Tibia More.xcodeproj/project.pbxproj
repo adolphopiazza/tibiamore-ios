@@ -69,7 +69,6 @@
 		387E5A0C2B5C0CE5009CA577 /* HighscoresModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387E5A0B2B5C0CE5009CA577 /* HighscoresModel.swift */; };
 		387E5A0F2B5C133D009CA577 /* HighscoresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387E5A0E2B5C133D009CA577 /* HighscoresView.swift */; };
 		387E5A112B5C4BBF009CA577 /* HighscoresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387E5A102B5C4BBF009CA577 /* HighscoresViewModel.swift */; };
-		3889C4E82B8406D8004F462B /* spellList.json in Resources */ = {isa = PBXBuildFile; fileRef = 3889C4E72B8406D8004F462B /* spellList.json */; };
 		3889C4EA2B840733004F462B /* SpellsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3889C4E92B840733004F462B /* SpellsModel.swift */; };
 		3889C4EC2B84233D004F462B /* SpellsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3889C4EB2B84233D004F462B /* SpellsRowView.swift */; };
 		3889C4EE2B843224004F462B /* rashidItems.json in Resources */ = {isa = PBXBuildFile; fileRef = 3889C4ED2B843224004F462B /* rashidItems.json */; };
@@ -90,6 +89,7 @@
 		38A3EDFD2B2F3DE1003C7BDA /* CharacterSearchDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A3EDFC2B2F3DE1003C7BDA /* CharacterSearchDetailsView.swift */; };
 		38A5582C2B82587900F31857 /* SpellsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A5582B2B82587900F31857 /* SpellsView.swift */; };
 		38A5582E2B82588B00F31857 /* SpellsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A5582D2B82588B00F31857 /* SpellsViewModel.swift */; };
+		38A68E6B2DA8793C00CD7CB4 /* spellList.json in Resources */ = {isa = PBXBuildFile; fileRef = 38A68E6A2DA8793C00CD7CB4 /* spellList.json */; };
 		38AC7CE72B24B22200B6DF29 /* NewsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AC7CE62B24B22200B6DF29 /* NewsListViewModel.swift */; };
 		38AC7CEA2B24BD7000B6DF29 /* NewsListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AC7CE92B24BD7000B6DF29 /* NewsListRowView.swift */; };
 		38AC7CEC2B24BD7900B6DF29 /* NewsListRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AC7CEB2B24BD7900B6DF29 /* NewsListRowViewModel.swift */; };
@@ -192,7 +192,6 @@
 		387E5A0B2B5C0CE5009CA577 /* HighscoresModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighscoresModel.swift; sourceTree = "<group>"; };
 		387E5A0E2B5C133D009CA577 /* HighscoresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighscoresView.swift; sourceTree = "<group>"; };
 		387E5A102B5C4BBF009CA577 /* HighscoresViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighscoresViewModel.swift; sourceTree = "<group>"; };
-		3889C4E72B8406D8004F462B /* spellList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = spellList.json; sourceTree = "<group>"; };
 		3889C4E92B840733004F462B /* SpellsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsModel.swift; sourceTree = "<group>"; };
 		3889C4EB2B84233D004F462B /* SpellsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsRowView.swift; sourceTree = "<group>"; };
 		3889C4ED2B843224004F462B /* rashidItems.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rashidItems.json; sourceTree = "<group>"; };
@@ -213,6 +212,7 @@
 		38A3EDFC2B2F3DE1003C7BDA /* CharacterSearchDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSearchDetailsView.swift; sourceTree = "<group>"; };
 		38A5582B2B82587900F31857 /* SpellsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsView.swift; sourceTree = "<group>"; };
 		38A5582D2B82588B00F31857 /* SpellsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsViewModel.swift; sourceTree = "<group>"; };
+		38A68E6A2DA8793C00CD7CB4 /* spellList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = spellList.json; sourceTree = "<group>"; };
 		38AC7CE62B24B22200B6DF29 /* NewsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewModel.swift; sourceTree = "<group>"; };
 		38AC7CE92B24BD7000B6DF29 /* NewsListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListRowView.swift; sourceTree = "<group>"; };
 		38AC7CEB2B24BD7900B6DF29 /* NewsListRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListRowViewModel.swift; sourceTree = "<group>"; };
@@ -571,7 +571,7 @@
 		3889C4E62B8406CF004F462B /* JSON */ = {
 			isa = PBXGroup;
 			children = (
-				3889C4E72B8406D8004F462B /* spellList.json */,
+				38A68E6A2DA8793C00CD7CB4 /* spellList.json */,
 				3889C4ED2B843224004F462B /* rashidItems.json */,
 			);
 			path = JSON;
@@ -861,10 +861,10 @@
 			files = (
 				381F0E782C1F476200CD26F4 /* PrivacyInfo.xcprivacy in Resources */,
 				382A29C92B1EA97600961FE2 /* Preview Assets.xcassets in Resources */,
+				38A68E6B2DA8793C00CD7CB4 /* spellList.json in Resources */,
 				38C546AC2BC2EFBE0039E589 /* Localizable.xcstrings in Resources */,
 				3889C4EE2B843224004F462B /* rashidItems.json in Resources */,
 				382A29C62B1EA97600961FE2 /* Assets.xcassets in Resources */,
-				3889C4E82B8406D8004F462B /* spellList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1157,7 +1157,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.adolphopiazza.Tibia-More";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1188,7 +1188,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.adolphopiazza.Tibia-More";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
