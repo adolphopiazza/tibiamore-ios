@@ -23,6 +23,7 @@ struct CharactersListView: View {
                     }
             }
             .disabled(viewModel.isLoading)
+            .opacity(viewModel.isLoading ? 0.5 : 1)
             .navigationTitle(viewModel.viewTitle.localized)
             .task {
                 await viewModel.checkUserDefaults()
@@ -46,7 +47,9 @@ struct CharactersListView: View {
                 }
                 
                 if viewModel.isLoading {
-                    ProgressView()
+                    ProgressView {
+                        Text("Character.Loading")
+                    }
                 }
             }
             .toolbar {
