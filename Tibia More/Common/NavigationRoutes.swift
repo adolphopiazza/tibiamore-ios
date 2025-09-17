@@ -11,7 +11,7 @@ enum NavigationRoutes {
     
     enum News: Hashable {
         case details(of: NewsInformationModel)
-        case browser(with: String)
+        case browser(with: String, title: String)
     }
     
     enum Characters: Hashable {
