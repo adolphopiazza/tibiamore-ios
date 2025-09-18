@@ -44,7 +44,7 @@ struct WikiView: View {
                         .contentShape(.rect)
                         .onTapGesture {
                             let url = AppLanguage.shared.wikiDetailURL + text
-                            navigationPath.append(NavigationRoutes.Wiki.browser(with: url))
+                            navigationPath.append(NavigationRoutes.Wiki.browser(with: url, title: text))
                         }
                     }
                 }
@@ -78,8 +78,12 @@ struct WikiView: View {
             }
             .navigationDestination(for: NavigationRoutes.Wiki.self) { route in
                 switch route {
-                case .browser(let url):
-                    BrowserView(navigationPath: $navigationPath, url: url)
+                case .browser(let url, let title):
+                    if #available(iOS 26.0, *) {
+                        BrowserWebView(navigationPath: $navigationPath, url: url, title: title)
+                    } else {
+                        BrowserView(navigationPath: $navigationPath, url: url)
+                    }
                 }
             }
         }
