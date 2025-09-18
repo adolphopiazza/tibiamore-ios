@@ -18,7 +18,7 @@ struct FansitesDetailView: View {
             headerView
                 .contentShape(.rect)
                 .onTapGesture {
-                    self.navigationPath.append(NavigationRoutes.Utils.Fansites.browser(with: model.homepage))
+                    self.navigationPath.append(NavigationRoutes.Utils.Fansites.browser(with: model.homepage, name: model.name))
                 }
             
             aboutView
@@ -32,7 +32,7 @@ struct FansitesDetailView: View {
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Button("Website.Visit") {
-                    self.navigationPath.append(NavigationRoutes.Utils.Fansites.browser(with: model.homepage))
+                    self.navigationPath.append(NavigationRoutes.Utils.Fansites.browser(with: model.homepage, name: model.name))
                 }
             }
         }

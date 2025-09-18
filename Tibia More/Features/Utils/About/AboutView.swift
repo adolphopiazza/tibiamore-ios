@@ -36,7 +36,7 @@ struct AboutView: View {
                 ForEach(viewModel.sources, id: \.title) { source in
                     LabeledContent(source.title) {
                         Button {
-                            navigationPath.append(NavigationRoutes.Utils.About.browser(with: source.url))
+                            navigationPath.append(NavigationRoutes.Utils.About.browser(with: source.url, title: source.title))
                         } label: {
                             Image(systemName: .SFImages.chevronRight)
                         }
@@ -48,7 +48,7 @@ struct AboutView: View {
                 ForEach(viewModel.developer, id: \.title) { source in
                     LabeledContent(source.title) {
                         Button {
-                            navigationPath.append(NavigationRoutes.Utils.About.browser(with: source.url))
+                            navigationPath.append(NavigationRoutes.Utils.About.browser(with: source.url, title: source.title))
                         } label: {
                             Image(systemName: .SFImages.chevronRight)
                         }
@@ -59,7 +59,7 @@ struct AboutView: View {
             Section("Tibia") {
                 LabeledContent("CipSoft website") {
                     Button {
-                        navigationPath.append(NavigationRoutes.Utils.About.browser(with: "https://www.cipsoft.com/en/"))
+                        navigationPath.append(NavigationRoutes.Utils.About.browser(with: "https://www.cipsoft.com/en/", title: "CipSoft website"))
                     } label: {
                         Image(systemName: .SFImages.chevronRight)
                     }

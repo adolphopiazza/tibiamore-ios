@@ -22,7 +22,7 @@ struct NewsListTickerDetailView: View {
                 }
                 
                 Button(action: {
-                    let route = NavigationRoutes.News.browser(with: viewModel.detailedNews.url)
+                    let route = NavigationRoutes.News.browser(with: viewModel.detailedNews.url, title: viewModel.detailedNews.title ?? "News Ticker")
                     self.navigationPath.append(route)
                 }, label: {
                     Text("News.Row.TibiaWebsite")

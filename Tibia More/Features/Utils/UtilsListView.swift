@@ -72,8 +72,12 @@ struct UtilsListView: View {
                 switch route {
                 case .details(let model):
                     FansitesDetailView(navigationPath: $navigationPath, model: model)
-                case .browser(let url):
-                    BrowserView(navigationPath: $navigationPath, url: url)
+                case .browser(let url, let name):
+                    if #available(iOS 26.0, *) {
+                        BrowserWebView(navigationPath: $navigationPath, url: url, title: name)
+                    } else {
+                        BrowserView(navigationPath: $navigationPath, url: url)
+                    }
                 }
             }
             .navigationDestination(for: NavigationRoutes.Utils.Guilds.self) { route in
@@ -84,8 +88,12 @@ struct UtilsListView: View {
             }
             .navigationDestination(for: NavigationRoutes.Utils.About.self) { route in
                 switch route {
-                case .browser(let url):
-                    BrowserView(navigationPath: $navigationPath, url: url)
+                case .browser(let url, let title):
+                    if #available(iOS 26.0, *) {
+                        BrowserWebView(navigationPath: $navigationPath, url: url, title: title)
+                    } else {
+                        BrowserView(navigationPath: $navigationPath, url: url)
+                    }
                 }
             }
             .navigationDestination(for: NavigationRoutes.Utils.Highscores.self) { route in

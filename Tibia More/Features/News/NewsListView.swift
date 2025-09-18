@@ -37,7 +37,7 @@ struct NewsListView: View {
                         NewsListRowView(viewModel: .init(news))
                             .contentShape(Rectangle())
                             .onTapGesture {
-                                navigationPath.append(NavigationRoutes.News.browser(with: news.url))
+                                navigationPath.append(NavigationRoutes.News.browser(with: news.url, title: news.news))
                             }
                     }
                 }
@@ -63,8 +63,12 @@ struct NewsListView: View {
                 switch route {
                 case .details(let news):
                     NewsListTickerDetailView(viewModel: .init(newsID: news.id), navigationPath: $navigationPath)
-                case .browser(let url):
-                    BrowserView(navigationPath: $navigationPath, url: url)
+                case .browser(let url, let title):
+                    if #available(iOS 26.0, *) {
+                        BrowserWebView(navigationPath: $navigationPath, url: url, title: title)
+                    } else {
+                        BrowserView(navigationPath: $navigationPath, url: url)
+                    }
                 }
             }
         }

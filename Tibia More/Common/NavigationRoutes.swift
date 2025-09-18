@@ -11,7 +11,7 @@ enum NavigationRoutes {
     
     enum News: Hashable {
         case details(of: NewsInformationModel)
-        case browser(with: String)
+        case browser(with: String, title: String)
     }
     
     enum Characters: Hashable {
@@ -39,7 +39,7 @@ enum NavigationRoutes {
         
         enum Fansites: Hashable {
             case details(of: FansiteModel)
-            case browser(with: String)
+            case browser(with: String, name: String)
         }
         
         enum Guilds: Hashable {
@@ -47,7 +47,7 @@ enum NavigationRoutes {
         }
         
         enum About: Hashable {
-            case browser(with: String)
+            case browser(with: String, title: String)
         }
         
         enum Highscores: Hashable {
@@ -56,7 +56,7 @@ enum NavigationRoutes {
     }
     
     enum Wiki: Hashable {
-        case browser(with: String)
+        case browser(with: String, title: String)
     }
     
 }

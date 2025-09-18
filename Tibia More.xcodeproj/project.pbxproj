@@ -55,6 +55,7 @@
 		382A2A042B1EBC8A00961FE2 /* URLConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A2A032B1EBC8A00961FE2 /* URLConstants.swift */; };
 		3838176B2B49A660000E13D7 /* WorldsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3838176A2B49A660000E13D7 /* WorldsListViewModel.swift */; };
 		3838176D2B4AEAE2000E13D7 /* WorldsListViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3838176C2B4AEAE2000E13D7 /* WorldsListViewRow.swift */; };
+		384BF34D2E79E71900B82CB4 /* BrowserWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384BF34C2E79E71900B82CB4 /* BrowserWebView.swift */; };
 		385D6EAE2B4AF2D600839091 /* WorldsDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385D6EAD2B4AF2D600839091 /* WorldsDetailsView.swift */; };
 		385D6EB02B4AF2E800839091 /* WorldsDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385D6EAF2B4AF2E800839091 /* WorldsDetailsViewModel.swift */; };
 		3872B02B2B5608D700725178 /* CreaturesRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3872B02A2B5608D700725178 /* CreaturesRowView.swift */; };
@@ -178,6 +179,7 @@
 		382A2A032B1EBC8A00961FE2 /* URLConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConstants.swift; sourceTree = "<group>"; };
 		3838176A2B49A660000E13D7 /* WorldsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldsListViewModel.swift; sourceTree = "<group>"; };
 		3838176C2B4AEAE2000E13D7 /* WorldsListViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldsListViewRow.swift; sourceTree = "<group>"; };
+		384BF34C2E79E71900B82CB4 /* BrowserWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserWebView.swift; sourceTree = "<group>"; };
 		385D6EAD2B4AF2D600839091 /* WorldsDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldsDetailsView.swift; sourceTree = "<group>"; };
 		385D6EAF2B4AF2E800839091 /* WorldsDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldsDetailsViewModel.swift; sourceTree = "<group>"; };
 		3872B02A2B5608D700725178 /* CreaturesRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreaturesRowView.swift; sourceTree = "<group>"; };
@@ -625,6 +627,7 @@
 			isa = PBXGroup;
 			children = (
 				38A28AA92B2B7CD500C707F7 /* BrowserView.swift */,
+				384BF34C2E79E71900B82CB4 /* BrowserWebView.swift */,
 			);
 			path = Browser;
 			sourceTree = "<group>";
@@ -957,6 +960,7 @@
 				38A5582C2B82587900F31857 /* SpellsView.swift in Sources */,
 				3808B1FD2B5C9254003E4AB8 /* FansiteRowView.swift in Sources */,
 				3872B02B2B5608D700725178 /* CreaturesRowView.swift in Sources */,
+				384BF34D2E79E71900B82CB4 /* BrowserWebView.swift in Sources */,
 				387E5A062B5B4ABC009CA577 /* BoostedBossView.swift in Sources */,
 				38C09ADF2B48A86B006B6B34 /* CharacterSearchDetailsViewModel.swift in Sources */,
 				3808B20A2B5DB596003E4AB8 /* GuildDetailsView.swift in Sources */,
@@ -1141,7 +1145,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Tibia More/Preview Content\"";
 				DEVELOPMENT_TEAM = H574TJ3JKS;
 				ENABLE_PREVIEWS = YES;
@@ -1157,7 +1161,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.2;
+				MARKETING_VERSION = 1.1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.adolphopiazza.Tibia-More";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1172,7 +1176,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Tibia More/Preview Content\"";
 				DEVELOPMENT_TEAM = H574TJ3JKS;
 				ENABLE_PREVIEWS = YES;
@@ -1188,7 +1192,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.2;
+				MARKETING_VERSION = 1.1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.adolphopiazza.Tibia-More";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
