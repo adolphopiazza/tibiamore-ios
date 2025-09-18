@@ -65,7 +65,7 @@ struct NewsListView: View {
                     NewsListTickerDetailView(viewModel: .init(newsID: news.id), navigationPath: $navigationPath)
                 case .browser(let url, let title):
                     if #available(iOS 26.0, *) {
-                        BrowserWebView(navigationPath: $navigationPath, url: url, newsTitle: title)
+                        BrowserWebView(navigationPath: $navigationPath, url: url, title: title)
                     } else {
                         BrowserView(navigationPath: $navigationPath, url: url)
                     }

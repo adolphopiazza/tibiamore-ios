@@ -15,7 +15,7 @@ struct BrowserWebView: View {
     @Binding var navigationPath: NavigationPath
     
     var url: String
-    var newsTitle: String
+    var title: String
     
     var body: some View {
         WebView(webPage)
@@ -23,7 +23,7 @@ struct BrowserWebView: View {
                 webPage.load(URL(string: url))
             }
             .toolbar(.hidden, for: .tabBar)
-            .navigationTitle(newsTitle)
+            .navigationTitle(title)
             .navigationBarTitleDisplayMode(.inline)
             .clipped()
             .scrollIndicators(.hidden)
@@ -40,7 +40,7 @@ struct BrowserWebView: View {
     NavigationStack {
         if #available(iOS 26.0, *) {
             BrowserWebView(navigationPath: .constant(NavigationPath()), url: "https://www.tibia.com/news/?subtopic=newsarchive&id=8416",
-                           newsTitle: "Double Exp")
+                           title: "Double Exp")
         } else {
             BrowserView(navigationPath: .constant(NavigationPath()), url: "https://www.tibia.com/news/?subtopic=newsarchive&id=8416")
         }
