@@ -58,8 +58,8 @@ struct UtilsListView: View {
             }
             .navigationDestination(for: NavigationRoutes.Utils.Rashid.self, destination: { route in
                 switch route {
-                case .items(let items):
-                    RashidItemsView(rashidItems: items)
+                case .items:
+                    RashidItemsView()
                 }
             })
             .navigationDestination(for: NavigationRoutes.Utils.Creatures.self) { route in

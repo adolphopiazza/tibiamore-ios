@@ -30,7 +30,7 @@ enum NavigationRoutes {
         case about
         
         enum Rashid: Hashable {
-            case items(with: [RashidModel])
+            case items
         }
         
         enum Creatures: Hashable {

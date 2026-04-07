@@ -13,23 +13,6 @@ final class UtilsService {
     
     init() {}
     
-    func fetchRashid() async throws -> String {
-        let service = NetworkService<String>()
-        
-        do {
-            let result = try await service.fetch(baseURL: .tibiaLabsURL, url: .Endpoints.Utils.rashid)
-            
-            if result.isEmpty {
-                throw APIErrors.errorOnAPI
-            }
-            
-            return result
-        } catch {
-            print("Some error on Utils service, fetchRashid: \(error)")
-            throw error
-        }
-    }
-    
     func fetchRashidItems() async throws -> [RashidModel] {
         guard let url = Bundle.main.url(forResource: "rashidItems", withExtension: "json") else {
             print("It seems that rashidItems.json does not exist")
