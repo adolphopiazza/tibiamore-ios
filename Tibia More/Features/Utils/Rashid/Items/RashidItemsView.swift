@@ -10,8 +10,7 @@ import SwiftUI
 struct RashidItemsView: View {
     
     @State private var searchItem: String = ""
-    
-    let rashidItems: [RashidModel]
+    @State private var rashidItems: [RashidModel] = []
     
     private var filteredItems: [RashidModel] {
         if searchItem.isEmpty {
@@ -31,12 +30,19 @@ struct RashidItemsView: View {
         .fontDesign(.serif)
         .navigationTitle("Rashid.Items.Desc")
         .searchable(text: $searchItem)
+        .task {
+            do {
+                let items = try await UtilsService.shared.fetchRashidItems()
+                rashidItems = items
+            } catch {
+                print("Some error on RashidItemsView: \(error)")
+            }
+        }
     }
 }
 
 #Preview {
     NavigationStack {
-        RashidItemsView(rashidItems: [RashidModel(item: "Item 1", value: "20000"),
-                                      RashidModel(item: "Item 2", value: "150")])
+        RashidItemsView()
     }
 }

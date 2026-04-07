@@ -31,7 +31,7 @@ struct RashidView: View {
                 }
                 
                 Button(action: {
-                    navigationPath.append(NavigationRoutes.Utils.Rashid.items(with: viewModel.rashidItems))
+                    navigationPath.append(NavigationRoutes.Utils.Rashid.items)
                 }, label: {
                     HStack {
                         Spacer()
@@ -44,21 +44,14 @@ struct RashidView: View {
             }
             
             Section("Schedule") {
-                LabeledContent("Mondays", value: "Svargrond")
-                LabeledContent("Tuesdays", value: "Liberty Bay")
-                LabeledContent("Wednesdays", value: "Port Hope")
-                LabeledContent("Thursdays", value: "Ankrahmun")
-                LabeledContent("Fridays", value: "Darashia")
-                LabeledContent("Saturdays", value: "Edron")
-                LabeledContent("Sundays", value: "Carlin")
+                ForEach(viewModel.rashidLocations, id: \.rawValue) { location in
+                    LabeledContent(location.day, value: location.city)
+                }
             }
         }
         .opacity(viewModel.opacity)
         .fontDesign(.serif)
         .navigationTitle(viewModel.viewTitle)
-        .task {
-            await viewModel.fetch()
-        }
         .overlay {
             if viewModel.isLoading {
                 ProgressView()
@@ -71,19 +64,9 @@ struct RashidView: View {
             }
         }
         .toolbar {
-            if !viewModel.hasError {
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button("Note", systemImage: .SFImages.infoCircle) {
-                        viewModel.isShowingInfo = true
-                    }
-                }
-            } else {
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button("Reload", systemImage: .SFImages.arrowClockwise) {
-                        Task {
-                            await viewModel.fetch()
-                        }
-                    }
+            ToolbarItem(placement: .topBarTrailing) {
+                Button("Note", systemImage: .SFImages.infoCircle) {
+                    viewModel.isShowingInfo = true
                 }
             }
         }
